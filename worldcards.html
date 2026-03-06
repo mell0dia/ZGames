@@ -234,37 +234,38 @@ html,body{min-height:100%;font-family:'Segoe UI',system-ui,sans-serif;background
   .lpanel.open{transform:translateX(0);}
   .panel-backdrop.open{display:block;}
 
-  /* Side-by-side compact cards */
-  .arena{flex-direction:row;gap:4px;padding:44px 4px 4px;overflow:hidden;align-items:flex-start;}
-  .wcard-wrap{flex:1;max-width:none;min-width:0;}
-  .card-header{margin-bottom:2px;padding:0 2px;}
-  .card-score{font-size:17px;}
+  /* Stacked compact cards */
+  .arena{flex-direction:column;gap:4px;padding:6px 8px 4px;overflow:hidden;align-items:stretch;}
+  .wcard-wrap{max-width:100%;width:100%;}
+  .card-header{margin-bottom:2px;padding:0 3px;}
+  .card-score{font-size:15px;}
   .wcard-owner{font-size:8px;letter-spacing:1px;}
 
-  /* Fixed height card instead of padding-top aspect trick */
-  .wcard-inner{padding-top:0;height:clamp(205px,54vw,245px);}
-  .wcard-front{padding:7px 5px;}
-  .wcard-flag{font-size:26px;margin-bottom:2px;}
-  .wcard-name{font-size:11px;margin-bottom:1px;}
+  /* Compact fixed-height card */
+  .wcard-inner{padding-top:0;height:162px;}
+  .wcard-front{padding:5px 8px 5px;}
+  .wcard-flag{font-size:20px;margin-bottom:1px;}
+  .wcard-name{font-size:11px;margin-bottom:0;}
   .wcard-region{font-size:8px;margin-bottom:3px;}
   .wcard-props{gap:0;}
-  .prop-row{padding:2px 3px;gap:2px;}
+  .prop-row{padding:2px 4px;gap:3px;}
   .prop-icon{font-size:11px;width:14px;}
   .prop-label{font-size:9px;}
   .prop-value{font-size:11px;}
   .mbt{font-size:9px;padding:1px 3px;}
 
-  /* VS / challenge column */
-  .vs-div{flex-direction:column;min-width:34px;width:34px;gap:4px;align-items:center;justify-content:flex-start;padding-top:22px;}
-  .vs-text{font-size:12px;}
-  .chal-btns{flex-direction:column;gap:3px;width:100%;}
-  .chal-btn{padding:5px 2px;font-size:8px;line-height:1.3;white-space:normal;}
-  .chal-left{font-size:8px;}
+  /* VS row: single compact horizontal strip between cards */
+  .vs-div{flex-direction:row;min-width:0;width:100%;align-items:center;
+    justify-content:center;gap:8px;padding:0;}
+  .vs-text{font-size:11px;min-width:20px;text-align:center;}
+  .chal-btns{flex-direction:row;gap:6px;}
+  .chal-btn{padding:3px 8px;font-size:9px;line-height:1.3;white-space:nowrap;width:auto;}
+  .chal-left{font-size:8px;white-space:nowrap;}
 
   /* Result bar */
-  .result-bar{min-height:50px;padding:0 10px;gap:8px;}
-  .rr-emoji{font-size:26px;}
-  .rr-title{font-size:16px;}
+  .result-bar{min-height:44px;padding:0 10px;gap:8px;}
+  .rr-emoji{font-size:22px;}
+  .rr-title{font-size:15px;}
   .rr-sub{font-size:9px;}
 
   .turn-banner{padding:7px 10px 7px 54px;font-size:11px;}
