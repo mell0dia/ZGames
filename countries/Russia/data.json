@@ -1,0 +1,233 @@
+{
+  "name": {
+    "common": "Russia",
+    "official": "Russian Federation",
+    "native": {
+      "rus": {
+        "official": "Российская Федерация",
+        "common": "Россия"
+      }
+    }
+  },
+  "cca2": "RU",
+  "cca3": "RUS",
+  "ccn3": "643",
+  "cioc": "RUS",
+  "fifa": "RUS",
+  "tld": [
+    ".ru",
+    ".su",
+    ".рф"
+  ],
+  "altSpellings": [
+    "RU",
+    "Russian Federation",
+    "Российская Федерация"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Eastern European Group",
+  "capital": [
+    "Moscow"
+  ],
+  "region": "Europe",
+  "subregion": "Eastern Europe",
+  "continents": [
+    "Europe",
+    "Asia"
+  ],
+  "latlng": [
+    60,
+    100
+  ],
+  "landlocked": false,
+  "borders": [
+    "AZE",
+    "BLR",
+    "CHN",
+    "EST",
+    "FIN",
+    "GEO",
+    "KAZ",
+    "PRK",
+    "LVA",
+    "LTU",
+    "MNG",
+    "NOR",
+    "POL",
+    "UKR"
+  ],
+  "area": 17098242,
+  "population": 146028325,
+  "demonyms": {
+    "eng": {
+      "f": "Russian",
+      "m": "Russian"
+    },
+    "fra": {
+      "f": "Russe",
+      "m": "Russe"
+    }
+  },
+  "languages": {
+    "rus": "Russian"
+  },
+  "currencies": {
+    "RUB": {
+      "name": "Russian ruble",
+      "symbol": "₽"
+    }
+  },
+  "gini": {
+    "2018": 37.5
+  },
+  "car": {
+    "signs": [
+      "RUS"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "######",
+    "regex": "^(\\d{6})$"
+  },
+  "idd": {
+    "root": "+7",
+    "suffixes": [
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ]
+  },
+  "timezones": [
+    "UTC+03:00",
+    "UTC+04:00",
+    "UTC+06:00",
+    "UTC+07:00",
+    "UTC+08:00",
+    "UTC+09:00",
+    "UTC+10:00",
+    "UTC+11:00",
+    "UTC+12:00"
+  ],
+  "flag": "🇷🇺",
+  "flags": {
+    "png": "https://flagcdn.com/w320/ru.png",
+    "svg": "https://flagcdn.com/ru.svg",
+    "alt": "The flag of Russia is composed of three equal horizontal bands of white, blue and red."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/ru.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/ru.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/4F4PpDhGJgVvLby57",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/60189#map=3/65.15/105.29"
+  },
+  "translations": {
+    "ara": {
+      "official": "روسيا الاتحادية",
+      "common": "روسيا"
+    },
+    "bre": {
+      "official": "Kevread Rusia",
+      "common": "Rusia"
+    },
+    "ces": {
+      "official": "Ruská federace",
+      "common": "Rusko"
+    },
+    "deu": {
+      "official": "Russische Föderation",
+      "common": "Russland"
+    },
+    "est": {
+      "official": "Venemaa Föderatsioon",
+      "common": "Venemaa"
+    },
+    "fin": {
+      "official": "Venäjän federaatio",
+      "common": "Venäjä"
+    },
+    "fra": {
+      "official": "Fédération de Russie",
+      "common": "Russie"
+    },
+    "hrv": {
+      "official": "Ruska Federacija",
+      "common": "Rusija"
+    },
+    "hun": {
+      "official": "Oroszországi Föderáció",
+      "common": "Oroszország"
+    },
+    "ita": {
+      "official": "Federazione russa",
+      "common": "Russia"
+    },
+    "jpn": {
+      "official": "ロシア連邦",
+      "common": "ロシア"
+    },
+    "kor": {
+      "official": "러시아 연방",
+      "common": "러시아"
+    },
+    "nld": {
+      "official": "Russische Federatie",
+      "common": "Rusland"
+    },
+    "per": {
+      "official": "فدراسیون روسیه",
+      "common": "روسیه"
+    },
+    "pol": {
+      "official": "Federacja Rosyjska",
+      "common": "Rosja"
+    },
+    "por": {
+      "official": "Federação Russa",
+      "common": "Rússia"
+    },
+    "rus": {
+      "official": "Российская Федерация",
+      "common": "Россия"
+    },
+    "slk": {
+      "official": "Ruská federácia",
+      "common": "Rusko"
+    },
+    "spa": {
+      "official": "Federación de Rusia",
+      "common": "Rusia"
+    },
+    "srp": {
+      "official": "Ruska Federacija",
+      "common": "Rusija"
+    },
+    "swe": {
+      "official": "Ryska federationen",
+      "common": "Ryssland"
+    },
+    "tur": {
+      "official": "Rusya Federasyonu",
+      "common": "Rusya"
+    },
+    "urd": {
+      "official": "روسی وفاق",
+      "common": "روس"
+    },
+    "zho": {
+      "official": "俄罗斯联邦",
+      "common": "俄罗斯"
+    }
+  },
+  "largest_city": "Moscow",
+  "largest_city_local": "Moscow",
+  "largest_city_pop": 10381222,
+  "largest_city_is_capital": true
+}

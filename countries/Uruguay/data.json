@@ -1,0 +1,206 @@
+{
+  "name": {
+    "common": "Uruguay",
+    "official": "Oriental Republic of Uruguay",
+    "native": {
+      "spa": {
+        "official": "República Oriental del Uruguay",
+        "common": "Uruguay"
+      }
+    }
+  },
+  "cca2": "UY",
+  "cca3": "URY",
+  "ccn3": "858",
+  "cioc": "URU",
+  "fifa": "URU",
+  "tld": [
+    ".uy"
+  ],
+  "altSpellings": [
+    "UY",
+    "Oriental Republic of Uruguay",
+    "República Oriental del Uruguay"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Latin American and Caribbean Group",
+  "capital": [
+    "Montevideo"
+  ],
+  "region": "Americas",
+  "subregion": "South America",
+  "continents": [
+    "South America"
+  ],
+  "latlng": [
+    -33,
+    -56
+  ],
+  "landlocked": false,
+  "borders": [
+    "ARG",
+    "BRA"
+  ],
+  "area": 181034,
+  "population": 3499451,
+  "demonyms": {
+    "eng": {
+      "f": "Uruguayan",
+      "m": "Uruguayan"
+    },
+    "fra": {
+      "f": "Uruguayenne",
+      "m": "Uruguayen"
+    }
+  },
+  "languages": {
+    "spa": "Spanish"
+  },
+  "currencies": {
+    "UYU": {
+      "name": "Uruguayan peso",
+      "symbol": "$"
+    }
+  },
+  "gini": {
+    "2019": 39.7
+  },
+  "car": {
+    "signs": [
+      "ROU"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "#####",
+    "regex": "^(\\d{5})$"
+  },
+  "idd": {
+    "root": "+5",
+    "suffixes": [
+      "98"
+    ]
+  },
+  "timezones": [
+    "UTC-03:00"
+  ],
+  "flag": "🇺🇾",
+  "flags": {
+    "png": "https://flagcdn.com/w320/uy.png",
+    "svg": "https://flagcdn.com/uy.svg",
+    "alt": "The flag of Uruguay is composed of nine equal horizontal bands of white alternating with blue, with a white square superimposed in the canton. In the white square is a yellow sun bearing a human face — the Sun of May — from which sixteen rays extend. The sun's rays alternate between triangular and wavy."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/uy.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/uy.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/tiQ9Baekb1jQtDSD9",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/287072"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية الأوروغواي الشرقية",
+      "common": "الأوروغواي"
+    },
+    "bre": {
+      "official": "Republik Reter Uruguay",
+      "common": "Uruguay"
+    },
+    "ces": {
+      "official": "Uruguayská východní republika",
+      "common": "Uruguay"
+    },
+    "deu": {
+      "official": "Republik Östlich des Uruguay",
+      "common": "Uruguay"
+    },
+    "est": {
+      "official": "Uruguay Idavabariik",
+      "common": "Uruguay"
+    },
+    "fin": {
+      "official": "Uruguayn itäinen tasavalta",
+      "common": "Uruguay"
+    },
+    "fra": {
+      "official": "République orientale de l'Uruguay",
+      "common": "Uruguay"
+    },
+    "hrv": {
+      "official": "Orijentalna Republika Urugvaj",
+      "common": "Urugvaj"
+    },
+    "hun": {
+      "official": "Uruguayi Keleti Köztársaság",
+      "common": "Uruguay"
+    },
+    "ita": {
+      "official": "Repubblica Orientale dell'Uruguay",
+      "common": "Uruguay"
+    },
+    "jpn": {
+      "official": "ウルグアイ東方共和国",
+      "common": "ウルグアイ"
+    },
+    "kor": {
+      "official": "우루과이 동방 공화국",
+      "common": "우루과이"
+    },
+    "nld": {
+      "official": "Oosterse Republiek Uruguay",
+      "common": "Uruguay"
+    },
+    "per": {
+      "official": "جمهوری اروگوئه",
+      "common": "اروگوئه"
+    },
+    "pol": {
+      "official": "Wschodnia Republika Urugwaju",
+      "common": "Urugwaj"
+    },
+    "por": {
+      "official": "República Oriental do Uruguai",
+      "common": "Uruguai"
+    },
+    "rus": {
+      "official": "Восточной Республики Уругвай",
+      "common": "Уругвай"
+    },
+    "slk": {
+      "official": "Uruguajská východná republika",
+      "common": "Uruguaj"
+    },
+    "spa": {
+      "official": "República Oriental del Uruguay",
+      "common": "Uruguay"
+    },
+    "srp": {
+      "official": "Istočna Republika Urugvaj",
+      "common": "Urugvaj"
+    },
+    "swe": {
+      "official": "Republiken Uruguay",
+      "common": "Uruguay"
+    },
+    "tur": {
+      "official": "Uruguay Doğu Cumhuriyeti",
+      "common": "Uruguay"
+    },
+    "urd": {
+      "official": "جمہوریہ شرقیہ یوراگوئے",
+      "common": "یوراگوئے"
+    },
+    "zho": {
+      "official": "乌拉圭东岸共和国",
+      "common": "乌拉圭"
+    }
+  },
+  "largest_city": "Montevideo",
+  "largest_city_local": "Montevideo",
+  "largest_city_pop": 1270737,
+  "largest_city_is_capital": true
+}

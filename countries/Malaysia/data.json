@@ -1,0 +1,210 @@
+{
+  "name": {
+    "common": "Malaysia",
+    "official": "Malaysia",
+    "native": {
+      "eng": {
+        "official": "Malaysia",
+        "common": "Malaysia"
+      },
+      "msa": {
+        "official": "مليسيا",
+        "common": "مليسيا"
+      }
+    }
+  },
+  "cca2": "MY",
+  "cca3": "MYS",
+  "ccn3": "458",
+  "cioc": "MAS",
+  "fifa": "MAS",
+  "tld": [
+    ".my"
+  ],
+  "altSpellings": [
+    "MY"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Asia and the Pacific Group",
+  "capital": [
+    "Kuala Lumpur"
+  ],
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "continents": [
+    "Asia"
+  ],
+  "latlng": [
+    2.5,
+    112.5
+  ],
+  "landlocked": false,
+  "borders": [
+    "BRN",
+    "IDN",
+    "THA"
+  ],
+  "area": 330803,
+  "population": 34231700,
+  "demonyms": {
+    "eng": {
+      "f": "Malaysian",
+      "m": "Malaysian"
+    },
+    "fra": {
+      "f": "Malaisienne",
+      "m": "Malaisien"
+    }
+  },
+  "languages": {
+    "eng": "English",
+    "msa": "Malay"
+  },
+  "currencies": {
+    "MYR": {
+      "name": "Malaysian ringgit",
+      "symbol": "RM"
+    }
+  },
+  "gini": {
+    "2015": 41.1
+  },
+  "car": {
+    "signs": [
+      "MAL"
+    ],
+    "side": "left"
+  },
+  "startOfWeek": "sunday",
+  "postalCode": {
+    "format": "#####",
+    "regex": "^(\\d{5})$"
+  },
+  "idd": {
+    "root": "+6",
+    "suffixes": [
+      "0"
+    ]
+  },
+  "timezones": [
+    "UTC+08:00"
+  ],
+  "flag": "🇲🇾",
+  "flags": {
+    "png": "https://flagcdn.com/w320/my.png",
+    "svg": "https://flagcdn.com/my.svg",
+    "alt": "The flag of Malaysia is composed of fourteen equal horizontal bands of red alternating with white. A blue rectangle, bearing a fly-side facing yellow crescent and a fourteen-pointed yellow star placed just outside the crescent opening, is superimposed in the canton."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/my.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/my.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/qrY1PNeUXGyXDcPy6",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/2108121"
+  },
+  "translations": {
+    "ara": {
+      "official": "ماليزيا",
+      "common": "ماليزيا"
+    },
+    "bre": {
+      "official": "Malaysia",
+      "common": "Malaysia"
+    },
+    "ces": {
+      "official": "Malajsie",
+      "common": "Malajsie"
+    },
+    "deu": {
+      "official": "Malaysia",
+      "common": "Malaysia"
+    },
+    "est": {
+      "official": "Malaisia",
+      "common": "Malaisia"
+    },
+    "fin": {
+      "official": "Malesia",
+      "common": "Malesia"
+    },
+    "fra": {
+      "official": "Fédération de Malaisie",
+      "common": "Malaisie"
+    },
+    "hrv": {
+      "official": "Malezija",
+      "common": "Malezija"
+    },
+    "hun": {
+      "official": "Malajzia",
+      "common": "Malajzia"
+    },
+    "ita": {
+      "official": "Malaysia",
+      "common": "Malesia"
+    },
+    "jpn": {
+      "official": "マレーシア",
+      "common": "マレーシア"
+    },
+    "kor": {
+      "official": "말레이시아",
+      "common": "말레이시아"
+    },
+    "nld": {
+      "official": "Maleisië",
+      "common": "Maleisië"
+    },
+    "per": {
+      "official": "فدراسیون مالزی",
+      "common": "مالزی"
+    },
+    "pol": {
+      "official": "Malezja",
+      "common": "Malezja"
+    },
+    "por": {
+      "official": "Malásia",
+      "common": "Malásia"
+    },
+    "rus": {
+      "official": "Малайзия",
+      "common": "Малайзия"
+    },
+    "slk": {
+      "official": "Malajzia",
+      "common": "Malajzia"
+    },
+    "spa": {
+      "official": "Malasia",
+      "common": "Malasia"
+    },
+    "srp": {
+      "official": "Malezija",
+      "common": "Malezija"
+    },
+    "swe": {
+      "official": "Malaysia",
+      "common": "Malaysia"
+    },
+    "tur": {
+      "official": "Malezya",
+      "common": "Malezya"
+    },
+    "urd": {
+      "official": "ملائیشیا",
+      "common": "ملائیشیا"
+    },
+    "zho": {
+      "official": "马来西亚",
+      "common": "马来西亚"
+    }
+  },
+  "largest_city": "Kuala Lumpur",
+  "largest_city_local": "Kuala Lumpur",
+  "largest_city_pop": 1453975,
+  "largest_city_is_capital": true
+}

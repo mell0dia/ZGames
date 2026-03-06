@@ -1,0 +1,210 @@
+{
+  "name": {
+    "common": "Spain",
+    "official": "Kingdom of Spain",
+    "native": {
+      "spa": {
+        "official": "Reino de España",
+        "common": "España"
+      }
+    }
+  },
+  "cca2": "ES",
+  "cca3": "ESP",
+  "ccn3": "724",
+  "cioc": "ESP",
+  "fifa": "ESP",
+  "tld": [
+    ".es"
+  ],
+  "altSpellings": [
+    "ES",
+    "Kingdom of Spain",
+    "Reino de España"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Western European and Others Group",
+  "capital": [
+    "Madrid"
+  ],
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "continents": [
+    "Europe"
+  ],
+  "latlng": [
+    40,
+    -4
+  ],
+  "landlocked": false,
+  "borders": [
+    "AND",
+    "FRA",
+    "GIB",
+    "PRT",
+    "MAR"
+  ],
+  "area": 505992,
+  "population": 49315949,
+  "demonyms": {
+    "eng": {
+      "f": "Spanish",
+      "m": "Spanish"
+    },
+    "fra": {
+      "f": "Espagnole",
+      "m": "Espagnol"
+    }
+  },
+  "languages": {
+    "spa": "Spanish"
+  },
+  "currencies": {
+    "EUR": {
+      "name": "Euro",
+      "symbol": "€"
+    }
+  },
+  "gini": {
+    "2018": 34.7
+  },
+  "car": {
+    "signs": [
+      "E"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "#####",
+    "regex": "^(\\d{5})$"
+  },
+  "idd": {
+    "root": "+3",
+    "suffixes": [
+      "4"
+    ]
+  },
+  "timezones": [
+    "UTC",
+    "UTC+01:00"
+  ],
+  "flag": "🇪🇸",
+  "flags": {
+    "png": "https://flagcdn.com/w320/es.png",
+    "svg": "https://flagcdn.com/es.svg",
+    "alt": "The flag of Spain is composed of three horizontal bands of red, yellow and red, with the yellow band twice the height of the red bands. In the yellow band is the national coat of arms offset slightly towards the hoist side of center."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/es.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/es.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/138JaXW8EZzRVitY9",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/1311341"
+  },
+  "translations": {
+    "ara": {
+      "official": "مملكة إسبانيا",
+      "common": "إسبانيا"
+    },
+    "bre": {
+      "official": "Rouantelezh Spagn",
+      "common": "Spagn"
+    },
+    "ces": {
+      "official": "Španělské království",
+      "common": "Španělsko"
+    },
+    "deu": {
+      "official": "Königreich Spanien",
+      "common": "Spanien"
+    },
+    "est": {
+      "official": "Hispaania Kuningriik",
+      "common": "Hispaania"
+    },
+    "fin": {
+      "official": "Espanjan kuningaskunta",
+      "common": "Espanja"
+    },
+    "fra": {
+      "official": "Royaume d'Espagne",
+      "common": "Espagne"
+    },
+    "hrv": {
+      "official": "Kraljevina Španjolska",
+      "common": "Španjolska"
+    },
+    "hun": {
+      "official": "Spanyol Királyság",
+      "common": "Spanyolország"
+    },
+    "ita": {
+      "official": "Regno di Spagna",
+      "common": "Spagna"
+    },
+    "jpn": {
+      "official": "スペイン",
+      "common": "スペイン"
+    },
+    "kor": {
+      "official": "에스파냐 왕국",
+      "common": "스페인"
+    },
+    "nld": {
+      "official": "Koninkrijk Spanje",
+      "common": "Spanje"
+    },
+    "per": {
+      "official": "پادشاهی اسپانیا",
+      "common": "اسپانیا"
+    },
+    "pol": {
+      "official": "Królestwo Hiszpanii ",
+      "common": "Hiszpania"
+    },
+    "por": {
+      "official": "Reino de Espanha",
+      "common": "Espanha"
+    },
+    "rus": {
+      "official": "Королевство Испания",
+      "common": "Испания"
+    },
+    "slk": {
+      "official": "Španielske kráľovstvo",
+      "common": "Španielsko"
+    },
+    "spa": {
+      "official": "Reino de España",
+      "common": "España"
+    },
+    "srp": {
+      "official": "Kraljevina Španija",
+      "common": "Španija"
+    },
+    "swe": {
+      "official": "Konungariket Spanien",
+      "common": "Spanien"
+    },
+    "tur": {
+      "official": "İspanya Krallığı",
+      "common": "İspanya"
+    },
+    "urd": {
+      "official": "مملکتِ ہسپانیہ",
+      "common": "ہسپانیہ"
+    },
+    "zho": {
+      "official": "西班牙王国",
+      "common": "西班牙"
+    }
+  },
+  "largest_city": "Madrid",
+  "largest_city_local": "Madrid",
+  "largest_city_pop": 3255944,
+  "largest_city_is_capital": true
+}

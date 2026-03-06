@@ -1,0 +1,207 @@
+{
+  "name": {
+    "common": "Ecuador",
+    "official": "Republic of Ecuador",
+    "native": {
+      "spa": {
+        "official": "República del Ecuador",
+        "common": "Ecuador"
+      }
+    }
+  },
+  "cca2": "EC",
+  "cca3": "ECU",
+  "ccn3": "218",
+  "cioc": "ECU",
+  "fifa": "ECU",
+  "tld": [
+    ".ec"
+  ],
+  "altSpellings": [
+    "EC",
+    "Republic of Ecuador",
+    "República del Ecuador"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Latin American and Caribbean Group",
+  "capital": [
+    "Quito"
+  ],
+  "region": "Americas",
+  "subregion": "South America",
+  "continents": [
+    "South America"
+  ],
+  "latlng": [
+    -2,
+    -77.5
+  ],
+  "landlocked": false,
+  "borders": [
+    "COL",
+    "PER"
+  ],
+  "area": 276841,
+  "population": 18103660,
+  "demonyms": {
+    "eng": {
+      "f": "Ecuadorean",
+      "m": "Ecuadorean"
+    },
+    "fra": {
+      "f": "Équatorienne",
+      "m": "Équatorien"
+    }
+  },
+  "languages": {
+    "spa": "Spanish"
+  },
+  "currencies": {
+    "USD": {
+      "name": "United States dollar",
+      "symbol": "$"
+    }
+  },
+  "gini": {
+    "2019": 45.7
+  },
+  "car": {
+    "signs": [
+      "EC"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "@####@",
+    "regex": "^([a-zA-Z]\\d{4}[a-zA-Z])$"
+  },
+  "idd": {
+    "root": "+5",
+    "suffixes": [
+      "93"
+    ]
+  },
+  "timezones": [
+    "UTC-06:00",
+    "UTC-05:00"
+  ],
+  "flag": "🇪🇨",
+  "flags": {
+    "png": "https://flagcdn.com/w320/ec.png",
+    "svg": "https://flagcdn.com/ec.svg",
+    "alt": "The flag of Ecuador is composed of the horizontal bands of yellow, blue and red, with the yellow band twice the height of the other two bands. The Ecuadorian coat of arms is superimposed in the center of the field."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/ec.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/ec.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/TbX8hUW4gcbRPZiK7",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/108089"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية الإكوادور",
+      "common": "الإكوادور"
+    },
+    "bre": {
+      "official": "Republik Ecuador",
+      "common": "Ecuador"
+    },
+    "ces": {
+      "official": "Ekvádorská republika",
+      "common": "Ekvádor"
+    },
+    "deu": {
+      "official": "Republik Ecuador",
+      "common": "Ecuador"
+    },
+    "est": {
+      "official": "Ecuadori Vabariik",
+      "common": "Ecuador"
+    },
+    "fin": {
+      "official": "Ecuadorin tasavalta",
+      "common": "Ecuador"
+    },
+    "fra": {
+      "official": "République de l'Équateur",
+      "common": "Équateur"
+    },
+    "hrv": {
+      "official": "Republika Ekvador",
+      "common": "Ekvador"
+    },
+    "hun": {
+      "official": "Ecuadori Köztársaság",
+      "common": "Ecuador"
+    },
+    "ita": {
+      "official": "Repubblica dell'Ecuador",
+      "common": "Ecuador"
+    },
+    "jpn": {
+      "official": "エクアドル共和国",
+      "common": "エクアドル"
+    },
+    "kor": {
+      "official": "에콰도르 공화국",
+      "common": "에콰도르"
+    },
+    "nld": {
+      "official": "Republiek Ecuador",
+      "common": "Ecuador"
+    },
+    "per": {
+      "official": "جمهوری اکوادور",
+      "common": "اکوادور"
+    },
+    "pol": {
+      "official": "Ekwador",
+      "common": "Ekwador"
+    },
+    "por": {
+      "official": "República do Equador",
+      "common": "Equador"
+    },
+    "rus": {
+      "official": "Республика Эквадор",
+      "common": "Эквадор"
+    },
+    "slk": {
+      "official": "Ekvádorská republika",
+      "common": "Ekvádor"
+    },
+    "spa": {
+      "official": "República del Ecuador",
+      "common": "Ecuador"
+    },
+    "srp": {
+      "official": "Republika Ekvador",
+      "common": "Ekvador"
+    },
+    "swe": {
+      "official": "Republiken Ecuador",
+      "common": "Ecuador"
+    },
+    "tur": {
+      "official": "Ekvador Cumhuriyeti",
+      "common": "Ekvador"
+    },
+    "urd": {
+      "official": "جمہوریہ ایکوڈور",
+      "common": "ایکواڈور"
+    },
+    "zho": {
+      "official": "厄瓜多尔共和国",
+      "common": "厄瓜多尔"
+    }
+  },
+  "largest_city": "Quito",
+  "largest_city_local": "Quito",
+  "largest_city_pop": 2781641,
+  "largest_city_is_capital": true
+}

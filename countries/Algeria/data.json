@@ -1,0 +1,212 @@
+{
+  "name": {
+    "common": "Algeria",
+    "official": "People's Democratic Republic of Algeria",
+    "native": {
+      "ara": {
+        "official": "الجمهورية الديمقراطية الشعبية الجزائرية",
+        "common": "الجزائر"
+      }
+    }
+  },
+  "cca2": "DZ",
+  "cca3": "DZA",
+  "ccn3": "012",
+  "cioc": "ALG",
+  "fifa": "ALG",
+  "tld": [
+    ".dz",
+    "الجزائر."
+  ],
+  "altSpellings": [
+    "DZ",
+    "Dzayer",
+    "Algérie"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "African Group",
+  "capital": [
+    "Algiers"
+  ],
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "latlng": [
+    28,
+    3
+  ],
+  "landlocked": false,
+  "borders": [
+    "TUN",
+    "LBY",
+    "NER",
+    "ESH",
+    "MRT",
+    "MLI",
+    "MAR"
+  ],
+  "area": 2381741,
+  "population": 47400000,
+  "demonyms": {
+    "eng": {
+      "f": "Algerian",
+      "m": "Algerian"
+    },
+    "fra": {
+      "f": "Algérienne",
+      "m": "Algérien"
+    }
+  },
+  "languages": {
+    "ara": "Arabic"
+  },
+  "currencies": {
+    "DZD": {
+      "name": "Algerian dinar",
+      "symbol": "د.ج"
+    }
+  },
+  "gini": {
+    "2011": 27.6
+  },
+  "car": {
+    "signs": [
+      "DZ"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "sunday",
+  "postalCode": {
+    "format": "#####",
+    "regex": "^(\\d{5})$"
+  },
+  "idd": {
+    "root": "+2",
+    "suffixes": [
+      "13"
+    ]
+  },
+  "timezones": [
+    "UTC+01:00"
+  ],
+  "flag": "🇩🇿",
+  "flags": {
+    "png": "https://flagcdn.com/w320/dz.png",
+    "svg": "https://flagcdn.com/dz.svg",
+    "alt": "The flag of Algeria features two equal vertical bands of green and white. A five-pointed red star within a fly-side facing red crescent is centered over the two-color boundary."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/dz.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/dz.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/RsAyAfyaiNVb8DpW8",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/192756"
+  },
+  "translations": {
+    "ara": {
+      "official": "الجمهورية الديمقراطية الشعبية الجزائرية",
+      "common": "الجزائر"
+    },
+    "bre": {
+      "official": "Republik Aljerian Demokratel ha Poblel",
+      "common": "Aljeria"
+    },
+    "ces": {
+      "official": "Alžírská demokratická a lidová republika",
+      "common": "Alžírsko"
+    },
+    "deu": {
+      "official": "Demokratische Volksrepublik Algerien",
+      "common": "Algerien"
+    },
+    "est": {
+      "official": "Alžeeria Demokraatlik Rahvavabariik",
+      "common": "Alžeeria"
+    },
+    "fin": {
+      "official": "Algerian demokraattinen kansantasavalta",
+      "common": "Algeria"
+    },
+    "fra": {
+      "official": "République démocratique et populaire d'Algérie",
+      "common": "Algérie"
+    },
+    "hrv": {
+      "official": "Narodna Demokratska Republika Alžir",
+      "common": "Alžir"
+    },
+    "hun": {
+      "official": "Algériai Népi Demokratikus Köztársaság",
+      "common": "Algéria"
+    },
+    "ita": {
+      "official": "Repubblica popolare democratica di Algeria",
+      "common": "Algeria"
+    },
+    "jpn": {
+      "official": "アルジェリア人民民主共和国",
+      "common": "アルジェリア"
+    },
+    "kor": {
+      "official": "알제리 인민 민주 공화국",
+      "common": "알제리"
+    },
+    "nld": {
+      "official": "Democratische Volksrepubliek Algerije",
+      "common": "Algerije"
+    },
+    "per": {
+      "official": "جمهوری دموکراتیک خلق الجزایر",
+      "common": "الجزایر"
+    },
+    "pol": {
+      "official": "Algierska Republika Ludowo-Demokratyczna",
+      "common": "Algieria"
+    },
+    "por": {
+      "official": "República Argelina Democrática e Popular",
+      "common": "Argélia"
+    },
+    "rus": {
+      "official": "Народно-Демократическая Республика Алжир",
+      "common": "Алжир"
+    },
+    "slk": {
+      "official": "Alžírska demokratická ľudová republika",
+      "common": "Alžírsko"
+    },
+    "spa": {
+      "official": "República Argelina Democrática y Popular",
+      "common": "Argelia"
+    },
+    "srp": {
+      "official": "Narodna Demokratska Republika Alžir",
+      "common": "Alžir"
+    },
+    "swe": {
+      "official": "Demokratiska folkrepubliken Algeriet",
+      "common": "Algeriet"
+    },
+    "tur": {
+      "official": "Cezayir Demokratik Halk Cumhuriyeti",
+      "common": "Cezayir"
+    },
+    "urd": {
+      "official": "عوامی جمہوری جمہوریہ الجزائر",
+      "common": "الجزائر"
+    },
+    "zho": {
+      "official": "阿尔及利亚人民民主共和国",
+      "common": "阿尔及利亚"
+    }
+  },
+  "largest_city": "Algiers",
+  "largest_city_local": "Algiers",
+  "largest_city_pop": 2364230,
+  "largest_city_is_capital": true
+}

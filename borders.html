@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🗺️ Borders Game</title>
+<script src="https://unpkg.com/d3@7/dist/d3.min.js"></script>
+<script src="https://unpkg.com/topojson-client@3/dist/topojson-client.min.js"></script>
+<style>
+/* ── Variables ──────────────────────────────────── */
+:root {
+  --bg:       #06091a;
+  --panel-bg: rgba(255,255,255,0.035);
+  --card-bg:  rgba(255,255,255,0.07);
+  --border:   rgba(255,255,255,0.1);
+  --accent:   #3dffc0;
+  --accent2:  #5599ff;
+  --danger:   #ff4d7a;
+  --warn:     #ffcc44;
+  --text:     #e8eaf2;
+  --sub:      rgba(232,234,242,0.48);
+  --panel-w:  308px;
+}
+
+/* ── Reset ──────────────────────────────────────── */
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+html,body { height:100%; overflow:hidden; font-family:'Segoe UI',system-ui,sans-serif; background:var(--bg); color:var(--text); }
+
+/* ── Stars ──────────────────────────────────────── */
+#stars { position:fixed; inset:0; z-index:0; pointer-events:none; }
+
+/* ── Layout ─────────────────────────────────────── */
+.layout { display:flex; height:100%; position:relative; z-index:1; }
+
+/* ── LEFT PANEL ─────────────────────────────────── */
+.lpanel {
+  width:var(--panel-w); min-width:var(--panel-w); height:100%;
+  background:var(--panel-bg); backdrop-filter:blur(24px);
+  border-right:1px solid var(--border);
+  display:flex; flex-direction:column;
+  overflow-y:auto; padding:22px 18px 28px;
+}
+.lpanel::-webkit-scrollbar { width:3px; }
+.lpanel::-webkit-scrollbar-thumb { background:var(--border); border-radius:2px; }
+
+.back-link {
+  display:inline-flex; align-items:center; gap:6px;
+  font-size:12px; font-weight:600; color:var(--sub);
+  text-decoration:none; letter-spacing:.5px;
+  padding:6px 10px 6px 6px; border-radius:8px;
+  margin-bottom:18px; transition:all .2s;
+}
+.back-link:hover { color:var(--accent); background:rgba(61,255,192,.08); }
+.back-link .arr { font-size:14px; transition:transform .2s; }
+.back-link:hover .arr { transform:translateX(-3px); }
+
+.logo { text-align:center; margin-bottom:26px; }
+.logo .ico { font-size:44px; display:block; margin-bottom:6px; animation:floatY 3.5s ease-in-out infinite; }
+.logo h1 {
+  font-size:18px; font-weight:800; letter-spacing:3px; text-transform:uppercase;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+}
+
+.slabel { font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--sub); margin-bottom:10px; }
+.divider { height:1px; background:var(--border); margin:18px 0; }
+
+.count-row { display:flex; gap:7px; margin-bottom:4px; }
+.cbtn {
+  flex:1; height:38px; border:1px solid var(--border); border-radius:10px;
+  background:var(--card-bg); color:var(--sub); font-size:13px; font-weight:700;
+  cursor:pointer; transition:all .2s;
+}
+.cbtn:hover { border-color:var(--accent); color:var(--accent); }
+.cbtn.active { background:rgba(61,255,192,.12); border-color:var(--accent); color:var(--accent); }
+
+.legend { display:flex; flex-direction:column; gap:8px; margin-bottom:4px; }
+.legend-item { display:flex; align-items:flex-start; gap:10px; font-size:12px; color:var(--sub); line-height:1.5; }
+.legend-item .badge {
+  flex-shrink:0; padding:2px 8px; border-radius:6px; font-size:10px; font-weight:700;
+  letter-spacing:.5px; text-transform:uppercase;
+}
+.badge-list  { background:rgba(61,255,192,.15);  color:var(--accent);  border:1px solid rgba(61,255,192,.3); }
+.badge-count { background:rgba(85,153,255,.15);  color:var(--accent2); border:1px solid rgba(85,153,255,.3); }
+
+.start-btn {
+  width:100%; height:50px; border:none; border-radius:13px; margin-top:2px;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#060b18; font-size:14px; font-weight:900; letter-spacing:1.5px;
+  text-transform:uppercase; cursor:pointer; transition:all .2s;
+}
+.start-btn:hover { transform:translateY(-2px); box-shadow:0 8px 28px rgba(61,255,192,.3); }
+.start-btn:active { transform:none; }
+.start-btn:disabled { opacity:.45; cursor:not-allowed; transform:none; box-shadow:none; }
+
+.stats-grid { display:grid; grid-template-columns:1fr 1fr; gap:9px; }
+.scard { background:var(--card-bg); border:1px solid var(--border); border-radius:12px; padding:11px; text-align:center; }
+.scard .val { font-size:20px; font-weight:800; color:var(--accent); }
+.scard .lbl { font-size:10px; color:var(--sub); text-transform:uppercase; letter-spacing:1px; margin-top:2px; }
+
+/* Mobile start btn (right panel) */
+.mobile-start-btn {
+  display:none; margin-top:28px;
+  width:100%; max-width:320px;
+  height:52px; border:none; border-radius:14px;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#060b18; font-size:15px; font-weight:900; letter-spacing:1.5px;
+  text-transform:uppercase; cursor:pointer; transition:all .2s;
+}
+.mobile-start-btn:hover { transform:translateY(-2px); box-shadow:0 8px 28px rgba(61,255,192,.3); }
+
+@media (max-width:680px) {
+  .mobile-start-btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; }
+}
+
+/* ── RIGHT PANEL ────────────────────────────────── */
+.rpanel {
+  flex:1; height:100%; display:flex; align-items:center; justify-content:center;
+  padding:20px; overflow-y:auto;
+  background:
+    radial-gradient(ellipse at 25% 20%, rgba(255,140,50,0.13) 0%, transparent 52%),
+    radial-gradient(ellipse at 80% 80%, rgba(220,80,180,0.10) 0%, transparent 50%),
+    linear-gradient(160deg, #1a0e0a 0%, #1c1018 50%, #180d1a 100%);
+}
+.rpanel::-webkit-scrollbar { width:3px; }
+.rpanel::-webkit-scrollbar-thumb { background:var(--border); border-radius:2px; }
+
+/* ── WELCOME ─────────────────────────────────────── */
+.welcome { text-align:center; max-width:460px; animation:fadeUp .6s ease; }
+.welcome .wico { font-size:80px; display:block; margin-bottom:16px; animation:pulseScale 2s ease-in-out infinite; }
+.welcome h2 { font-size:32px; font-weight:900; margin-bottom:10px; }
+.welcome p  { font-size:15px; color:var(--sub); line-height:1.75; max-width:380px; margin:0 auto; }
+.pills { display:flex; flex-wrap:wrap; gap:10px; margin-top:22px; justify-content:center; }
+.pill { padding:7px 15px; border:1px solid var(--border); border-radius:100px; font-size:12px; color:var(--sub); background:var(--card-bg); }
+
+/* ── GAME WRAP ───────────────────────────────────── */
+.game-wrap { width:100%; max-width:860px; animation:fadeUp .35s ease; }
+
+.qheader { display:flex; align-items:center; justify-content:space-between; margin-bottom:8px; }
+.qtype-badge {
+  padding:3px 12px; border-radius:100px; font-size:11px; font-weight:700; letter-spacing:1px; text-transform:uppercase;
+}
+.qtype-list  { background:rgba(61,255,192,.15);  color:var(--accent);  border:1px solid rgba(61,255,192,.3); }
+.qtype-count { background:rgba(85,153,255,.15);  color:var(--accent2); border:1px solid rgba(85,153,255,.3); }
+.qprog { font-size:13px; color:var(--sub); }
+.qscore { font-size:14px; font-weight:800; color:var(--accent); }
+
+.pbar  { height:4px; background:var(--card-bg); border-radius:2px; margin-bottom:14px; overflow:hidden; }
+.pfill { height:100%; background:linear-gradient(90deg,var(--accent),var(--accent2)); border-radius:2px; transition:width .5s ease; }
+
+/* ── MAP + INFO CARD ─────────────────────────────── */
+.info-card {
+  background:var(--card-bg); border:1px solid var(--border);
+  border-radius:20px; padding:20px 24px 18px;
+  margin-bottom:14px; position:relative;
+  display:flex; gap:24px; align-items:center;
+  transition:border-color .3s;
+}
+.info-card.glow-correct { border-color:var(--accent); box-shadow:0 0 28px rgba(61,255,192,.18); }
+.info-card.glow-wrong   { border-color:var(--danger);  box-shadow:0 0 28px rgba(255,77,122,.14); }
+
+/* Map container */
+.map-box {
+  flex-shrink:0; width:220px; height:160px;
+  display:flex; align-items:center; justify-content:center;
+  background:rgba(0,0,0,.25); border-radius:14px;
+  border:1px solid var(--border); overflow:hidden;
+}
+.map-box svg { display:block; }
+.map-box .no-map { font-size:12px; color:var(--sub); text-align:center; padding:10px; }
+
+/* Country info */
+.country-info { flex:1; }
+.country-name {
+  font-size:26px; font-weight:900; margin-bottom:6px;
+  background:linear-gradient(135deg,#fff,var(--accent2));
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+}
+.country-meta { font-size:13px; color:var(--sub); line-height:1.8; }
+.country-meta span { color:var(--text); font-weight:600; }
+
+/* Timer */
+.timer-wrap { position:absolute; top:16px; right:18px; width:58px; height:58px; }
+.tring-svg { width:58px; height:58px; transform:rotate(-90deg); }
+.tring-bg  { fill:none; stroke:rgba(255,255,255,.08); stroke-width:5; }
+.tring-fg  { fill:none; stroke-width:5; stroke-linecap:round; transition:stroke-dashoffset .92s linear, stroke .4s; }
+.tnum { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:16px; font-weight:900; }
+
+/* ── QUESTION ────────────────────────────────────── */
+.qtxt { font-size:17px; font-weight:700; margin-bottom:14px; text-align:center; line-height:1.5; }
+
+/* ── LIST CHALLENGE ──────────────────────────────── */
+.lists-row { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+
+.list-card {
+  background:var(--card-bg); border:2px solid var(--border);
+  border-radius:16px; padding:16px 14px;
+  cursor:pointer; transition:all .22s;
+  position:relative; overflow:hidden;
+}
+.list-card::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:2px;
+  background:linear-gradient(90deg,var(--accent),var(--accent2));
+  opacity:0; transition:opacity .2s;
+}
+.list-card:hover:not(:disabled):not(.revealed) { border-color:rgba(255,255,255,.22); transform:translateY(-3px); box-shadow:0 8px 24px rgba(0,0,0,.3); }
+.list-card:hover:not(:disabled):not(.revealed)::before { opacity:1; }
+
+.list-label {
+  font-size:10px; font-weight:800; letter-spacing:2px; text-transform:uppercase;
+  color:var(--sub); margin-bottom:10px;
+  display:flex; align-items:center; justify-content:space-between;
+}
+.list-country { font-size:13px; color:var(--text); padding:4px 0; border-bottom:1px solid rgba(255,255,255,.05); line-height:1.4; }
+.list-country:last-child { border-bottom:none; }
+
+.list-card.correct { border-color:var(--accent) !important; background:rgba(61,255,192,.1); }
+.list-card.correct .list-label { color:var(--accent); }
+.list-card.wrong   { border-color:var(--danger) !important;  background:rgba(255,77,122,.08); animation:shake .4s ease; }
+.list-card.wrong   .list-label { color:var(--danger); }
+.list-card.reveal  { border-color:rgba(61,255,192,.4); background:rgba(61,255,192,.06); }
+.list-card.disabled { cursor:default; }
+
+/* ── COUNT CHALLENGE ─────────────────────────────── */
+.count-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.count-btn {
+  height:80px; border:2px solid var(--border); border-radius:16px;
+  background:var(--card-bg); color:var(--text);
+  font-size:32px; font-weight:900; cursor:pointer; transition:all .22s;
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px;
+}
+.count-btn .cbl { font-size:11px; font-weight:600; color:var(--sub); letter-spacing:.5px; }
+.count-btn:hover:not(:disabled) { border-color:var(--accent2); background:rgba(85,153,255,.12); transform:translateY(-3px); box-shadow:0 8px 24px rgba(85,153,255,.2); }
+.count-btn.correct { border-color:var(--accent) !important; background:rgba(61,255,192,.15); color:var(--accent); animation:popCorrect .4s ease; }
+.count-btn.correct .cbl { color:var(--accent); }
+.count-btn.wrong   { border-color:var(--danger) !important;  background:rgba(255,77,122,.12); color:var(--danger); animation:shake .4s ease; }
+.count-btn.reveal  { border-color:rgba(61,255,192,.4); background:rgba(61,255,192,.06); color:rgba(61,255,192,.7); }
+.count-btn:disabled { cursor:default; }
+
+/* ── RESULTS ─────────────────────────────────────── */
+.results-wrap { text-align:center; max-width:480px; animation:fadeUp .5s ease; }
+.results-wrap .trophy { font-size:80px; display:block; margin-bottom:14px; }
+.results-wrap h2 { font-size:30px; font-weight:900; margin-bottom:6px; }
+.big-score {
+  font-size:68px; font-weight:900; line-height:1;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+  margin:14px 0 6px;
+}
+.score-sub { font-size:14px; color:var(--sub); margin-bottom:22px; }
+.res-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:11px; margin-bottom:26px; }
+.rstat { background:var(--card-bg); border:1px solid var(--border); border-radius:14px; padding:15px 10px; }
+.rstat .val { font-size:22px; font-weight:800; }
+.rstat .lbl { font-size:10px; color:var(--sub); text-transform:uppercase; letter-spacing:1px; margin-top:3px; }
+.again-btn {
+  width:100%; max-width:280px; height:50px; border:none; border-radius:13px;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#060b18; font-size:14px; font-weight:900; letter-spacing:1.5px;
+  text-transform:uppercase; cursor:pointer; transition:all .2s;
+}
+.again-btn:hover { transform:translateY(-2px); box-shadow:0 8px 26px rgba(61,255,192,.3); }
+
+/* ── TOAST ───────────────────────────────────────── */
+.toast {
+  position:fixed; top:24px; left:50%; transform:translateX(-50%) translateY(-90px);
+  padding:11px 26px; border-radius:100px; font-weight:700; font-size:14px;
+  z-index:500; pointer-events:none; transition:transform .28s cubic-bezier(.34,1.56,.64,1);
+}
+.toast.show { transform:translateX(-50%) translateY(0); }
+.toast.t-ok   { background:rgba(61,255,192,.18);  border:1px solid var(--accent); color:var(--accent); }
+.toast.t-bad  { background:rgba(255,77,122,.18);  border:1px solid var(--danger); color:var(--danger); }
+.toast.t-time { background:rgba(255,204,68,.18);  border:1px solid var(--warn);   color:var(--warn); }
+
+/* ── Flash overlay ───────────────────────────────── */
+#flash { position:fixed; inset:0; pointer-events:none; z-index:200; opacity:0; }
+#flash.go { animation:flashAnim .5s ease forwards; }
+
+/* ── Score pop ───────────────────────────────────── */
+.score-pop { position:fixed; font-size:28px; font-weight:900; color:var(--accent); pointer-events:none; z-index:400; animation:floatScore .9s ease forwards; }
+
+/* ── Utility ─────────────────────────────────────── */
+.hidden { display:none !important; }
+
+/* ── Keyframes ───────────────────────────────────── */
+@keyframes floatY     { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+@keyframes pulseScale { 0%,100%{transform:scale(1)} 50%{transform:scale(1.08)} }
+@keyframes fadeUp     { from{opacity:0;transform:translateY(18px)} to{opacity:1;transform:translateY(0)} }
+@keyframes popCorrect { 0%{transform:scale(1)} 40%{transform:scale(1.05)} 100%{transform:scale(1)} }
+@keyframes shake      { 0%,100%{transform:translateX(0)} 20%{transform:translateX(-7px)} 40%{transform:translateX(7px)} 60%{transform:translateX(-5px)} 80%{transform:translateX(5px)} }
+@keyframes flashAnim  { 0%{opacity:.5} 100%{opacity:0} }
+@keyframes floatScore { 0%{opacity:1;transform:translateY(0) scale(1)} 100%{opacity:0;transform:translateY(-70px) scale(1.3)} }
+
+/* ── Mobile ──────────────────────────────────────── */
+.panel-toggle {
+  display:none; position:fixed; top:12px; left:12px; z-index:200;
+  width:40px; height:40px; border-radius:10px;
+  border:1px solid var(--border); background:rgba(6,9,26,.92);
+  backdrop-filter:blur(10px); color:var(--text);
+  font-size:20px; cursor:pointer;
+  align-items:center; justify-content:center;
+}
+.panel-backdrop {
+  display:none; position:fixed; inset:0; z-index:150;
+  background:rgba(0,0,0,.55); backdrop-filter:blur(2px);
+}
+.panel-backdrop.open { display:block; }
+
+@media (max-width:680px) {
+  .layout { z-index:auto; }  /* remove stacking context so lpanel z-index competes at root level */
+  .panel-toggle { display:flex; }
+  .lpanel {
+    position:fixed; left:0; top:0; height:100%; z-index:160;
+    width:min(var(--panel-w), 88vw);
+    transform:translateX(-100%);
+    transition:transform .3s cubic-bezier(.4,0,.2,1);
+  }
+  .lpanel.open { transform:translateX(0); box-shadow:8px 0 40px rgba(0,0,0,.6); }
+  .rpanel { padding:12px; }
+}
+</style>
+</head>
+<body>
+
+<canvas id="stars"></canvas>
+<div id="flash"></div>
+<div id="toast" class="toast"></div>
+
+<button class="panel-toggle" id="panelToggle" aria-label="Settings">☰</button>
+<div class="panel-backdrop" id="panelBackdrop"></div>
+
+<div class="layout">
+
+  <!-- ── LEFT PANEL ─────────────────── -->
+  <aside class="lpanel">
+    <a class="back-link" href="index.html">
+      <span class="arr">←</span> Game Center
+    </a>
+
+    <div class="logo">
+      <span class="ico">🗺️</span>
+      <h1>Borders</h1>
+    </div>
+
+    <div class="slabel">Number of Rounds</div>
+    <div class="count-row">
+      <button class="cbtn" data-n="5">5</button>
+      <button class="cbtn active" data-n="10">10</button>
+      <button class="cbtn" data-n="15">15</button>
+      <button class="cbtn" data-n="20">20</button>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="slabel">How It Works</div>
+    <div class="legend">
+      <div class="legend-item">
+        <span class="badge badge-list">List</span>
+        Pick the correct list of border countries from 3 options.
+      </div>
+      <div class="legend-item">
+        <span class="badge badge-count">Count</span>
+        Guess the number of countries that share a border.
+      </div>
+    </div>
+
+    <div class="divider"></div>
+    <button class="start-btn" id="startBtn">▶&nbsp; Start Game</button>
+    <div class="divider"></div>
+
+    <div class="slabel">Your Stats</div>
+    <div class="stats-grid">
+      <div class="scard"><div class="val" id="stHigh">0</div><div class="lbl">High Score</div></div>
+      <div class="scard"><div class="val" id="stGames">0</div><div class="lbl">Games</div></div>
+      <div class="scard"><div class="val" id="stAcc">—</div><div class="lbl">Accuracy</div></div>
+      <div class="scard"><div class="val" id="stStreak">0</div><div class="lbl">Best Streak</div></div>
+    </div>
+  </aside>
+
+  <!-- ── RIGHT PANEL ────────────────── -->
+  <main class="rpanel" id="rpanel">
+
+    <!-- Welcome -->
+    <div class="welcome" id="welcomeScreen">
+      <span class="wico">🗺️</span>
+      <h2>Borders</h2>
+      <p>You'll see a country map and name. Pick the correct list of its border countries, then guess how many borders it has.</p>
+      <div class="pills">
+        <span class="pill">⏱ 20 seconds per question</span>
+        <span class="pill">🏆 1 point per correct answer</span>
+        <span class="pill">🌍 195 countries</span>
+      </div>
+      <button class="mobile-start-btn" id="mobileStartBtn">▶&nbsp; Start Game</button>
+    </div>
+
+    <!-- Game -->
+    <div class="game-wrap hidden" id="gameScreen">
+      <div class="qheader">
+        <span class="qtype-badge" id="qtypeBadge">List</span>
+        <span class="qprog">Round <strong id="qNum">1</strong> of <strong id="qOf">10</strong></span>
+        <span class="qscore">⭐ <span id="scoreNum">0</span></span>
+      </div>
+      <div class="pbar"><div class="pfill" id="pfill" style="width:0%"></div></div>
+
+      <!-- Map + info -->
+      <div class="info-card" id="infoCard">
+        <div class="timer-wrap">
+          <svg class="tring-svg" viewBox="0 0 58 58">
+            <circle class="tring-bg" cx="29" cy="29" r="23"/>
+            <circle class="tring-fg" cx="29" cy="29" r="23" id="tring"/>
+          </svg>
+          <div class="tnum" id="tnum">20</div>
+        </div>
+        <div class="map-box" id="mapBox"></div>
+        <div class="country-info">
+          <div class="country-name" id="countryName">—</div>
+          <div class="country-meta" id="countryMeta"></div>
+        </div>
+      </div>
+
+      <!-- Question text -->
+      <div class="qtxt" id="qtxt"></div>
+
+      <!-- Answers (swapped by question type) -->
+      <div id="listArea"  class="lists-row hidden"></div>
+      <div id="countArea" class="count-grid hidden"></div>
+    </div>
+
+    <!-- Results -->
+    <div class="results-wrap hidden" id="resultsScreen">
+      <span class="trophy" id="resTrophy">🏆</span>
+      <h2 id="resTitle">Game Over!</h2>
+      <div class="big-score" id="resBig">0/10</div>
+      <div class="score-sub" id="resSub"></div>
+      <div class="res-stats">
+        <div class="rstat"><div class="val" id="rs1" style="color:var(--accent)">-</div><div class="lbl">Correct</div></div>
+        <div class="rstat"><div class="val" id="rs2" style="color:var(--danger)">-</div><div class="lbl">Wrong</div></div>
+        <div class="rstat"><div class="val" id="rs3" style="color:var(--accent2)">-</div><div class="lbl">Accuracy</div></div>
+      </div>
+      <button class="again-btn" id="againBtn">▶&nbsp; Play Again</button>
+    </div>
+
+  </main>
+</div>
+
+<!-- ── Scripts ──────────────────────────────────── -->
+<script src="game-data.js"></script>
+<script src="world-data.js"></script>
+<script>
+// ══════════════════════════════════════════════════
+// STARS
+// ══════════════════════════════════════════════════
+(function(){
+  const cvs=document.getElementById('stars'), ctx=cvs.getContext('2d'); let s=[];
+  function r(){ cvs.width=innerWidth; cvs.height=innerHeight; }
+  function i(){ s=Array.from({length:130},()=>({x:Math.random()*cvs.width,y:Math.random()*cvs.height,r:Math.random()*1.4+.2,o:Math.random()*.45+.08,f:Math.random()*.0004+.0001})); }
+  function d(){ ctx.clearRect(0,0,cvs.width,cvs.height); const t=Date.now(); s.forEach(p=>{ const a=p.o*(0.6+0.4*Math.sin(t*p.f*1000)); ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,Math.PI*2); ctx.fillStyle=`rgba(200,215,255,${a})`; ctx.fill(); }); requestAnimationFrame(d); }
+  r(); i(); d(); window.addEventListener('resize',()=>{r();i();});
+})();
+
+// ══════════════════════════════════════════════════
+// UTILS
+// ══════════════════════════════════════════════════
+const $   = id => document.getElementById(id);
+const shuf = a => [...a].sort(()=>Math.random()-.5);
+
+const SK = 'borders_v1';
+function loadStats(){ try{ return JSON.parse(localStorage.getItem(SK))||{hi:0,games:0,tc:0,tq:0,streak:0}; } catch{ return {hi:0,games:0,tc:0,tq:0,streak:0}; } }
+function saveStats(s){ localStorage.setItem(SK,JSON.stringify(s)); }
+function renderStats(){
+  const s=loadStats();
+  $('stHigh').textContent  = s.hi;
+  $('stGames').textContent = s.games;
+  $('stAcc').textContent   = s.tq ? Math.round(s.tc/s.tq*100)+'%' : '—';
+  $('stStreak').textContent= s.streak;
+}
+renderStats();
+
+// ══════════════════════════════════════════════════
+// MAP RENDERER
+// ══════════════════════════════════════════════════
+let worldFeatures = null;
+
+function getWorldFeatures(){
+  if(!worldFeatures){
+    const topo = WORLD_TOPO;
+    worldFeatures = topojson.feature(topo, topo.objects.countries).features;
+  }
+  return worldFeatures;
+}
+
+function renderMap(country){
+  const box = $('mapBox');
+  box.innerHTML = '';
+  const W = box.clientWidth  || 220;
+  const H = box.clientHeight || 160;
+
+  const features = getWorldFeatures();
+  const feature  = features.find(f => f.id === country.ccn3);
+
+  if(!feature){
+    box.innerHTML = `<div class="no-map">🌐<br>${country.name}</div>`;
+    return;
+  }
+
+  const svg = d3.create('svg').attr('width',W).attr('height',H);
+
+  // Glow filter
+  const defs   = svg.append('defs');
+  const filter = defs.append('filter').attr('id','cglow').attr('x','-30%').attr('y','-30%').attr('width','160%').attr('height','160%');
+  filter.append('feGaussianBlur').attr('stdDeviation','4').attr('result','blur');
+  const merge  = filter.append('feMerge');
+  merge.append('feMergeNode').attr('in','blur');
+  merge.append('feMergeNode').attr('in','SourceGraphic');
+
+  const proj = d3.geoMercator().fitExtent([[12,12],[W-12,H-12]], feature);
+  const path = d3.geoPath().projection(proj);
+
+  const g = svg.append('g');
+
+  // Glow layer
+  g.append('path').datum(feature)
+    .attr('d', path)
+    .attr('fill','rgba(61,255,192,0.2)')
+    .attr('filter','url(#cglow)');
+
+  // Main fill
+  g.append('path').datum(feature)
+    .attr('d', path)
+    .attr('fill','rgba(61,255,192,0.75)')
+    .attr('stroke','rgba(61,255,192,0.5)')
+    .attr('stroke-width','1.2');
+
+  box.appendChild(svg.node());
+}
+
+// ══════════════════════════════════════════════════
+// GAME ENGINE
+// ══════════════════════════════════════════════════
+const CIRC = 2 * Math.PI * 23; // r=23
+
+class BordersGame {
+  constructor(rounds){
+    this.rounds   = rounds;
+    this.pool     = COUNTRIES.filter(c => c.borders && c.borders.length > 0 && c.ccn3);
+    this.allC     = COUNTRIES;
+    this.questions= this._build(rounds);
+    this.idx      = 0;
+    this.score    = 0;
+    this.correct  = 0;
+    this.streak   = 0;
+    this.best     = 0;
+    this.answered = false;
+    this.timer    = null;
+    this.secs     = 20;
+  }
+
+  _build(n){
+    const pool = shuf(this.pool).slice(0, n);
+    return pool.map((c, i) => i % 2 === 0 ? this._listQ(c) : this._countQ(c));
+  }
+
+  _lookup(cca3){ return this.allC.find(c => c.cca3 === cca3); }
+
+  // ── List question ──────────────────────────────
+  _listQ(country){
+    const borderCs = country.borders.map(b => this._lookup(b)).filter(Boolean);
+
+    // Same-region non-border countries as plausible distractors
+    const distractorPool = shuf(
+      this.allC.filter(c => c.region === country.region && !country.borders.includes(c.cca3) && c.cca3 !== country.cca3)
+    );
+
+    const makeWrong = () => {
+      let list = [...borderCs];
+      // Replace 30–50% of entries with distractors
+      const reps = Math.max(1, Math.round(list.length * 0.35));
+      const swaps = distractorPool.slice(0, reps + 2);
+      for(let i = 0; i < Math.min(reps, swaps.length); i++){
+        const idx = Math.floor(Math.random() * list.length);
+        list[idx] = swaps[i];
+      }
+      // Deduplicate names
+      const seen = new Set(); list = list.filter(c=>{ if(seen.has(c.name)) return false; seen.add(c.name); return true; });
+      return shuf(list).map(c => c.name);
+    };
+
+    const correctNames = shuf(borderCs.map(c => c.name));
+    const wrong1 = makeWrong();
+    const wrong2 = makeWrong();
+
+    const lists = shuf([
+      { names: correctNames, ok: true  },
+      { names: wrong1,       ok: false },
+      { names: wrong2,       ok: false },
+    ]);
+
+    return { type:'list', country, lists };
+  }
+
+  // ── Count question ─────────────────────────────
+  _countQ(country){
+    const correct = country.borders.length;
+    const opts = new Set([correct]);
+    const cands = shuf([correct-3,correct-2,correct-1,correct+1,correct+2,correct+3].filter(n=>n>=0&&n!==correct));
+    cands.forEach(n => { if(opts.size < 4) opts.add(n); });
+    return {
+      type: 'count',
+      country,
+      opts: shuf([...opts]).map(n => ({ val:n, ok: n===correct }))
+    };
+  }
+
+  get q(){ return this.questions[this.idx]; }
+  get isLast(){ return this.idx >= this.questions.length - 1; }
+}
+
+// ══════════════════════════════════════════════════
+// TIMER
+// ══════════════════════════════════════════════════
+let game = null;
+let toastTimer = null;
+
+function initTimer(){
+  const ring = $('tring');
+  ring.style.strokeDasharray  = CIRC;
+  ring.style.strokeDashoffset = 0;
+  ring.style.stroke = 'var(--accent)';
+}
+function setTimer(t, total){
+  const ring = $('tring');
+  ring.style.strokeDashoffset = CIRC*(1 - t/total);
+  $('tnum').textContent = t;
+  const pct = t / total;
+  if(pct > 0.5)      ring.style.stroke = 'var(--accent)';
+  else if(pct > 0.25) ring.style.stroke = 'var(--warn)';
+  else                ring.style.stroke = 'var(--danger)';
+}
+function startTimer(){
+  const q = game.q;
+  // List: 5s × number of border countries; Count: fixed 20s
+  const total = q.type === 'list'
+    ? Math.max(10, q.country.borders.length * 5)
+    : 20;
+  game.maxSecs  = total;
+  game.secs     = total;
+  game.answered = false;
+  initTimer();
+  setTimer(total, total);
+  game.timer = setInterval(()=>{
+    game.secs--;
+    setTimer(game.secs, game.maxSecs);
+    if(game.secs <= 0){ clearInterval(game.timer); onTimeout(); }
+  }, 1000);
+}
+
+// ══════════════════════════════════════════════════
+// RENDER QUESTION
+// ══════════════════════════════════════════════════
+function renderQ(){
+  const q = game.q;
+  const { country } = q;
+
+  // Header
+  $('qNum').textContent = game.idx + 1;
+  $('qOf').textContent  = game.questions.length;
+  $('scoreNum').textContent = game.score;
+  $('pfill').style.width = (game.idx / game.questions.length * 100) + '%';
+
+  // Type badge
+  const badge = $('qtypeBadge');
+  if(q.type === 'list'){
+    badge.textContent = '🗂 Border List';
+    badge.className   = 'qtype-badge qtype-list';
+  } else {
+    badge.textContent = '🔢 Border Count';
+    badge.className   = 'qtype-badge qtype-count';
+  }
+
+  // Info card
+  $('infoCard').classList.remove('glow-correct','glow-wrong');
+  $('countryName').textContent = country.name;
+  $('countryMeta').innerHTML =
+    `Region: <span>${country.region}</span> &nbsp;·&nbsp; ` +
+    `Capital: <span>${country.capital || '—'}</span>`;
+
+  // Map
+  renderMap(country);
+
+  // Question text
+  if(q.type === 'list'){
+    $('qtxt').innerHTML = `Which list contains <strong>all</strong> the countries that border <strong>${country.name}</strong>?`;
+  } else {
+    $('qtxt').innerHTML = `How many countries share a border with <strong>${country.name}</strong>?`;
+  }
+
+  // Show correct area, hide other
+  if(q.type === 'list'){
+    $('listArea').classList.remove('hidden');
+    $('countArea').classList.add('hidden');
+    renderLists(q);
+  } else {
+    $('countArea').classList.remove('hidden');
+    $('listArea').classList.add('hidden');
+    renderCount(q);
+  }
+
+  startTimer();
+}
+
+// ── List answer area ───────────────────────────────
+const LABELS = ['A','B','C'];
+
+function renderLists(q){
+  const area = $('listArea');
+  area.innerHTML = '';
+  q.lists.forEach((lst, i) => {
+    const card = document.createElement('div');
+    card.className = 'list-card';
+    card.innerHTML = `
+      <div class="list-label">
+        <span>List ${LABELS[i]}</span>
+        <span style="font-size:13px;opacity:0"id="chk${i}">✓</span>
+      </div>
+      ${lst.names.map(n => `<div class="list-country">${n}</div>`).join('')}
+    `;
+    card.addEventListener('click', () => onListPick(card, lst, q, i));
+    area.appendChild(card);
+  });
+}
+
+function onListPick(card, lst, q, idx){
+  if(game.answered) return;
+  game.answered = true;
+  clearInterval(game.timer);
+
+  // Lock + reveal all
+  document.querySelectorAll('.list-card').forEach((c, i) => {
+    c.classList.add('disabled');
+    if(q.lists[i].ok){ c.classList.add('reveal'); document.getElementById('chk'+i).style.opacity='1'; }
+  });
+
+  if(lst.ok){
+    card.classList.remove('reveal');
+    card.classList.add('correct');
+    game.score++; game.correct++; game.streak++;
+    if(game.streak > game.best) game.best = game.streak;
+    $('scoreNum').textContent = game.score;
+    $('infoCard').classList.add('glow-correct');
+    showToast('✓  Correct list!','t-ok');
+    doFlash('rgba(61,255,192,.07)');
+    spawnPop();
+  } else {
+    card.classList.add('wrong');
+    game.streak = 0;
+    $('infoCard').classList.add('glow-wrong');
+    showToast('✗  Wrong list!','t-bad');
+    doFlash('rgba(255,77,122,.08)');
+  }
+  updateProgress();
+  setTimeout(advance, 2400);
+}
+
+// ── Count answer area ──────────────────────────────
+function renderCount(q){
+  const area = $('countArea');
+  area.innerHTML = '';
+  q.opts.forEach(opt => {
+    const btn = document.createElement('button');
+    btn.className = 'count-btn';
+    btn.innerHTML = `${opt.val}<span class="cbl">${opt.val === 1 ? 'country' : 'countries'}</span>`;
+    btn.addEventListener('click', () => onCountPick(btn, opt, q));
+    area.appendChild(btn);
+  });
+}
+
+function onCountPick(btn, opt, q){
+  if(game.answered) return;
+  game.answered = true;
+  clearInterval(game.timer);
+
+  document.querySelectorAll('.count-btn').forEach(b => {
+    b.disabled = true;
+    // Find the correct button and mark it
+  });
+
+  // Re-mark correct
+  const all = document.querySelectorAll('.count-btn');
+  all.forEach((b, i) => {
+    b.disabled = true;
+    if(q.opts[i].ok) b.classList.add('reveal');
+  });
+
+  if(opt.ok){
+    btn.classList.remove('reveal');
+    btn.classList.add('correct');
+    game.score++; game.correct++; game.streak++;
+    if(game.streak > game.best) game.best = game.streak;
+    $('scoreNum').textContent = game.score;
+    $('infoCard').classList.add('glow-correct');
+    showToast(`✓  Correct — ${opt.val} ${opt.val===1?'border':'borders'}!`,'t-ok');
+    doFlash('rgba(61,255,192,.07)');
+    spawnPop();
+  } else {
+    btn.classList.add('wrong');
+    game.streak = 0;
+    $('infoCard').classList.add('glow-wrong');
+    const correct = q.opts.find(o=>o.ok);
+    showToast(`✗  It's ${correct.val} ${correct.val===1?'border':'borders'}!`,'t-bad');
+    doFlash('rgba(255,77,122,.08)');
+  }
+  updateProgress();
+  setTimeout(advance, 2400);
+}
+
+function onTimeout(){
+  if(game.answered) return;
+  game.answered = true;
+  game.streak   = 0;
+
+  // Reveal correct for whichever type
+  const q = game.q;
+  if(q.type === 'list'){
+    document.querySelectorAll('.list-card').forEach((c,i) => {
+      c.classList.add('disabled');
+      if(q.lists[i].ok){ c.classList.add('reveal'); }
+    });
+  } else {
+    document.querySelectorAll('.count-btn').forEach((b,i) => {
+      b.disabled = true;
+      if(q.opts[i].ok) b.classList.add('reveal');
+    });
+  }
+  $('infoCard').classList.add('glow-wrong');
+  showToast("⏱  Time's up!",'t-time');
+  doFlash('rgba(255,204,68,.07)');
+  updateProgress();
+  setTimeout(advance, 2400);
+}
+
+function updateProgress(){
+  $('pfill').style.width = ((game.idx+1)/game.questions.length*100)+'%';
+}
+
+function advance(){
+  if(game.isLast){ showResults(); return; }
+  game.idx++;
+  const gs = $('gameScreen');
+  gs.style.animation = 'none';
+  requestAnimationFrame(()=>{ gs.style.animation='fadeUp .3s ease'; renderQ(); });
+}
+
+// ══════════════════════════════════════════════════
+// RESULTS
+// ══════════════════════════════════════════════════
+function showResults(){
+  clearInterval(game.timer);
+  const total = game.questions.length;
+  const pct   = Math.round(game.correct / total * 100);
+
+  const s = loadStats();
+  s.games++; s.tc += game.correct; s.tq += total;
+  if(game.score > s.hi) s.hi = game.score;
+  if(game.best  > s.streak) s.streak = game.best;
+  saveStats(s); renderStats();
+
+  let trophy,title,sub;
+  if(pct===100){ trophy='🏆'; title='Perfect!';          sub='Impeccable geography knowledge!'; }
+  else if(pct>=80){ trophy='🥇'; title='Excellent!';     sub='You really know your borders!'; }
+  else if(pct>=60){ trophy='🥈'; title='Good Job!';      sub='Solid performance — keep at it!'; }
+  else if(pct>=40){ trophy='🥉'; title='Keep Studying!'; sub='Borders are tough — practice more!'; }
+  else             { trophy='📚'; title='Study Time!';   sub='Review your world geography!'; }
+
+  $('resTrophy').textContent = trophy;
+  $('resTitle').textContent  = title;
+  $('resBig').textContent    = `${game.correct}/${total}`;
+  $('resSub').textContent    = sub;
+  $('rs1').textContent = game.correct;
+  $('rs2').textContent = total - game.correct;
+  $('rs3').textContent = pct + '%';
+
+  $('gameScreen').classList.add('hidden');
+  $('resultsScreen').classList.remove('hidden');
+  setUI(true);
+}
+
+// ══════════════════════════════════════════════════
+// TOAST / FX
+// ══════════════════════════════════════════════════
+function showToast(msg, cls){
+  const t = $('toast');
+  t.textContent = msg;
+  t.className = 'toast '+cls+' show';
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=>{ t.className='toast '+cls; }, 1600);
+}
+function doFlash(color){
+  const f=$('flash'); f.style.background=color;
+  f.classList.remove('go');
+  requestAnimationFrame(()=> f.classList.add('go'));
+}
+function spawnPop(){
+  const el=document.createElement('div');
+  el.className='score-pop'; el.textContent='+1';
+  el.style.right=(Math.random()*80+20)+'px';
+  el.style.top=(Math.random()*60+120)+'px';
+  document.body.appendChild(el);
+  setTimeout(()=>el.remove(),950);
+}
+
+// ══════════════════════════════════════════════════
+// UI LOCK
+// ══════════════════════════════════════════════════
+function setUI(enabled){
+  $('startBtn').disabled = !enabled;
+  $('startBtn').textContent = enabled ? '▶\u00a0 Start Game' : '■\u00a0 Playing…';
+  document.querySelectorAll('.cbtn').forEach(b => {
+    b.style.pointerEvents = enabled ? '' : 'none';
+    b.style.opacity = enabled ? '' : '0.55';
+  });
+}
+
+// ══════════════════════════════════════════════════
+// SETTINGS
+// ══════════════════════════════════════════════════
+let cfg = { rounds: 10 };
+document.querySelectorAll('.cbtn').forEach(b => {
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('.cbtn').forEach(x=>x.classList.remove('active'));
+    b.classList.add('active');
+    cfg.rounds = parseInt(b.dataset.n);
+  });
+});
+
+// ══════════════════════════════════════════════════
+// START / RESTART
+// ══════════════════════════════════════════════════
+$('startBtn').addEventListener('click',()=>{
+  game = new BordersGame(cfg.rounds);
+  if(game.pool.length < 4){
+    showToast('⚠ Not enough country data','t-bad'); return;
+  }
+  $('welcomeScreen').classList.add('hidden');
+  $('resultsScreen').classList.add('hidden');
+  $('gameScreen').classList.remove('hidden');
+  setUI(false);
+  renderQ();
+  // auto-close panel on mobile
+  document.querySelector('.lpanel').classList.remove('open');
+  document.getElementById('panelBackdrop').classList.remove('open');
+});
+
+$('againBtn').addEventListener('click',()=>{
+  $('resultsScreen').classList.add('hidden');
+  $('welcomeScreen').classList.remove('hidden');
+  setUI(true);
+});
+
+// ── Mobile start button ──────────────────────────
+$('mobileStartBtn').addEventListener('click', () => $('startBtn').click());
+
+// ── Mobile panel toggle ──────────────────────────
+(function(){
+  const toggle   = document.getElementById('panelToggle');
+  const backdrop = document.getElementById('panelBackdrop');
+  const lpanel   = document.querySelector('.lpanel');
+  const open  = () => { lpanel.classList.add('open');    backdrop.classList.add('open'); };
+  const close = () => { lpanel.classList.remove('open'); backdrop.classList.remove('open'); };
+  toggle.addEventListener('click', () => lpanel.classList.contains('open') ? close() : open());
+  backdrop.addEventListener('click', close);
+})();
+</script>
+</body>
+</html>

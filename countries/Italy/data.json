@@ -1,0 +1,210 @@
+{
+  "name": {
+    "common": "Italy",
+    "official": "Italian Republic",
+    "native": {
+      "ita": {
+        "official": "Repubblica italiana",
+        "common": "Italia"
+      }
+    }
+  },
+  "cca2": "IT",
+  "cca3": "ITA",
+  "ccn3": "380",
+  "cioc": "ITA",
+  "fifa": "ITA",
+  "tld": [
+    ".it"
+  ],
+  "altSpellings": [
+    "IT",
+    "Italian Republic",
+    "Repubblica italiana"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Western European and Others Group",
+  "capital": [
+    "Rome"
+  ],
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "continents": [
+    "Europe"
+  ],
+  "latlng": [
+    42.83333333,
+    12.83333333
+  ],
+  "landlocked": false,
+  "borders": [
+    "AUT",
+    "FRA",
+    "SMR",
+    "SVN",
+    "CHE",
+    "VAT"
+  ],
+  "area": 301336,
+  "population": 58927633,
+  "demonyms": {
+    "eng": {
+      "f": "Italian",
+      "m": "Italian"
+    },
+    "fra": {
+      "f": "Italienne",
+      "m": "Italien"
+    }
+  },
+  "languages": {
+    "ita": "Italian"
+  },
+  "currencies": {
+    "EUR": {
+      "name": "Euro",
+      "symbol": "€"
+    }
+  },
+  "gini": {
+    "2017": 35.9
+  },
+  "car": {
+    "signs": [
+      "I"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "#####",
+    "regex": "^(\\d{5})$"
+  },
+  "idd": {
+    "root": "+3",
+    "suffixes": [
+      "9"
+    ]
+  },
+  "timezones": [
+    "UTC+01:00"
+  ],
+  "flag": "🇮🇹",
+  "flags": {
+    "png": "https://flagcdn.com/w320/it.png",
+    "svg": "https://flagcdn.com/it.svg",
+    "alt": "The flag of Italy is composed of three equal vertical bands of green, white and red."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/it.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/it.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/8M1K27TDj7StTRTq8",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/365331"
+  },
+  "translations": {
+    "ara": {
+      "official": "الجمهورية الإيطالية",
+      "common": "إيطاليا"
+    },
+    "bre": {
+      "official": "Republik Italia",
+      "common": "Italia"
+    },
+    "ces": {
+      "official": "Italská republika",
+      "common": "Itálie"
+    },
+    "deu": {
+      "official": "Italienische Republik",
+      "common": "Italien"
+    },
+    "est": {
+      "official": "Itaalia Vabariik",
+      "common": "Itaalia"
+    },
+    "fin": {
+      "official": "Italian tasavalta",
+      "common": "Italia"
+    },
+    "fra": {
+      "official": "République italienne",
+      "common": "Italie"
+    },
+    "hrv": {
+      "official": "talijanska Republika",
+      "common": "Italija"
+    },
+    "hun": {
+      "official": "Olasz Köztársaság",
+      "common": "Olaszország"
+    },
+    "ita": {
+      "official": "Repubblica italiana",
+      "common": "Italia"
+    },
+    "jpn": {
+      "official": "イタリア共和国",
+      "common": "イタリア"
+    },
+    "kor": {
+      "official": "이탈리아 공화국",
+      "common": "이탈리아"
+    },
+    "nld": {
+      "official": "Italiaanse Republiek",
+      "common": "Italië"
+    },
+    "per": {
+      "official": "جمهوری ایتالیا",
+      "common": "ایتالیا"
+    },
+    "pol": {
+      "official": "Republika Włoska",
+      "common": "Włochy"
+    },
+    "por": {
+      "official": "República Italiana",
+      "common": "Itália"
+    },
+    "rus": {
+      "official": "итальянская Республика",
+      "common": "Италия"
+    },
+    "slk": {
+      "official": "Talianska republika",
+      "common": "Taliansko"
+    },
+    "spa": {
+      "official": "República Italiana",
+      "common": "Italia"
+    },
+    "srp": {
+      "official": "Republika Italija",
+      "common": "Italija"
+    },
+    "swe": {
+      "official": "Republiken Italien",
+      "common": "Italien"
+    },
+    "tur": {
+      "official": "İtalya Cumhuriyeti",
+      "common": "İtalya"
+    },
+    "urd": {
+      "official": "جمہوریہ اطالیہ",
+      "common": "اطالیہ"
+    },
+    "zho": {
+      "official": "意大利共和国",
+      "common": "意大利"
+    }
+  },
+  "largest_city": "Rome",
+  "largest_city_local": "Rome",
+  "largest_city_pop": 2318895,
+  "largest_city_is_capital": true
+}

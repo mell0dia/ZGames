@@ -1,0 +1,216 @@
+{
+  "name": {
+    "common": "Congo",
+    "official": "Republic of the Congo",
+    "native": {
+      "fra": {
+        "official": "République du Congo",
+        "common": "République du Congo"
+      },
+      "kon": {
+        "official": "Repubilika ya Kongo",
+        "common": "Repubilika ya Kongo"
+      },
+      "lin": {
+        "official": "Republíki ya Kongó",
+        "common": "Republíki ya Kongó"
+      }
+    }
+  },
+  "cca2": "CG",
+  "cca3": "COG",
+  "ccn3": "178",
+  "cioc": "CGO",
+  "fifa": "CGO",
+  "tld": [
+    ".cg"
+  ],
+  "altSpellings": [
+    "CG",
+    "Congo",
+    "Congo-Brazzaville"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "African Group",
+  "capital": [
+    "Brazzaville"
+  ],
+  "region": "Africa",
+  "subregion": "Middle Africa",
+  "continents": [
+    "Africa"
+  ],
+  "latlng": [
+    -1,
+    15
+  ],
+  "landlocked": false,
+  "borders": [
+    "AGO",
+    "CMR",
+    "CAF",
+    "COD",
+    "GAB"
+  ],
+  "area": 342000,
+  "population": 6142180,
+  "demonyms": {
+    "eng": {
+      "f": "Congolese",
+      "m": "Congolese"
+    },
+    "fra": {
+      "f": "Congolaise",
+      "m": "Congolais"
+    }
+  },
+  "languages": {
+    "fra": "French",
+    "kon": "Kikongo",
+    "lin": "Lingala"
+  },
+  "currencies": {
+    "XAF": {
+      "name": "Central African CFA franc",
+      "symbol": "Fr"
+    }
+  },
+  "gini": {
+    "2011": 48.9
+  },
+  "car": {
+    "signs": [
+      "RCB"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {},
+  "idd": {
+    "root": "+2",
+    "suffixes": [
+      "42"
+    ]
+  },
+  "timezones": [
+    "UTC+01:00"
+  ],
+  "flag": "🇨🇬",
+  "flags": {
+    "png": "https://flagcdn.com/w320/cg.png",
+    "svg": "https://flagcdn.com/cg.svg",
+    "alt": "The flag of the Republic of the Congo features a yellow diagonal band that extends from the lower hoist-side corner to the upper fly-side corner of the field. Above and beneath this band are a green and red triangle respectively."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/cd.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/cd.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/Phf5dDDKdfCtuBTb6",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/192794"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية الكونغو",
+      "common": "جمهورية الكونغو"
+    },
+    "bre": {
+      "official": "Republik Kongo",
+      "common": "Kongo-Brazzaville"
+    },
+    "ces": {
+      "official": "Konžská republika",
+      "common": "Kongo"
+    },
+    "deu": {
+      "official": "Republik Kongo",
+      "common": "Kongo"
+    },
+    "est": {
+      "official": "Kongo Vabariik",
+      "common": "Kongo Vabariik"
+    },
+    "fin": {
+      "official": "Kongon tasavalta",
+      "common": "Kongo-Brazzaville"
+    },
+    "fra": {
+      "official": "République du Congo",
+      "common": "Congo"
+    },
+    "hrv": {
+      "official": "Republika Kongo",
+      "common": "Kongo"
+    },
+    "hun": {
+      "official": "Kongói Köztársaság",
+      "common": "Kongói Köztársaság"
+    },
+    "ita": {
+      "official": "Repubblica del Congo",
+      "common": "Congo"
+    },
+    "jpn": {
+      "official": "コンゴ共和国",
+      "common": "コンゴ共和国"
+    },
+    "kor": {
+      "official": "콩고",
+      "common": "콩고"
+    },
+    "nld": {
+      "official": "Republiek Congo",
+      "common": "Congo"
+    },
+    "per": {
+      "official": "جمهوری برازاویل کُنگو",
+      "common": "جمهوری کُنگو"
+    },
+    "pol": {
+      "official": "Republika Konga",
+      "common": "Kongo"
+    },
+    "por": {
+      "official": "República do Congo",
+      "common": "Congo"
+    },
+    "rus": {
+      "official": "Республика Конго",
+      "common": "Республика Конго"
+    },
+    "slk": {
+      "official": "Konžská republika",
+      "common": "Kongo"
+    },
+    "spa": {
+      "official": "República del Congo",
+      "common": "Congo"
+    },
+    "srp": {
+      "official": "Republika Kongo",
+      "common": "Kongo, Republika"
+    },
+    "swe": {
+      "official": "Republiken Kongo",
+      "common": "Kongo-Brazzaville"
+    },
+    "tur": {
+      "official": "Kongo Cumhuriyeti",
+      "common": "Kongo Cumhuriyeti"
+    },
+    "urd": {
+      "official": "جمہوریہ کانگو",
+      "common": "جمہوریہ کانگو"
+    },
+    "zho": {
+      "official": "刚果共和国",
+      "common": "刚果"
+    }
+  },
+  "largest_city": "Brazzaville",
+  "largest_city_local": "Brazzaville",
+  "largest_city_pop": 1982000,
+  "largest_city_is_capital": true
+}

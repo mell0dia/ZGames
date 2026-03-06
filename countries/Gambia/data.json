@@ -1,0 +1,201 @@
+{
+  "name": {
+    "common": "Gambia",
+    "official": "Republic of the Gambia",
+    "native": {
+      "eng": {
+        "official": "Republic of the Gambia",
+        "common": "Gambia"
+      }
+    }
+  },
+  "cca2": "GM",
+  "cca3": "GMB",
+  "ccn3": "270",
+  "cioc": "GAM",
+  "fifa": "GAM",
+  "tld": [
+    ".gm"
+  ],
+  "altSpellings": [
+    "GM",
+    "Republic of the Gambia"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "African Group",
+  "capital": [
+    "Banjul"
+  ],
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "continents": [
+    "Africa"
+  ],
+  "latlng": [
+    13.46666666,
+    -16.56666666
+  ],
+  "landlocked": false,
+  "borders": [
+    "SEN"
+  ],
+  "area": 10689,
+  "population": 2422712,
+  "demonyms": {
+    "eng": {
+      "f": "Gambian",
+      "m": "Gambian"
+    },
+    "fra": {
+      "f": "Gambienne",
+      "m": "Gambien"
+    }
+  },
+  "languages": {
+    "eng": "English"
+  },
+  "currencies": {
+    "GMD": {
+      "name": "dalasi",
+      "symbol": "D"
+    }
+  },
+  "gini": {
+    "2015": 35.9
+  },
+  "car": {
+    "signs": [
+      "WAG"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {},
+  "idd": {
+    "root": "+2",
+    "suffixes": [
+      "20"
+    ]
+  },
+  "timezones": [
+    "UTC+00:00"
+  ],
+  "flag": "🇬🇲",
+  "flags": {
+    "png": "https://flagcdn.com/w320/gm.png",
+    "svg": "https://flagcdn.com/gm.svg",
+    "alt": "The flag of Gambia is composed of three equal horizontal bands of red, blue with white top and bottom edges, and green."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/gm.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/gm.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/bbGBCxxtfD2A9Z4m6",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/192774"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية غامبيا",
+      "common": "غامبيا"
+    },
+    "bre": {
+      "official": "Republik islamek ar Gambia",
+      "common": "Gambia"
+    },
+    "ces": {
+      "official": "Gambijská republika",
+      "common": "Gambie"
+    },
+    "deu": {
+      "official": "Republik Gambia",
+      "common": "Gambia"
+    },
+    "est": {
+      "official": "Gambia Vabariik",
+      "common": "Gambia"
+    },
+    "fin": {
+      "official": "Gambian tasavalta",
+      "common": "Gambia"
+    },
+    "fra": {
+      "official": "République de Gambie",
+      "common": "Gambie"
+    },
+    "hrv": {
+      "official": "Republika Gambija",
+      "common": "Gambija"
+    },
+    "hun": {
+      "official": "Gambiai Köztársaság",
+      "common": "Gambia"
+    },
+    "ita": {
+      "official": "Repubblica del Gambia",
+      "common": "Gambia"
+    },
+    "jpn": {
+      "official": "ガンビア共和国",
+      "common": "ガンビア"
+    },
+    "kor": {
+      "official": "감비아 공화국",
+      "common": "감비아"
+    },
+    "nld": {
+      "official": "Republiek Gambia",
+      "common": "Gambia"
+    },
+    "per": {
+      "official": "جمهوری گامبیا",
+      "common": "گامبیا"
+    },
+    "pol": {
+      "official": "Republika Gambii",
+      "common": "Gambia"
+    },
+    "por": {
+      "official": "República da Gâmbia",
+      "common": "Gâmbia"
+    },
+    "rus": {
+      "official": "Республика Гамбия",
+      "common": "Гамбия"
+    },
+    "slk": {
+      "official": "Gambijská republika",
+      "common": "Gambia"
+    },
+    "spa": {
+      "official": "República de Gambia",
+      "common": "Gambia"
+    },
+    "srp": {
+      "official": "Republika Gambija",
+      "common": "Gambija"
+    },
+    "swe": {
+      "official": "Republiken Gambia",
+      "common": "Gambia"
+    },
+    "tur": {
+      "official": "Gambiya Cumhuriyeti",
+      "common": "Gambiya"
+    },
+    "urd": {
+      "official": "جمہوریہ گیمبیا",
+      "common": "گیمبیا"
+    },
+    "zho": {
+      "official": "冈比亚共和国",
+      "common": "冈比亚"
+    }
+  },
+  "largest_city": "Serekunda",
+  "largest_city_local": "Serekunda",
+  "largest_city_pop": 340000,
+  "largest_city_is_capital": false
+}

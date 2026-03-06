@@ -1,0 +1,208 @@
+{
+  "name": {
+    "common": "Montenegro",
+    "official": "Montenegro",
+    "native": {
+      "cnr": {
+        "official": "Црна Гора",
+        "common": "Црна Гора"
+      }
+    }
+  },
+  "cca2": "ME",
+  "cca3": "MNE",
+  "ccn3": "499",
+  "cioc": "MNE",
+  "fifa": "MNE",
+  "tld": [
+    ".me"
+  ],
+  "altSpellings": [
+    "ME",
+    "Crna Gora"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Eastern European Group",
+  "capital": [
+    "Podgorica"
+  ],
+  "region": "Europe",
+  "subregion": "Southeast Europe",
+  "continents": [
+    "Europe"
+  ],
+  "latlng": [
+    42.5,
+    19.3
+  ],
+  "landlocked": false,
+  "borders": [
+    "ALB",
+    "BIH",
+    "HRV",
+    "UNK",
+    "SRB"
+  ],
+  "area": 13812,
+  "population": 623327,
+  "demonyms": {
+    "eng": {
+      "f": "Montenegrin",
+      "m": "Montenegrin"
+    },
+    "fra": {
+      "f": "Monténégrine",
+      "m": "Monténégrin"
+    }
+  },
+  "languages": {
+    "cnr": "Montenegrin"
+  },
+  "currencies": {
+    "EUR": {
+      "name": "Euro",
+      "symbol": "€"
+    }
+  },
+  "gini": {
+    "2016": 38.5
+  },
+  "car": {
+    "signs": [
+      "SCG"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "#####",
+    "regex": "^(\\d{5})$"
+  },
+  "idd": {
+    "root": "+3",
+    "suffixes": [
+      "82"
+    ]
+  },
+  "timezones": [
+    "UTC+01:00"
+  ],
+  "flag": "🇲🇪",
+  "flags": {
+    "png": "https://flagcdn.com/w320/me.png",
+    "svg": "https://flagcdn.com/me.svg",
+    "alt": "The flag of Montenegro features a large red central rectangular area surrounded by a golden-yellow border. The coat of arms of Montenegro is centered in the red rectangle."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/me.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/me.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/4THX1fM7WqANuPbB8",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/53296"
+  },
+  "translations": {
+    "ara": {
+      "official": "الجبل الاسود",
+      "common": "الجبل الاسود"
+    },
+    "bre": {
+      "official": "Republik Montenegro",
+      "common": "Montenegro"
+    },
+    "ces": {
+      "official": "Černá Hora",
+      "common": "Černá Hora"
+    },
+    "deu": {
+      "official": "Montenegro",
+      "common": "Montenegro"
+    },
+    "est": {
+      "official": "Montenegro",
+      "common": "Montenegro"
+    },
+    "fin": {
+      "official": "Montenegro",
+      "common": "Montenegro"
+    },
+    "fra": {
+      "official": "Monténégro",
+      "common": "Monténégro"
+    },
+    "hrv": {
+      "official": "Crna Gora",
+      "common": "Crna Gora"
+    },
+    "hun": {
+      "official": "Montenegró",
+      "common": "Montenegró"
+    },
+    "ita": {
+      "official": "Montenegro",
+      "common": "Montenegro"
+    },
+    "jpn": {
+      "official": "モンテネグロ",
+      "common": "モンテネグロ"
+    },
+    "kor": {
+      "official": "몬테네그로",
+      "common": "몬테네그로"
+    },
+    "nld": {
+      "official": "Montenegro",
+      "common": "Montenegro"
+    },
+    "per": {
+      "official": "مونته‌نگرو",
+      "common": "مونته‌نگرو"
+    },
+    "pol": {
+      "official": "Czarnogóra",
+      "common": "Czarnogóra"
+    },
+    "por": {
+      "official": "Montenegro",
+      "common": "Montenegro"
+    },
+    "rus": {
+      "official": "Черногория",
+      "common": "Черногория"
+    },
+    "slk": {
+      "official": "Čierna Hora",
+      "common": "Čierna Hora"
+    },
+    "spa": {
+      "official": "Montenegro",
+      "common": "Montenegro"
+    },
+    "srp": {
+      "official": "Crna Gora",
+      "common": "Crna Gora"
+    },
+    "swe": {
+      "official": "Montenegro",
+      "common": "Montenegro"
+    },
+    "tur": {
+      "official": "Karadağ",
+      "common": "Karadağ"
+    },
+    "urd": {
+      "official": "مونٹینیگرو",
+      "common": "مونٹینیگرو"
+    },
+    "zho": {
+      "official": "黑山",
+      "common": "黑山"
+    }
+  },
+  "largest_city": "Podgorica",
+  "largest_city_local": "Podgorica",
+  "largest_city_pop": 236852,
+  "largest_city_is_capital": true
+}

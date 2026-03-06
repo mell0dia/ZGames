@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zago's Game Center</title>
+<style>
+/* ── Variables ───────────────────────────────── */
+:root {
+  --bg:      #06091a;
+  --accent:  #3dffc0;
+  --accent2: #5599ff;
+  --danger:  #ff4d7a;
+  --text:    #e8eaf2;
+  --sub:     rgba(232,234,242,0.5);
+  --border:  rgba(255,255,255,0.1);
+  --card-bg: rgba(255,255,255,0.06);
+}
+
+/* ── Reset ───────────────────────────────────── */
+*, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+html, body {
+  min-height:100%; font-family:'Segoe UI', system-ui, sans-serif;
+  background:var(--bg); color:var(--text); overflow-x:hidden;
+}
+
+/* ── Stars canvas ────────────────────────────── */
+#stars { position:fixed; inset:0; z-index:0; pointer-events:none; }
+
+/* ── Page bg glow ────────────────────────────── */
+.bg-glow {
+  position:fixed; inset:0; z-index:0; pointer-events:none;
+  background:
+    radial-gradient(ellipse at 15% 10%,  rgba(85,153,255,0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 85% 85%,  rgba(61,255,192,0.09) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%,  rgba(255,77,122,0.04) 0%, transparent 70%);
+}
+
+/* ── Layout ──────────────────────────────────── */
+.page {
+  position:relative; z-index:1;
+  min-height:100vh;
+  display:flex; flex-direction:column; align-items:center;
+  padding:0 24px 80px;
+}
+
+/* ── HERO ────────────────────────────────────── */
+.hero {
+  width:100%; max-width:900px;
+  text-align:center;
+  padding:72px 0 56px;
+}
+
+/* Animated badge */
+.badge {
+  display:inline-flex; align-items:center; gap:8px;
+  padding:6px 18px; border-radius:100px;
+  border:1px solid rgba(61,255,192,0.3);
+  background:rgba(61,255,192,0.07);
+  font-size:12px; font-weight:700; letter-spacing:2px;
+  text-transform:uppercase; color:var(--accent);
+  margin-bottom:28px;
+  animation:fadeDown .6s ease both;
+}
+.badge .dot {
+  width:7px; height:7px; border-radius:50%;
+  background:var(--accent);
+  animation:pulseDot 1.8s ease-in-out infinite;
+}
+
+/* Main title */
+.title-wrap { position:relative; display:inline-block; animation:fadeDown .7s .1s ease both; }
+
+.title {
+  font-size:clamp(42px, 8vw, 86px);
+  font-weight:900;
+  line-height:1.05;
+  letter-spacing:-1px;
+  background: linear-gradient(135deg,
+    #ffffff 0%,
+    #a8d8ff 25%,
+    #3dffc0 50%,
+    #5599ff 75%,
+    #ffffff 100%);
+  background-size:300% 300%;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:shimmer 5s ease-in-out infinite;
+}
+
+/* Glow under title */
+.title-glow {
+  position:absolute; bottom:-10px; left:50%;
+  transform:translateX(-50%);
+  width:70%; height:30px;
+  background:radial-gradient(ellipse, rgba(61,255,192,0.35) 0%, transparent 70%);
+  filter:blur(8px);
+  animation:glowPulse 3s ease-in-out infinite;
+}
+
+.subtitle {
+  font-size:16px; color:var(--sub); margin-top:22px; line-height:1.7;
+  animation:fadeDown .7s .2s ease both;
+}
+
+/* Decorative divider */
+.hero-divider {
+  display:flex; align-items:center; gap:16px;
+  margin:36px auto 0; max-width:340px;
+  animation:fadeDown .7s .3s ease both;
+}
+.hero-divider .line { flex:1; height:1px; background:linear-gradient(90deg,transparent,var(--border),transparent); }
+.hero-divider .icon { font-size:22px; }
+
+/* ── GAMES GRID ──────────────────────────────── */
+.section-label {
+  font-size:11px; font-weight:700; letter-spacing:3px;
+  text-transform:uppercase; color:var(--sub);
+  margin-bottom:24px;
+  animation:fadeUp .6s .4s ease both;
+}
+
+.games-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));
+  gap:22px;
+  width:100%; max-width:1100px;
+}
+
+/* ── GAME CARD ───────────────────────────────── */
+.game-card {
+  position:relative;
+  background:var(--card-bg);
+  border:1px solid var(--border);
+  border-radius:22px;
+  padding:30px 26px 26px;
+  cursor:pointer;
+  text-decoration:none;
+  color:var(--text);
+  display:flex; flex-direction:column;
+  overflow:hidden;
+  transition:transform .25s cubic-bezier(.34,1.56,.64,1),
+             border-color .25s, box-shadow .25s;
+  animation:fadeUp .6s .45s ease both;
+}
+
+/* Radial glow that follows mouse (set via JS) */
+.game-card::before {
+  content:'';
+  position:absolute; inset:0;
+  background:radial-gradient(600px circle at var(--mx,50%) var(--my,50%),
+    rgba(255,255,255,0.04), transparent 60%);
+  opacity:0; transition:opacity .3s;
+  border-radius:inherit;
+}
+.game-card:hover::before { opacity:1; }
+
+/* Top shine strip */
+.game-card::after {
+  content:'';
+  position:absolute; top:0; left:0; right:0; height:1px;
+  background:linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+  opacity:0; transition:opacity .3s;
+}
+.game-card:hover::after { opacity:1; }
+
+.game-card:hover {
+  transform:translateY(-6px) scale(1.01);
+  border-color:rgba(255,255,255,0.22);
+  box-shadow:0 20px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.06);
+}
+
+/* Card color accent bar */
+.card-bar {
+  position:absolute; top:0; left:0; right:0; height:3px;
+  border-radius:22px 22px 0 0;
+  background:linear-gradient(90deg, var(--c1, var(--accent)), var(--c2, var(--accent2)));
+  opacity:0; transition:opacity .3s;
+}
+.game-card:hover .card-bar { opacity:1; }
+
+/* Card icon */
+.card-icon {
+  width:64px; height:64px; border-radius:18px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:32px;
+  background:rgba(255,255,255,0.06);
+  border:1px solid var(--border);
+  margin-bottom:18px;
+  transition:transform .25s;
+}
+.game-card:hover .card-icon { transform:scale(1.1) rotate(-4deg); }
+
+.card-title {
+  font-size:20px; font-weight:800; margin-bottom:8px;
+  transition:color .2s;
+}
+.game-card:hover .card-title { color:var(--accent); }
+
+.card-desc {
+  font-size:14px; color:var(--sub); line-height:1.65;
+  flex:1; margin-bottom:20px;
+}
+
+/* Tags */
+.card-tags { display:flex; flex-wrap:wrap; gap:7px; margin-bottom:20px; }
+.tag {
+  padding:4px 11px; border-radius:100px;
+  border:1px solid var(--border);
+  font-size:11px; font-weight:600; letter-spacing:.5px;
+  color:var(--sub); background:rgba(255,255,255,0.04);
+}
+
+/* Play button */
+.play-btn {
+  display:flex; align-items:center; justify-content:center; gap:8px;
+  height:44px; border-radius:12px;
+  background:linear-gradient(135deg, var(--c1,var(--accent)), var(--c2,var(--accent2)));
+  color:#060b18; font-size:13px; font-weight:900;
+  letter-spacing:1.5px; text-transform:uppercase;
+  transition:box-shadow .25s, transform .15s;
+}
+.game-card:hover .play-btn {
+  box-shadow:0 6px 24px rgba(61,255,192,0.35);
+}
+
+/* ── COMING SOON CARD ────────────────────────── */
+.card-soon {
+  background:rgba(255,255,255,0.025);
+  border:1px dashed rgba(255,255,255,0.1);
+  border-radius:22px; padding:30px 26px;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  text-align:center; min-height:280px;
+  animation:fadeUp .6s .55s ease both;
+}
+.card-soon .soon-icon { font-size:36px; margin-bottom:14px; opacity:.4; }
+.card-soon p { font-size:14px; color:var(--sub); line-height:1.6; }
+
+/* ── FOOTER ──────────────────────────────────── */
+.footer {
+  margin-top:64px; font-size:12px; color:rgba(255,255,255,0.18);
+  text-align:center; letter-spacing:1px;
+}
+
+/* ── Keyframes ───────────────────────────────── */
+@keyframes shimmer {
+  0%,100%  { background-position:0%   50%; }
+  50%      { background-position:100% 50%; }
+}
+@keyframes glowPulse {
+  0%,100%  { opacity:.6; transform:translateX(-50%) scaleX(1);   }
+  50%      { opacity:1;  transform:translateX(-50%) scaleX(1.15); }
+}
+@keyframes pulseDot {
+  0%,100%  { opacity:1;   transform:scale(1); }
+  50%      { opacity:.4;  transform:scale(.6); }
+}
+@keyframes fadeDown {
+  from { opacity:0; transform:translateY(-16px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(20px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+
+/* ── Mobile ──────────────────────────────────────── */
+@media (max-width:600px) {
+  .page { padding:0 14px 56px; }
+  .hero { padding:44px 0 36px; }
+  .games-grid { grid-template-columns:1fr; gap:14px; }
+  .game-card { padding:22px 18px 20px; }
+  .card-soon { min-height:160px; }
+  .subtitle { font-size:14px; }
+  .hero-divider { margin-top:24px; }
+}
+</style>
+</head>
+<body>
+
+<canvas id="stars"></canvas>
+<div class="bg-glow"></div>
+
+<div class="page">
+
+  <!-- ── HERO ───────────────────────── -->
+  <header class="hero">
+    <div class="badge"><span class="dot"></span>Game Center</div>
+
+    <div class="title-wrap">
+      <h1 class="title">Zago's Game Center</h1>
+      <div class="title-glow"></div>
+    </div>
+
+    <p class="subtitle">Pick a game, test your knowledge, challenge yourself.</p>
+
+    <div class="hero-divider">
+      <div class="line"></div>
+      <span class="icon">🎮</span>
+      <div class="line"></div>
+    </div>
+  </header>
+
+  <!-- ── GAMES ──────────────────────── -->
+  <p class="section-label">Available Games</p>
+
+  <div class="games-grid">
+
+    <!-- World Quiz -->
+    <a class="game-card" href="quiz.html"
+       style="--c1:#3dffc0; --c2:#5599ff;"
+       data-card>
+      <div class="card-bar"></div>
+      <div class="card-icon">🌍</div>
+      <div class="card-title">World Quiz</div>
+      <p class="card-desc">Test your knowledge of countries, capitals, populations, languages, currencies and more — across 195 sovereign nations.</p>
+      <div class="card-tags">
+        <span class="tag">Geography</span>
+        <span class="tag">Trivia</span>
+        <span class="tag">Quiz</span>
+        <span class="tag">195 Countries</span>
+      </div>
+      <div class="play-btn">▶&nbsp; Play Now</div>
+    </a>
+
+    <!-- Borders -->
+    <a class="game-card" href="borders.html"
+       style="--c1:#ff9a3d; --c2:#ff4d7a; animation-delay:.5s"
+       data-card>
+      <div class="card-bar"></div>
+      <div class="card-icon">🗺️</div>
+      <div class="card-title">Borders</div>
+      <p class="card-desc">Can you name all the countries that share a border? Pick the right list — then guess how many neighbors a country has.</p>
+      <div class="card-tags">
+        <span class="tag">Geography</span>
+        <span class="tag">Borders</span>
+        <span class="tag">Strategy</span>
+        <span class="tag">195 Countries</span>
+      </div>
+      <div class="play-btn" style="background:linear-gradient(135deg,#ff9a3d,#ff4d7a)">▶&nbsp; Play Now</div>
+    </a>
+
+    <!-- World Network -->
+    <a class="game-card" href="network.html"
+       style="--c1:#cc88ff; --c2:#5599ff; animation-delay:.55s"
+       data-card>
+      <div class="card-bar"></div>
+      <div class="card-icon">🌐</div>
+      <div class="card-title">World Network</div>
+      <p class="card-desc">Explore 195 countries as an interactive network map. Switch between countries, capitals, and largest cities — click any node to reveal all its border connections.</p>
+      <div class="card-tags">
+        <span class="tag">Network</span>
+        <span class="tag">Explorer</span>
+        <span class="tag">Geography</span>
+        <span class="tag">Sigma.js</span>
+      </div>
+      <div class="play-btn" style="background:linear-gradient(135deg,#cc88ff,#5599ff)">▶&nbsp; Explore</div>
+    </a>
+
+    <!-- Pin the Country -->
+    <a class="game-card" href="pin.html"
+       style="--c1:#ffcc44; --c2:#ff9a3d; animation-delay:.6s"
+       data-card>
+      <div class="card-bar"></div>
+      <div class="card-icon">📍</div>
+      <div class="card-title">Pin the Country</div>
+      <p class="card-desc">Spin the globe and click where you think the country is. Drag to rotate, click to pin — how well do you know the world map?</p>
+      <div class="card-tags">
+        <span class="tag">Globe</span>
+        <span class="tag">Geography</span>
+        <span class="tag">Interactive</span>
+        <span class="tag">3D Map</span>
+      </div>
+      <div class="play-btn" style="background:linear-gradient(135deg,#ffcc44,#ff9a3d)">▶&nbsp; Play Now</div>
+    </a>
+
+    <!-- World Cards -->
+    <a class="game-card" href="worldcards.html"
+       style="--c1:#cc88ff; --c2:#ffcc44; animation-delay:.65s"
+       data-card>
+      <div class="card-bar"></div>
+      <div class="card-icon">🃏</div>
+      <div class="card-title">World Cards</div>
+      <p class="card-desc">Pick a country stat — go HIGH or LOW to beat the CPU and steal their card. Use a Flag Contest to identify your opponent's country and steal the win!</p>
+      <div class="card-tags">
+        <span class="tag">Card Game</span>
+        <span class="tag">Strategy</span>
+        <span class="tag">Geography</span>
+        <span class="tag">vs CPU</span>
+      </div>
+      <div class="play-btn" style="background:linear-gradient(135deg,#cc88ff,#ffcc44)">▶&nbsp; Play Now</div>
+    </a>
+
+  </div>
+
+  <footer class="footer">Zago's Game Center &nbsp;·&nbsp; 2026</footer>
+</div>
+
+<script>
+// ── Star background ─────────────────────────────────
+(function(){
+  const cvs = document.getElementById('stars');
+  const ctx = cvs.getContext('2d');
+  let stars = [];
+  function resize(){ cvs.width = innerWidth; cvs.height = innerHeight; }
+  function init(){
+    stars = Array.from({length:160}, ()=>({
+      x: Math.random()*cvs.width,
+      y: Math.random()*cvs.height,
+      r: Math.random()*1.5+.2,
+      o: Math.random()*.5+.08,
+      f: Math.random()*.0004+.0001
+    }));
+  }
+  function draw(){
+    ctx.clearRect(0,0,cvs.width,cvs.height);
+    const t = Date.now();
+    stars.forEach(s=>{
+      const a = s.o*(0.6+0.4*Math.sin(t*s.f*1000));
+      ctx.beginPath();
+      ctx.arc(s.x,s.y,s.r,0,Math.PI*2);
+      ctx.fillStyle=`rgba(200,215,255,${a})`;
+      ctx.fill();
+    });
+    requestAnimationFrame(draw);
+  }
+  resize(); init(); draw();
+  window.addEventListener('resize',()=>{ resize(); init(); });
+})();
+
+// ── Card mouse-tracking glow ────────────────────────
+document.querySelectorAll('[data-card]').forEach(card=>{
+  card.addEventListener('mousemove', e=>{
+    const r = card.getBoundingClientRect();
+    card.style.setProperty('--mx', (e.clientX-r.left)+'px');
+    card.style.setProperty('--my', (e.clientY-r.top)+'px');
+  });
+});
+</script>
+</body>
+</html>

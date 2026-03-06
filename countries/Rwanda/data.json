@@ -1,0 +1,216 @@
+{
+  "name": {
+    "common": "Rwanda",
+    "official": "Republic of Rwanda",
+    "native": {
+      "eng": {
+        "official": "Republic of Rwanda",
+        "common": "Rwanda"
+      },
+      "fra": {
+        "official": "République rwandaise",
+        "common": "Rwanda"
+      },
+      "kin": {
+        "official": "Repubulika y'u Rwanda",
+        "common": "Rwanda"
+      }
+    }
+  },
+  "cca2": "RW",
+  "cca3": "RWA",
+  "ccn3": "646",
+  "cioc": "RWA",
+  "fifa": "RWA",
+  "tld": [
+    ".rw"
+  ],
+  "altSpellings": [
+    "RW",
+    "Republic of Rwanda",
+    "Repubulika y'u Rwanda",
+    "République du Rwanda"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "African Group",
+  "capital": [
+    "Kigali"
+  ],
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "latlng": [
+    -2,
+    30
+  ],
+  "landlocked": true,
+  "borders": [
+    "BDI",
+    "COD",
+    "TZA",
+    "UGA"
+  ],
+  "area": 26338,
+  "population": 14104969,
+  "demonyms": {
+    "eng": {
+      "f": "Rwandan",
+      "m": "Rwandan"
+    },
+    "fra": {
+      "f": "Rwandaise",
+      "m": "Rwandais"
+    }
+  },
+  "languages": {
+    "eng": "English",
+    "fra": "French",
+    "kin": "Kinyarwanda"
+  },
+  "currencies": {
+    "RWF": {
+      "name": "Rwandan franc",
+      "symbol": "Fr"
+    }
+  },
+  "gini": {
+    "2016": 43.7
+  },
+  "car": {
+    "signs": [
+      "RWA"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {},
+  "idd": {
+    "root": "+2",
+    "suffixes": [
+      "50"
+    ]
+  },
+  "timezones": [
+    "UTC+02:00"
+  ],
+  "flag": "🇷🇼",
+  "flags": {
+    "png": "https://flagcdn.com/w320/rw.png",
+    "svg": "https://flagcdn.com/rw.svg",
+    "alt": "The flag of Rwanda is composed of three horizontal bands of light blue, yellow and green. The light blue band is twice the height of the other two bands and bears a yellow sun with twenty-four rays on its fly side."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/rw.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/rw.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/j5xb5r7CLqjYbyP86",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/171496"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية رواندا",
+      "common": "رواندا"
+    },
+    "bre": {
+      "official": "Republik Rwanda",
+      "common": "Rwanda"
+    },
+    "ces": {
+      "official": "Rwandská republika",
+      "common": "Rwanda"
+    },
+    "deu": {
+      "official": "Republik Ruanda",
+      "common": "Ruanda"
+    },
+    "est": {
+      "official": "Rwanda Vabariik",
+      "common": "Rwanda"
+    },
+    "fin": {
+      "official": "Ruandan tasavalta",
+      "common": "Ruanda"
+    },
+    "fra": {
+      "official": "République rwandaise",
+      "common": "Rwanda"
+    },
+    "hrv": {
+      "official": "Republika Ruandi",
+      "common": "Ruanda"
+    },
+    "hun": {
+      "official": "Ruandai Köztársaság",
+      "common": "Ruanda"
+    },
+    "ita": {
+      "official": "Repubblica del Ruanda",
+      "common": "Ruanda"
+    },
+    "jpn": {
+      "official": "ルワンダ共和国",
+      "common": "ルワンダ"
+    },
+    "kor": {
+      "official": "르완다 공화국",
+      "common": "르완다"
+    },
+    "nld": {
+      "official": "Republiek Rwanda",
+      "common": "Rwanda"
+    },
+    "per": {
+      "official": "جمهوری رواندا",
+      "common": "رواندا"
+    },
+    "pol": {
+      "official": "Republika Rwandy",
+      "common": "Rwanda"
+    },
+    "por": {
+      "official": "República do Ruanda",
+      "common": "Ruanda"
+    },
+    "rus": {
+      "official": "Республика Руанда",
+      "common": "Руанда"
+    },
+    "slk": {
+      "official": "Rwandská republika",
+      "common": "Rwanda"
+    },
+    "spa": {
+      "official": "República de Rwanda",
+      "common": "Ruanda"
+    },
+    "srp": {
+      "official": "Republika Ruanda",
+      "common": "Ruanda"
+    },
+    "swe": {
+      "official": "Republiken Rwanda",
+      "common": "Rwanda"
+    },
+    "tur": {
+      "official": "Ruanda Cumhuriyeti",
+      "common": "Ruanda"
+    },
+    "urd": {
+      "official": "جمہوریہ روانڈا",
+      "common": "روانڈا"
+    },
+    "zho": {
+      "official": "卢旺达共和国",
+      "common": "卢旺达"
+    }
+  },
+  "largest_city": "Kigali",
+  "largest_city_local": "Kigali",
+  "largest_city_pop": 1132686,
+  "largest_city_is_capital": true
+}

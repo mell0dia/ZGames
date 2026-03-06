@@ -1,0 +1,202 @@
+{
+  "name": {
+    "common": "Sierra Leone",
+    "official": "Republic of Sierra Leone",
+    "native": {
+      "eng": {
+        "official": "Republic of Sierra Leone",
+        "common": "Sierra Leone"
+      }
+    }
+  },
+  "cca2": "SL",
+  "cca3": "SLE",
+  "ccn3": "694",
+  "cioc": "SLE",
+  "fifa": "SLE",
+  "tld": [
+    ".sl"
+  ],
+  "altSpellings": [
+    "SL",
+    "Republic of Sierra Leone"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "African Group",
+  "capital": [
+    "Freetown"
+  ],
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "continents": [
+    "Africa"
+  ],
+  "latlng": [
+    8.5,
+    -11.5
+  ],
+  "landlocked": false,
+  "borders": [
+    "GIN",
+    "LBR"
+  ],
+  "area": 71740,
+  "population": 9077691,
+  "demonyms": {
+    "eng": {
+      "f": "Sierra Leonean",
+      "m": "Sierra Leonean"
+    },
+    "fra": {
+      "f": "Sierra-leonaise",
+      "m": "Sierra-leonais"
+    }
+  },
+  "languages": {
+    "eng": "English"
+  },
+  "currencies": {
+    "SLL": {
+      "name": "Sierra Leonean leone",
+      "symbol": "Le"
+    }
+  },
+  "gini": {
+    "2018": 35.7
+  },
+  "car": {
+    "signs": [
+      "WAL"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {},
+  "idd": {
+    "root": "+2",
+    "suffixes": [
+      "32"
+    ]
+  },
+  "timezones": [
+    "UTC"
+  ],
+  "flag": "🇸🇱",
+  "flags": {
+    "png": "https://flagcdn.com/w320/sl.png",
+    "svg": "https://flagcdn.com/sl.svg",
+    "alt": "The flag of Sierra Leone is composed of three equal horizontal bands of green, white and blue."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/sl.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/sl.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/jhacar85oq9QaeKB7",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/192777"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية سيراليون",
+      "common": "سيراليون"
+    },
+    "bre": {
+      "official": "Republik Sierra Leone",
+      "common": "Sierra Leone"
+    },
+    "ces": {
+      "official": "Republika Sierra Leone",
+      "common": "Sierra Leone"
+    },
+    "deu": {
+      "official": "Republik Sierra Leone",
+      "common": "Sierra Leone"
+    },
+    "est": {
+      "official": "Sierra Leone Vabariik",
+      "common": "Sierra Leone"
+    },
+    "fin": {
+      "official": "Sierra Leonen tasavalta",
+      "common": "Sierra Leone"
+    },
+    "fra": {
+      "official": "République de Sierra Leone",
+      "common": "Sierra Leone"
+    },
+    "hrv": {
+      "official": "Republika Sijera Leone",
+      "common": "Sijera Leone"
+    },
+    "hun": {
+      "official": "Sierra Leone Köztársaság",
+      "common": "Sierra Leone"
+    },
+    "ita": {
+      "official": "Repubblica della Sierra Leone",
+      "common": "Sierra Leone"
+    },
+    "jpn": {
+      "official": "シエラレオネ共和国",
+      "common": "シエラレオネ"
+    },
+    "kor": {
+      "official": "시에라리온 공화국",
+      "common": "시에라리온"
+    },
+    "nld": {
+      "official": "Republiek Sierra Leone",
+      "common": "Sierra Leone"
+    },
+    "per": {
+      "official": "جمهوری سیرالئون",
+      "common": "سیرالئون"
+    },
+    "pol": {
+      "official": "Sierra Leone",
+      "common": "Sierra Leone"
+    },
+    "por": {
+      "official": "República da Serra Leoa",
+      "common": "Serra Leoa"
+    },
+    "rus": {
+      "official": "Республика Сьерра-Леоне",
+      "common": "Сьерра-Леоне"
+    },
+    "slk": {
+      "official": "Sierraleonská republika",
+      "common": "Sierra Leone"
+    },
+    "spa": {
+      "official": "República de Sierra Leona",
+      "common": "Sierra Leone"
+    },
+    "srp": {
+      "official": "Republika Sijera Leone",
+      "common": "Sijera Leone"
+    },
+    "swe": {
+      "official": "Republiken Sierra Leone",
+      "common": "Sierra Leone"
+    },
+    "tur": {
+      "official": "Sierra Leone Cumhuriyeti",
+      "common": "Sierra Leone"
+    },
+    "urd": {
+      "official": "جمہوریہ سیرالیون",
+      "common": "سیرالیون"
+    },
+    "zho": {
+      "official": "塞拉利昂共和国",
+      "common": "塞拉利昂"
+    }
+  },
+  "largest_city": "Freetown",
+  "largest_city_local": "Freetown",
+  "largest_city_pop": 802639,
+  "largest_city_is_capital": true
+}

@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📍 Pin the Country</title>
+<style>
+/* ── Variables ───────────────────────────────────────── */
+:root {
+  --bg:      #06091a;
+  --panel-bg:rgba(255,255,255,0.035);
+  --card-bg: rgba(255,255,255,0.07);
+  --border:  rgba(255,255,255,0.1);
+  --accent:  #3dffc0;
+  --accent2: #5599ff;
+  --danger:  #ff4d7a;
+  --warn:    #ffcc44;
+  --text:    #e8eaf2;
+  --sub:     rgba(232,234,242,0.48);
+  --panel-w: 308px;
+}
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+html,body { height:100%; overflow:hidden; font-family:'Segoe UI',system-ui,sans-serif;
+  background:var(--bg); color:var(--text); }
+
+#stars { position:fixed; inset:0; z-index:0; pointer-events:none; }
+.layout { display:flex; height:100%; position:relative; z-index:1; }
+
+/* ── LEFT PANEL ──────────────────────────────────────── */
+.lpanel {
+  width:var(--panel-w); min-width:var(--panel-w); height:100%;
+  background:var(--panel-bg); backdrop-filter:blur(24px);
+  border-right:1px solid var(--border);
+  display:flex; flex-direction:column;
+  overflow-y:auto; padding:22px 18px 28px;
+}
+.lpanel::-webkit-scrollbar { width:3px; }
+.lpanel::-webkit-scrollbar-thumb { background:var(--border); border-radius:2px; }
+
+.back-link {
+  display:inline-flex; align-items:center; gap:6px;
+  font-size:12px; font-weight:600; color:var(--sub);
+  text-decoration:none; padding:6px 10px 6px 6px;
+  border-radius:8px; margin-bottom:18px; transition:all .2s;
+}
+.back-link:hover { color:var(--accent); background:rgba(61,255,192,.08); }
+.back-link .arr { font-size:14px; transition:transform .2s; }
+.back-link:hover .arr { transform:translateX(-3px); }
+
+.logo { text-align:center; margin-bottom:26px; }
+.logo .ico { font-size:44px; display:block; margin-bottom:6px;
+  animation:floatY 3.5s ease-in-out infinite; }
+.logo h1 {
+  font-size:18px; font-weight:800; letter-spacing:3px; text-transform:uppercase;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+}
+.slabel { font-size:10px; font-weight:700; letter-spacing:2px;
+  text-transform:uppercase; color:var(--sub); margin-bottom:10px; }
+.divider { height:1px; background:var(--border); margin:18px 0; }
+
+.count-row { display:flex; gap:7px; margin-bottom:4px; }
+.cbtn {
+  flex:1; height:38px; border:1px solid var(--border); border-radius:10px;
+  background:var(--card-bg); color:var(--sub); font-size:13px; font-weight:700;
+  cursor:pointer; transition:all .2s;
+}
+.cbtn:hover { border-color:var(--accent); color:var(--accent); }
+.cbtn.active { background:rgba(61,255,192,.12); border-color:var(--accent); color:var(--accent); }
+
+/* Toggle switch */
+.toggle-row {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:10px 13px; border:1px solid var(--border); border-radius:11px;
+  background:var(--card-bg); cursor:pointer; user-select:none;
+  font-size:13px; font-weight:600; color:var(--sub); transition:all .2s;
+}
+.toggle-row:hover { border-color:var(--accent2); color:var(--text); }
+.toggle-sw {
+  width:36px; height:20px; border-radius:10px; background:var(--border);
+  position:relative; flex-shrink:0; transition:background .2s;
+}
+.toggle-sw::after {
+  content:''; position:absolute; top:3px; left:3px;
+  width:14px; height:14px; border-radius:50%; background:#fff; transition:left .2s;
+}
+.toggle-row.on .toggle-sw { background:var(--accent2); }
+.toggle-row.on .toggle-sw::after { left:19px; }
+
+.start-btn {
+  width:100%; height:50px; border:none; border-radius:13px; margin-top:2px;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#060b18; font-size:14px; font-weight:900; letter-spacing:1.5px;
+  text-transform:uppercase; cursor:pointer; transition:all .2s;
+}
+.start-btn:hover { transform:translateY(-2px); box-shadow:0 8px 28px rgba(61,255,192,.3); }
+.start-btn:active { transform:none; }
+.start-btn:disabled { opacity:.45; cursor:not-allowed; transform:none; box-shadow:none; }
+
+.stats-grid { display:grid; grid-template-columns:1fr 1fr; gap:9px; }
+.scard { background:var(--card-bg); border:1px solid var(--border);
+  border-radius:12px; padding:11px; text-align:center; }
+.scard .val { font-size:20px; font-weight:800; color:var(--accent); }
+.scard .lbl { font-size:10px; color:var(--sub); text-transform:uppercase;
+  letter-spacing:1px; margin-top:2px; }
+
+/* ── RIGHT PANEL ─────────────────────────────────────── */
+.rpanel {
+  flex:1; height:100%; position:relative; overflow:hidden;
+  background:
+    radial-gradient(ellipse at 20% 15%, rgba(85,153,255,0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 85%, rgba(61,255,192,0.08) 0%, transparent 50%),
+    #060d1f;
+}
+
+/* ── SCREENS ─────────────────────────────────────────── */
+.screen {
+  position:absolute; inset:0; display:none;
+  flex-direction:column; align-items:center; justify-content:center;
+}
+
+/* ── WELCOME ─────────────────────────────────────────── */
+.welcome { text-align:center; max-width:420px; padding:24px; animation:fadeUp .6s ease; }
+.welcome .wico { font-size:80px; display:block; margin-bottom:16px;
+  animation:pulseScale 2.2s ease-in-out infinite; }
+.welcome h2 { font-size:32px; font-weight:900; margin-bottom:10px; }
+.welcome p  { font-size:15px; color:var(--sub); line-height:1.75;
+  max-width:360px; margin:0 auto; }
+.pills { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin-top:18px; }
+.pill { padding:5px 13px; border:1px solid var(--border); border-radius:100px;
+  font-size:12px; color:var(--sub); background:rgba(255,255,255,0.04); }
+
+.mobile-start-btn {
+  display:none; margin-top:28px; width:100%; max-width:300px;
+  height:52px; border:none; border-radius:14px;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#060b18; font-size:15px; font-weight:900; letter-spacing:1.5px;
+  text-transform:uppercase; cursor:pointer; transition:all .2s;
+}
+.mobile-start-btn:hover { transform:translateY(-2px); box-shadow:0 8px 28px rgba(61,255,192,.3); }
+
+/* ── GAME SCREEN ─────────────────────────────────────── */
+#gameScreen { align-items:stretch; justify-content:flex-start; }
+
+.game-header {
+  flex-shrink:0; display:flex; align-items:center; gap:12px;
+  padding:10px 20px; border-bottom:1px solid var(--border);
+  background:rgba(6,9,26,.65); backdrop-filter:blur(10px); z-index:5;
+}
+.prog-txt { font-size:12px; color:var(--sub); font-weight:600; }
+.score-badge { margin-left:auto; font-size:14px; font-weight:800; color:var(--warn); }
+
+.timer-wrap { position:relative; width:38px; height:38px; }
+.timer-wrap svg { position:absolute; inset:0; transform:rotate(-90deg); width:100%; height:100%; }
+.t-bg { fill:none; stroke:rgba(255,255,255,.1); stroke-width:3; }
+.t-fg { fill:none; stroke:var(--accent); stroke-width:3; stroke-linecap:round;
+  transition:stroke .4s; }
+.t-num { position:absolute; inset:0; display:flex; align-items:center;
+  justify-content:center; font-size:11px; font-weight:800; }
+
+.question-card {
+  flex-shrink:0; display:flex; align-items:center; gap:14px;
+  padding:12px 20px; border-bottom:1px solid var(--border);
+  background:rgba(6,9,26,.4); backdrop-filter:blur(8px); z-index:5;
+}
+.q-label { font-size:10px; font-weight:700; letter-spacing:2px;
+  text-transform:uppercase; color:var(--sub); margin-bottom:4px; }
+.q-flag { font-size:38px; line-height:1; }
+.q-name { font-size:22px; font-weight:900; line-height:1.1; }
+.q-region {
+  margin-left:auto; padding:4px 11px; border-radius:8px;
+  font-size:11px; font-weight:700; letter-spacing:.5px; text-transform:uppercase;
+  background:rgba(255,204,68,.1); border:1px solid rgba(255,204,68,.25); color:var(--warn);
+  flex-shrink:0;
+}
+
+/* ── GLOBE ───────────────────────────────────────────── */
+.globe-wrap { flex:1; position:relative; overflow:hidden; }
+#globeSvg { display:block; width:100%; height:100%; cursor:grab; }
+#globeSvg:active { cursor:grabbing; }
+
+.c-land  { fill:#1a2d50; stroke:rgba(255,255,255,.16); stroke-width:.45;
+  cursor:pointer; transition:fill .12s; }
+.c-land:hover { fill:#243d68; }
+.c-graticule { fill:none; stroke:rgba(255,255,255,.04); stroke-width:.4; }
+.c-sphere { fill:#071628; }
+.c-borders { fill:none; stroke:rgba(255,255,255,.18); stroke-width:.35; }
+
+.c-land.hl-correct { fill:#3dffc0 !important; stroke:#3dffc0; stroke-width:1; }
+.c-land.hl-wrong   { fill:#ff4d7a !important; stroke:#ff4d7a; stroke-width:1; }
+.c-land.hl-reveal  { fill:#ffcc44 !important; stroke:#ffcc44; stroke-width:1; }
+.c-land.hl-hint    { fill:#2a4a8a !important; animation:hintPulse 1.2s ease-in-out infinite; }
+
+/* Feedback badge over globe */
+#feedbackOverlay {
+  position:absolute; inset:0; display:none; pointer-events:none;
+  align-items:center; justify-content:center; z-index:10;
+}
+#feedbackOverlay.show { display:flex; }
+.fb-badge {
+  padding:14px 36px; border-radius:100px; font-size:22px; font-weight:900;
+  letter-spacing:.5px; backdrop-filter:blur(14px);
+  animation:popIn .3s cubic-bezier(.34,1.56,.64,1) both;
+}
+.fb-badge.ok  { background:rgba(61,255,192,.2); border:2px solid var(--accent); color:var(--accent); }
+.fb-badge.bad { background:rgba(255,77,122,.2);  border:2px solid var(--danger); color:var(--danger); }
+
+/* ── RESULTS ─────────────────────────────────────────── */
+.results-wrap { text-align:center; max-width:440px; padding:24px; animation:fadeUp .5s ease; }
+.res-ico  { font-size:64px; display:block; margin-bottom:12px; }
+.res-h    { font-size:30px; font-weight:900; margin-bottom:8px; }
+.res-sub  { font-size:15px; color:var(--sub); margin-bottom:24px; line-height:1.6; }
+.res-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-bottom:28px; }
+.res-card { background:var(--card-bg); border:1px solid var(--border);
+  border-radius:12px; padding:14px 8px; text-align:center; }
+.res-card .rv { font-size:22px; font-weight:900; color:var(--accent); }
+.res-card .rl { font-size:10px; color:var(--sub); text-transform:uppercase;
+  letter-spacing:1px; margin-top:3px; }
+.again-btn {
+  height:50px; padding:0 36px; border:none; border-radius:13px;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#060b18; font-size:14px; font-weight:900; letter-spacing:1.5px;
+  text-transform:uppercase; cursor:pointer; transition:all .2s;
+  display:inline-flex; align-items:center; gap:8px;
+}
+.again-btn:hover { transform:translateY(-2px); box-shadow:0 8px 28px rgba(61,255,192,.3); }
+
+/* ── TOAST ───────────────────────────────────────────── */
+#toast {
+  position:fixed; bottom:24px; left:50%; transform:translateX(-50%);
+  background:rgba(12,16,35,.95); border:1px solid var(--border);
+  border-radius:12px; padding:10px 20px; font-size:13px; font-weight:600;
+  color:var(--text); display:none; z-index:200; backdrop-filter:blur(10px);
+  white-space:nowrap; animation:fadeUp .3s ease;
+}
+#toast.show { display:block; }
+
+/* ── MOBILE ──────────────────────────────────────────── */
+.panel-toggle {
+  display:none; position:fixed; top:12px; left:12px; z-index:200;
+  width:40px; height:40px; border-radius:10px;
+  border:1px solid var(--border); background:rgba(6,9,26,.92);
+  backdrop-filter:blur(10px); color:var(--text); font-size:20px;
+  cursor:pointer; align-items:center; justify-content:center;
+}
+.panel-backdrop {
+  display:none; position:fixed; inset:0; z-index:150;
+  background:rgba(0,0,0,.55); backdrop-filter:blur(2px);
+}
+.panel-backdrop.open { display:block; }
+
+@media (max-width:680px) {
+  .layout { z-index:auto; }
+  .panel-toggle { display:flex; }
+  .lpanel {
+    position:fixed; left:0; top:0; height:100%; z-index:160;
+    width:min(var(--panel-w), 88vw);
+    transform:translateX(-100%);
+    transition:transform .3s cubic-bezier(.4,0,.2,1);
+  }
+  .lpanel.open { transform:translateX(0); box-shadow:8px 0 40px rgba(0,0,0,.6); }
+  .mobile-start-btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; }
+  .question-card { padding:9px 14px; gap:10px; }
+  .q-name { font-size:18px; }
+  .q-flag { font-size:28px; }
+  .game-header { padding:8px 14px; }
+}
+
+/* ── Keyframes ───────────────────────────────────────── */
+@keyframes floatY    { 0%,100%{transform:translateY(0)}  50%{transform:translateY(-8px)} }
+@keyframes pulseScale{ 0%,100%{transform:scale(1)}       50%{transform:scale(1.08)} }
+@keyframes fadeUp    { from{opacity:0;transform:translateY(18px)} to{opacity:1;transform:translateY(0)} }
+@keyframes popIn     { 0%{opacity:0;transform:scale(.5)} 100%{opacity:1;transform:scale(1)} }
+@keyframes hintPulse { 0%,100%{opacity:1} 50%{opacity:.5} }
+</style>
+</head>
+<body>
+
+<canvas id="stars"></canvas>
+<button class="panel-toggle" id="panelToggle" aria-label="Menu">☰</button>
+<div class="panel-backdrop" id="panelBackdrop"></div>
+
+<div class="layout">
+
+  <!-- ── LEFT PANEL ─────────────────── -->
+  <aside class="lpanel">
+    <a class="back-link" href="index.html"><span class="arr">←</span> Game Center</a>
+
+    <div class="logo">
+      <span class="ico">📍</span>
+      <h1>Pin the Country</h1>
+    </div>
+
+    <div class="slabel">Number of Countries</div>
+    <div class="count-row">
+      <button class="cbtn" data-n="5">5</button>
+      <button class="cbtn active" data-n="10">10</button>
+      <button class="cbtn" data-n="15">15</button>
+      <button class="cbtn" data-n="20">20</button>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="slabel">Options</div>
+    <div class="toggle-row" id="hintToggle">
+      <span>💡 Show region hint</span>
+      <div class="toggle-sw"></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <button class="start-btn" id="startBtn">▶&nbsp; Start Game</button>
+
+    <div class="divider"></div>
+
+    <div class="slabel">Your Stats</div>
+    <div class="stats-grid">
+      <div class="scard"><div class="val" id="stHigh">0</div><div class="lbl">High Score</div></div>
+      <div class="scard"><div class="val" id="stGames">0</div><div class="lbl">Games</div></div>
+      <div class="scard"><div class="val" id="stAcc">—</div><div class="lbl">Accuracy</div></div>
+      <div class="scard"><div class="val" id="stStreak">0</div><div class="lbl">Best Streak</div></div>
+    </div>
+  </aside>
+
+  <!-- ── RIGHT PANEL ────────────────── -->
+  <main class="rpanel">
+
+    <!-- Welcome -->
+    <div class="screen" id="welcomeScreen">
+      <div class="welcome">
+        <span class="wico">📍</span>
+        <h2>Pin the Country</h2>
+        <p>Spin the globe, find the country, click to pin it. How well do you know the world?</p>
+        <div class="pills">
+          <span class="pill">🌍 Full 3D globe</span>
+          <span class="pill">🔄 Drag to spin</span>
+          <span class="pill">⏱ 30 seconds each</span>
+          <span class="pill">🎯 Click to pin</span>
+        </div>
+        <button class="mobile-start-btn" id="mobileStartBtn">▶&nbsp; Start Game</button>
+      </div>
+    </div>
+
+    <!-- Game -->
+    <div class="screen" id="gameScreen" style="display:none">
+      <div class="game-header">
+        <span class="prog-txt">Country <strong id="qNum">1</strong> of <strong id="qOf">10</strong></span>
+        <div class="timer-wrap">
+          <svg viewBox="0 0 38 38">
+            <circle class="t-bg" cx="19" cy="19" r="16"/>
+            <circle class="t-fg" id="timerRing" cx="19" cy="19" r="16"
+              stroke-dasharray="100.53" stroke-dashoffset="0"/>
+          </svg>
+          <span class="t-num" id="timerNum">30</span>
+        </div>
+        <div class="score-badge">⭐ <span id="scoreNum">0</span></div>
+      </div>
+
+      <div class="question-card">
+        <div>
+          <div class="q-label">Find this country</div>
+          <div style="display:flex;align-items:center;gap:10px;margin-top:4px">
+            <span class="q-flag" id="qFlag">🌍</span>
+            <span class="q-name" id="qName">—</span>
+          </div>
+        </div>
+        <span class="q-region" id="qRegion" style="display:none"></span>
+      </div>
+
+      <div class="globe-wrap" id="globeWrap">
+        <svg id="globeSvg"></svg>
+        <div id="feedbackOverlay">
+          <div class="fb-badge" id="fbBadge"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Results -->
+    <div class="screen" id="resultsScreen">
+      <div class="results-wrap">
+        <span class="res-ico" id="resIco">🎯</span>
+        <h2 class="res-h"  id="resH">—</h2>
+        <p  class="res-sub" id="resSub">—</p>
+        <div class="res-grid">
+          <div class="res-card"><div class="rv" id="rScore">0</div><div class="rl">Score</div></div>
+          <div class="res-card"><div class="rv" id="rAcc">0%</div><div class="rl">Accuracy</div></div>
+          <div class="res-card"><div class="rv" id="rStreak">0</div><div class="rl">Best Streak</div></div>
+        </div>
+        <button class="again-btn" id="againBtn">↩&nbsp; Play Again</button>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<div id="toast"></div>
+
+<script src="game-data.js"></script>
+<script src="world-data.js"></script>
+<script src="https://unpkg.com/d3@7/dist/d3.min.js"></script>
+<script src="https://unpkg.com/topojson-client@3/dist/topojson-client.min.js"></script>
+<script>
+// ══════════════════════════════════════════════════
+// STARS
+// ══════════════════════════════════════════════════
+(function(){
+  const cvs = document.getElementById('stars'), ctx = cvs.getContext('2d');
+  let stars = [];
+  function resize(){ cvs.width = innerWidth; cvs.height = innerHeight; }
+  function init(){ stars = Array.from({length:140}, ()=>({
+    x:Math.random()*cvs.width, y:Math.random()*cvs.height,
+    r:Math.random()*1.4+.2, o:Math.random()*.5+.08, f:Math.random()*.0004+.0001 })); }
+  function draw(){
+    ctx.clearRect(0,0,cvs.width,cvs.height);
+    const t=Date.now();
+    stars.forEach(s=>{ const a=s.o*(0.6+0.4*Math.sin(t*s.f*1000));
+      ctx.beginPath(); ctx.arc(s.x,s.y,s.r,0,Math.PI*2);
+      ctx.fillStyle=`rgba(200,215,255,${a})`; ctx.fill(); });
+    requestAnimationFrame(draw);
+  }
+  resize(); init(); draw();
+  window.addEventListener('resize',()=>{ resize(); init(); });
+})();
+
+// ══════════════════════════════════════════════════
+// HELPERS
+// ══════════════════════════════════════════════════
+const $ = id => document.getElementById(id);
+
+let toastTimer;
+function showToast(msg, dur=2500){
+  const t = $('toast'); t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=> t.classList.remove('show'), dur);
+}
+
+function showScreen(id){
+  ['welcomeScreen','gameScreen','resultsScreen'].forEach(s => {
+    $(s).style.display = (s === id) ? 'flex' : 'none';
+  });
+}
+
+function shuffle(arr){ return [...arr].sort(()=>Math.random()-.5); }
+
+// ══════════════════════════════════════════════════
+// WORLD DATA + POOL
+// ══════════════════════════════════════════════════
+const geoCountries = topojson.feature(WORLD_TOPO, WORLD_TOPO.objects.countries);
+const geoBorders   = topojson.mesh(WORLD_TOPO, WORLD_TOPO.objects.countries, (a,b)=>a!==b);
+
+const byccn3 = new Map(COUNTRIES.map(c => [c.ccn3, c]));
+
+// featureMap: ccn3 → TopoJSON feature (only those that exist in world-110m)
+const featureMap = new Map();
+geoCountries.features.forEach(f => {
+  const ccn3 = String(f.id).padStart(3,'0');
+  if(byccn3.has(ccn3)) featureMap.set(ccn3, f);
+});
+
+// Game pool = countries that exist on the map
+const gamePool = COUNTRIES.filter(c => featureMap.has(c.ccn3));
+
+// ══════════════════════════════════════════════════
+// CONFIG & STATS
+// ══════════════════════════════════════════════════
+const cfg = { rounds:10, hints:false };
+const stats = JSON.parse(localStorage.getItem('pin_stats')||
+  '{"high":0,"games":0,"totalCorrect":0,"totalRounds":0,"bestStreak":0}');
+updateStatsUI();
+
+// ══════════════════════════════════════════════════
+// GLOBE
+// ══════════════════════════════════════════════════
+let projection, pathGen, svgSel, countryPaths, autoTimer, dragDist=0, feedbackActive=false;
+
+const CIRC = 2 * Math.PI * 16; // r=16 circumference ≈ 100.53
+
+function buildGlobe(){
+  const wrap = $('globeWrap');
+  const W = wrap.clientWidth, H = wrap.clientHeight;
+  const R = Math.min(W, H) * 0.44;
+
+  projection = d3.geoOrthographic()
+    .scale(R)
+    .translate([W/2, H/2])
+    .clipAngle(90)
+    .rotate([10, -20]);
+
+  pathGen = d3.geoPath().projection(projection);
+
+  svgSel = d3.select('#globeSvg');
+  svgSel.selectAll('*').remove();
+
+  const defs = svgSel.append('defs');
+
+  // Ocean gradient
+  const og = defs.append('radialGradient').attr('id','og').attr('cx','38%').attr('cy','32%');
+  og.append('stop').attr('offset','0%').attr('stop-color','#1a3a70');
+  og.append('stop').attr('offset','100%').attr('stop-color','#060e20');
+
+  // Lighting overlay
+  const lg = defs.append('radialGradient').attr('id','lg').attr('cx','35%').attr('cy','28%');
+  lg.append('stop').attr('offset','0%').attr('stop-color','white').attr('stop-opacity','.13');
+  lg.append('stop').attr('offset','100%').attr('stop-color','black').attr('stop-opacity','.3');
+
+  const g = svgSel.append('g');
+
+  // Ocean
+  g.append('path').datum({type:'Sphere'}).attr('class','c-sphere')
+    .attr('fill','url(#og)').attr('d', pathGen);
+
+  // Graticule
+  g.append('path').datum(d3.geoGraticule()())
+    .attr('class','c-graticule').attr('d', pathGen);
+
+  // Countries (clickable)
+  countryPaths = g.selectAll('.c-land')
+    .data(geoCountries.features)
+    .enter().append('path')
+    .attr('class','c-land')
+    .attr('data-ccn3', d => String(d.id).padStart(3,'0'))
+    .attr('d', pathGen);
+
+  // Border lines (on top, non-interactive)
+  g.append('path').datum(geoBorders)
+    .attr('class','c-borders').attr('d', pathGen)
+    .attr('pointer-events','none');
+
+  // Lighting overlay (non-interactive)
+  g.append('path').datum({type:'Sphere'})
+    .attr('fill','url(#lg)').attr('pointer-events','none').attr('d', pathGen);
+
+  // Atmosphere ring
+  g.append('circle').attr('cx',W/2).attr('cy',H/2).attr('r',R+2)
+    .attr('fill','none').attr('stroke','#4477ff').attr('stroke-width','3')
+    .attr('opacity','.3').attr('pointer-events','none');
+
+  // ── Drag to rotate ────────────────────────────
+  let dragStart = {};
+  const drag = d3.drag()
+    .on('start', event => {
+      dragDist = 0;
+      dragStart.rot = projection.rotate().slice();
+      dragStart.pos = [event.x, event.y];
+      stopAutoRotate();
+    })
+    .on('drag', event => {
+      const dx = event.x - dragStart.pos[0];
+      const dy = event.y - dragStart.pos[1];
+      dragDist = Math.sqrt(dx*dx + dy*dy);
+      projection.rotate([
+        dragStart.rot[0] + dx * 0.28,
+        Math.max(-85, Math.min(85, dragStart.rot[1] - dy * 0.28))
+      ]);
+      redraw();
+    })
+    .on('end', () => {
+      if(!feedbackActive) scheduleAutoRotate(2000);
+    });
+  svgSel.call(drag);
+
+  // ── Click to guess ─────────────────────────────
+  svgSel.on('click', event => {
+    if(dragDist > 5 || feedbackActive || !currentGame) return;
+    const [px, py] = d3.pointer(event);
+    const coords = projection.invert([px, py]);
+    if(!coords) return;
+    // find which country the click landed on
+    const hit = geoCountries.features.find(f => d3.geoContains(f, coords));
+    if(!hit) return;
+    const ccn3 = String(hit.id).padStart(3,'0');
+    if(!byccn3.has(ccn3)) return; // not a recognised country
+    handleGuess(ccn3);
+  });
+
+  startAutoRotate();
+}
+
+function redraw(){
+  svgSel.selectAll('path').attr('d', pathGen);
+}
+
+function startAutoRotate(){
+  if(autoTimer) autoTimer.stop();
+  autoTimer = d3.timer(()=>{
+    const r = projection.rotate();
+    projection.rotate([r[0]+0.14, r[1]]);
+    redraw();
+  });
+}
+function stopAutoRotate(){
+  if(autoTimer){ autoTimer.stop(); autoTimer=null; }
+}
+function scheduleAutoRotate(delay){
+  setTimeout(()=>{ if(!feedbackActive) startAutoRotate(); }, delay);
+}
+
+function spinTo(ccn3, cb){
+  const feat = featureMap.get(ccn3);
+  if(!feat){ if(cb) cb(); return; }
+  const c   = d3.geoCentroid(feat);
+  const to  = [-c[0], Math.max(-75, Math.min(75, -c[1]))];
+  const from = projection.rotate().slice();
+  let dL = to[0] - from[0];
+  if(dL >  180) dL -= 360;
+  if(dL < -180) dL += 360;
+  const t0 = Date.now(), dur = 700;
+  const spin = d3.timer(()=>{
+    const p = Math.min(1,(Date.now()-t0)/dur);
+    const e = 1 - Math.pow(1-p, 3); // ease-out cubic
+    projection.rotate([from[0]+dL*e, from[1]+(to[1]-from[1])*e]);
+    redraw();
+    if(p>=1){ spin.stop(); if(cb) cb(); }
+  });
+}
+
+function clearHighlights(){
+  if(!countryPaths) return;
+  countryPaths.classed('hl-correct',false).classed('hl-wrong',false)
+              .classed('hl-reveal',false).classed('hl-hint',false);
+}
+function highlight(ccn3, cls){
+  countryPaths.filter(d => String(d.id).padStart(3,'0') === ccn3).classed(cls, true);
+}
+
+// ══════════════════════════════════════════════════
+// TIMER
+// ══════════════════════════════════════════════════
+const TIMER_SECS = 30;
+let timerInterval, timerLeft;
+
+function startTimer(){
+  clearInterval(timerInterval);
+  timerLeft = TIMER_SECS;
+  updateTimerUI();
+  timerInterval = setInterval(()=>{
+    timerLeft--;
+    updateTimerUI();
+    if(timerLeft <= 0){ clearInterval(timerInterval); handleTimeout(); }
+  }, 1000);
+}
+function stopTimer(){ clearInterval(timerInterval); }
+
+function updateTimerUI(){
+  const frac   = timerLeft / TIMER_SECS;
+  const offset = CIRC * (1 - frac);
+  const ring   = $('timerRing');
+  ring.style.strokeDashoffset = offset;
+  ring.style.stroke = timerLeft > 10 ? 'var(--accent)' : timerLeft > 5 ? 'var(--warn)' : 'var(--danger)';
+  $('timerNum').textContent = timerLeft;
+}
+
+// ══════════════════════════════════════════════════
+// GAME CLASS
+// ══════════════════════════════════════════════════
+let currentGame = null;
+
+class PinGame {
+  constructor(rounds){
+    this.rounds  = rounds;
+    this.queue   = shuffle(gamePool).slice(0, rounds);
+    this.idx     = 0;
+    this.correct = 0;
+    this.streak  = 0;
+    this.bestStreak = 0;
+  }
+  get country(){ return this.queue[this.idx]; }
+  get done()   { return this.idx >= this.rounds; }
+  advance()    { this.idx++; }
+}
+
+// ══════════════════════════════════════════════════
+// GAME FLOW
+// ══════════════════════════════════════════════════
+function startGame(){
+  currentGame = new PinGame(cfg.rounds);
+  showScreen('gameScreen');
+  $('qOf').textContent     = cfg.rounds;
+  $('scoreNum').textContent = '0';
+  // Build globe after screen is visible
+  requestAnimationFrame(()=>{
+    buildGlobe();
+    nextQuestion();
+  });
+}
+
+function nextQuestion(){
+  if(currentGame.done){ endGame(); return; }
+  feedbackActive = false;
+  clearHighlights();
+  hideFeedback();
+
+  const c = currentGame.country;
+  $('qNum').textContent   = currentGame.idx + 1;
+  $('qFlag').textContent  = c.flag_emoji || '🌍';
+  $('qName').textContent  = c.name;
+
+  const regionEl = $('qRegion');
+  if(cfg.hints){
+    regionEl.textContent  = c.subregion || c.region || '';
+    regionEl.style.display = '';
+  } else {
+    regionEl.style.display = 'none';
+  }
+
+  scheduleAutoRotate(300);
+  startTimer();
+}
+
+function handleGuess(clickedCcn3){
+  stopTimer();
+  feedbackActive = true;
+  stopAutoRotate();
+
+  const target = currentGame.country.ccn3;
+
+  if(clickedCcn3 === target){
+    currentGame.correct++;
+    currentGame.streak++;
+    if(currentGame.streak > currentGame.bestStreak)
+      currentGame.bestStreak = currentGame.streak;
+    $('scoreNum').textContent = currentGame.correct;
+    highlight(target, 'hl-correct');
+    showFeedback('✓ Correct!', 'ok');
+    setTimeout(()=>{ currentGame.advance(); nextQuestion(); }, 1500);
+  } else {
+    currentGame.streak = 0;
+    highlight(clickedCcn3, 'hl-wrong');
+    setTimeout(()=>{
+      highlight(target, 'hl-reveal');
+      spinTo(target);
+      showFeedback('✗  ' + currentGame.country.name, 'bad');
+      setTimeout(()=>{ currentGame.advance(); nextQuestion(); }, 2200);
+    }, 400);
+  }
+}
+
+function handleTimeout(){
+  feedbackActive = true;
+  stopAutoRotate();
+  currentGame.streak = 0;
+  const target = currentGame.country.ccn3;
+  highlight(target, 'hl-reveal');
+  spinTo(target);
+  showFeedback('⏱  ' + currentGame.country.name, 'bad');
+  setTimeout(()=>{ currentGame.advance(); nextQuestion(); }, 2400);
+}
+
+function endGame(){
+  stopTimer(); stopAutoRotate();
+  const g = currentGame;
+  const acc = Math.round(g.correct / g.rounds * 100);
+
+  stats.games++;
+  stats.totalCorrect += g.correct;
+  stats.totalRounds  += g.rounds;
+  if(g.correct > stats.high) stats.high = g.correct;
+  if(g.bestStreak > stats.bestStreak) stats.bestStreak = g.bestStreak;
+  localStorage.setItem('pin_stats', JSON.stringify(stats));
+  updateStatsUI();
+
+  $('rScore').textContent  = `${g.correct} / ${g.rounds}`;
+  $('rAcc').textContent    = acc + '%';
+  $('rStreak').textContent = g.bestStreak;
+
+  let ico='🌍', h='', sub='';
+  if(acc>=80){ ico='🎯'; h='Excellent Navigator!';   sub='You really know your world map cold.'; }
+  else if(acc>=60){ ico='🧭'; h='Good Explorer!';    sub='A few more spins and you\'ll nail it all.'; }
+  else if(acc>=40){ ico='🗺️'; h='Learning the Globe'; sub='Keep spinning — every game sharpens the map.'; }
+  else            { ico='📚'; h='Keep Exploring!';   sub='The world is big — but you\'ll learn it!'; }
+
+  $('resIco').textContent = ico;
+  $('resH').textContent   = h;
+  $('resSub').textContent = sub;
+  showScreen('resultsScreen');
+  currentGame = null;
+}
+
+function showFeedback(msg, type){
+  const b = $('fbBadge');
+  b.textContent = msg;
+  b.className   = 'fb-badge ' + type;
+  $('feedbackOverlay').classList.add('show');
+}
+function hideFeedback(){
+  $('feedbackOverlay').classList.remove('show');
+}
+
+// ══════════════════════════════════════════════════
+// SETTINGS
+// ══════════════════════════════════════════════════
+document.querySelectorAll('.cbtn').forEach(btn => {
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('.cbtn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    cfg.rounds = +btn.dataset.n;
+  });
+});
+
+$('hintToggle').addEventListener('click', ()=>{
+  cfg.hints = !cfg.hints;
+  $('hintToggle').classList.toggle('on', cfg.hints);
+});
+
+function setUI(enabled){
+  $('startBtn').disabled    = !enabled;
+  $('startBtn').textContent = enabled ? '▶\u00a0 Start Game' : '■\u00a0 Playing…';
+}
+
+// ══════════════════════════════════════════════════
+// STATS UI
+// ══════════════════════════════════════════════════
+function updateStatsUI(){
+  $('stHigh').textContent   = stats.high;
+  $('stGames').textContent  = stats.games;
+  $('stStreak').textContent = stats.bestStreak || 0;
+  $('stAcc').textContent    = stats.totalRounds > 0
+    ? Math.round(stats.totalCorrect / stats.totalRounds * 100) + '%' : '—';
+}
+
+// ══════════════════════════════════════════════════
+// BUTTON EVENTS
+// ══════════════════════════════════════════════════
+$('startBtn').addEventListener('click', ()=>{
+  setUI(false);
+  startGame();
+  document.querySelector('.lpanel').classList.remove('open');
+  $('panelBackdrop').classList.remove('open');
+});
+
+$('mobileStartBtn').addEventListener('click', ()=> $('startBtn').click());
+
+$('againBtn').addEventListener('click', ()=>{
+  setUI(true);
+  showScreen('welcomeScreen');
+});
+
+// ══════════════════════════════════════════════════
+// MOBILE PANEL TOGGLE
+// ══════════════════════════════════════════════════
+(function(){
+  const toggle   = $('panelToggle');
+  const backdrop = $('panelBackdrop');
+  const lpanel   = document.querySelector('.lpanel');
+  const open  = ()=>{ lpanel.classList.add('open');    backdrop.classList.add('open'); };
+  const close = ()=>{ lpanel.classList.remove('open'); backdrop.classList.remove('open'); };
+  toggle.addEventListener('click', ()=> lpanel.classList.contains('open') ? close() : open());
+  backdrop.addEventListener('click', close);
+})();
+
+// ══════════════════════════════════════════════════
+// RESIZE — rebuild globe if game is active
+// ══════════════════════════════════════════════════
+let resizeTimer;
+window.addEventListener('resize', ()=>{
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(()=>{
+    if(currentGame) buildGlobe();
+  }, 250);
+});
+
+// ── Init ──────────────────────────────────────────
+showScreen('welcomeScreen');
+</script>
+</body>
+</html>

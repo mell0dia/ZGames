@@ -1,0 +1,204 @@
+{
+  "name": {
+    "common": "Iceland",
+    "official": "Iceland",
+    "native": {
+      "isl": {
+        "official": "Ísland",
+        "common": "Ísland"
+      }
+    }
+  },
+  "cca2": "IS",
+  "cca3": "ISL",
+  "ccn3": "352",
+  "cioc": "ISL",
+  "fifa": "ISL",
+  "tld": [
+    ".is"
+  ],
+  "altSpellings": [
+    "IS",
+    "Island",
+    "Republic of Iceland",
+    "Lýðveldið Ísland"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Western European and Others Group",
+  "capital": [
+    "Reykjavik"
+  ],
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "continents": [
+    "Europe"
+  ],
+  "latlng": [
+    65,
+    -18
+  ],
+  "landlocked": false,
+  "borders": [],
+  "area": 103000,
+  "population": 391810,
+  "demonyms": {
+    "eng": {
+      "f": "Icelander",
+      "m": "Icelander"
+    },
+    "fra": {
+      "f": "Islandaise",
+      "m": "Islandais"
+    }
+  },
+  "languages": {
+    "isl": "Icelandic"
+  },
+  "currencies": {
+    "ISK": {
+      "name": "Icelandic króna",
+      "symbol": "kr"
+    }
+  },
+  "gini": {
+    "2017": 26.1
+  },
+  "car": {
+    "signs": [
+      "IS"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "###",
+    "regex": "^(\\d{3})$"
+  },
+  "idd": {
+    "root": "+3",
+    "suffixes": [
+      "54"
+    ]
+  },
+  "timezones": [
+    "UTC"
+  ],
+  "flag": "🇮🇸",
+  "flags": {
+    "png": "https://flagcdn.com/w320/is.png",
+    "svg": "https://flagcdn.com/is.svg",
+    "alt": "The flag of Iceland has a blue field with a large white-edged red cross that extends to the edges of the field. The vertical part of this cross is offset towards the hoist side."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/is.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/is.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/WxFWSQuc3oamNxoE6",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/299133"
+  },
+  "translations": {
+    "ara": {
+      "official": "آيسلندا",
+      "common": "آيسلندا"
+    },
+    "bre": {
+      "official": "Island",
+      "common": "Island"
+    },
+    "ces": {
+      "official": "Island",
+      "common": "Island"
+    },
+    "deu": {
+      "official": "Island",
+      "common": "Island"
+    },
+    "est": {
+      "official": "Islandi Vabariik",
+      "common": "Island"
+    },
+    "fin": {
+      "official": "Islanti",
+      "common": "Islanti"
+    },
+    "fra": {
+      "official": "République d'Islande",
+      "common": "Islande"
+    },
+    "hrv": {
+      "official": "Island",
+      "common": "Island"
+    },
+    "hun": {
+      "official": "Izland",
+      "common": "Izland"
+    },
+    "ita": {
+      "official": "Islanda",
+      "common": "Islanda"
+    },
+    "jpn": {
+      "official": "アイスランド",
+      "common": "アイスランド"
+    },
+    "kor": {
+      "official": "아이슬란드 공화국",
+      "common": "아이슬란드"
+    },
+    "nld": {
+      "official": "IJsland",
+      "common": "IJsland"
+    },
+    "per": {
+      "official": "جمهوری ایسلند",
+      "common": "ایسلند"
+    },
+    "pol": {
+      "official": "Republika Islandii",
+      "common": "Islandia"
+    },
+    "por": {
+      "official": "Islândia",
+      "common": "Islândia"
+    },
+    "rus": {
+      "official": "Исландия",
+      "common": "Исландия"
+    },
+    "slk": {
+      "official": "Islandská republika",
+      "common": "Island"
+    },
+    "spa": {
+      "official": "Islandia",
+      "common": "Islandia"
+    },
+    "srp": {
+      "official": "Republika Island",
+      "common": "Island"
+    },
+    "swe": {
+      "official": "Island",
+      "common": "Island"
+    },
+    "tur": {
+      "official": "İzlanda",
+      "common": "İzlanda"
+    },
+    "urd": {
+      "official": "آئس لینڈ",
+      "common": "آئس لینڈ"
+    },
+    "zho": {
+      "official": "冰岛",
+      "common": "冰岛"
+    }
+  },
+  "largest_city": "Reykjavik",
+  "largest_city_local": "Reykjavík",
+  "largest_city_pop": 118918,
+  "largest_city_is_capital": true
+}

@@ -1,0 +1,207 @@
+{
+  "name": {
+    "common": "Tuvalu",
+    "official": "Tuvalu",
+    "native": {
+      "eng": {
+        "official": "Tuvalu",
+        "common": "Tuvalu"
+      },
+      "tvl": {
+        "official": "Tuvalu",
+        "common": "Tuvalu"
+      }
+    }
+  },
+  "cca2": "TV",
+  "cca3": "TUV",
+  "ccn3": "798",
+  "cioc": "TUV",
+  "fifa": "",
+  "tld": [
+    ".tv"
+  ],
+  "altSpellings": [
+    "TV"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Asia and the Pacific Group",
+  "capital": [
+    "Funafuti"
+  ],
+  "region": "Oceania",
+  "subregion": "Polynesia",
+  "continents": [
+    "Oceania"
+  ],
+  "latlng": [
+    -8,
+    178
+  ],
+  "landlocked": false,
+  "borders": [],
+  "area": 26,
+  "population": 10643,
+  "demonyms": {
+    "eng": {
+      "f": "Tuvaluan",
+      "m": "Tuvaluan"
+    },
+    "fra": {
+      "f": "Tuvaluane",
+      "m": "Tuvaluan"
+    }
+  },
+  "languages": {
+    "eng": "English",
+    "tvl": "Tuvaluan"
+  },
+  "currencies": {
+    "AUD": {
+      "name": "Australian dollar",
+      "symbol": "$"
+    },
+    "TVD": {
+      "name": "Tuvaluan dollar",
+      "symbol": "$"
+    }
+  },
+  "gini": {
+    "2010": 39.1
+  },
+  "car": {
+    "signs": [
+      "TUV"
+    ],
+    "side": "left"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {},
+  "idd": {
+    "root": "+6",
+    "suffixes": [
+      "88"
+    ]
+  },
+  "timezones": [
+    "UTC+12:00"
+  ],
+  "flag": "🇹🇻",
+  "flags": {
+    "png": "https://flagcdn.com/w320/tv.png",
+    "svg": "https://flagcdn.com/tv.svg",
+    "alt": "The flag of Tuvalu has a light blue field with the flag of the United Kingdom — the Union Jack — in the canton. A representation of the country's nine Islands using nine five-pointed yellow stars is situated in the fly half of the field."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/tv.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/tv.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/LbuUxtkgm1dfN1Pn6",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/2177266"
+  },
+  "translations": {
+    "ara": {
+      "official": "توفالو",
+      "common": "توفالو"
+    },
+    "bre": {
+      "official": "Tuvalu",
+      "common": "Tuvalu"
+    },
+    "ces": {
+      "official": "Tuvalu",
+      "common": "Tuvalu"
+    },
+    "deu": {
+      "official": "Tuvalu",
+      "common": "Tuvalu"
+    },
+    "est": {
+      "official": "Tuvalu",
+      "common": "Tuvalu"
+    },
+    "fin": {
+      "official": "Tuvalu",
+      "common": "Tuvalu"
+    },
+    "fra": {
+      "official": "Tuvalu",
+      "common": "Tuvalu"
+    },
+    "hrv": {
+      "official": "Tuvalu",
+      "common": "Tuvalu"
+    },
+    "hun": {
+      "official": "Tuvalu",
+      "common": "Tuvalu"
+    },
+    "ita": {
+      "official": "Tuvalu",
+      "common": "Tuvalu"
+    },
+    "jpn": {
+      "official": "ツバル",
+      "common": "ツバル"
+    },
+    "kor": {
+      "official": "투발루",
+      "common": "투발루"
+    },
+    "nld": {
+      "official": "Tuvalu",
+      "common": "Tuvalu"
+    },
+    "per": {
+      "official": "تووالو",
+      "common": "تووالو"
+    },
+    "pol": {
+      "official": "Tuvalu",
+      "common": "Tuvalu"
+    },
+    "por": {
+      "official": "Tuvalu",
+      "common": "Tuvalu"
+    },
+    "rus": {
+      "official": "Тувалу",
+      "common": "Тувалу"
+    },
+    "slk": {
+      "official": "Tuvalu",
+      "common": "Tuvalu"
+    },
+    "spa": {
+      "official": "Tuvalu",
+      "common": "Tuvalu"
+    },
+    "srp": {
+      "official": "Tuvalu",
+      "common": "Tuvalu"
+    },
+    "swe": {
+      "official": "Tuvalu",
+      "common": "Tuvalu"
+    },
+    "tur": {
+      "official": "Tuvalu",
+      "common": "Tuvalu"
+    },
+    "urd": {
+      "official": "تووالو",
+      "common": "تووالو"
+    },
+    "zho": {
+      "official": "图瓦卢",
+      "common": "图瓦卢"
+    }
+  },
+  "largest_city": "Funafuti",
+  "largest_city_local": "Funafuti",
+  "largest_city_pop": 6320,
+  "largest_city_is_capital": true
+}

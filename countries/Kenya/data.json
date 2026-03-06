@@ -1,0 +1,214 @@
+{
+  "name": {
+    "common": "Kenya",
+    "official": "Republic of Kenya",
+    "native": {
+      "eng": {
+        "official": "Republic of Kenya",
+        "common": "Kenya"
+      },
+      "swa": {
+        "official": "Republic of Kenya",
+        "common": "Kenya"
+      }
+    }
+  },
+  "cca2": "KE",
+  "cca3": "KEN",
+  "ccn3": "404",
+  "cioc": "KEN",
+  "fifa": "KEN",
+  "tld": [
+    ".ke"
+  ],
+  "altSpellings": [
+    "KE",
+    "Republic of Kenya",
+    "Jamhuri ya Kenya"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "African Group",
+  "capital": [
+    "Nairobi"
+  ],
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "latlng": [
+    1,
+    38
+  ],
+  "landlocked": false,
+  "borders": [
+    "ETH",
+    "SOM",
+    "SSD",
+    "TZA",
+    "UGA"
+  ],
+  "area": 580367,
+  "population": 53330978,
+  "demonyms": {
+    "eng": {
+      "f": "Kenyan",
+      "m": "Kenyan"
+    },
+    "fra": {
+      "f": "Kényane",
+      "m": "Kényan"
+    }
+  },
+  "languages": {
+    "eng": "English",
+    "swa": "Swahili"
+  },
+  "currencies": {
+    "KES": {
+      "name": "Kenyan shilling",
+      "symbol": "Sh"
+    }
+  },
+  "gini": {
+    "2015": 40.8
+  },
+  "car": {
+    "signs": [
+      "EAK"
+    ],
+    "side": "left"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "#####",
+    "regex": "^(\\d{5})$"
+  },
+  "idd": {
+    "root": "+2",
+    "suffixes": [
+      "54"
+    ]
+  },
+  "timezones": [
+    "UTC+03:00"
+  ],
+  "flag": "🇰🇪",
+  "flags": {
+    "png": "https://flagcdn.com/w320/ke.png",
+    "svg": "https://flagcdn.com/ke.svg",
+    "alt": "The flag of Kenya is composed of three equal horizontal bands of black, red with white top and bottom edges, and green. An emblem comprising a red, black and white Maasai shield covering two crossed white spears is superimposed at the center of the field."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/ke.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/ke.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/Ni9M7wcCxf8bJHLX8",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/192798"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية كينيا",
+      "common": "كينيا"
+    },
+    "bre": {
+      "official": "Republik Kenya",
+      "common": "Kenya"
+    },
+    "ces": {
+      "official": "Keňská republika",
+      "common": "Keňa"
+    },
+    "deu": {
+      "official": "Republik Kenia",
+      "common": "Kenia"
+    },
+    "est": {
+      "official": "Keenia Vabariik",
+      "common": "Keenia"
+    },
+    "fin": {
+      "official": "Kenian tasavalta",
+      "common": "Kenia"
+    },
+    "fra": {
+      "official": "République du Kenya",
+      "common": "Kenya"
+    },
+    "hrv": {
+      "official": "Republika Kenija",
+      "common": "Kenija"
+    },
+    "hun": {
+      "official": "Kenyai Köztársaság",
+      "common": "Kenya"
+    },
+    "ita": {
+      "official": "Repubblica del Kenya",
+      "common": "Kenya"
+    },
+    "jpn": {
+      "official": "ケニア共和国",
+      "common": "ケニア"
+    },
+    "kor": {
+      "official": "케냐 공화국",
+      "common": "케냐"
+    },
+    "nld": {
+      "official": "Republiek Kenia",
+      "common": "Kenia"
+    },
+    "per": {
+      "official": "جمهوری کنیا",
+      "common": "کنیا"
+    },
+    "pol": {
+      "official": "Republika Kenii",
+      "common": "Kenia"
+    },
+    "por": {
+      "official": "República do Quénia",
+      "common": "Quénia"
+    },
+    "rus": {
+      "official": "Республика Кения",
+      "common": "Кения"
+    },
+    "slk": {
+      "official": "Kenská republika",
+      "common": "Keňa"
+    },
+    "spa": {
+      "official": "República de Kenya",
+      "common": "Kenia"
+    },
+    "srp": {
+      "official": "Republika Kenija",
+      "common": "Kenija"
+    },
+    "swe": {
+      "official": "Republiken Kenya",
+      "common": "Kenya"
+    },
+    "tur": {
+      "official": "Kenya Cumhuriyeti",
+      "common": "Kenya"
+    },
+    "urd": {
+      "official": "جمہوریہ کینیا",
+      "common": "کینیا"
+    },
+    "zho": {
+      "official": "肯尼亚共和国",
+      "common": "肯尼亚"
+    }
+  },
+  "largest_city": "Nairobi",
+  "largest_city_local": "Nairobi",
+  "largest_city_pop": 4397073,
+  "largest_city_is_capital": true
+}

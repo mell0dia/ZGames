@@ -1,0 +1,208 @@
+{
+  "name": {
+    "common": "South Korea",
+    "official": "Republic of Korea",
+    "native": {
+      "kor": {
+        "official": "대한민국",
+        "common": "한국"
+      }
+    }
+  },
+  "cca2": "KR",
+  "cca3": "KOR",
+  "ccn3": "410",
+  "cioc": "KOR",
+  "fifa": "KOR",
+  "tld": [
+    ".kr",
+    ".한국"
+  ],
+  "altSpellings": [
+    "KR",
+    "Korea, Republic of",
+    "Republic of Korea",
+    "남한",
+    "남조선"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Asia and the Pacific Group",
+  "capital": [
+    "Seoul"
+  ],
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "continents": [
+    "Asia"
+  ],
+  "latlng": [
+    37,
+    127.5
+  ],
+  "landlocked": false,
+  "borders": [
+    "PRK"
+  ],
+  "area": 100210,
+  "population": 51159889,
+  "demonyms": {
+    "eng": {
+      "f": "South Korean",
+      "m": "South Korean"
+    },
+    "fra": {
+      "f": "Sud-coréenne",
+      "m": "Sud-coréen"
+    }
+  },
+  "languages": {
+    "kor": "Korean"
+  },
+  "currencies": {
+    "KRW": {
+      "name": "South Korean won",
+      "symbol": "₩"
+    }
+  },
+  "gini": {
+    "2016": 31.4
+  },
+  "car": {
+    "signs": [
+      "ROK"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "SEOUL ###-###",
+    "regex": "^(?:SEOUL)*(\\d{6})$"
+  },
+  "idd": {
+    "root": "+8",
+    "suffixes": [
+      "2"
+    ]
+  },
+  "timezones": [
+    "UTC+09:00"
+  ],
+  "flag": "🇰🇷",
+  "flags": {
+    "png": "https://flagcdn.com/w320/kr.png",
+    "svg": "https://flagcdn.com/kr.svg",
+    "alt": "The flag of South Korea has a white field, at the center of which is a red and blue Taegeuk circle surrounded by four black trigrams, one in each corner."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/kr.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/kr.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/7ecjaJXefjAQhxjGA",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/307756"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية كوريا",
+      "common": "كوريا الجنوبية"
+    },
+    "bre": {
+      "official": "Republik Korea",
+      "common": "Korea ar Su"
+    },
+    "ces": {
+      "official": "Korejská republika",
+      "common": "Jižní Korea"
+    },
+    "deu": {
+      "official": "Republik Korea",
+      "common": "Südkorea"
+    },
+    "est": {
+      "official": "Korea Vabariik",
+      "common": "Lõuna-Korea"
+    },
+    "fin": {
+      "official": "Korean tasavalta",
+      "common": "Etelä-Korea"
+    },
+    "fra": {
+      "official": "République de Corée",
+      "common": "Corée du Sud"
+    },
+    "hrv": {
+      "official": "Republika Koreja",
+      "common": "Južna Koreja"
+    },
+    "hun": {
+      "official": "Koreai Köztársaság",
+      "common": "Dél-Korea"
+    },
+    "ita": {
+      "official": "Repubblica di Corea",
+      "common": "Corea del Sud"
+    },
+    "jpn": {
+      "official": "大韓民国",
+      "common": "韓国"
+    },
+    "kor": {
+      "official": "대한민국",
+      "common": "한국"
+    },
+    "nld": {
+      "official": "Republiek Korea",
+      "common": "Zuid-Korea"
+    },
+    "per": {
+      "official": "جمهوری کره",
+      "common": "کرهٔ جنوبی"
+    },
+    "pol": {
+      "official": "Republika Korei",
+      "common": "Korea Południowa"
+    },
+    "por": {
+      "official": "República da Coreia",
+      "common": "Coreia do Sul"
+    },
+    "rus": {
+      "official": "Республика Корея",
+      "common": "Южная Корея"
+    },
+    "slk": {
+      "official": "Kórejská republika",
+      "common": "Južná Kórea"
+    },
+    "spa": {
+      "official": "República de Corea",
+      "common": "Corea del Sur"
+    },
+    "srp": {
+      "official": "Republika Koreja",
+      "common": "Južna Koreja"
+    },
+    "swe": {
+      "official": "Republiken Korea",
+      "common": "Sydkorea"
+    },
+    "tur": {
+      "official": "Kore Cumhuriyeti",
+      "common": "Güney Kore"
+    },
+    "urd": {
+      "official": "جمہوریہ کوریا ",
+      "common": "جنوبی کوریا"
+    },
+    "zho": {
+      "official": "大韩民国",
+      "common": "韩国"
+    }
+  },
+  "largest_city": "Seoul",
+  "largest_city_local": "Seoul",
+  "largest_city_pop": 10349312,
+  "largest_city_is_capital": true
+}

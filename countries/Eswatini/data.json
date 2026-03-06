@@ -1,0 +1,219 @@
+{
+  "name": {
+    "common": "Eswatini",
+    "official": "Kingdom of Eswatini",
+    "native": {
+      "eng": {
+        "official": "Kingdom of Eswatini",
+        "common": "Eswatini"
+      },
+      "ssw": {
+        "official": "Umbuso weSwatini",
+        "common": "eSwatini"
+      }
+    }
+  },
+  "cca2": "SZ",
+  "cca3": "SWZ",
+  "ccn3": "748",
+  "cioc": "SWZ",
+  "fifa": "SWZ",
+  "tld": [
+    ".sz"
+  ],
+  "altSpellings": [
+    "SZ",
+    "Swaziland",
+    "weSwatini",
+    "Swatini",
+    "Ngwane",
+    "Kingdom of Eswatini",
+    "Umbuso weSwatini"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "African Group",
+  "capital": [
+    "Lobamba"
+  ],
+  "region": "Africa",
+  "subregion": "Southern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "latlng": [
+    -26.5,
+    31.5
+  ],
+  "landlocked": true,
+  "borders": [
+    "MOZ",
+    "ZAF"
+  ],
+  "area": 17364,
+  "population": 1235549,
+  "demonyms": {
+    "eng": {
+      "f": "Swazi",
+      "m": "Swazi"
+    },
+    "fra": {
+      "f": "Swazie",
+      "m": "Swazie"
+    }
+  },
+  "languages": {
+    "eng": "English",
+    "ssw": "Swazi"
+  },
+  "currencies": {
+    "SZL": {
+      "name": "Swazi lilangeni",
+      "symbol": "L"
+    },
+    "ZAR": {
+      "name": "South African rand",
+      "symbol": "R"
+    }
+  },
+  "gini": {
+    "2016": 54.6
+  },
+  "car": {
+    "signs": [
+      "SD"
+    ],
+    "side": "left"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "@###",
+    "regex": "^([A-Z]\\d{3})$"
+  },
+  "idd": {
+    "root": "+2",
+    "suffixes": [
+      "68"
+    ]
+  },
+  "timezones": [
+    "UTC+02:00"
+  ],
+  "flag": "🇸🇿",
+  "flags": {
+    "png": "https://flagcdn.com/w320/sz.png",
+    "svg": "https://flagcdn.com/sz.svg",
+    "alt": "The flag of Eswatini is composed of three horizontal bands — a large central yellow-edged red band, and a light blue band above and beneath the red band. The red band is three times the height of the blue bands and bears a centered emblem made up of a large black and white Nguni shield covering two spears and a staff decorated with feather tassels, all placed horizontally."
+  },
+  "coatOfArms": {
+    "png": "",
+    "svg": ""
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/cUY79eqQihFSE8hV6",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/88210"
+  },
+  "translations": {
+    "ara": {
+      "official": "مملكة إسواتيني",
+      "common": "إسواتيني"
+    },
+    "bre": {
+      "official": "Rouantelezh Eswatini",
+      "common": "Eswatini"
+    },
+    "ces": {
+      "official": "Svazijské království",
+      "common": "eSwatini"
+    },
+    "deu": {
+      "official": "Königreich Eswatini",
+      "common": "Eswatini"
+    },
+    "est": {
+      "official": "eSwatini Kuningriik",
+      "common": "eSwatini"
+    },
+    "fin": {
+      "official": "Swazimaan kuningaskunta",
+      "common": "Eswatini"
+    },
+    "fra": {
+      "official": "Royaume d’Eswatini",
+      "common": "Eswatini"
+    },
+    "hrv": {
+      "official": "Kraljevina eSwatini",
+      "common": "Esvatini"
+    },
+    "hun": {
+      "official": "Szváziföldi Királyság",
+      "common": "Szváziföld"
+    },
+    "ita": {
+      "official": "Regno di eSwatini",
+      "common": "ESwatini"
+    },
+    "jpn": {
+      "official": "エスワティニ王国",
+      "common": "エスワティニ"
+    },
+    "kor": {
+      "official": "에스와티니 왕국",
+      "common": "에스와티니"
+    },
+    "nld": {
+      "official": "Koninkrijk eSwatini",
+      "common": "Swaziland"
+    },
+    "per": {
+      "official": "پادشاهی سوازیلند",
+      "common": "اسواتینی"
+    },
+    "pol": {
+      "official": "Królestwo Suazi",
+      "common": "Eswatini"
+    },
+    "por": {
+      "official": "Reino de eSwatini",
+      "common": "Essuatíni"
+    },
+    "rus": {
+      "official": "Королевство Свазиленд",
+      "common": "Свазиленд"
+    },
+    "slk": {
+      "official": "Svazijské kráľovstvo",
+      "common": "Eswatini"
+    },
+    "spa": {
+      "official": "Reino de eSwatini",
+      "common": "Esuatini"
+    },
+    "srp": {
+      "official": "Kraljevina Esvatini",
+      "common": "Esvatini"
+    },
+    "swe": {
+      "official": "Konungariket Eswatini",
+      "common": "Eswatini"
+    },
+    "tur": {
+      "official": "Esvatini Krallığı",
+      "common": "Esvatini"
+    },
+    "urd": {
+      "official": "مملکتِ سوازی لینڈ",
+      "common": "سوازی لینڈ"
+    },
+    "zho": {
+      "official": "斯威士兰王国",
+      "common": "斯威士兰"
+    }
+  },
+  "largest_city": "Manzini",
+  "largest_city_local": "Manzini",
+  "largest_city_pop": 110537,
+  "largest_city_is_capital": false
+}

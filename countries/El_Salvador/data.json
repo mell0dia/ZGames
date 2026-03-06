@@ -1,0 +1,206 @@
+{
+  "name": {
+    "common": "El Salvador",
+    "official": "Republic of El Salvador",
+    "native": {
+      "spa": {
+        "official": "República de El Salvador",
+        "common": "El Salvador"
+      }
+    }
+  },
+  "cca2": "SV",
+  "cca3": "SLV",
+  "ccn3": "222",
+  "cioc": "ESA",
+  "fifa": "SLV",
+  "tld": [
+    ".sv"
+  ],
+  "altSpellings": [
+    "SV",
+    "Republic of El Salvador",
+    "República de El Salvador"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Latin American and Caribbean Group",
+  "capital": [
+    "San Salvador"
+  ],
+  "region": "Americas",
+  "subregion": "Central America",
+  "continents": [
+    "North America"
+  ],
+  "latlng": [
+    13.83333333,
+    -88.91666666
+  ],
+  "landlocked": false,
+  "borders": [
+    "GTM",
+    "HND"
+  ],
+  "area": 21041,
+  "population": 6029976,
+  "demonyms": {
+    "eng": {
+      "f": "Salvadoran",
+      "m": "Salvadoran"
+    },
+    "fra": {
+      "f": "Salvadorienne",
+      "m": "Salvadorien"
+    }
+  },
+  "languages": {
+    "spa": "Spanish"
+  },
+  "currencies": {
+    "USD": {
+      "name": "United States dollar",
+      "symbol": "$"
+    }
+  },
+  "gini": {
+    "2019": 38.8
+  },
+  "car": {
+    "signs": [
+      "ES"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "CP ####",
+    "regex": "^(?:CP)*(\\d{4})$"
+  },
+  "idd": {
+    "root": "+5",
+    "suffixes": [
+      "03"
+    ]
+  },
+  "timezones": [
+    "UTC-06:00"
+  ],
+  "flag": "🇸🇻",
+  "flags": {
+    "png": "https://flagcdn.com/w320/sv.png",
+    "svg": "https://flagcdn.com/sv.svg",
+    "alt": "The flag of El Salvador is composed of three equal horizontal bands of cobalt blue, white and cobalt blue, with the national coat of arms centered in the white band."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/sv.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/sv.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/cZnCEi5sEMQtKKcB7",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/1520612"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية السلفادور",
+      "common": "السلفادور"
+    },
+    "bre": {
+      "official": "Republik El Salvador",
+      "common": "El Salvador"
+    },
+    "ces": {
+      "official": "Salvadorská republika",
+      "common": "Salvador"
+    },
+    "deu": {
+      "official": "Republik El Salvador",
+      "common": "El Salvador"
+    },
+    "est": {
+      "official": "El Salvadori Vabariik",
+      "common": "El Salvador"
+    },
+    "fin": {
+      "official": "El Salvadorin tasavalta",
+      "common": "El Salvador"
+    },
+    "fra": {
+      "official": "République du Salvador",
+      "common": "Salvador"
+    },
+    "hrv": {
+      "official": "Republika El Salvador",
+      "common": "Salvador"
+    },
+    "hun": {
+      "official": "Salvadori Köztársaság",
+      "common": "Salvador"
+    },
+    "ita": {
+      "official": "Repubblica di El Salvador",
+      "common": "El Salvador"
+    },
+    "jpn": {
+      "official": "エルサルバドル共和国",
+      "common": "エルサルバドル"
+    },
+    "kor": {
+      "official": "엘살바도르 공화국",
+      "common": "엘살바도르"
+    },
+    "nld": {
+      "official": "Republiek El Salvador",
+      "common": "El Salvador"
+    },
+    "per": {
+      "official": "جمهوری السالوادور",
+      "common": "السالوادور"
+    },
+    "pol": {
+      "official": "Republika Salwadoru",
+      "common": "Salwador"
+    },
+    "por": {
+      "official": "República de El Salvador",
+      "common": "El Salvador"
+    },
+    "rus": {
+      "official": "Республика Эль-Сальвадор",
+      "common": "Сальвадор"
+    },
+    "slk": {
+      "official": "Salvádorská republika",
+      "common": "Salvádor"
+    },
+    "spa": {
+      "official": "República de El Salvador",
+      "common": "El Salvador"
+    },
+    "srp": {
+      "official": "Republika El Salvador",
+      "common": "El Salvador"
+    },
+    "swe": {
+      "official": "Republiken El Salvador",
+      "common": "El Salvador"
+    },
+    "tur": {
+      "official": "El Salvador Cumhuriyeti",
+      "common": "El Salvador"
+    },
+    "urd": {
+      "official": "جمہوریہ ایل سیلواڈور",
+      "common": "ایل سیلواڈور"
+    },
+    "zho": {
+      "official": "萨尔瓦多共和国",
+      "common": "萨尔瓦多"
+    }
+  },
+  "largest_city": "San Salvador",
+  "largest_city_local": "San Salvador",
+  "largest_city_pop": 525990,
+  "largest_city_is_capital": true
+}

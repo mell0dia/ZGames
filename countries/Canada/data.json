@@ -1,0 +1,274 @@
+{
+  "name": {
+    "common": "Canada",
+    "official": "Canada",
+    "native": {
+      "eng": {
+        "official": "Canada",
+        "common": "Canada"
+      },
+      "fra": {
+        "official": "Canada",
+        "common": "Canada"
+      }
+    }
+  },
+  "cca2": "CA",
+  "cca3": "CAN",
+  "ccn3": "124",
+  "cioc": "CAN",
+  "fifa": "CAN",
+  "tld": [
+    ".ca"
+  ],
+  "altSpellings": [
+    "CA"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Western European and Others Group",
+  "capital": [
+    "Ottawa"
+  ],
+  "region": "Americas",
+  "subregion": "North America",
+  "continents": [
+    "North America"
+  ],
+  "latlng": [
+    60,
+    -95
+  ],
+  "landlocked": false,
+  "borders": [
+    "USA"
+  ],
+  "area": 9984670,
+  "population": 41651653,
+  "demonyms": {
+    "eng": {
+      "f": "Canadian",
+      "m": "Canadian"
+    },
+    "fra": {
+      "f": "Canadienne",
+      "m": "Canadien"
+    }
+  },
+  "languages": {
+    "eng": "English",
+    "fra": "French"
+  },
+  "currencies": {
+    "CAD": {
+      "name": "Canadian dollar",
+      "symbol": "$"
+    }
+  },
+  "gini": {
+    "2017": 33.3
+  },
+  "car": {
+    "signs": [
+      "CDN"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "sunday",
+  "postalCode": {
+    "format": "@#@ #@#",
+    "regex": "^([ABCEGHJKLMNPRSTVXY]\\d[ABCEGHJKLMNPRSTVWXYZ]) ?(\\d[ABCEGHJKLMNPRSTVWXYZ]\\d)$"
+  },
+  "idd": {
+    "root": "+1",
+    "suffixes": [
+      "204",
+      "226",
+      "236",
+      "249",
+      "250",
+      "263",
+      "289",
+      "306",
+      "343",
+      "354",
+      "365",
+      "367",
+      "368",
+      "382",
+      "387",
+      "403",
+      "416",
+      "418",
+      "428",
+      "431",
+      "437",
+      "438",
+      "450",
+      "468",
+      "474",
+      "506",
+      "514",
+      "519",
+      "548",
+      "579",
+      "581",
+      "584",
+      "587",
+      "600",
+      "604",
+      "613",
+      "622",
+      "633",
+      "639",
+      "644",
+      "647",
+      "655",
+      "672",
+      "677",
+      "683",
+      "688",
+      "705",
+      "709",
+      "742",
+      "753",
+      "778",
+      "780",
+      "782",
+      "807",
+      "819",
+      "825",
+      "867",
+      "873",
+      "879",
+      "902",
+      "905",
+      "942"
+    ]
+  },
+  "timezones": [
+    "UTC-08:00",
+    "UTC-07:00",
+    "UTC-06:00",
+    "UTC-05:00",
+    "UTC-04:00",
+    "UTC-03:30"
+  ],
+  "flag": "🇨🇦",
+  "flags": {
+    "png": "https://flagcdn.com/w320/ca.png",
+    "svg": "https://flagcdn.com/ca.svg",
+    "alt": "The flag of Canada is composed of a red vertical band on the hoist and fly sides and a central white square that is twice the width of the vertical bands. A large eleven-pointed red maple leaf is centered in the white square."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/ca.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/ca.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/jmEVLugreeqiZXxbA",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/1428125"
+  },
+  "translations": {
+    "ara": {
+      "official": "كندا",
+      "common": "كندا"
+    },
+    "bre": {
+      "official": "Kanada",
+      "common": "Kanada"
+    },
+    "ces": {
+      "official": "Kanada",
+      "common": "Kanada"
+    },
+    "deu": {
+      "official": "Kanada",
+      "common": "Kanada"
+    },
+    "est": {
+      "official": "Kanada",
+      "common": "Kanada"
+    },
+    "fin": {
+      "official": "Kanada",
+      "common": "Kanada"
+    },
+    "fra": {
+      "official": "Canada",
+      "common": "Canada"
+    },
+    "hrv": {
+      "official": "Kanada",
+      "common": "Kanada"
+    },
+    "hun": {
+      "official": "Kanada",
+      "common": "Kanada"
+    },
+    "ita": {
+      "official": "Canada",
+      "common": "Canada"
+    },
+    "jpn": {
+      "official": "カナダ",
+      "common": "カナダ"
+    },
+    "kor": {
+      "official": "캐나다",
+      "common": "캐나다"
+    },
+    "nld": {
+      "official": "Canada",
+      "common": "Canada"
+    },
+    "per": {
+      "official": "کانادا",
+      "common": "کانادا"
+    },
+    "pol": {
+      "official": "Kanada",
+      "common": "Kanada"
+    },
+    "por": {
+      "official": "Canadá",
+      "common": "Canadá"
+    },
+    "rus": {
+      "official": "Канада",
+      "common": "Канада"
+    },
+    "slk": {
+      "official": "Kanada",
+      "common": "Kanada"
+    },
+    "spa": {
+      "official": "Canadá",
+      "common": "Canadá"
+    },
+    "srp": {
+      "official": "Kanada",
+      "common": "Kanada"
+    },
+    "swe": {
+      "official": "Kanada",
+      "common": "Kanada"
+    },
+    "tur": {
+      "official": "Kanada",
+      "common": "Kanada"
+    },
+    "urd": {
+      "official": "کینیڈا",
+      "common": "کینیڈا"
+    },
+    "zho": {
+      "official": "加拿大",
+      "common": "加拿大"
+    }
+  },
+  "largest_city": "Toronto",
+  "largest_city_local": "Toronto",
+  "largest_city_pop": 2794356,
+  "largest_city_is_capital": false
+}

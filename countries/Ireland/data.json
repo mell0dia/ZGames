@@ -1,0 +1,208 @@
+{
+  "name": {
+    "common": "Ireland",
+    "official": "Republic of Ireland",
+    "native": {
+      "eng": {
+        "official": "Republic of Ireland",
+        "common": "Ireland"
+      },
+      "gle": {
+        "official": "Poblacht na hÉireann",
+        "common": "Éire"
+      }
+    }
+  },
+  "cca2": "IE",
+  "cca3": "IRL",
+  "ccn3": "372",
+  "cioc": "IRL",
+  "fifa": "IRL",
+  "tld": [
+    ".ie"
+  ],
+  "altSpellings": [
+    "IE",
+    "Éire",
+    "Republic of Ireland",
+    "Poblacht na hÉireann"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Western European and Others Group",
+  "capital": [
+    "Dublin"
+  ],
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "continents": [
+    "Europe"
+  ],
+  "latlng": [
+    53,
+    -8
+  ],
+  "landlocked": false,
+  "borders": [
+    "GBR"
+  ],
+  "area": 70273,
+  "population": 5458600,
+  "demonyms": {
+    "eng": {
+      "f": "Irish",
+      "m": "Irish"
+    },
+    "fra": {
+      "f": "Irlandaise",
+      "m": "Irlandais"
+    }
+  },
+  "languages": {
+    "eng": "English",
+    "gle": "Irish"
+  },
+  "currencies": {
+    "EUR": {
+      "name": "Euro",
+      "symbol": "€"
+    }
+  },
+  "gini": {
+    "2017": 31.4
+  },
+  "car": {
+    "signs": [
+      "IRL"
+    ],
+    "side": "left"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {},
+  "idd": {
+    "root": "+3",
+    "suffixes": [
+      "53"
+    ]
+  },
+  "timezones": [
+    "UTC"
+  ],
+  "flag": "🇮🇪",
+  "flags": {
+    "png": "https://flagcdn.com/w320/ie.png",
+    "svg": "https://flagcdn.com/ie.svg",
+    "alt": "The flag of Ireland is composed of three equal vertical bands of green, white and orange."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/ie.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/ie.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/hxd1BKxgpchStzQC6",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/62273"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية أيرلندا",
+      "common": "أيرلندا"
+    },
+    "bre": {
+      "official": "Republik Iwerzhon",
+      "common": "Iwerzhon"
+    },
+    "ces": {
+      "official": "Irsko",
+      "common": "Irsko"
+    },
+    "deu": {
+      "official": "Republik Irland",
+      "common": "Irland"
+    },
+    "est": {
+      "official": "Iirimaa",
+      "common": "Iirimaa"
+    },
+    "fin": {
+      "official": "Irlannin tasavalta",
+      "common": "Irlanti"
+    },
+    "fra": {
+      "official": "République d'Irlande",
+      "common": "Irlande"
+    },
+    "hrv": {
+      "official": "Republika Irska",
+      "common": "Irska"
+    },
+    "hun": {
+      "official": "Ír Köztársaság",
+      "common": "Írország"
+    },
+    "ita": {
+      "official": "Repubblica d'Irlanda",
+      "common": "Irlanda"
+    },
+    "jpn": {
+      "official": "アイルランド",
+      "common": "アイルランド"
+    },
+    "kor": {
+      "official": "아일랜드 공화국",
+      "common": "아일랜드"
+    },
+    "nld": {
+      "official": "Republic of Ireland",
+      "common": "Ierland"
+    },
+    "per": {
+      "official": "ایرلند",
+      "common": "ایرلند"
+    },
+    "pol": {
+      "official": "Republika Irlandii",
+      "common": "Irlandia"
+    },
+    "por": {
+      "official": "República da Irlanda",
+      "common": "Irlanda"
+    },
+    "rus": {
+      "official": "Ирландия",
+      "common": "Ирландия"
+    },
+    "slk": {
+      "official": "Írska republika",
+      "common": "Írsko"
+    },
+    "spa": {
+      "official": "República de Irlanda",
+      "common": "Irlanda"
+    },
+    "srp": {
+      "official": "Republika Irska",
+      "common": "Irska"
+    },
+    "swe": {
+      "official": "Irland",
+      "common": "Irland"
+    },
+    "tur": {
+      "official": "İrlanda Cumhuriyeti",
+      "common": "İrlanda"
+    },
+    "urd": {
+      "official": "جمہوریہ جزیرہ آئرلینڈ",
+      "common": "جزیرہ آئرلینڈ"
+    },
+    "zho": {
+      "official": "爱尔兰共和国",
+      "common": "爱尔兰"
+    }
+  },
+  "largest_city": "Dublin",
+  "largest_city_local": "Dublin",
+  "largest_city_pop": 1024027,
+  "largest_city_is_capital": true
+}

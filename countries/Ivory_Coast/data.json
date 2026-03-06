@@ -1,0 +1,209 @@
+{
+  "name": {
+    "common": "Ivory Coast",
+    "official": "Republic of Côte d'Ivoire",
+    "native": {
+      "fra": {
+        "official": "République de Côte d'Ivoire",
+        "common": "Côte d'Ivoire"
+      }
+    }
+  },
+  "cca2": "CI",
+  "cca3": "CIV",
+  "ccn3": "384",
+  "cioc": "CIV",
+  "fifa": "CIV",
+  "tld": [
+    ".ci"
+  ],
+  "altSpellings": [
+    "CI",
+    "Côte d'Ivoire",
+    "Cote d'Ivoire",
+    "Ivory Coast",
+    "Republic of Côte d'Ivoire",
+    "République de Côte d'Ivoire"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "African Group",
+  "capital": [
+    "Yamoussoukro"
+  ],
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "continents": [
+    "Africa"
+  ],
+  "latlng": [
+    8,
+    -5
+  ],
+  "landlocked": false,
+  "borders": [
+    "BFA",
+    "GHA",
+    "GIN",
+    "LBR",
+    "MLI"
+  ],
+  "area": 322463,
+  "population": 31719275,
+  "demonyms": {
+    "eng": {
+      "f": "Ivorian",
+      "m": "Ivorian"
+    },
+    "fra": {
+      "f": "Ivoirienne",
+      "m": "Ivoirien"
+    }
+  },
+  "languages": {
+    "fra": "French"
+  },
+  "currencies": {
+    "XOF": {
+      "name": "West African CFA franc",
+      "symbol": "Fr"
+    }
+  },
+  "gini": {
+    "2015": 41.5
+  },
+  "car": {
+    "signs": [
+      "CI"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {},
+  "idd": {
+    "root": "+2",
+    "suffixes": [
+      "25"
+    ]
+  },
+  "timezones": [
+    "UTC"
+  ],
+  "flag": "🇨🇮",
+  "flags": {
+    "png": "https://flagcdn.com/w320/ci.png",
+    "svg": "https://flagcdn.com/ci.svg",
+    "alt": "The flag of Ivory Coast is composed of three equal vertical bands of orange, white and green."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/ci.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/ci.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/wKsmN7f5qAeNtGjP6",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/192779"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية ساحل العاج",
+      "common": "ساحل العاج"
+    },
+    "bre": {
+      "official": "Republik Aod an Olifant",
+      "common": "Aod an Olifant"
+    },
+    "ces": {
+      "official": "Republika Pobřeží slonoviny",
+      "common": "Pobřeží slonoviny"
+    },
+    "deu": {
+      "official": "Republik Côte d'Ivoire",
+      "common": "Côte d'Ivoire"
+    },
+    "est": {
+      "official": "Côte d’Ivoire’i Vabariik",
+      "common": "Elevandiluurannik"
+    },
+    "fin": {
+      "official": "Norsunluurannikon tasavalta",
+      "common": "Norsunluurannikko"
+    },
+    "fra": {
+      "official": "République de Côte d' Ivoire",
+      "common": "Côte d'Ivoire"
+    },
+    "hrv": {
+      "official": "Republika Côte d'Ivoire",
+      "common": "Obala Bjelokosti"
+    },
+    "hun": {
+      "official": "Elefántcsontparti Köztársaság",
+      "common": "Elefántcsontpart"
+    },
+    "ita": {
+      "official": "Repubblica della Costa d'Avorio",
+      "common": "Costa d'Avorio"
+    },
+    "jpn": {
+      "official": "コートジボワール共和国",
+      "common": "コートジボワール"
+    },
+    "kor": {
+      "official": "코트디부아르 공화국",
+      "common": "코트디부아르"
+    },
+    "nld": {
+      "official": "Republiek Ivoorkust",
+      "common": "Ivoorkust"
+    },
+    "per": {
+      "official": "جمهوری ساحل عاج",
+      "common": "ساحل عاج"
+    },
+    "pol": {
+      "official": "Republika WybrzeŻa Kości Słoniowej",
+      "common": "WybrzeŻe Kości Słoniowej"
+    },
+    "por": {
+      "official": "República da Côte d'Ivoire",
+      "common": "Costa do Marfim"
+    },
+    "rus": {
+      "official": "Республика Кот-д'Ивуаре",
+      "common": "Кот-д’Ивуар"
+    },
+    "slk": {
+      "official": "Republika Pobrežie Slonoviny",
+      "common": "Pobržie Slonoviny"
+    },
+    "spa": {
+      "official": "República de Côte d'Ivoire",
+      "common": "Costa de Marfil"
+    },
+    "srp": {
+      "official": "Republika Obala Slonovače",
+      "common": "Obala Slonovače"
+    },
+    "swe": {
+      "official": "Republiken Elfenbenskusten",
+      "common": "Elfenbenskusten"
+    },
+    "tur": {
+      "official": "Fildişi Sahili",
+      "common": "Fildişi Sahili"
+    },
+    "urd": {
+      "official": "جمہوریہ کوت دیواغ",
+      "common": "آئیوری کوسٹ"
+    },
+    "zho": {
+      "official": "科特迪瓦共和国",
+      "common": "科特迪瓦"
+    }
+  },
+  "largest_city": "Abidjan",
+  "largest_city_local": "Abidjan",
+  "largest_city_pop": 6321017,
+  "largest_city_is_capital": false
+}

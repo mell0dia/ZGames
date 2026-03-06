@@ -1,0 +1,207 @@
+{
+  "name": {
+    "common": "Estonia",
+    "official": "Republic of Estonia",
+    "native": {
+      "est": {
+        "official": "Eesti Vabariik",
+        "common": "Eesti"
+      }
+    }
+  },
+  "cca2": "EE",
+  "cca3": "EST",
+  "ccn3": "233",
+  "cioc": "EST",
+  "fifa": "EST",
+  "tld": [
+    ".ee"
+  ],
+  "altSpellings": [
+    "EE",
+    "Eesti",
+    "Republic of Estonia",
+    "Eesti Vabariik"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Eastern European Group",
+  "capital": [
+    "Tallinn"
+  ],
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "continents": [
+    "Europe"
+  ],
+  "latlng": [
+    59,
+    26
+  ],
+  "landlocked": false,
+  "borders": [
+    "LVA",
+    "RUS"
+  ],
+  "area": 45227,
+  "population": 1369995,
+  "demonyms": {
+    "eng": {
+      "f": "Estonian",
+      "m": "Estonian"
+    },
+    "fra": {
+      "f": "Estonienne",
+      "m": "Estonien"
+    }
+  },
+  "languages": {
+    "est": "Estonian"
+  },
+  "currencies": {
+    "EUR": {
+      "name": "Euro",
+      "symbol": "€"
+    }
+  },
+  "gini": {
+    "2018": 30.3
+  },
+  "car": {
+    "signs": [
+      "EST"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "#####",
+    "regex": "^(\\d{5})$"
+  },
+  "idd": {
+    "root": "+3",
+    "suffixes": [
+      "72"
+    ]
+  },
+  "timezones": [
+    "UTC+02:00"
+  ],
+  "flag": "🇪🇪",
+  "flags": {
+    "png": "https://flagcdn.com/w320/ee.png",
+    "svg": "https://flagcdn.com/ee.svg",
+    "alt": "The flag of Estonia is composed of three equal horizontal bands of blue, black and white."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/ee.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/ee.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/6SsynwGUodL1sDvq8",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/79510"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية إستونيا",
+      "common": "إستونيا"
+    },
+    "bre": {
+      "official": "Republik Estonia",
+      "common": "Estonia"
+    },
+    "ces": {
+      "official": "Estonská republika",
+      "common": "Estonsko"
+    },
+    "deu": {
+      "official": "Republik Estland",
+      "common": "Estland"
+    },
+    "est": {
+      "official": "Eesti Vabariik",
+      "common": "Eesti"
+    },
+    "fin": {
+      "official": "Viron tasavalta",
+      "common": "Viro"
+    },
+    "fra": {
+      "official": "République d'Estonie",
+      "common": "Estonie"
+    },
+    "hrv": {
+      "official": "Republika Estonija",
+      "common": "Estonija"
+    },
+    "hun": {
+      "official": "Észt Köztársaság",
+      "common": "Észtország"
+    },
+    "ita": {
+      "official": "Repubblica di Estonia",
+      "common": "Estonia"
+    },
+    "jpn": {
+      "official": "エストニア共和国",
+      "common": "エストニア"
+    },
+    "kor": {
+      "official": "에스토니아 공화국",
+      "common": "에스토니아"
+    },
+    "nld": {
+      "official": "Republiek Estland",
+      "common": "Estland"
+    },
+    "per": {
+      "official": "جمهوری استونی",
+      "common": "اِستونی"
+    },
+    "pol": {
+      "official": "Republika Estońska",
+      "common": "Estonia"
+    },
+    "por": {
+      "official": "República da Estónia",
+      "common": "Estónia"
+    },
+    "rus": {
+      "official": "Эстонская Республика",
+      "common": "Эстония"
+    },
+    "slk": {
+      "official": "Estónska republika",
+      "common": "Estónsko"
+    },
+    "spa": {
+      "official": "República de Estonia",
+      "common": "Estonia"
+    },
+    "srp": {
+      "official": "Republika Estonija",
+      "common": "Estonija"
+    },
+    "swe": {
+      "official": "Republiken Estland",
+      "common": "Estland"
+    },
+    "tur": {
+      "official": "Estonya Cumhuriyeti",
+      "common": "Estonya"
+    },
+    "urd": {
+      "official": "جمہوریہ اسٹونیا",
+      "common": "اسٹونیا"
+    },
+    "zho": {
+      "official": "爱沙尼亚共和国",
+      "common": "爱沙尼亚"
+    }
+  },
+  "largest_city": "Tallinn",
+  "largest_city_local": "Tallinn",
+  "largest_city_pop": 394024,
+  "largest_city_is_capital": true
+}

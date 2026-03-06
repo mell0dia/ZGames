@@ -1,0 +1,228 @@
+{
+  "name": {
+    "common": "China",
+    "official": "People's Republic of China",
+    "native": {
+      "zho": {
+        "official": "中华人民共和国",
+        "common": "中国"
+      }
+    }
+  },
+  "cca2": "CN",
+  "cca3": "CHN",
+  "ccn3": "156",
+  "cioc": "CHN",
+  "fifa": "CHN",
+  "tld": [
+    ".cn",
+    ".中国",
+    ".中國",
+    ".公司",
+    ".网络"
+  ],
+  "altSpellings": [
+    "CN",
+    "Zhōngguó",
+    "Zhongguo",
+    "Zhonghua",
+    "People's Republic of China",
+    "中华人民共和国",
+    "Zhōnghuá Rénmín Gònghéguó"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Asia and the Pacific Group",
+  "capital": [
+    "Beijing"
+  ],
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "continents": [
+    "Asia"
+  ],
+  "latlng": [
+    35,
+    105
+  ],
+  "landlocked": false,
+  "borders": [
+    "AFG",
+    "BTN",
+    "MMR",
+    "HKG",
+    "IND",
+    "KAZ",
+    "NPL",
+    "PRK",
+    "KGZ",
+    "LAO",
+    "MAC",
+    "MNG",
+    "PAK",
+    "RUS",
+    "TJK",
+    "VNM"
+  ],
+  "area": 9706961,
+  "population": 1408280000,
+  "demonyms": {
+    "eng": {
+      "f": "Chinese",
+      "m": "Chinese"
+    },
+    "fra": {
+      "f": "Chinoise",
+      "m": "Chinois"
+    }
+  },
+  "languages": {
+    "zho": "Chinese"
+  },
+  "currencies": {
+    "CNY": {
+      "name": "Chinese yuan",
+      "symbol": "¥"
+    }
+  },
+  "gini": {
+    "2016": 38.5
+  },
+  "car": {
+    "signs": [
+      "RC"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "######",
+    "regex": "^(\\d{6})$"
+  },
+  "idd": {
+    "root": "+8",
+    "suffixes": [
+      "6"
+    ]
+  },
+  "timezones": [
+    "UTC+08:00"
+  ],
+  "flag": "🇨🇳",
+  "flags": {
+    "png": "https://flagcdn.com/w320/cn.png",
+    "svg": "https://flagcdn.com/cn.svg",
+    "alt": "The flag of China has a red field. In the canton are five yellow five-pointed stars — a large star and four smaller stars arranged in a vertical arc on the fly side of the large star."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/cn.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/cn.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/p9qC6vgiFRRXzvGi7",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/270056"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية الصين الشعبية",
+      "common": "الصين"
+    },
+    "bre": {
+      "official": "Republik Pobl Sina",
+      "common": "Sina"
+    },
+    "ces": {
+      "official": "Čínská lidová republika",
+      "common": "Čína"
+    },
+    "deu": {
+      "official": "Volksrepublik China",
+      "common": "China"
+    },
+    "est": {
+      "official": "Hiina Rahvavabariik",
+      "common": "Hiina"
+    },
+    "fin": {
+      "official": "Kiinan kansantasavalta",
+      "common": "Kiina"
+    },
+    "fra": {
+      "official": "République populaire de Chine",
+      "common": "Chine"
+    },
+    "hrv": {
+      "official": "Narodna Republika Kina",
+      "common": "Kina"
+    },
+    "hun": {
+      "official": "Kínai Népköztársaság",
+      "common": "Kína"
+    },
+    "ita": {
+      "official": "Repubblica popolare cinese",
+      "common": "Cina"
+    },
+    "jpn": {
+      "official": "中華人民共和国",
+      "common": "中国"
+    },
+    "kor": {
+      "official": "중화인민공화국",
+      "common": "중국"
+    },
+    "nld": {
+      "official": "Volksrepubliek China",
+      "common": "China"
+    },
+    "per": {
+      "official": "جمهوری خلق چین",
+      "common": "چین"
+    },
+    "pol": {
+      "official": "Chińska Republika Ludowa",
+      "common": "Chiny"
+    },
+    "por": {
+      "official": "República Popular da China",
+      "common": "China"
+    },
+    "rus": {
+      "official": "Народная Республика Китай",
+      "common": "Китай"
+    },
+    "slk": {
+      "official": "Čínska ľudová republika",
+      "common": "Čína"
+    },
+    "spa": {
+      "official": "República Popular de China",
+      "common": "China"
+    },
+    "srp": {
+      "official": "Narodna Republika Kina",
+      "common": "Kina"
+    },
+    "swe": {
+      "official": "Folkrepubliken Kina",
+      "common": "Kina"
+    },
+    "tur": {
+      "official": "çin Halk Cumhuriyeti",
+      "common": "çin"
+    },
+    "urd": {
+      "official": "عوامی جمہوریہ چین",
+      "common": "چین"
+    },
+    "zho": {
+      "official": "中华人民共和国",
+      "common": "中国"
+    }
+  },
+  "largest_city": "Shanghai",
+  "largest_city_local": "Shanghai",
+  "largest_city_pop": 24874500,
+  "largest_city_is_capital": false
+}

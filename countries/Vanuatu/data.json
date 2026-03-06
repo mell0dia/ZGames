@@ -1,0 +1,211 @@
+{
+  "name": {
+    "common": "Vanuatu",
+    "official": "Republic of Vanuatu",
+    "native": {
+      "bis": {
+        "official": "Ripablik blong Vanuatu",
+        "common": "Vanuatu"
+      },
+      "eng": {
+        "official": "Republic of Vanuatu",
+        "common": "Vanuatu"
+      },
+      "fra": {
+        "official": "République de Vanuatu",
+        "common": "Vanuatu"
+      }
+    }
+  },
+  "cca2": "VU",
+  "cca3": "VUT",
+  "ccn3": "548",
+  "cioc": "VAN",
+  "fifa": "VAN",
+  "tld": [
+    ".vu"
+  ],
+  "altSpellings": [
+    "VU",
+    "Republic of Vanuatu",
+    "Ripablik blong Vanuatu",
+    "République de Vanuatu"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Asia and the Pacific Group",
+  "capital": [
+    "Port Vila"
+  ],
+  "region": "Oceania",
+  "subregion": "Melanesia",
+  "continents": [
+    "Oceania"
+  ],
+  "latlng": [
+    -16,
+    167
+  ],
+  "landlocked": false,
+  "borders": [],
+  "area": 12189,
+  "population": 321409,
+  "demonyms": {
+    "eng": {
+      "f": "Ni-Vanuatu",
+      "m": "Ni-Vanuatu"
+    },
+    "fra": {
+      "f": "Vanuatuane",
+      "m": "Vanuatuan"
+    }
+  },
+  "languages": {
+    "bis": "Bislama",
+    "eng": "English",
+    "fra": "French"
+  },
+  "currencies": {
+    "VUV": {
+      "name": "Vanuatu vatu",
+      "symbol": "Vt"
+    }
+  },
+  "gini": {
+    "2010": 37.6
+  },
+  "car": {
+    "signs": [
+      "VU"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {},
+  "idd": {
+    "root": "+6",
+    "suffixes": [
+      "78"
+    ]
+  },
+  "timezones": [
+    "UTC+11:00"
+  ],
+  "flag": "🇻🇺",
+  "flags": {
+    "png": "https://flagcdn.com/w320/vu.png",
+    "svg": "https://flagcdn.com/vu.svg",
+    "alt": "The flag of Vanuatu is composed of two equal horizontal bands of red and green, with a black isosceles triangle superimposed on the hoist side of the field. This triangle has its base on the hoist end, spans about two-fifth the width of the field and is enclosed on its sides by the arms of a thin black-edged yellow horizontally oriented Y-shaped band which extends along the boundary of the red and green bands to the fly end of the field. A yellow boar's tusk encircling two yellow crossed namele leaves is centered in the triangle."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/vu.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/vu.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/hwAjehcT7VfvP5zJ8",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/2177246"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية فانواتو",
+      "common": "فانواتو"
+    },
+    "bre": {
+      "official": "Republik Vanuatu",
+      "common": "Vanuatu"
+    },
+    "ces": {
+      "official": "Republika Vanuatu",
+      "common": "Vanuatu"
+    },
+    "deu": {
+      "official": "Vanuatu",
+      "common": "Vanuatu"
+    },
+    "est": {
+      "official": "Vanuatu Vabariik",
+      "common": "Vanuatu"
+    },
+    "fin": {
+      "official": "Vanuatun tasavalta",
+      "common": "Vanuatu"
+    },
+    "fra": {
+      "official": "République de Vanuatu",
+      "common": "Vanuatu"
+    },
+    "hrv": {
+      "official": "Republika Vanuatu",
+      "common": "Vanuatu"
+    },
+    "hun": {
+      "official": "Vanuatui Köztársaság",
+      "common": "Vanuatu"
+    },
+    "ita": {
+      "official": "Repubblica di Vanuatu",
+      "common": "Vanuatu"
+    },
+    "jpn": {
+      "official": "バヌアツ共和国",
+      "common": "バヌアツ"
+    },
+    "kor": {
+      "official": "바누아투 공화국",
+      "common": "바누아투"
+    },
+    "nld": {
+      "official": "Republiek Vanuatu",
+      "common": "Vanuatu"
+    },
+    "per": {
+      "official": "جمهوری وانواتو",
+      "common": "وانواتو"
+    },
+    "pol": {
+      "official": "Republika Vanuatu",
+      "common": "Vanuatu"
+    },
+    "por": {
+      "official": "República de Vanuatu",
+      "common": "Vanuatu"
+    },
+    "rus": {
+      "official": "Республика Вануату",
+      "common": "Вануату"
+    },
+    "slk": {
+      "official": "Vanuatská republika",
+      "common": "Vanuatu"
+    },
+    "spa": {
+      "official": "República de Vanuatu",
+      "common": "Vanuatu"
+    },
+    "srp": {
+      "official": "Republika Vanuatu",
+      "common": "Vanuatu"
+    },
+    "swe": {
+      "official": "Republiken Vanuatu",
+      "common": "Vanuatu"
+    },
+    "tur": {
+      "official": "Vanuatu Cumhuriyeti",
+      "common": "Vanuatu"
+    },
+    "urd": {
+      "official": "جمہوریہ وانواتو",
+      "common": "وانواتو"
+    },
+    "zho": {
+      "official": "瓦努阿图共和国",
+      "common": "瓦努阿图"
+    }
+  },
+  "largest_city": "Port-Vila",
+  "largest_city_local": "Port-Vila",
+  "largest_city_pop": 35901,
+  "largest_city_is_capital": false
+}

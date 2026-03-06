@@ -1,0 +1,306 @@
+{
+  "name": {
+    "common": "Zimbabwe",
+    "official": "Republic of Zimbabwe",
+    "native": {
+      "bwg": {
+        "official": "Republic of Zimbabwe",
+        "common": "Zimbabwe"
+      },
+      "eng": {
+        "official": "Republic of Zimbabwe",
+        "common": "Zimbabwe"
+      },
+      "kck": {
+        "official": "Republic of Zimbabwe",
+        "common": "Zimbabwe"
+      },
+      "khi": {
+        "official": "Republic of Zimbabwe",
+        "common": "Zimbabwe"
+      },
+      "ndc": {
+        "official": "Republic of Zimbabwe",
+        "common": "Zimbabwe"
+      },
+      "nde": {
+        "official": "Republic of Zimbabwe",
+        "common": "Zimbabwe"
+      },
+      "nya": {
+        "official": "Republic of Zimbabwe",
+        "common": "Zimbabwe"
+      },
+      "sna": {
+        "official": "Republic of Zimbabwe",
+        "common": "Zimbabwe"
+      },
+      "sot": {
+        "official": "Republic of Zimbabwe",
+        "common": "Zimbabwe"
+      },
+      "toi": {
+        "official": "Republic of Zimbabwe",
+        "common": "Zimbabwe"
+      },
+      "tsn": {
+        "official": "Republic of Zimbabwe",
+        "common": "Zimbabwe"
+      },
+      "tso": {
+        "official": "Republic of Zimbabwe",
+        "common": "Zimbabwe"
+      },
+      "ven": {
+        "official": "Republic of Zimbabwe",
+        "common": "Zimbabwe"
+      },
+      "xho": {
+        "official": "Republic of Zimbabwe",
+        "common": "Zimbabwe"
+      },
+      "zib": {
+        "official": "Republic of Zimbabwe",
+        "common": "Zimbabwe"
+      }
+    }
+  },
+  "cca2": "ZW",
+  "cca3": "ZWE",
+  "ccn3": "716",
+  "cioc": "ZIM",
+  "fifa": "ZIM",
+  "tld": [
+    ".zw"
+  ],
+  "altSpellings": [
+    "ZW",
+    "Republic of Zimbabwe"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "African Group",
+  "capital": [
+    "Harare"
+  ],
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "latlng": [
+    -20,
+    30
+  ],
+  "landlocked": true,
+  "borders": [
+    "BWA",
+    "MOZ",
+    "ZAF",
+    "ZMB"
+  ],
+  "area": 390757,
+  "population": 17073087,
+  "demonyms": {
+    "eng": {
+      "f": "Zimbabwean",
+      "m": "Zimbabwean"
+    },
+    "fra": {
+      "f": "Zimbabwéenne",
+      "m": "Zimbabwéen"
+    }
+  },
+  "languages": {
+    "bwg": "Chibarwe",
+    "eng": "English",
+    "kck": "Kalanga",
+    "khi": "Khoisan",
+    "ndc": "Ndau",
+    "nde": "Northern Ndebele",
+    "nya": "Chewa",
+    "sna": "Shona",
+    "sot": "Sotho",
+    "toi": "Tonga",
+    "tsn": "Tswana",
+    "tso": "Tsonga",
+    "ven": "Venda",
+    "xho": "Xhosa",
+    "zib": "Zimbabwean Sign Language"
+  },
+  "currencies": {
+    "BWP": {
+      "name": "Botswana pula",
+      "symbol": "P"
+    },
+    "CNY": {
+      "name": "Chinese yuan",
+      "symbol": "¥"
+    },
+    "EUR": {
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "GBP": {
+      "name": "British pound",
+      "symbol": "£"
+    },
+    "INR": {
+      "name": "Indian rupee",
+      "symbol": "₹"
+    },
+    "JPY": {
+      "name": "Japanese yen",
+      "symbol": "¥"
+    },
+    "USD": {
+      "name": "United States dollar",
+      "symbol": "$"
+    },
+    "ZAR": {
+      "name": "South African rand",
+      "symbol": "Rs"
+    },
+    "ZWB": {
+      "name": "Zimbabwean bonds",
+      "symbol": "$"
+    }
+  },
+  "gini": {
+    "2019": 50.3
+  },
+  "car": {
+    "signs": [
+      "ZW"
+    ],
+    "side": "left"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {},
+  "idd": {
+    "root": "+2",
+    "suffixes": [
+      "63"
+    ]
+  },
+  "timezones": [
+    "UTC+02:00"
+  ],
+  "flag": "🇿🇼",
+  "flags": {
+    "png": "https://flagcdn.com/w320/zw.png",
+    "svg": "https://flagcdn.com/zw.svg",
+    "alt": "The flag of Zimbabwe is composed of seven equal horizontal bands of green, yellow, red, black, red, yellow and green, with a white isosceles triangle superimposed on the hoist side of the field. This triangle is edged in black, spans about one-fourth the width of the field and has its base on the hoist end. A yellow Zimbabwe Bird superimposed on a five-pointed red star is centered in the triangle."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/zw.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/zw.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/M26BqdwQctqxXS65A",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/195272"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية زيمبابوي",
+      "common": "زيمبابوي"
+    },
+    "bre": {
+      "official": "Republik Zimbabwe",
+      "common": "Zimbabwe"
+    },
+    "ces": {
+      "official": "Zimbabwská republika",
+      "common": "Zimbabwe"
+    },
+    "deu": {
+      "official": "Republik Simbabwe",
+      "common": "Simbabwe"
+    },
+    "est": {
+      "official": "Zimbabwe Vabariik",
+      "common": "Zimbabwe"
+    },
+    "fin": {
+      "official": "Zimbabwen tasavalta",
+      "common": "Zimbabwe"
+    },
+    "fra": {
+      "official": "République du Zimbabwe",
+      "common": "Zimbabwe"
+    },
+    "hrv": {
+      "official": "Republika Zimbabve",
+      "common": "Zimbabve"
+    },
+    "hun": {
+      "official": "Zimbabwei Köztársaság",
+      "common": "Zimbabwe"
+    },
+    "ita": {
+      "official": "Repubblica dello Zimbabwe",
+      "common": "Zimbabwe"
+    },
+    "jpn": {
+      "official": "ジンバブエ共和国",
+      "common": "ジンバブエ"
+    },
+    "kor": {
+      "official": "짐바브웨 공화국",
+      "common": "짐바브웨"
+    },
+    "nld": {
+      "official": "Republiek Zimbabwe",
+      "common": "Zimbabwe"
+    },
+    "per": {
+      "official": "جمهوری زیمبابوه",
+      "common": "زیمبابوه"
+    },
+    "pol": {
+      "official": "Republika Zimbabwe",
+      "common": "Zimbabwe"
+    },
+    "por": {
+      "official": "República do Zimbabwe",
+      "common": "Zimbabwe"
+    },
+    "rus": {
+      "official": "Республика Зимбабве",
+      "common": "Зимбабве"
+    },
+    "slk": {
+      "official": "Zimbabwianska republika",
+      "common": "Zimbabwe"
+    },
+    "spa": {
+      "official": "República de Zimbabue",
+      "common": "Zimbabue"
+    },
+    "srp": {
+      "official": "Republika Zimbabve",
+      "common": "Zimbabve"
+    },
+    "swe": {
+      "official": "Republiken Zimbabwe",
+      "common": "Zimbabwe"
+    },
+    "tur": {
+      "official": "Zimbabve Cumhuriyeti",
+      "common": "Zimbabve"
+    },
+    "urd": {
+      "official": "جمہوریہ زمبابوے",
+      "common": "زمبابوے"
+    },
+    "zho": {
+      "official": "津巴布韦共和国",
+      "common": "津巴布韦"
+    }
+  },
+  "largest_city": "Harare",
+  "largest_city_local": "Harare",
+  "largest_city_pop": 1542813,
+  "largest_city_is_capital": true
+}

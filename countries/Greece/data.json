@@ -1,0 +1,209 @@
+{
+  "name": {
+    "common": "Greece",
+    "official": "Hellenic Republic",
+    "native": {
+      "ell": {
+        "official": "Ελληνική Δημοκρατία",
+        "common": "Ελλάδα"
+      }
+    }
+  },
+  "cca2": "GR",
+  "cca3": "GRC",
+  "ccn3": "300",
+  "cioc": "GRE",
+  "fifa": "GRE",
+  "tld": [
+    ".gr"
+  ],
+  "altSpellings": [
+    "GR",
+    "Elláda",
+    "Hellenic Republic",
+    "Ελληνική Δημοκρατία"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Western European and Others Group",
+  "capital": [
+    "Athens"
+  ],
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "continents": [
+    "Europe"
+  ],
+  "latlng": [
+    39,
+    22
+  ],
+  "landlocked": false,
+  "borders": [
+    "ALB",
+    "BGR",
+    "TUR",
+    "MKD"
+  ],
+  "area": 131990,
+  "population": 10400720,
+  "demonyms": {
+    "eng": {
+      "f": "Greek",
+      "m": "Greek"
+    },
+    "fra": {
+      "f": "Grecque",
+      "m": "Grec"
+    }
+  },
+  "languages": {
+    "ell": "Greek"
+  },
+  "currencies": {
+    "EUR": {
+      "name": "Euro",
+      "symbol": "€"
+    }
+  },
+  "gini": {
+    "2018": 32.9
+  },
+  "car": {
+    "signs": [
+      "GR"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "### ##",
+    "regex": "^(\\d{5})$"
+  },
+  "idd": {
+    "root": "+3",
+    "suffixes": [
+      "0"
+    ]
+  },
+  "timezones": [
+    "UTC+02:00"
+  ],
+  "flag": "🇬🇷",
+  "flags": {
+    "png": "https://flagcdn.com/w320/gr.png",
+    "svg": "https://flagcdn.com/gr.svg",
+    "alt": "The flag of Greece is composed of nine equal horizontal bands of blue alternating with white. A blue square bearing a white cross is superimposed in the canton."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/gr.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/gr.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/LHGcAvuRyD2iKECC6",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/192307"
+  },
+  "translations": {
+    "ara": {
+      "official": "الجمهورية الهيلينية",
+      "common": "اليونان"
+    },
+    "bre": {
+      "official": "Republik Hellenek",
+      "common": "Gres"
+    },
+    "ces": {
+      "official": "Řecká republika",
+      "common": "Řecko"
+    },
+    "deu": {
+      "official": "Hellenische Republik",
+      "common": "Griechenland"
+    },
+    "est": {
+      "official": "Kreeka Vabariik",
+      "common": "Kreeka"
+    },
+    "fin": {
+      "official": "Helleenien tasavalta",
+      "common": "Kreikka"
+    },
+    "fra": {
+      "official": "République hellénique",
+      "common": "Grèce"
+    },
+    "hrv": {
+      "official": "Helenska Republika",
+      "common": "Grčka"
+    },
+    "hun": {
+      "official": "Görög Köztársaság",
+      "common": "Görögország"
+    },
+    "ita": {
+      "official": "Repubblica ellenica",
+      "common": "Grecia"
+    },
+    "jpn": {
+      "official": "ギリシャ共和国",
+      "common": "ギリシャ"
+    },
+    "kor": {
+      "official": "그리스 공화국",
+      "common": "그리스"
+    },
+    "nld": {
+      "official": "Helleense Republiek",
+      "common": "Griekenland"
+    },
+    "per": {
+      "official": "جمهوری یونان",
+      "common": "یونان"
+    },
+    "pol": {
+      "official": "Republika Grecka",
+      "common": "Grecja"
+    },
+    "por": {
+      "official": "República Helénica",
+      "common": "Grécia"
+    },
+    "rus": {
+      "official": "Греческая Республика",
+      "common": "Греция"
+    },
+    "slk": {
+      "official": "Grécka republika",
+      "common": "Greécko"
+    },
+    "spa": {
+      "official": "República Helénica",
+      "common": "Grecia"
+    },
+    "srp": {
+      "official": "Republika Grčka",
+      "common": "Grčka"
+    },
+    "swe": {
+      "official": "Republiken Grekland",
+      "common": "Grekland"
+    },
+    "tur": {
+      "official": "Helen Cumhuriyeti",
+      "common": "Yunanistan"
+    },
+    "urd": {
+      "official": "جمہوریہ ہیلینیہ",
+      "common": "یونان"
+    },
+    "zho": {
+      "official": "希腊共和国",
+      "common": "希腊"
+    }
+  },
+  "largest_city": "Athens",
+  "largest_city_local": "Athens",
+  "largest_city_pop": 664046,
+  "largest_city_is_capital": true
+}

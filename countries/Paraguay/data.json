@@ -1,0 +1,213 @@
+{
+  "name": {
+    "common": "Paraguay",
+    "official": "Republic of Paraguay",
+    "native": {
+      "grn": {
+        "official": "Tetã Paraguái",
+        "common": "Paraguái"
+      },
+      "spa": {
+        "official": "República de Paraguay",
+        "common": "Paraguay"
+      }
+    }
+  },
+  "cca2": "PY",
+  "cca3": "PRY",
+  "ccn3": "600",
+  "cioc": "PAR",
+  "fifa": "PAR",
+  "tld": [
+    ".py"
+  ],
+  "altSpellings": [
+    "PY",
+    "Republic of Paraguay",
+    "República del Paraguay",
+    "Tetã Paraguái"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Latin American and Caribbean Group",
+  "capital": [
+    "Asunción"
+  ],
+  "region": "Americas",
+  "subregion": "South America",
+  "continents": [
+    "South America"
+  ],
+  "latlng": [
+    -23,
+    -58
+  ],
+  "landlocked": true,
+  "borders": [
+    "ARG",
+    "BOL",
+    "BRA"
+  ],
+  "area": 406752,
+  "population": 6109644,
+  "demonyms": {
+    "eng": {
+      "f": "Paraguayan",
+      "m": "Paraguayan"
+    },
+    "fra": {
+      "f": "Paraguayenne",
+      "m": "Paraguayen"
+    }
+  },
+  "languages": {
+    "grn": "Guaraní",
+    "spa": "Spanish"
+  },
+  "currencies": {
+    "PYG": {
+      "name": "Paraguayan guaraní",
+      "symbol": "₲"
+    }
+  },
+  "gini": {
+    "2019": 45.7
+  },
+  "car": {
+    "signs": [
+      "PY"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "######",
+    "regex": "^(\\d{6})$"
+  },
+  "idd": {
+    "root": "+5",
+    "suffixes": [
+      "95"
+    ]
+  },
+  "timezones": [
+    "UTC-04:00"
+  ],
+  "flag": "🇵🇾",
+  "flags": {
+    "png": "https://flagcdn.com/w320/py.png",
+    "svg": "https://flagcdn.com/py.svg",
+    "alt": "The flag of Paraguay features three equal horizontal bands of red, white and blue, with an emblem centered in the white band. On the obverse side of the flag depicted, this emblem is the national coat of arms."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/py.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/py.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/JtnqG73WJn1Gx6mz6",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/287077"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية باراغواي",
+      "common": "باراغواي"
+    },
+    "bre": {
+      "official": "Republik Paraguay",
+      "common": "Paraguay"
+    },
+    "ces": {
+      "official": "Paraguayská republika",
+      "common": "Paraguay"
+    },
+    "deu": {
+      "official": "Republik Paraguay",
+      "common": "Paraguay"
+    },
+    "est": {
+      "official": "Paraguay Vabariik",
+      "common": "Paraguay"
+    },
+    "fin": {
+      "official": "Paraguayn tasavalta",
+      "common": "Paraguay"
+    },
+    "fra": {
+      "official": "République du Paraguay",
+      "common": "Paraguay"
+    },
+    "hrv": {
+      "official": "Republika Paragvaj",
+      "common": "Paragvaj"
+    },
+    "hun": {
+      "official": "Paraguayi Köztársaság",
+      "common": "Paraguay"
+    },
+    "ita": {
+      "official": "Repubblica del Paraguay",
+      "common": "Paraguay"
+    },
+    "jpn": {
+      "official": "パラグアイ共和国",
+      "common": "パラグアイ"
+    },
+    "kor": {
+      "official": "파라과이 공화국",
+      "common": "파라과이"
+    },
+    "nld": {
+      "official": "Republiek Paraguay",
+      "common": "Paraguay"
+    },
+    "per": {
+      "official": "جمهوری پاراگوئه",
+      "common": "پاراگوئه"
+    },
+    "pol": {
+      "official": "Republika Paragwaju",
+      "common": "Paragwaj"
+    },
+    "por": {
+      "official": "República do Paraguai",
+      "common": "Paraguai"
+    },
+    "rus": {
+      "official": "Республика Парагвай",
+      "common": "Парагвай"
+    },
+    "slk": {
+      "official": "Paraguajská republika",
+      "common": "Paraguaj"
+    },
+    "spa": {
+      "official": "República de Paraguay",
+      "common": "Paraguay"
+    },
+    "srp": {
+      "official": "Republika Paragvaj",
+      "common": "Paragvaj"
+    },
+    "swe": {
+      "official": "Republiken Paraguay",
+      "common": "Paraguay"
+    },
+    "tur": {
+      "official": "Paraguay Cumhuriyeti",
+      "common": "Paraguay"
+    },
+    "urd": {
+      "official": "جمہوریہ پیراگوئے",
+      "common": "پیراگوئے"
+    },
+    "zho": {
+      "official": "巴拉圭共和国",
+      "common": "巴拉圭"
+    }
+  },
+  "largest_city": "Asuncion",
+  "largest_city_local": "Asunción",
+  "largest_city_pop": 1482200,
+  "largest_city_is_capital": false
+}

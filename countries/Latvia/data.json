@@ -1,0 +1,208 @@
+{
+  "name": {
+    "common": "Latvia",
+    "official": "Republic of Latvia",
+    "native": {
+      "lav": {
+        "official": "Latvijas Republikas",
+        "common": "Latvija"
+      }
+    }
+  },
+  "cca2": "LV",
+  "cca3": "LVA",
+  "ccn3": "428",
+  "cioc": "LAT",
+  "fifa": "LVA",
+  "tld": [
+    ".lv"
+  ],
+  "altSpellings": [
+    "LV",
+    "Republic of Latvia",
+    "Latvijas Republika"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Eastern European Group",
+  "capital": [
+    "Riga"
+  ],
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "continents": [
+    "Europe"
+  ],
+  "latlng": [
+    57,
+    25
+  ],
+  "landlocked": false,
+  "borders": [
+    "BLR",
+    "EST",
+    "LTU",
+    "RUS"
+  ],
+  "area": 64559,
+  "population": 1829000,
+  "demonyms": {
+    "eng": {
+      "f": "Latvian",
+      "m": "Latvian"
+    },
+    "fra": {
+      "f": "Lettone",
+      "m": "Letton"
+    }
+  },
+  "languages": {
+    "lav": "Latvian"
+  },
+  "currencies": {
+    "EUR": {
+      "name": "Euro",
+      "symbol": "€"
+    }
+  },
+  "gini": {
+    "2018": 35.1
+  },
+  "car": {
+    "signs": [
+      "LV"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "LV-####",
+    "regex": "^(?:LV)*(\\d{4})$"
+  },
+  "idd": {
+    "root": "+3",
+    "suffixes": [
+      "71"
+    ]
+  },
+  "timezones": [
+    "UTC+02:00"
+  ],
+  "flag": "🇱🇻",
+  "flags": {
+    "png": "https://flagcdn.com/w320/lv.png",
+    "svg": "https://flagcdn.com/lv.svg",
+    "alt": "The flag of Latvia has a carmine-red field with a thin white horizontal band across the middle of the field."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/lv.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/lv.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/iQpUkH7ghq31ZtXe9",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/72594"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية لاتفيا",
+      "common": "لاتفيا"
+    },
+    "bre": {
+      "official": "Republik Latvia",
+      "common": "Latvia"
+    },
+    "ces": {
+      "official": "Lotyšská republika",
+      "common": "Lotyšsko"
+    },
+    "deu": {
+      "official": "Republik Lettland",
+      "common": "Lettland"
+    },
+    "est": {
+      "official": "Läti Vabariik",
+      "common": "Läti"
+    },
+    "fin": {
+      "official": "Latvian tasavalta",
+      "common": "Latvia"
+    },
+    "fra": {
+      "official": "République de Lettonie",
+      "common": "Lettonie"
+    },
+    "hrv": {
+      "official": "Republika Latvija",
+      "common": "Latvija"
+    },
+    "hun": {
+      "official": "Lett Köztársaság",
+      "common": "Lettország"
+    },
+    "ita": {
+      "official": "Repubblica di Lettonia",
+      "common": "Lettonia"
+    },
+    "jpn": {
+      "official": "ラトビア共和国",
+      "common": "ラトビア"
+    },
+    "kor": {
+      "official": "라트비아 공화국",
+      "common": "라트비아"
+    },
+    "nld": {
+      "official": "Republiek Letland",
+      "common": "Letland"
+    },
+    "per": {
+      "official": "جمهوری لتونی",
+      "common": "لتونی"
+    },
+    "pol": {
+      "official": "Republika Łotewska",
+      "common": "Łotwa"
+    },
+    "por": {
+      "official": "República da Letónia",
+      "common": "Letónia"
+    },
+    "rus": {
+      "official": "Латвийская Республика",
+      "common": "Латвия"
+    },
+    "slk": {
+      "official": "Lotyšská republika",
+      "common": "Lotyšsko"
+    },
+    "spa": {
+      "official": "República de Letonia",
+      "common": "Letonia"
+    },
+    "srp": {
+      "official": "Republika Letonija",
+      "common": "Letonija"
+    },
+    "swe": {
+      "official": "Republiken Lettland",
+      "common": "Lettland"
+    },
+    "tur": {
+      "official": "Letonya Cumhuriyeti",
+      "common": "Letonya"
+    },
+    "urd": {
+      "official": "جمہوریہ لٹویا",
+      "common": "لٹویا"
+    },
+    "zho": {
+      "official": "拉脱维亚共和国",
+      "common": "拉脱维亚"
+    }
+  },
+  "largest_city": "Riga",
+  "largest_city_local": "Riga",
+  "largest_city_pop": 742572,
+  "largest_city_is_capital": true
+}

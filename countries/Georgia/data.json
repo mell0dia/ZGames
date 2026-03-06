@@ -1,0 +1,207 @@
+{
+  "name": {
+    "common": "Georgia",
+    "official": "Georgia",
+    "native": {
+      "kat": {
+        "official": "საქართველო",
+        "common": "საქართველო"
+      }
+    }
+  },
+  "cca2": "GE",
+  "cca3": "GEO",
+  "ccn3": "268",
+  "cioc": "GEO",
+  "fifa": "GEO",
+  "tld": [
+    ".ge"
+  ],
+  "altSpellings": [
+    "GE",
+    "Sakartvelo"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Eastern European Group",
+  "capital": [
+    "Tbilisi"
+  ],
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "continents": [
+    "Asia"
+  ],
+  "latlng": [
+    42,
+    43.5
+  ],
+  "landlocked": false,
+  "borders": [
+    "ARM",
+    "AZE",
+    "RUS",
+    "TUR"
+  ],
+  "area": 69700,
+  "population": 4000921,
+  "demonyms": {
+    "eng": {
+      "f": "Georgian",
+      "m": "Georgian"
+    },
+    "fra": {
+      "f": "Géorgienne",
+      "m": "Géorgien"
+    }
+  },
+  "languages": {
+    "kat": "Georgian"
+  },
+  "currencies": {
+    "GEL": {
+      "name": "lari",
+      "symbol": "₾"
+    }
+  },
+  "gini": {
+    "2019": 35.9
+  },
+  "car": {
+    "signs": [
+      "GE"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "####",
+    "regex": "^(\\d{4})$"
+  },
+  "idd": {
+    "root": "+9",
+    "suffixes": [
+      "95"
+    ]
+  },
+  "timezones": [
+    "UTC+04:00"
+  ],
+  "flag": "🇬🇪",
+  "flags": {
+    "png": "https://flagcdn.com/w320/ge.png",
+    "svg": "https://flagcdn.com/ge.svg",
+    "alt": "The flag of Georgia has a white field with a large centered red cross that extends to the edges and divides the field into four quarters. A small red Bolnur-Katskhuri cross is centered in each quarter."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/ge.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/ge.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/bvCaGBePR1ZEDK5cA",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/28699"
+  },
+  "translations": {
+    "ara": {
+      "official": "جورجيا",
+      "common": "جورجيا"
+    },
+    "bre": {
+      "official": "Republik Jorjia",
+      "common": "Jorjia"
+    },
+    "ces": {
+      "official": "Gruzie",
+      "common": "Gruzie"
+    },
+    "deu": {
+      "official": "Georgien",
+      "common": "Georgien"
+    },
+    "est": {
+      "official": "Gruusia",
+      "common": "Gruusia"
+    },
+    "fin": {
+      "official": "Georgia",
+      "common": "Georgia"
+    },
+    "fra": {
+      "official": "République de Géorgie",
+      "common": "Géorgie"
+    },
+    "hrv": {
+      "official": "Gruzija",
+      "common": "Gruzija"
+    },
+    "hun": {
+      "official": "Grúzia",
+      "common": "Grúzia"
+    },
+    "ita": {
+      "official": "Georgia",
+      "common": "Georgia"
+    },
+    "jpn": {
+      "official": "ジョージア",
+      "common": "ジョージア"
+    },
+    "kor": {
+      "official": "조지아",
+      "common": "조지아"
+    },
+    "nld": {
+      "official": "Georgia",
+      "common": "Georgië"
+    },
+    "per": {
+      "official": "گرجستان",
+      "common": "گرجستان"
+    },
+    "pol": {
+      "official": "Gruzja",
+      "common": "Gruzja"
+    },
+    "por": {
+      "official": "Georgia",
+      "common": "Geórgia"
+    },
+    "rus": {
+      "official": "Грузия",
+      "common": "Грузия"
+    },
+    "slk": {
+      "official": "Gruzínsko",
+      "common": "Gruzínsko"
+    },
+    "spa": {
+      "official": "Georgia",
+      "common": "Georgia"
+    },
+    "srp": {
+      "official": "Gruzija",
+      "common": "Gruzija"
+    },
+    "swe": {
+      "official": "Georgien",
+      "common": "Georgien"
+    },
+    "tur": {
+      "official": "Gürcistan",
+      "common": "Gürcistan"
+    },
+    "urd": {
+      "official": "جارجیا",
+      "common": "جارجیا"
+    },
+    "zho": {
+      "official": "格鲁吉亚",
+      "common": "格鲁吉亚"
+    }
+  },
+  "largest_city": "Tbilisi",
+  "largest_city_local": "Tbilisi",
+  "largest_city_pop": 1049498,
+  "largest_city_is_capital": true
+}

@@ -1,0 +1,208 @@
+{
+  "name": {
+    "common": "Malawi",
+    "official": "Republic of Malawi",
+    "native": {
+      "eng": {
+        "official": "Republic of Malawi",
+        "common": "Malawi"
+      },
+      "nya": {
+        "official": "Chalo cha Malawi, Dziko la Malaŵi",
+        "common": "Malaŵi"
+      }
+    }
+  },
+  "cca2": "MW",
+  "cca3": "MWI",
+  "ccn3": "454",
+  "cioc": "MAW",
+  "fifa": "MWI",
+  "tld": [
+    ".mw"
+  ],
+  "altSpellings": [
+    "MW",
+    "Republic of Malawi"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "African Group",
+  "capital": [
+    "Lilongwe"
+  ],
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "latlng": [
+    -13.5,
+    34
+  ],
+  "landlocked": true,
+  "borders": [
+    "MOZ",
+    "TZA",
+    "ZMB"
+  ],
+  "area": 118484,
+  "population": 20734262,
+  "demonyms": {
+    "eng": {
+      "f": "Malawian",
+      "m": "Malawian"
+    },
+    "fra": {
+      "f": "Malawienne",
+      "m": "Malawien"
+    }
+  },
+  "languages": {
+    "eng": "English",
+    "nya": "Chewa"
+  },
+  "currencies": {
+    "MWK": {
+      "name": "Malawian kwacha",
+      "symbol": "MK"
+    }
+  },
+  "gini": {
+    "2016": 44.7
+  },
+  "car": {
+    "signs": [
+      "MW"
+    ],
+    "side": "left"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {},
+  "idd": {
+    "root": "+2",
+    "suffixes": [
+      "65"
+    ]
+  },
+  "timezones": [
+    "UTC+02:00"
+  ],
+  "flag": "🇲🇼",
+  "flags": {
+    "png": "https://flagcdn.com/w320/mw.png",
+    "svg": "https://flagcdn.com/mw.svg",
+    "alt": "The flag of Malawi is composed of three equal horizontal bands of black, red and green. The top half of a red sun with thirty-one visible rays is centered in the black band."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/mw.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/mw.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/mc6z83pW9m98X2Ef6",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/195290"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية مالاوي",
+      "common": "مالاوي"
+    },
+    "bre": {
+      "official": "Republik Malawi",
+      "common": "Malawi"
+    },
+    "ces": {
+      "official": "Malawiská republika",
+      "common": "Malawi"
+    },
+    "deu": {
+      "official": "Republik Malawi",
+      "common": "Malawi"
+    },
+    "est": {
+      "official": "Malawi Vabariik",
+      "common": "Malawi"
+    },
+    "fin": {
+      "official": "Malawin tasavalta",
+      "common": "Malawi"
+    },
+    "fra": {
+      "official": "République du Malawi",
+      "common": "Malawi"
+    },
+    "hrv": {
+      "official": "Republika Malavi",
+      "common": "Malavi"
+    },
+    "hun": {
+      "official": "Malawi Köztársaság",
+      "common": "Malawi"
+    },
+    "ita": {
+      "official": "Repubblica del Malawi",
+      "common": "Malawi"
+    },
+    "jpn": {
+      "official": "マラウイ共和国",
+      "common": "マラウイ"
+    },
+    "kor": {
+      "official": "말라위 공화국",
+      "common": "말라위"
+    },
+    "nld": {
+      "official": "Republiek Malawi",
+      "common": "Malawi"
+    },
+    "per": {
+      "official": "جمهوری مالاوی",
+      "common": "مالاوی"
+    },
+    "pol": {
+      "official": "Republika Malawi",
+      "common": "Malawi"
+    },
+    "por": {
+      "official": "República do Malawi",
+      "common": "Malawi"
+    },
+    "rus": {
+      "official": "Республика Малави",
+      "common": "Малави"
+    },
+    "slk": {
+      "official": "Malawijská republika",
+      "common": "Malawi"
+    },
+    "spa": {
+      "official": "República de Malawi",
+      "common": "Malawi"
+    },
+    "srp": {
+      "official": "Republika Malavi",
+      "common": "Malavi"
+    },
+    "swe": {
+      "official": "Republiken Malawi",
+      "common": "Malawi"
+    },
+    "tur": {
+      "official": "Malavi Cumhuriyeti",
+      "common": "Malavi"
+    },
+    "urd": {
+      "official": "جمہوریہ ملاوی",
+      "common": "ملاوی"
+    },
+    "zho": {
+      "official": "马拉维共和国",
+      "common": "马拉维"
+    }
+  },
+  "largest_city": "Lilongwe",
+  "largest_city_local": "Lilongwe",
+  "largest_city_pop": 1115815,
+  "largest_city_is_capital": true
+}

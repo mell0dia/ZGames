@@ -1,0 +1,206 @@
+{
+  "name": {
+    "common": "Guatemala",
+    "official": "Republic of Guatemala",
+    "native": {
+      "spa": {
+        "official": "República de Guatemala",
+        "common": "Guatemala"
+      }
+    }
+  },
+  "cca2": "GT",
+  "cca3": "GTM",
+  "ccn3": "320",
+  "cioc": "GUA",
+  "fifa": "GUA",
+  "tld": [
+    ".gt"
+  ],
+  "altSpellings": [
+    "GT"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Latin American and Caribbean Group",
+  "capital": [
+    "Guatemala City"
+  ],
+  "region": "Americas",
+  "subregion": "Central America",
+  "continents": [
+    "North America"
+  ],
+  "latlng": [
+    15.5,
+    -90.25
+  ],
+  "landlocked": false,
+  "borders": [
+    "BLZ",
+    "SLV",
+    "HND",
+    "MEX"
+  ],
+  "area": 108889,
+  "population": 18079810,
+  "demonyms": {
+    "eng": {
+      "f": "Guatemalan",
+      "m": "Guatemalan"
+    },
+    "fra": {
+      "f": "Guatémaltèque",
+      "m": "Guatémaltèque"
+    }
+  },
+  "languages": {
+    "spa": "Spanish"
+  },
+  "currencies": {
+    "GTQ": {
+      "name": "Guatemalan quetzal",
+      "symbol": "Q"
+    }
+  },
+  "gini": {
+    "2014": 48.3
+  },
+  "car": {
+    "signs": [
+      "GCA"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "#####",
+    "regex": "^(\\d{5})$"
+  },
+  "idd": {
+    "root": "+5",
+    "suffixes": [
+      "02"
+    ]
+  },
+  "timezones": [
+    "UTC-06:00"
+  ],
+  "flag": "🇬🇹",
+  "flags": {
+    "png": "https://flagcdn.com/w320/gt.png",
+    "svg": "https://flagcdn.com/gt.svg",
+    "alt": "The flag of Guatemala is composed of three equal vertical bands of light blue, white and light blue, with the national coat of arms centered in the white band."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/gt.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/gt.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/JoRAbem4Hxb9FYbVA",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/1521463"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية غواتيمالا",
+      "common": "غواتيمالا"
+    },
+    "bre": {
+      "official": "Republik Guatemala",
+      "common": "Guatemala"
+    },
+    "ces": {
+      "official": "Republika Guatemala",
+      "common": "Guatemala"
+    },
+    "deu": {
+      "official": "Republik Guatemala",
+      "common": "Guatemala"
+    },
+    "est": {
+      "official": "Guatemala Vabariik",
+      "common": "Guatemala"
+    },
+    "fin": {
+      "official": "Guatemalan tasavalta",
+      "common": "Guatemala"
+    },
+    "fra": {
+      "official": "République du Guatemala",
+      "common": "Guatemala"
+    },
+    "hrv": {
+      "official": "Republika Gvatemala",
+      "common": "Gvatemala"
+    },
+    "hun": {
+      "official": "Guatemalai Köztársaság",
+      "common": "Guatemala"
+    },
+    "ita": {
+      "official": "Repubblica del Guatemala",
+      "common": "Guatemala"
+    },
+    "jpn": {
+      "official": "グアテマラ共和国",
+      "common": "グアテマラ"
+    },
+    "kor": {
+      "official": "과테말라 공화국",
+      "common": "과테말라"
+    },
+    "nld": {
+      "official": "Republiek Guatemala",
+      "common": "Guatemala"
+    },
+    "per": {
+      "official": "جمهوری گواتِمالا",
+      "common": "گواتِمالا"
+    },
+    "pol": {
+      "official": "Republika Gwatemali",
+      "common": "Gwatemala"
+    },
+    "por": {
+      "official": "República da Guatemala",
+      "common": "Guatemala"
+    },
+    "rus": {
+      "official": "Республика Гватемала",
+      "common": "Гватемала"
+    },
+    "slk": {
+      "official": "Guatemalská republika",
+      "common": "Guatemala"
+    },
+    "spa": {
+      "official": "República de Guatemala",
+      "common": "Guatemala"
+    },
+    "srp": {
+      "official": "Republika Gvatemala",
+      "common": "Gvatemala"
+    },
+    "swe": {
+      "official": "Republiken Guatemala",
+      "common": "Guatemala"
+    },
+    "tur": {
+      "official": "Guatemala Cumhuriyeti",
+      "common": "Guatemala"
+    },
+    "urd": {
+      "official": "جمہوریہ گواتیمالا",
+      "common": "گواتیمالا"
+    },
+    "zho": {
+      "official": "危地马拉共和国",
+      "common": "危地马拉"
+    }
+  },
+  "largest_city": "Guatemala City",
+  "largest_city_local": "Guatemala City",
+  "largest_city_pop": 994938,
+  "largest_city_is_capital": true
+}

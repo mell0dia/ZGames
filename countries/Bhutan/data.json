@@ -1,0 +1,206 @@
+{
+  "name": {
+    "common": "Bhutan",
+    "official": "Kingdom of Bhutan",
+    "native": {
+      "dzo": {
+        "official": "འབྲུག་རྒྱལ་ཁབ་",
+        "common": "འབྲུག་ཡུལ་"
+      }
+    }
+  },
+  "cca2": "BT",
+  "cca3": "BTN",
+  "ccn3": "064",
+  "cioc": "BHU",
+  "fifa": "BHU",
+  "tld": [
+    ".bt"
+  ],
+  "altSpellings": [
+    "BT",
+    "Kingdom of Bhutan"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Asia and the Pacific Group",
+  "capital": [
+    "Thimphu"
+  ],
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "continents": [
+    "Asia"
+  ],
+  "latlng": [
+    27.5,
+    90.5
+  ],
+  "landlocked": true,
+  "borders": [
+    "CHN",
+    "IND"
+  ],
+  "area": 38394,
+  "population": 784043,
+  "demonyms": {
+    "eng": {
+      "f": "Bhutanese",
+      "m": "Bhutanese"
+    },
+    "fra": {
+      "f": "Bhoutanaise",
+      "m": "Bhoutanais"
+    }
+  },
+  "languages": {
+    "dzo": "Dzongkha"
+  },
+  "currencies": {
+    "BTN": {
+      "name": "Bhutanese ngultrum",
+      "symbol": "Nu."
+    },
+    "INR": {
+      "name": "Indian rupee",
+      "symbol": "₹"
+    }
+  },
+  "gini": {
+    "2017": 37.4
+  },
+  "car": {
+    "signs": [
+      "BHT"
+    ],
+    "side": "left"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {},
+  "idd": {
+    "root": "+9",
+    "suffixes": [
+      "75"
+    ]
+  },
+  "timezones": [
+    "UTC+06:00"
+  ],
+  "flag": "🇧🇹",
+  "flags": {
+    "png": "https://flagcdn.com/w320/bt.png",
+    "svg": "https://flagcdn.com/bt.svg",
+    "alt": "The flag of Bhutan is divided diagonally, from the lower hoist-side corner to the upper fly-side corner, into an upper yellow and a lower orange triangle. A fly-side facing white dragon holding four jewels in its claws is situated along the boundary of the two triangles."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/bt.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/bt.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/VEfXXBftTFLUpNgp8",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/184629"
+  },
+  "translations": {
+    "ara": {
+      "official": "مملكة بوتان",
+      "common": "بوتان"
+    },
+    "bre": {
+      "official": "Rouantelezh Bhoutan",
+      "common": "Bhoutan"
+    },
+    "ces": {
+      "official": "Bhútánské království",
+      "common": "Bhútán"
+    },
+    "deu": {
+      "official": "Königreich Bhutan",
+      "common": "Bhutan"
+    },
+    "est": {
+      "official": "Bhutani Kuningriik",
+      "common": "Bhutan"
+    },
+    "fin": {
+      "official": "Bhutanin kuningaskunta",
+      "common": "Bhutan"
+    },
+    "fra": {
+      "official": "Royaume du Bhoutan",
+      "common": "Bhoutan"
+    },
+    "hrv": {
+      "official": "Kraljevina Butan",
+      "common": "Butan"
+    },
+    "hun": {
+      "official": "Bhutáni Királyság",
+      "common": "Bhután"
+    },
+    "ita": {
+      "official": "Regno del Bhutan",
+      "common": "Bhutan"
+    },
+    "jpn": {
+      "official": "ブータン王国",
+      "common": "ブータン"
+    },
+    "kor": {
+      "official": "부탄 왕국",
+      "common": "부탄"
+    },
+    "nld": {
+      "official": "Koninkrijk Bhutan",
+      "common": "Bhutan"
+    },
+    "per": {
+      "official": "پادشاهی بوتان",
+      "common": "بوتان"
+    },
+    "pol": {
+      "official": "Bhutan",
+      "common": "Bhutan"
+    },
+    "por": {
+      "official": "Reino do Butão",
+      "common": "Butão"
+    },
+    "rus": {
+      "official": "Королевство Бутан",
+      "common": "Бутан"
+    },
+    "slk": {
+      "official": "Bhutánske krâľovstvo",
+      "common": "Bhután"
+    },
+    "spa": {
+      "official": "Reino de Bután",
+      "common": "Bután"
+    },
+    "srp": {
+      "official": "Kraljevina Butan",
+      "common": "Butan"
+    },
+    "swe": {
+      "official": "Konungariket Bhutan",
+      "common": "Bhutan"
+    },
+    "tur": {
+      "official": "Butan Krallığı",
+      "common": "Butan"
+    },
+    "urd": {
+      "official": "سلطنت بھوٹان",
+      "common": "بھوٹان"
+    },
+    "zho": {
+      "official": "不丹王国",
+      "common": "不丹"
+    }
+  },
+  "largest_city": "Thimphu",
+  "largest_city_local": "Thimphu",
+  "largest_city_pop": 98676,
+  "largest_city_is_capital": true
+}

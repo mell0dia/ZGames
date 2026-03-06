@@ -1,0 +1,209 @@
+{
+  "name": {
+    "common": "Armenia",
+    "official": "Republic of Armenia",
+    "native": {
+      "hye": {
+        "official": "Հայաստանի Հանրապետություն",
+        "common": "Հայաստան"
+      }
+    }
+  },
+  "cca2": "AM",
+  "cca3": "ARM",
+  "ccn3": "051",
+  "cioc": "ARM",
+  "fifa": "ARM",
+  "tld": [
+    ".am"
+  ],
+  "altSpellings": [
+    "AM",
+    "Hayastan",
+    "Republic of Armenia",
+    "Հայաստանի Հանրապետություն"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Eastern European Group",
+  "capital": [
+    "Yerevan"
+  ],
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "continents": [
+    "Asia"
+  ],
+  "latlng": [
+    40,
+    45
+  ],
+  "landlocked": true,
+  "borders": [
+    "AZE",
+    "GEO",
+    "IRN",
+    "TUR"
+  ],
+  "area": 29743,
+  "population": 3076200,
+  "demonyms": {
+    "eng": {
+      "f": "Armenian",
+      "m": "Armenian"
+    },
+    "fra": {
+      "f": "Arménienne",
+      "m": "Arménien"
+    }
+  },
+  "languages": {
+    "hye": "Armenian"
+  },
+  "currencies": {
+    "AMD": {
+      "name": "Armenian dram",
+      "symbol": "֏"
+    }
+  },
+  "gini": {
+    "2019": 29.9
+  },
+  "car": {
+    "signs": [
+      "AM"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "######",
+    "regex": "^(\\d{6})$"
+  },
+  "idd": {
+    "root": "+3",
+    "suffixes": [
+      "74"
+    ]
+  },
+  "timezones": [
+    "UTC+04:00"
+  ],
+  "flag": "🇦🇲",
+  "flags": {
+    "png": "https://flagcdn.com/w320/am.png",
+    "svg": "https://flagcdn.com/am.svg",
+    "alt": "The flag of Armenia is composed of three equal horizontal bands of red, blue and orange."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/am.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/am.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/azWUtK9bUQYEyccbA",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/364066"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية أرمينيا",
+      "common": "أرمينيا"
+    },
+    "bre": {
+      "official": "Republik Armenia",
+      "common": "Armenia"
+    },
+    "ces": {
+      "official": "Arménská republika",
+      "common": "Arménie"
+    },
+    "deu": {
+      "official": "Republik Armenien",
+      "common": "Armenien"
+    },
+    "est": {
+      "official": "Armeenia Vabariik",
+      "common": "Armeenia"
+    },
+    "fin": {
+      "official": "Armenian tasavalta",
+      "common": "Armenia"
+    },
+    "fra": {
+      "official": "République d'Arménie",
+      "common": "Arménie"
+    },
+    "hrv": {
+      "official": "Republika Armenija",
+      "common": "Armenija"
+    },
+    "hun": {
+      "official": "Örményország",
+      "common": "Örményország"
+    },
+    "ita": {
+      "official": "Repubblica di Armenia",
+      "common": "Armenia"
+    },
+    "jpn": {
+      "official": "アルメニア共和国",
+      "common": "アルメニア"
+    },
+    "kor": {
+      "official": "아르메니아 공화국",
+      "common": "아르메니아"
+    },
+    "nld": {
+      "official": "Republiek Armenië",
+      "common": "Armenië"
+    },
+    "per": {
+      "official": "جمهوری ارمنستان",
+      "common": "ارمنستان"
+    },
+    "pol": {
+      "official": "Republika Armenii",
+      "common": "Armenia"
+    },
+    "por": {
+      "official": "República da Arménia",
+      "common": "Arménia"
+    },
+    "rus": {
+      "official": "Республика Армения",
+      "common": "Армения"
+    },
+    "slk": {
+      "official": "Arménska republika",
+      "common": "Arménsko"
+    },
+    "spa": {
+      "official": "República de Armenia",
+      "common": "Armenia"
+    },
+    "srp": {
+      "official": "Republika Jermenija",
+      "common": "Jermenija"
+    },
+    "swe": {
+      "official": "Republiken Armenien",
+      "common": "Armenien"
+    },
+    "tur": {
+      "official": "Ermenistan Cumhuriyeti",
+      "common": "Ermenistan"
+    },
+    "urd": {
+      "official": "جمہوریہ آرمینیا",
+      "common": "آرمینیا"
+    },
+    "zho": {
+      "official": "亚美尼亚共和国",
+      "common": "亚美尼亚"
+    }
+  },
+  "largest_city": "Yerevan",
+  "largest_city_local": "Yerevan",
+  "largest_city_pop": 1144700,
+  "largest_city_is_capital": true
+}

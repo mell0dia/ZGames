@@ -1,0 +1,207 @@
+{
+  "name": {
+    "common": "Honduras",
+    "official": "Republic of Honduras",
+    "native": {
+      "spa": {
+        "official": "República de Honduras",
+        "common": "Honduras"
+      }
+    }
+  },
+  "cca2": "HN",
+  "cca3": "HND",
+  "ccn3": "340",
+  "cioc": "HON",
+  "fifa": "HON",
+  "tld": [
+    ".hn"
+  ],
+  "altSpellings": [
+    "HN",
+    "Republic of Honduras",
+    "República de Honduras"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Latin American and Caribbean Group",
+  "capital": [
+    "Tegucigalpa"
+  ],
+  "region": "Americas",
+  "subregion": "Central America",
+  "continents": [
+    "North America"
+  ],
+  "latlng": [
+    15,
+    -86.5
+  ],
+  "landlocked": false,
+  "borders": [
+    "GTM",
+    "SLV",
+    "NIC"
+  ],
+  "area": 112492,
+  "population": 9892632,
+  "demonyms": {
+    "eng": {
+      "f": "Honduran",
+      "m": "Honduran"
+    },
+    "fra": {
+      "f": "Hondurienne",
+      "m": "Hondurien"
+    }
+  },
+  "languages": {
+    "spa": "Spanish"
+  },
+  "currencies": {
+    "HNL": {
+      "name": "Honduran lempira",
+      "symbol": "L"
+    }
+  },
+  "gini": {
+    "2019": 48.2
+  },
+  "car": {
+    "signs": [
+      "HN"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "@@####",
+    "regex": "^([A-Z]{2}\\d{4})$"
+  },
+  "idd": {
+    "root": "+5",
+    "suffixes": [
+      "04"
+    ]
+  },
+  "timezones": [
+    "UTC-06:00"
+  ],
+  "flag": "🇭🇳",
+  "flags": {
+    "png": "https://flagcdn.com/w320/hn.png",
+    "svg": "https://flagcdn.com/hn.svg",
+    "alt": "The flag of Honduras is composed of three equal horizontal bands of turquoise, white and turquoise, with five small five-pointed turquoise stars arranged in a quincuncial pattern at the center of the white band."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/hn.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/hn.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/BbeJK8Sk2VkMHbdF8",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/287670"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية هندوراس",
+      "common": "هندوراس"
+    },
+    "bre": {
+      "official": "Republik Honduras",
+      "common": "Honduras"
+    },
+    "ces": {
+      "official": "Honduraská republika",
+      "common": "Honduras"
+    },
+    "deu": {
+      "official": "Republik Honduras",
+      "common": "Honduras"
+    },
+    "est": {
+      "official": "Hondurase Vabariik",
+      "common": "Honduras"
+    },
+    "fin": {
+      "official": "Hondurasin tasavalta",
+      "common": "Honduras"
+    },
+    "fra": {
+      "official": "République du Honduras",
+      "common": "Honduras"
+    },
+    "hrv": {
+      "official": "Republika Honduras",
+      "common": "Honduras"
+    },
+    "hun": {
+      "official": "Hondurasi Köztársaság",
+      "common": "Honduras"
+    },
+    "ita": {
+      "official": "Repubblica di Honduras",
+      "common": "Honduras"
+    },
+    "jpn": {
+      "official": "ホンジュラス共和国",
+      "common": "ホンジュラス"
+    },
+    "kor": {
+      "official": "온두라스 공화국",
+      "common": "온두라스"
+    },
+    "nld": {
+      "official": "Republiek Honduras",
+      "common": "Honduras"
+    },
+    "per": {
+      "official": "جمهوری هندوراس",
+      "common": "هُندوراس"
+    },
+    "pol": {
+      "official": "Republika Hondurasu",
+      "common": "Honduras"
+    },
+    "por": {
+      "official": "República de Honduras",
+      "common": "Honduras"
+    },
+    "rus": {
+      "official": "Республика Гондурас",
+      "common": "Гондурас"
+    },
+    "slk": {
+      "official": "Honduraská republika",
+      "common": "Honduras"
+    },
+    "spa": {
+      "official": "República de Honduras",
+      "common": "Honduras"
+    },
+    "srp": {
+      "official": "Republika Honduras",
+      "common": "Honduras"
+    },
+    "swe": {
+      "official": "Republiken Honduras",
+      "common": "Honduras"
+    },
+    "tur": {
+      "official": "Honduras Cumhuriyeti",
+      "common": "Honduras"
+    },
+    "urd": {
+      "official": "جمہوریہ ہونڈوراس",
+      "common": "ہونڈوراس"
+    },
+    "zho": {
+      "official": "洪都拉斯共和国",
+      "common": "洪都拉斯"
+    }
+  },
+  "largest_city": "Tegucigalpa",
+  "largest_city_local": "Tegucigalpa",
+  "largest_city_pop": 850848,
+  "largest_city_is_capital": true
+}

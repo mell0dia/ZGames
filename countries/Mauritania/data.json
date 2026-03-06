@@ -1,0 +1,205 @@
+{
+  "name": {
+    "common": "Mauritania",
+    "official": "Islamic Republic of Mauritania",
+    "native": {
+      "ara": {
+        "official": "الجمهورية الإسلامية الموريتانية",
+        "common": "موريتانيا"
+      }
+    }
+  },
+  "cca2": "MR",
+  "cca3": "MRT",
+  "ccn3": "478",
+  "cioc": "MTN",
+  "fifa": "MTN",
+  "tld": [
+    ".mr"
+  ],
+  "altSpellings": [
+    "MR",
+    "Islamic Republic of Mauritania",
+    "al-Jumhūriyyah al-ʾIslāmiyyah al-Mūrītāniyyah"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "African Group",
+  "capital": [
+    "Nouakchott"
+  ],
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "continents": [
+    "Africa"
+  ],
+  "latlng": [
+    20,
+    -12
+  ],
+  "landlocked": false,
+  "borders": [
+    "DZA",
+    "MLI",
+    "SEN",
+    "ESH"
+  ],
+  "area": 1030700,
+  "population": 4927532,
+  "demonyms": {
+    "eng": {
+      "f": "Mauritanian",
+      "m": "Mauritanian"
+    },
+    "fra": {
+      "f": "Mauritanienne",
+      "m": "Mauritanien"
+    }
+  },
+  "languages": {
+    "ara": "Arabic"
+  },
+  "currencies": {
+    "MRU": {
+      "name": "Mauritanian ouguiya",
+      "symbol": "UM"
+    }
+  },
+  "gini": {
+    "2014": 32.6
+  },
+  "car": {
+    "signs": [
+      "RIM"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {},
+  "idd": {
+    "root": "+2",
+    "suffixes": [
+      "22"
+    ]
+  },
+  "timezones": [
+    "UTC"
+  ],
+  "flag": "🇲🇷",
+  "flags": {
+    "png": "https://flagcdn.com/w320/mr.png",
+    "svg": "https://flagcdn.com/mr.svg",
+    "alt": "The flag of Mauritania has a green field with a thin red horizontal band at the top and bottom of the field. At the center of the field is a five-pointed yellow star above an upward facing yellow crescent."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/mr.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/mr.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/im2MmQ5jFjzxWBks5",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/192763"
+  },
+  "translations": {
+    "ara": {
+      "official": "الجمهورية الإسلامية الموريتانية",
+      "common": "موريتانيا"
+    },
+    "bre": {
+      "official": "Republik islamek Maouritania",
+      "common": "Maouritania"
+    },
+    "ces": {
+      "official": "Mauritánská islámská republika",
+      "common": "Mauritánie"
+    },
+    "deu": {
+      "official": "Islamische Republik Mauretanien",
+      "common": "Mauretanien"
+    },
+    "est": {
+      "official": "Mauritaania Islamivabariik",
+      "common": "Mauritaania"
+    },
+    "fin": {
+      "official": "Mauritanian islamilainen tasavalta",
+      "common": "Mauritania"
+    },
+    "fra": {
+      "official": "République islamique de Mauritanie",
+      "common": "Mauritanie"
+    },
+    "hrv": {
+      "official": "Islamska Republika Mauritanija",
+      "common": "Mauritanija"
+    },
+    "hun": {
+      "official": "Mauritániai Iszlám Köztársaság",
+      "common": "Mauritánia"
+    },
+    "ita": {
+      "official": "Repubblica islamica di Mauritania",
+      "common": "Mauritania"
+    },
+    "jpn": {
+      "official": "モーリタニア・イスラム共和国",
+      "common": "モーリタニア"
+    },
+    "kor": {
+      "official": "모리타니 이슬람 공화국",
+      "common": "모리타니"
+    },
+    "nld": {
+      "official": "Islamitische Republiek Mauritanië",
+      "common": "Mauritanië"
+    },
+    "per": {
+      "official": "جمهوری اسلامی موریتانی",
+      "common": "موریتانی"
+    },
+    "pol": {
+      "official": "Islamska Republika Mauretańska",
+      "common": "Mauretania"
+    },
+    "por": {
+      "official": "República Islâmica da Mauritânia",
+      "common": "Mauritânia"
+    },
+    "rus": {
+      "official": "Исламская Республика Мавритания",
+      "common": "Мавритания"
+    },
+    "slk": {
+      "official": "Mauritánska islamská republika",
+      "common": "Mauritánia"
+    },
+    "spa": {
+      "official": "República Islámica de Mauritania",
+      "common": "Mauritania"
+    },
+    "srp": {
+      "official": "Islamska Republika Mauritanija",
+      "common": "Mauritanija"
+    },
+    "swe": {
+      "official": "Islamiska republiken Mauretanien",
+      "common": "Mauretanien"
+    },
+    "tur": {
+      "official": "Moritanya İslam Cumhuriyeti",
+      "common": "Moritanya"
+    },
+    "urd": {
+      "official": "اسلامی جمہوریہ موریتانیہ",
+      "common": "موریتانیہ"
+    },
+    "zho": {
+      "official": "毛里塔尼亚伊斯兰共和国",
+      "common": "毛里塔尼亚"
+    }
+  },
+  "largest_city": "Nouakchott",
+  "largest_city_local": "Nouakchott",
+  "largest_city_pop": 1184530,
+  "largest_city_is_capital": true
+}

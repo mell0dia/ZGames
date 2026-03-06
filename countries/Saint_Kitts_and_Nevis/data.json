@@ -1,0 +1,197 @@
+{
+  "name": {
+    "common": "Saint Kitts and Nevis",
+    "official": "Federation of Saint Christopher and Nevis",
+    "native": {
+      "eng": {
+        "official": "Federation of Saint Christopher and Nevis",
+        "common": "Saint Kitts and Nevis"
+      }
+    }
+  },
+  "cca2": "KN",
+  "cca3": "KNA",
+  "ccn3": "659",
+  "cioc": "SKN",
+  "fifa": "SKN",
+  "tld": [
+    ".kn"
+  ],
+  "altSpellings": [
+    "KN",
+    "Federation of Saint Christopher and Nevis"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Latin American and Caribbean Group",
+  "capital": [
+    "Basseterre"
+  ],
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "continents": [
+    "North America"
+  ],
+  "latlng": [
+    17.33333333,
+    -62.75
+  ],
+  "landlocked": false,
+  "borders": [],
+  "area": 261,
+  "population": 51320,
+  "demonyms": {
+    "eng": {
+      "f": "Kittitian or Nevisian",
+      "m": "Kittitian or Nevisian"
+    },
+    "fra": {
+      "f": "Kittitienne-et-nevicienne",
+      "m": "Kittitien-et-nevicien"
+    }
+  },
+  "languages": {
+    "eng": "English"
+  },
+  "currencies": {
+    "XCD": {
+      "name": "Eastern Caribbean dollar",
+      "symbol": "$"
+    }
+  },
+  "gini": {},
+  "car": {
+    "signs": [
+      "KN"
+    ],
+    "side": "left"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {},
+  "idd": {
+    "root": "+1",
+    "suffixes": [
+      "869"
+    ]
+  },
+  "timezones": [
+    "UTC-04:00"
+  ],
+  "flag": "🇰🇳",
+  "flags": {
+    "png": "https://flagcdn.com/w320/kn.png",
+    "svg": "https://flagcdn.com/kn.svg",
+    "alt": "The flag of Saint Kitts and Nevis features two large five-pointed white stars within a yellow-edged black diagonal band that extends from the lower hoist-side corner to the upper fly-side corner of the field. Above and beneath this band are a green and red triangle respectively."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/kn.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/kn.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/qiaVwcLVTXX3eoTNA",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/536899"
+  },
+  "translations": {
+    "ara": {
+      "official": "اتحاد القديس كريستوفر ونيفيس",
+      "common": "سانت كيتس ونيفيس"
+    },
+    "bre": {
+      "official": "Kevread Saint Kitts ha Nevis",
+      "common": "Saint Kitts ha Nevis"
+    },
+    "ces": {
+      "official": "Federace Sv. Kryštof a Nevis",
+      "common": "Svatý Kryštof a Nevis"
+    },
+    "deu": {
+      "official": "Föderation von St. Kitts und Nevis",
+      "common": "St. Kitts und Nevis"
+    },
+    "est": {
+      "official": "Saint Kittsi ja Nevise Föderatsioon",
+      "common": "Saint Kitts ja Nevis"
+    },
+    "fin": {
+      "official": "Saint Christopherin ja Nevisin federaatio",
+      "common": "Saint Kitts ja Nevis"
+    },
+    "fra": {
+      "official": "Fédération de Saint-Christophe-et-Niévès",
+      "common": "Saint-Christophe-et-Niévès"
+    },
+    "hrv": {
+      "official": "Federacija Sv.Kristofora i Nevisa",
+      "common": "Sveti Kristof i Nevis"
+    },
+    "hun": {
+      "official": "Saint Christopher és Nevis Államszövetség",
+      "common": "Saint Kitts és Nevis"
+    },
+    "ita": {
+      "official": "Federazione di Saint Christopher e Nevis",
+      "common": "Saint Kitts e Nevis"
+    },
+    "jpn": {
+      "official": "セントキッツ・ネービス",
+      "common": "セントキッツ・ネーヴィス連邦"
+    },
+    "kor": {
+      "official": "세인트키츠 네비스 연방",
+      "common": "세인트키츠 네비스"
+    },
+    "nld": {
+      "official": "Federatie van Saint Kitts en Nevis",
+      "common": "Saint Kitts en Nevis"
+    },
+    "per": {
+      "official": "فدراسیون سنت کیتس و نویس",
+      "common": "سنت کیتس و نویس"
+    },
+    "pol": {
+      "official": "Federacja Saint Kitts i Nevis",
+      "common": "Saint Kitts i Nevis"
+    },
+    "por": {
+      "official": "Federação de São Cristóvão e Nevis",
+      "common": "São Cristóvão e Nevis"
+    },
+    "rus": {
+      "official": "Федерация Сент-Кристофер и Н е в и с",
+      "common": "Сент-Китс и Невис"
+    },
+    "slk": {
+      "official": "Feder໡cia Svätého Krištofa a Nevisu",
+      "common": "Svätý Krištof a Nevis"
+    },
+    "spa": {
+      "official": "Federación de San Cristóbal y Nevis",
+      "common": "San Cristóbal y Nieves"
+    },
+    "srp": {
+      "official": "Federacija Sent Kits i Nevis",
+      "common": "Sveti Kits i Nevis"
+    },
+    "swe": {
+      "official": "Federationen Saint Kitts och Nevis",
+      "common": "Saint Kitts och Nevis"
+    },
+    "tur": {
+      "official": "Saint Kitts ve Nevis Federasyonu",
+      "common": "Saint Kitts ve Nevis"
+    },
+    "urd": {
+      "official": "وفاقِ سینٹ کیٹز و ناویس",
+      "common": "سینٹ کیٹز و ناویس"
+    },
+    "zho": {
+      "official": "圣克里斯托弗和尼维斯联邦",
+      "common": "圣基茨和尼维斯"
+    }
+  },
+  "largest_city": "Basseterre",
+  "largest_city_local": "Basseterre",
+  "largest_city_pop": 12920,
+  "largest_city_is_capital": true
+}

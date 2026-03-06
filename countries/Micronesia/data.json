@@ -1,0 +1,199 @@
+{
+  "name": {
+    "common": "Micronesia",
+    "official": "Federated States of Micronesia",
+    "native": {
+      "eng": {
+        "official": "Federated States of Micronesia",
+        "common": "Micronesia"
+      }
+    }
+  },
+  "cca2": "FM",
+  "cca3": "FSM",
+  "ccn3": "583",
+  "cioc": "FSM",
+  "fifa": "",
+  "tld": [
+    ".fm"
+  ],
+  "altSpellings": [
+    "FM",
+    "Federated States of Micronesia",
+    "Micronesia, Federated States of"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Asia and the Pacific Group",
+  "capital": [
+    "Palikir"
+  ],
+  "region": "Oceania",
+  "subregion": "Micronesia",
+  "continents": [
+    "Oceania"
+  ],
+  "latlng": [
+    6.91666666,
+    158.25
+  ],
+  "landlocked": false,
+  "borders": [],
+  "area": 702,
+  "population": 105564,
+  "demonyms": {
+    "eng": {
+      "f": "Micronesian",
+      "m": "Micronesian"
+    },
+    "fra": {
+      "f": "Micronésienne",
+      "m": "Micronésien"
+    }
+  },
+  "languages": {
+    "eng": "English"
+  },
+  "currencies": {},
+  "gini": {
+    "2013": 40.1
+  },
+  "car": {
+    "signs": [
+      "FSM"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "#####",
+    "regex": "^(\\d{5})$"
+  },
+  "idd": {
+    "root": "+6",
+    "suffixes": [
+      "91"
+    ]
+  },
+  "timezones": [
+    "UTC+10:00",
+    "UTC+11:00"
+  ],
+  "flag": "🇫🇲",
+  "flags": {
+    "png": "https://flagcdn.com/w320/fm.png",
+    "svg": "https://flagcdn.com/fm.svg",
+    "alt": "The flag of Micronesia has a light blue field, at the center of which are four five-pointed white stars arranged in the shape of a diamond."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/fm.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/fm.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/LLcnofC5LxZsJXTo8",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/571802"
+  },
+  "translations": {
+    "ara": {
+      "official": "ولايات ميكرونيسيا المتحدة",
+      "common": "ميكرونيسيا"
+    },
+    "bre": {
+      "official": "Stadoù Kevreet Mikronezia",
+      "common": "Mikronezia"
+    },
+    "ces": {
+      "official": "Federativní státy Mikronésie",
+      "common": "Mikronésie"
+    },
+    "deu": {
+      "official": "Föderierte Staaten von Mikronesien",
+      "common": "Mikronesien"
+    },
+    "est": {
+      "official": "Mikroneesia Liiduriigid",
+      "common": "Mikroneesia"
+    },
+    "fin": {
+      "official": "Mikronesian liittovaltio",
+      "common": "Mikronesia"
+    },
+    "fra": {
+      "official": "États fédérés de Micronésie",
+      "common": "Micronésie"
+    },
+    "hrv": {
+      "official": "Savezne Države Mikronezije",
+      "common": "Mikronezija"
+    },
+    "hun": {
+      "official": "Mikronéziai Szövetségi Államok",
+      "common": "Mikronéziai Szövetségi Államok"
+    },
+    "ita": {
+      "official": "Stati federati di Micronesia",
+      "common": "Micronesia"
+    },
+    "jpn": {
+      "official": "ミクロネシア連邦",
+      "common": "ミクロネシア"
+    },
+    "kor": {
+      "official": "미크로네시아 연방",
+      "common": "미크로네시아"
+    },
+    "nld": {
+      "official": "Federale Staten van Micronesia",
+      "common": "Micronesië"
+    },
+    "per": {
+      "official": "ایالات فدرال میکرونزی",
+      "common": "میکرونزی"
+    },
+    "pol": {
+      "official": "Sfederowane Stany Mikronezji",
+      "common": "Mikronezja"
+    },
+    "por": {
+      "official": "Estados Federados da Micronésia",
+      "common": "Micronésia"
+    },
+    "rus": {
+      "official": "Федеративные Штаты Микронезии",
+      "common": "Федеративные Штаты Микронезии"
+    },
+    "slk": {
+      "official": "Mikronézske federatívne štáty",
+      "common": "Mikronézia"
+    },
+    "spa": {
+      "official": "Estados Federados de Micronesia",
+      "common": "Micronesia"
+    },
+    "srp": {
+      "official": "Savezne Države Mikronezije",
+      "common": "Mikronezija"
+    },
+    "swe": {
+      "official": "Mikronesiska federationen",
+      "common": "Mikronesiska federationen"
+    },
+    "tur": {
+      "official": "Mikronezya Federal Devletleri",
+      "common": "Mikronezya"
+    },
+    "urd": {
+      "official": "ریاستہائے وفاقیہ مائکرونیشیا",
+      "common": "مائکرونیشیا"
+    },
+    "zho": {
+      "official": "密克罗尼西亚联邦",
+      "common": "密克罗尼西亚"
+    }
+  },
+  "largest_city": "Palikir",
+  "largest_city_local": "Palikir",
+  "largest_city_pop": 6942,
+  "largest_city_is_capital": true
+}

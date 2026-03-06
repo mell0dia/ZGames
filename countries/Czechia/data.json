@@ -1,0 +1,213 @@
+{
+  "name": {
+    "common": "Czechia",
+    "official": "Czech Republic",
+    "native": {
+      "ces": {
+        "official": "Česká republika",
+        "common": "Česko"
+      },
+      "slk": {
+        "official": "Česká republika",
+        "common": "Česko"
+      }
+    }
+  },
+  "cca2": "CZ",
+  "cca3": "CZE",
+  "ccn3": "203",
+  "cioc": "CZE",
+  "fifa": "CZE",
+  "tld": [
+    ".cz"
+  ],
+  "altSpellings": [
+    "CZ",
+    "Česká republika",
+    "Česko"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Eastern European Group",
+  "capital": [
+    "Prague"
+  ],
+  "region": "Europe",
+  "subregion": "Central Europe",
+  "continents": [
+    "Europe"
+  ],
+  "latlng": [
+    49.75,
+    15.5
+  ],
+  "landlocked": true,
+  "borders": [
+    "AUT",
+    "DEU",
+    "POL",
+    "SVK"
+  ],
+  "area": 78865,
+  "population": 10882341,
+  "demonyms": {
+    "eng": {
+      "f": "Czech",
+      "m": "Czech"
+    },
+    "fra": {
+      "f": "Tchèque",
+      "m": "Tchèque"
+    }
+  },
+  "languages": {
+    "ces": "Czech",
+    "slk": "Slovak"
+  },
+  "currencies": {
+    "CZK": {
+      "name": "Czech koruna",
+      "symbol": "Kč"
+    }
+  },
+  "gini": {
+    "2018": 25.0
+  },
+  "car": {
+    "signs": [
+      "CZ"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "### ##",
+    "regex": "^(\\d{5})$"
+  },
+  "idd": {
+    "root": "+4",
+    "suffixes": [
+      "20"
+    ]
+  },
+  "timezones": [
+    "UTC+01:00"
+  ],
+  "flag": "🇨🇿",
+  "flags": {
+    "png": "https://flagcdn.com/w320/cz.png",
+    "svg": "https://flagcdn.com/cz.svg",
+    "alt": "The flag of Czechia is composed of two equal horizontal bands of white and red, with a blue isosceles triangle superimposed on the hoist side of the field. The triangle has its base on the hoist end and spans about two-fifth the width of the field."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/cz.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/cz.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/47dmgeXMZyhDHyQW8",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/51684"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية التشيك",
+      "common": "التشيك"
+    },
+    "bre": {
+      "official": "Republik Tchek",
+      "common": "Tchekia"
+    },
+    "ces": {
+      "official": "Česká republika",
+      "common": "Česko"
+    },
+    "deu": {
+      "official": "Tschechische Republik",
+      "common": "Tschechien"
+    },
+    "est": {
+      "official": "Tšehhi Vabariik",
+      "common": "Tšehhi"
+    },
+    "fin": {
+      "official": "Tšekin tasavalta",
+      "common": "Tšekki"
+    },
+    "fra": {
+      "official": "République tchèque",
+      "common": "Tchéquie"
+    },
+    "hrv": {
+      "official": "Češka",
+      "common": "Češka"
+    },
+    "hun": {
+      "official": "Cseh Köztársaság",
+      "common": "Csehország"
+    },
+    "ita": {
+      "official": "Repubblica Ceca",
+      "common": "Cechia"
+    },
+    "jpn": {
+      "official": "チェコ共和国",
+      "common": "チェコ"
+    },
+    "kor": {
+      "official": "체코",
+      "common": "체코"
+    },
+    "nld": {
+      "official": "Tsjechische Republiek",
+      "common": "Tsjechië"
+    },
+    "per": {
+      "official": "جمهوری چک",
+      "common": "جمهوری چک"
+    },
+    "pol": {
+      "official": "Republika Czeska",
+      "common": "Czechy"
+    },
+    "por": {
+      "official": "República Checa",
+      "common": "Chéquia"
+    },
+    "rus": {
+      "official": "Чешская Республика",
+      "common": "Чехия"
+    },
+    "slk": {
+      "official": "Česká republika",
+      "common": "Česko"
+    },
+    "spa": {
+      "official": "República Checa",
+      "common": "Chequia"
+    },
+    "srp": {
+      "official": "Češka Republika",
+      "common": "Češka"
+    },
+    "swe": {
+      "official": "Republiken Tjeckien",
+      "common": "Tjeckien"
+    },
+    "tur": {
+      "official": "çek Cumhuriyeti",
+      "common": "çekya"
+    },
+    "urd": {
+      "official": "چيک جمہوريہ",
+      "common": "چيک"
+    },
+    "zho": {
+      "official": "捷克共和国",
+      "common": "捷克"
+    }
+  },
+  "largest_city": "Prague",
+  "largest_city_local": "Prague",
+  "largest_city_pop": 1165581,
+  "largest_city_is_capital": true
+}

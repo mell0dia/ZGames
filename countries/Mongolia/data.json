@@ -1,0 +1,205 @@
+{
+  "name": {
+    "common": "Mongolia",
+    "official": "Mongolia",
+    "native": {
+      "mon": {
+        "official": "Монгол улс",
+        "common": "Монгол улс"
+      }
+    }
+  },
+  "cca2": "MN",
+  "cca3": "MNG",
+  "ccn3": "496",
+  "cioc": "MGL",
+  "fifa": "MNG",
+  "tld": [
+    ".mn"
+  ],
+  "altSpellings": [
+    "MN"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Asia and the Pacific Group",
+  "capital": [
+    "Ulan Bator"
+  ],
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "continents": [
+    "Asia"
+  ],
+  "latlng": [
+    46,
+    105
+  ],
+  "landlocked": true,
+  "borders": [
+    "CHN",
+    "RUS"
+  ],
+  "area": 1564110,
+  "population": 3544835,
+  "demonyms": {
+    "eng": {
+      "f": "Mongolian",
+      "m": "Mongolian"
+    },
+    "fra": {
+      "f": "Mongole",
+      "m": "Mongol"
+    }
+  },
+  "languages": {
+    "mon": "Mongolian"
+  },
+  "currencies": {
+    "MNT": {
+      "name": "Mongolian tögrög",
+      "symbol": "₮"
+    }
+  },
+  "gini": {
+    "2018": 32.7
+  },
+  "car": {
+    "signs": [
+      "MGL"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "######",
+    "regex": "^(\\d{6})$"
+  },
+  "idd": {
+    "root": "+9",
+    "suffixes": [
+      "76"
+    ]
+  },
+  "timezones": [
+    "UTC+07:00",
+    "UTC+08:00"
+  ],
+  "flag": "🇲🇳",
+  "flags": {
+    "png": "https://flagcdn.com/w320/mn.png",
+    "svg": "https://flagcdn.com/mn.svg",
+    "alt": "The flag of Mongolia is composed of three equal vertical bands of red, blue and red, with the national emblem — the Soyombo — in gold centered in the hoist-side red band."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/mn.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/mn.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/A1X7bMCKThBDNjzH6",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/161033"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية منغوليا",
+      "common": "منغوليا"
+    },
+    "bre": {
+      "official": "Mongolia",
+      "common": "Mongolia"
+    },
+    "ces": {
+      "official": "Stát Mongolsko",
+      "common": "Mongolsko"
+    },
+    "deu": {
+      "official": "Mongolei",
+      "common": "Mongolei"
+    },
+    "est": {
+      "official": "Mongoolia",
+      "common": "Mongoolia"
+    },
+    "fin": {
+      "official": "Mongolian tasavalta",
+      "common": "Mongolia"
+    },
+    "fra": {
+      "official": "Mongolie",
+      "common": "Mongolie"
+    },
+    "hrv": {
+      "official": "Mongolija",
+      "common": "Mongolija"
+    },
+    "hun": {
+      "official": "Mongólia",
+      "common": "Mongólia"
+    },
+    "ita": {
+      "official": "Mongolia",
+      "common": "Mongolia"
+    },
+    "jpn": {
+      "official": "モンゴル国",
+      "common": "モンゴル"
+    },
+    "kor": {
+      "official": "몽골",
+      "common": "몽골국"
+    },
+    "nld": {
+      "official": "Mongolië",
+      "common": "Mongolië"
+    },
+    "per": {
+      "official": "مغولستان",
+      "common": "مغولستان"
+    },
+    "pol": {
+      "official": "Mongolia",
+      "common": "Mongolia"
+    },
+    "por": {
+      "official": "Mongólia",
+      "common": "Mongólia"
+    },
+    "rus": {
+      "official": "Монголия",
+      "common": "Монголия"
+    },
+    "slk": {
+      "official": "Mongolsko",
+      "common": "Mongolsko"
+    },
+    "spa": {
+      "official": "Mongolia",
+      "common": "Mongolia"
+    },
+    "srp": {
+      "official": "Mongolija",
+      "common": "Mongolija"
+    },
+    "swe": {
+      "official": "Mongoliet",
+      "common": "Mongoliet"
+    },
+    "tur": {
+      "official": "Moğolistan",
+      "common": "Moğolistan"
+    },
+    "urd": {
+      "official": "منگولیا",
+      "common": "منگولیا"
+    },
+    "zho": {
+      "official": "蒙古",
+      "common": "蒙古"
+    }
+  },
+  "largest_city": "Ulan Bator",
+  "largest_city_local": "Ulan Bator",
+  "largest_city_pop": 844818,
+  "largest_city_is_capital": true
+}

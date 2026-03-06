@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Cards – Zago's Game Center</title>
+<style>
+:root {
+  --bg:#06091a; --accent:#3dffc0; --accent2:#5599ff;
+  --danger:#ff4d7a; --text:#e8eaf2; --sub:rgba(232,234,242,0.55);
+  --border:rgba(255,255,255,0.1); --panel-bg:#0d1128;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html,body{min-height:100%;font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;}
+#stars{position:fixed;inset:0;z-index:0;pointer-events:none;}
+.bg-glow{position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:radial-gradient(ellipse at 20% 20%,rgba(204,136,255,0.1) 0%,transparent 50%),
+             radial-gradient(ellipse at 80% 80%,rgba(255,204,68,0.07) 0%,transparent 50%);}
+
+/* Layout */
+.layout{position:relative;z-index:1;display:flex;height:100vh;overflow:hidden;}
+.lpanel{width:252px;min-width:252px;background:var(--panel-bg);border-right:1px solid var(--border);
+  display:flex;flex-direction:column;padding:18px 14px;overflow-y:auto;gap:12px;}
+.main-area{flex:1;display:flex;flex-direction:column;overflow:hidden;}
+
+/* Panel pieces */
+.panel-logo{display:flex;align-items:center;gap:10px;}
+.panel-logo a{color:var(--sub);font-size:12px;text-decoration:none;transition:color .2s;}
+.panel-logo a:hover{color:var(--text);}
+.panel-title{font-size:15px;font-weight:800;}
+.slbl{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--sub);}
+
+/* Score */
+.score-row{display:flex;align-items:center;gap:8px;}
+.score-bar{flex:1;height:8px;border-radius:4px;background:rgba(255,255,255,0.08);overflow:hidden;}
+.score-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,#cc88ff,#5599ff);transition:width .5s;}
+.sc-you{color:#3dffc0;font-weight:800;font-size:15px;}
+.sc-cpu{color:#ff9a3d;font-weight:800;font-size:15px;}
+.score-sub{display:flex;justify-content:space-between;font-size:10px;color:var(--sub);margin-top:2px;}
+
+/* Round */
+.round-box{background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:10px;
+  padding:10px;text-align:center;}
+.round-num{font-size:26px;font-weight:900;color:var(--accent);line-height:1;}
+.round-sub2{font-size:10px;color:var(--sub);margin-top:2px;}
+
+/* Deck table */
+.deck-table{display:flex;flex-direction:column;}
+.deck-row{display:flex;justify-content:space-between;align-items:center;
+  padding:5px 0;border-bottom:1px solid var(--border);font-size:12px;}
+.deck-row:last-child{border:none;}
+.deck-lbl{color:var(--sub);}
+.deck-val{font-weight:700;}
+
+/* Mode toggle */
+.mode-opts{display:flex;gap:4px;margin-top:6px;}
+.mode-opt{flex:1;padding:8px 4px;border-radius:8px;border:1px solid var(--border);
+  background:rgba(255,255,255,0.03);color:var(--sub);font-size:11px;font-weight:700;
+  cursor:pointer;transition:all .2s;text-align:center;}
+.mode-opt.active{background:rgba(204,136,255,0.15);border-color:rgba(204,136,255,0.5);color:#cc88ff;}
+.mode-opt:hover:not(.active){background:rgba(255,255,255,0.07);color:var(--text);}
+
+/* Challenge uses */
+.chal-uses-box{background:rgba(255,77,122,0.07);border:1px solid rgba(255,77,122,0.2);
+  border-radius:10px;padding:10px 12px;}
+.chal-uses-lbl{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
+  color:var(--danger);margin-bottom:6px;}
+.chal-dots{display:flex;gap:6px;}
+.cdot{width:12px;height:12px;border-radius:50%;background:var(--danger);transition:opacity .3s;}
+.cdot.used{opacity:.2;}
+
+/* Last result */
+.last-result{background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:10px;
+  padding:10px 12px;font-size:12px;color:var(--sub);line-height:1.5;flex:1;min-height:52px;}
+.last-result strong{color:var(--text);}
+
+/* Panel button */
+.panel-btn{margin-top:auto;padding:12px;border-radius:10px;border:none;cursor:pointer;
+  font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;
+  background:linear-gradient(135deg,#cc88ff,#ffcc44);color:#06091a;transition:opacity .2s;}
+.panel-btn:hover{opacity:.85;}
+
+/* Turn banner */
+.turn-banner{padding:10px 18px;background:var(--panel-bg);border-bottom:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;font-size:13px;font-weight:700;flex-shrink:0;}
+.turn-ind{display:flex;align-items:center;gap:8px;}
+.turn-dot{width:10px;height:10px;border-radius:50%;background:var(--accent);
+  animation:pulseDot 1.4s ease-in-out infinite;}
+.turn-dot.cpu{background:#ff9a3d;}
+@keyframes pulseDot{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(.6);}}
+.round-badge{font-size:12px;color:var(--sub);}
+
+/* Arena */
+.arena-wrap{position:relative;flex:1;display:flex;flex-direction:column;overflow:hidden;}
+.arena{flex:1;display:flex;align-items:center;justify-content:center;gap:24px;padding:14px 18px 10px;overflow:hidden;}
+
+/* Card wrapper */
+.wcard-wrap{flex:1;max-width:300px;display:flex;flex-direction:column;gap:0;}
+.card-header{display:flex;align-items:baseline;justify-content:space-between;
+  padding:0 4px;margin-bottom:6px;}
+.wcard-owner{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;
+  color:var(--sub);}
+.card-score{font-size:26px;font-weight:900;line-height:1;}
+.card-score.you{color:#3dffc0;}
+.card-score.cpu{color:#ff9a3d;}
+
+/* 3D card */
+.wcard-inner{position:relative;width:100%;padding-top:148%;
+  transform-style:preserve-3d;transition:transform .65s cubic-bezier(.4,0,.2,1);}
+.wcard-inner.flipped{transform:rotateY(180deg);}
+.wcard-face{position:absolute;inset:0;border-radius:18px;
+  backface-visibility:hidden;-webkit-backface-visibility:hidden;}
+.wcard-back{background:linear-gradient(135deg,#1a1040,#0d1840);
+  border:1px solid rgba(204,136,255,0.3);
+  display:flex;align-items:center;justify-content:center;}
+.wcard-back-pat{font-size:60px;opacity:.12;user-select:none;}
+.wcard-front{transform:rotateY(180deg);
+  background:linear-gradient(160deg,#12173a 0%,#0d1128 100%);
+  border:2px solid rgba(255,255,255,0.1);
+  padding:14px 12px;display:flex;flex-direction:column;overflow:hidden;}
+.wcard-front.p-card{border-color:rgba(61,255,192,0.35);}
+.wcard-front.c-card{border-color:rgba(255,154,61,0.35);}
+.wcard-front.won{border-color:rgba(61,255,192,0.8);box-shadow:0 0 20px rgba(61,255,192,0.22);}
+.wcard-front.lost{border-color:rgba(255,77,122,0.4);opacity:.7;}
+
+.wcard-flag{font-size:46px;text-align:center;margin-bottom:5px;line-height:1;}
+.wcard-name{font-size:15px;font-weight:900;text-align:center;margin-bottom:2px;line-height:1.2;}
+.wcard-region{font-size:11px;color:var(--sub);text-align:center;margin-bottom:8px;}
+.wcard-props{display:flex;flex-direction:column;gap:1px;flex:1;}
+
+/* Property rows */
+.prop-row{display:flex;align-items:center;gap:5px;padding:5px 7px;border-radius:7px;
+  cursor:pointer;transition:background .15s;border:1px solid transparent;}
+.prop-row:hover{background:rgba(255,255,255,0.06);}
+.prop-row.selected{background:rgba(61,255,192,0.08);border-color:rgba(61,255,192,0.35);}
+.prop-row.won-prop{background:rgba(61,255,192,0.13);border-color:rgba(61,255,192,0.5);}
+.prop-row.lost-prop{background:rgba(255,77,122,0.08);border-color:rgba(255,77,122,0.3);}
+.prop-row.nc{cursor:default;pointer-events:none;}
+.prop-icon{font-size:17px;width:22px;text-align:center;flex-shrink:0;}
+.prop-label{font-size:13px;color:var(--sub);flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.prop-value{font-size:15px;font-weight:700;white-space:nowrap;}
+.mode-btns{display:flex;gap:2px;margin-left:2px;flex-shrink:0;}
+.mbt{padding:2px 6px;border-radius:4px;border:1px solid var(--border);background:none;
+  cursor:pointer;font-size:13px;font-weight:700;color:var(--sub);transition:all .15s;line-height:1.4;}
+.mbt:hover{background:rgba(255,255,255,0.1);color:var(--text);}
+.mbt.ahi{background:rgba(61,255,192,0.2);border-color:#3dffc0;color:#3dffc0;}
+.mbt.alo{background:rgba(85,153,255,0.2);border-color:#5599ff;color:#5599ff;}
+
+/* VS divider */
+.vs-div{display:flex;flex-direction:column;align-items:center;gap:10px;min-width:64px;}
+.vs-text{font-size:20px;font-weight:900;color:var(--sub);}
+.chal-btns{display:flex;flex-direction:column;gap:6px;width:100%;}
+.chal-btn{padding:8px 10px;border-radius:10px;border:1px solid rgba(255,77,122,0.35);
+  background:rgba(255,77,122,0.07);color:var(--text);font-size:11px;font-weight:700;
+  text-align:center;line-height:1.4;cursor:pointer;transition:all .2s;white-space:nowrap;width:100%;}
+.chal-btn:hover:not(:disabled){background:rgba(255,77,122,0.18);transform:scale(1.05);}
+.chal-btn:disabled{opacity:.3;cursor:not-allowed;}
+.chal-left{font-size:10px;color:var(--sub);text-align:center;}
+.chal-left span{color:var(--danger);font-weight:700;}
+
+/* Screens */
+.screen{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;
+  justify-content:center;text-align:center;padding:40px 20px;z-index:50;
+  background:rgba(6,9,26,0.96);}
+.screen.hidden{display:none;}
+.screen h1{font-size:clamp(24px,5vw,52px);font-weight:900;margin-bottom:14px;}
+.screen p{font-size:14px;color:var(--sub);max-width:420px;line-height:1.75;margin-bottom:28px;}
+.start-btn{padding:15px 44px;border-radius:14px;border:none;cursor:pointer;
+  background:linear-gradient(135deg,#cc88ff,#ffcc44);color:#06091a;
+  font-size:15px;font-weight:900;letter-spacing:1px;transition:transform .2s,box-shadow .2s;}
+.start-btn:hover{transform:scale(1.05);box-shadow:0 8px 32px rgba(204,136,255,0.4);}
+
+/* End stats */
+.end-stats{display:flex;gap:28px;margin-bottom:28px;}
+.es{text-align:center;}
+.es-n{font-size:38px;font-weight:900;}
+.es-n.you{color:#3dffc0;} .es-n.cpu{color:#ff9a3d;} .es-n.drw{color:var(--sub);}
+.es-l{font-size:10px;color:var(--sub);letter-spacing:1px;text-transform:uppercase;margin-top:2px;}
+
+/* Result bar — sits below the cards */
+.result-bar{flex-shrink:0;min-height:88px;display:flex;align-items:center;justify-content:center;
+  gap:20px;padding:0 28px;border-top:2px solid var(--border);
+  background:rgba(255,255,255,0.025);
+  opacity:0;transform:translateY(6px);
+  transition:opacity .35s ease, transform .35s ease;}
+.result-bar.show{opacity:1;transform:translateY(0);}
+.result-bar.rb-win {background:rgba(61,255,192,0.08); border-top-color:rgba(61,255,192,0.4);}
+.result-bar.rb-lose{background:rgba(255,77,122,0.08); border-top-color:rgba(255,77,122,0.35);}
+.result-bar.rb-draw{background:rgba(255,255,255,0.04);border-top-color:rgba(255,255,255,0.15);}
+.rr-emoji{font-size:52px;line-height:1;flex-shrink:0;}
+.rr-info{display:flex;flex-direction:column;gap:4px;}
+.rr-title{font-size:26px;font-weight:900;line-height:1;}
+.rr-title.win {color:#3dffc0;}
+.rr-title.lose{color:#ff4d7a;}
+.rr-title.draw{color:var(--sub);}
+.rr-sub{font-size:13px;color:var(--sub);}
+
+/* CPU thinking */
+@keyframes thinkPulse{
+  0%,100%{border-color:rgba(255,154,61,0.3);}
+  50%{border-color:rgba(255,154,61,0.9);box-shadow:0 0 20px rgba(255,154,61,0.3);}
+}
+.wcard-inner.thinking .wcard-back{animation:thinkPulse .8s ease-in-out infinite;}
+
+/* Challenge modal */
+.chal-modal{position:fixed;inset:0;z-index:200;background:rgba(0,0,0,0.88);
+  display:flex;align-items:center;justify-content:center;padding:20px;}
+.chal-modal.hidden{display:none;}
+.chal-modal-inner{background:#0d1128;border:1px solid rgba(204,136,255,0.3);
+  border-radius:20px;padding:30px;max-width:380px;width:100%;text-align:center;}
+.cm-big{font-size:88px;margin-bottom:10px;line-height:1;}
+.cm-hdr{font-size:17px;font-weight:900;margin-bottom:6px;}
+.cm-sub{font-size:13px;color:var(--sub);margin-bottom:22px;line-height:1.5;}
+.cm-choices{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.cm-choice{padding:14px 8px;border-radius:12px;border:1px solid var(--border);
+  background:rgba(255,255,255,0.04);cursor:pointer;font-size:12px;font-weight:600;
+  transition:all .15s;color:var(--text);}
+.cm-choice:hover:not(:disabled){background:rgba(204,136,255,0.15);border-color:rgba(204,136,255,0.5);}
+.cm-choice.correct{background:rgba(61,255,192,0.2);border-color:#3dffc0;color:#3dffc0;}
+.cm-choice.wrong{background:rgba(255,77,122,0.2);border-color:#ff4d7a;color:#ff4d7a;}
+
+/* Mobile */
+.panel-toggle{display:none;position:fixed;top:12px;left:12px;z-index:300;
+  width:42px;height:42px;border-radius:10px;border:1px solid var(--border);
+  background:var(--panel-bg);color:var(--text);font-size:20px;cursor:pointer;
+  align-items:center;justify-content:center;}
+.panel-backdrop{display:none;position:fixed;inset:0;z-index:110;background:rgba(0,0,0,.5);}
+
+@media(max-width:700px){
+  .panel-toggle{display:flex;}
+  .layout{z-index:auto;}
+  .lpanel{position:fixed;top:0;left:0;bottom:0;z-index:160;
+    transform:translateX(-100%);transition:transform .3s;width:270px;min-width:0;}
+  .lpanel.open{transform:translateX(0);}
+  .panel-backdrop.open{display:block;}
+  .arena{gap:8px;padding:50px 8px 8px;flex-direction:column;overflow-y:auto;align-items:stretch;}
+  .wcard-wrap{max-width:100%;width:100%;}
+  .wcard-inner{padding-top:100%;}
+  .result-bar{min-height:72px;}
+  .rr-emoji{font-size:38px;}
+  .rr-title{font-size:20px;}
+  .vs-div{flex-direction:row;min-width:0;justify-content:center;flex-wrap:wrap;gap:8px;}
+  .chal-btns{flex-direction:row;}
+  .turn-banner{padding:8px 12px 8px 54px;}
+}
+</style>
+</head>
+<body>
+<canvas id="stars"></canvas>
+<div class="bg-glow"></div>
+
+<button class="panel-toggle" id="panelToggle">☰</button>
+<div class="panel-backdrop" id="panelBackdrop"></div>
+
+<div class="layout">
+
+<!-- LEFT PANEL -->
+<aside class="lpanel" id="lpanel">
+  <div class="panel-logo">
+    <a href="index.html">← Home</a>
+    <span class="panel-title">World Cards</span>
+  </div>
+
+  <div>
+    <div class="slbl">Score</div>
+    <div class="score-row" style="margin-top:6px;">
+      <span class="sc-you" id="scoreYou">0</span>
+      <div class="score-bar"><div class="score-fill" id="scoreFill" style="width:50%"></div></div>
+      <span class="sc-cpu" id="scoreCpu">0</span>
+    </div>
+    <div class="score-sub"><span>You</span><span>CPU</span></div>
+  </div>
+
+  <div class="round-box">
+    <div class="round-num" id="roundNum">–</div>
+    <div class="round-sub2">Round</div>
+  </div>
+
+  <div>
+    <div class="slbl" style="margin-bottom:6px;">Deck Sizes</div>
+    <div class="deck-table">
+      <div class="deck-row"><span class="deck-lbl">Your deck</span><span class="deck-val" id="deckYou">–</span></div>
+      <div class="deck-row"><span class="deck-lbl">CPU deck</span><span class="deck-val" id="deckCpu">–</span></div>
+      <div class="deck-row"><span class="deck-lbl">Draws</span><span class="deck-val" id="drawCount">0</span></div>
+    </div>
+  </div>
+
+  <!-- Mode toggle -->
+  <div>
+    <div class="slbl">Play Mode</div>
+    <div class="mode-opts">
+      <button class="mode-opt" id="modeMinMax" onclick="setGameMode('minmax')">▲▼ Min / Max</button>
+      <button class="mode-opt active" id="modeMaxOnly" onclick="setGameMode('maxonly')">▲ Max Only</button>
+    </div>
+  </div>
+
+  <!-- Challenge uses -->
+  <div class="chal-uses-box">
+    <div class="chal-uses-lbl">⚡ Challenges</div>
+    <div class="chal-dots">
+      <div class="cdot" id="cd0"></div>
+      <div class="cdot" id="cd1"></div>
+      <div class="cdot" id="cd2"></div>
+    </div>
+    <div style="font-size:10px;color:var(--sub);margin-top:6px;">Uses remaining</div>
+  </div>
+
+  <div class="last-result" id="lastResult">Start a game to begin!</div>
+
+  <button class="panel-btn" onclick="startGame()">▶ Start Game</button>
+</aside>
+
+<!-- MAIN -->
+<div class="main-area">
+  <div class="turn-banner">
+    <div class="turn-ind">
+      <div class="turn-dot" id="turnDot"></div>
+      <span id="turnText">–</span>
+    </div>
+    <span class="round-badge" id="roundBadge">Round – / 20</span>
+  </div>
+
+  <div class="arena-wrap">
+
+    <!-- Start screen -->
+    <div class="screen" id="startScreen">
+      <div style="font-size:64px;margin-bottom:14px;">🃏</div>
+      <h1 style="background:linear-gradient(135deg,#cc88ff,#ffcc44);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">World Cards</h1>
+      <p>Pick a stat, go <strong style="color:#3dffc0">HIGH</strong> or <strong style="color:#5599ff">LOW</strong> to beat the CPU and steal their card. Use a <strong style="color:#ff4d7a">⚡ Challenge</strong> to gamble — identify their flag or name their capital to win the round!</p>
+      <button class="start-btn" onclick="startGame()">Start Game</button>
+    </div>
+
+    <!-- End screen -->
+    <div class="screen hidden" id="endScreen">
+      <div id="endEmoji" style="font-size:72px;margin-bottom:14px;">🏆</div>
+      <h1 id="endTitle">You Win!</h1>
+      <div class="end-stats">
+        <div class="es"><div class="es-n you" id="endYou">0</div><div class="es-l">Your Wins</div></div>
+        <div class="es"><div class="es-n drw" id="endDraw">0</div><div class="es-l">Draws</div></div>
+        <div class="es"><div class="es-n cpu" id="endCpu">0</div><div class="es-l">CPU Wins</div></div>
+      </div>
+      <button class="start-btn" onclick="startGame()">Play Again</button>
+    </div>
+
+    <!-- Arena -->
+    <div class="arena" id="arena">
+      <!-- Player card -->
+      <div class="wcard-wrap">
+        <div class="card-header">
+          <span class="wcard-owner">Your Card</span>
+          <span class="card-score you" id="scoreYouCard">0</span>
+        </div>
+        <div class="wcard-inner" id="pInner">
+          <div class="wcard-face wcard-back"><div class="wcard-back-pat">🌍</div></div>
+          <div class="wcard-face wcard-front p-card" id="pFace"></div>
+        </div>
+      </div>
+
+      <!-- VS / Challenges -->
+      <div class="vs-div">
+        <div class="vs-text">VS</div>
+        <div class="chal-btns">
+          <button class="chal-btn" id="btnFlag"    onclick="startChallenge('flag')"    disabled>🏳<br>Flag</button>
+          <button class="chal-btn" id="btnCapital" onclick="startChallenge('capital')" disabled>🗺️<br>Capital</button>
+        </div>
+        <div class="chal-left">Uses: <span id="chalLeft">2</span></div>
+      </div>
+
+      <!-- CPU card -->
+      <div class="wcard-wrap">
+        <div class="card-header">
+          <span class="wcard-owner">CPU's Card</span>
+          <span class="card-score cpu" id="scoreCpuCard">0</span>
+        </div>
+        <div class="wcard-inner" id="cInner">
+          <div class="wcard-face wcard-back"><div class="wcard-back-pat">🌍</div></div>
+          <div class="wcard-face wcard-front c-card" id="cFace"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Result bar below cards -->
+    <div class="result-bar" id="rrEl">
+      <span class="rr-emoji" id="rrEmoji"></span>
+      <div class="rr-info">
+        <span class="rr-title" id="rrTitle"></span>
+        <span class="rr-sub"   id="rrSub"></span>
+      </div>
+    </div>
+
+  </div><!-- arena-wrap -->
+</div><!-- main-area -->
+</div><!-- layout -->
+
+<!-- Challenge Modal (flag + capital) -->
+<div class="chal-modal hidden" id="chalModal">
+  <div class="chal-modal-inner">
+    <div class="cm-big"  id="cmBig">🏳</div>
+    <div class="cm-hdr"  id="cmHdr">?</div>
+    <div class="cm-sub"  id="cmSub"></div>
+    <div class="cm-choices" id="cmChoices"></div>
+  </div>
+</div>
+
+<script src="game-data.js"></script>
+<script>
+// ── Stars ─────────────────────────────────────────────
+(function(){
+  const c=document.getElementById('stars'),x=c.getContext('2d');let s=[];
+  const r=()=>{c.width=innerWidth;c.height=innerHeight;};
+  const mk=()=>{s=Array.from({length:130},()=>({x:Math.random()*c.width,y:Math.random()*c.height,r:Math.random()*1.4+.2,o:Math.random()*.45+.07,f:Math.random()*.0004+.0001}));};
+  const d=()=>{x.clearRect(0,0,c.width,c.height);const t=Date.now();s.forEach(v=>{const a=v.o*(0.6+0.4*Math.sin(t*v.f*1000));x.beginPath();x.arc(v.x,v.y,v.r,0,Math.PI*2);x.fillStyle=`rgba(200,215,255,${a})`;x.fill();});requestAnimationFrame(d);};
+  r();mk();d();window.addEventListener('resize',()=>{r();mk();});
+})();
+
+// ── Mobile panel ─────────────────────────────────────
+(function(){
+  const btn=document.getElementById('panelToggle'),
+        panel=document.getElementById('lpanel'),
+        bd=document.getElementById('panelBackdrop');
+  const open=()=>{panel.classList.add('open');bd.classList.add('open');};
+  const close=()=>{panel.classList.remove('open');bd.classList.remove('open');};
+  btn.addEventListener('click',open);bd.addEventListener('click',close);
+})();
+
+// ── Properties (no language, added highest_point) ─────
+const PROPS=[
+  {key:'population',       label:'Population',       icon:'👥', fmt:fmtNum},
+  {key:'area',             label:'Area km²',          icon:'📐', fmt:fmtNum},
+  {key:'borders_count',    label:'Borders',           icon:'🌍', fmt:v=>v},
+  {key:'largest_city_pop', label:'Largest City Pop',  icon:'🏙️', fmt:fmtNum},
+  {key:'highest_point',    label:'Highest Point (m)', icon:'🏔️', fmt:fmtNum},
+];
+function fmtNum(n){
+  if(n===null||n===undefined)return'?';
+  if(n>=1e9)return(n/1e9).toFixed(2)+'B';
+  if(n>=1e6)return(n/1e6).toFixed(1)+'M';
+  if(n>=1e3)return(n/1e3).toFixed(0)+'K';
+  return n;
+}
+
+// ── Prep data ─────────────────────────────────────────
+const pool=COUNTRIES.map(c=>({
+  ...c,
+  borders_count:c.borders.length,
+}));
+function shuffle(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=0|Math.random()*(i+1);[b[i],b[j]]=[b[j],b[i]];}return b;}
+
+// ── State ─────────────────────────────────────────────
+const G={
+  playerDeck:[],cpuDeck:[],
+  playerCard:null,cpuCard:null,
+  round:0,maxRounds:20,
+  phase:'idle',
+  currentTurn:'player',    // alternates every round
+  challenge:{prop:null,mode:null},
+  challengeUsesLeft:3,
+  playerWins:0,cpuWins:0,draws:0,
+  gameMode:'maxonly',      // 'minmax' or 'maxonly'
+};
+
+// ── Game mode ─────────────────────────────────────────
+function setGameMode(m){
+  G.gameMode=m;
+  document.getElementById('modeMinMax').classList.toggle('active',m==='minmax');
+  document.getElementById('modeMaxOnly').classList.toggle('active',m==='maxonly');
+}
+
+// ── Start ─────────────────────────────────────────────
+function startGame(){
+  const deck=shuffle(pool),mid=deck.length>>1;
+  G.playerDeck=deck.slice(0,mid);
+  G.cpuDeck=deck.slice(mid);
+  G.round=0;G.playerWins=0;G.cpuWins=0;G.draws=0;
+  G.challengeUsesLeft=3;G.phase='picking';G.currentTurn='player';
+  G.challenge={prop:null,mode:null};
+  document.getElementById('startScreen').classList.add('hidden');
+  document.getElementById('endScreen').classList.add('hidden');
+  document.getElementById('lastResult').textContent='Pick a stat to begin!';
+  document.getElementById('lpanel').classList.remove('open');
+  document.getElementById('panelBackdrop').classList.remove('open');
+  drawRound();
+}
+
+// ── Draw round ────────────────────────────────────────
+function drawRound(){
+  if(!G.playerDeck.length||!G.cpuDeck.length||G.round>=G.maxRounds){endGame();return;}
+  G.round++;
+  G.playerCard=G.playerDeck[G.playerDeck.length-1];
+  G.cpuCard   =G.cpuDeck   [G.cpuDeck   .length-1];
+  G.phase='picking';G.challenge={prop:null,mode:null};
+
+  const pI=document.getElementById('pInner'),cI=document.getElementById('cInner');
+  pI.classList.remove('flipped','thinking');
+  cI.classList.remove('flipped','thinking');
+  document.getElementById('pFace').className='wcard-face wcard-front p-card';
+  document.getElementById('cFace').className='wcard-face wcard-front c-card';
+
+  setTimeout(()=>{
+    renderCards();
+    updateUI();
+    setTimeout(()=>pI.classList.add('flipped'),80);
+    if(G.currentTurn==='cpu'){
+      setTimeout(()=>cI.classList.add('thinking'),500);
+      setTimeout(cpuPlay,1900);
+    }
+  },300);
+}
+
+// ── Render cards ──────────────────────────────────────
+function renderCards(){
+  document.getElementById('pFace').innerHTML=buildCard(G.playerCard,true);
+  document.getElementById('cFace').innerHTML=buildCard(G.cpuCard,false);
+}
+function buildCard(c,interactive){
+  const maxOnly=(G.gameMode==='maxonly');
+  const rows=PROPS.map(p=>`
+    <div class="prop-row${interactive?'':' nc'}" id="${interactive?'pr':'cr'}_${p.key}"
+         ${interactive?`onclick="rowClick('${p.key}')"`:''}>
+      <span class="prop-icon">${p.icon}</span>
+      <span class="prop-label">${p.label}</span>
+      <span class="prop-value">${p.fmt(c[p.key])}</span>
+      ${interactive&&!maxOnly?`<div class="mode-btns">
+        <button class="mbt" id="hi_${p.key}" onclick="event.stopPropagation();pickMode('${p.key}','high')" title="Higher wins">▲</button>
+        <button class="mbt" id="lo_${p.key}" onclick="event.stopPropagation();pickMode('${p.key}','low')"  title="Lower wins">▼</button>
+      </div>`:''}
+    </div>`).join('');
+  return`<div class="wcard-flag">${c.flag_emoji}</div>
+    <div class="wcard-name">${c.name}</div>
+    <div class="wcard-region">${c.region}${c.subregion?' · '+c.subregion:''}</div>
+    <div class="wcard-props">${rows}</div>`;
+}
+
+// ── Row click ─────────────────────────────────────────
+function rowClick(key){
+  if(G.phase!=='picking'||G.currentTurn!=='player')return;
+  if(G.gameMode==='maxonly'){
+    // Max Only: clicking commits immediately with high
+    G.challenge.prop=key;G.challenge.mode='high';
+    PROPS.forEach(p=>{const r=document.getElementById('pr_'+p.key);if(r)r.classList.toggle('selected',p.key===key);});
+    kickOff();
+  } else {
+    // Min/Max: click selects row; commit via ▲▼ button
+    selectProp(key);
+  }
+}
+function selectProp(key){
+  G.challenge.prop=key;
+  PROPS.forEach(p=>{const r=document.getElementById('pr_'+p.key);if(r)r.classList.toggle('selected',p.key===key);});
+  if(G.challenge.mode)kickOff();
+}
+function pickMode(key,mode){
+  if(G.phase!=='picking'||G.currentTurn!=='player')return;
+  G.challenge.prop=key;G.challenge.mode=mode;
+  PROPS.forEach(p=>{
+    const r=document.getElementById('pr_'+p.key);if(r)r.classList.toggle('selected',p.key===key);
+    const hi=document.getElementById('hi_'+p.key);if(hi)hi.className='mbt'+(p.key===key&&mode==='high'?' ahi':'');
+    const lo=document.getElementById('lo_'+p.key);if(lo)lo.className='mbt'+(p.key===key&&mode==='low' ?' alo':'');
+  });
+  kickOff();
+}
+
+// ── CPU AI ────────────────────────────────────────────
+function cpuPlay(){
+  document.getElementById('cInner').classList.remove('thinking');
+  const best=cpuChoose();
+
+  // If CPU has no winning play and has challenges left, use challenge (75% chance)
+  if(best.advantage<=0&&G.challengeUsesLeft>0&&Math.random()<0.75){
+    cpuChallenge();
+    return;
+  }
+  G.challenge.prop=best.key;G.challenge.mode=best.mode;
+  kickOff();
+}
+
+function cpuChoose(){
+  if(G.gameMode==='maxonly'){
+    if(Math.random()<0.2){const p=PROPS[0|Math.random()*PROPS.length];return{key:p.key,mode:'high',advantage:-1};}
+    let best=null,bestAdv=-Infinity;
+    PROPS.forEach(p=>{
+      const cv=G.cpuCard[p.key],pv=G.playerCard[p.key];
+      if(typeof cv!=='number'||typeof pv!=='number')return;
+      const adv=(cv-pv)/Math.max(pv,1);
+      if(adv>bestAdv){bestAdv=adv;best={key:p.key,mode:'high',advantage:adv};}
+    });
+    if(!best){const p=PROPS[0|Math.random()*PROPS.length];return{key:p.key,mode:'high',advantage:-1};}
+    return best;
+  }
+  // Min/Max mode
+  if(Math.random()<0.2){const p=PROPS[0|Math.random()*PROPS.length];return{key:p.key,mode:Math.random()<.5?'high':'low',advantage:0};}
+  let best=null,bestAdv=-Infinity;
+  PROPS.forEach(p=>{
+    const cv=G.cpuCard[p.key],pv=G.playerCard[p.key];
+    if(typeof cv!=='number'||typeof pv!=='number')return;
+    if(cv>pv){const a=(cv-pv)/Math.max(pv,1);if(a>bestAdv){bestAdv=a;best={key:p.key,mode:'high',advantage:a};}}
+    else if(cv<pv){const a=(pv-cv)/Math.max(cv,1);if(a>bestAdv){bestAdv=a;best={key:p.key,mode:'low',advantage:a};}}
+  });
+  if(!best){const p=PROPS[0|Math.random()*PROPS.length];return{key:p.key,mode:'high',advantage:-1};}
+  return best;
+}
+
+// CPU decides to challenge the player when card is weak
+function cpuChallenge(){
+  G.challengeUsesLeft--;G.phase='challenge';
+  disableChallengeBtns();
+  updateUI();
+
+  const correct=G.cpuCard;
+  const sameReg=pool.filter(c=>c.ccn3!==correct.ccn3&&c.region===correct.region);
+  const src=sameReg.length>=3?sameReg:pool.filter(c=>c.ccn3!==correct.ccn3);
+  const decoys=shuffle(src).slice(0,3);
+  const choices=shuffle([correct,...decoys]);
+  const type=Math.random()<0.5?'flag':'capital';
+
+  if(type==='flag'){
+    document.getElementById('cmBig').textContent=correct.flag_emoji;
+    document.getElementById('cmHdr').textContent='⚡ CPU Challenges You! Whose flag?';
+    document.getElementById('cmSub').textContent="The CPU played a challenge! Identify their flag to steal the win!";
+    document.getElementById('cmChoices').innerHTML=choices.map(c=>
+      `<button class="cm-choice" data-ccn3="${c.ccn3}" onclick="onChalAnswer('${c.ccn3}','${correct.ccn3}')">${c.name}</button>`
+    ).join('');
+  } else {
+    document.getElementById('cmBig').textContent=correct.flag_emoji;
+    document.getElementById('cmHdr').textContent=`⚡ CPU Challenges You! Capital of ${correct.name}?`;
+    document.getElementById('cmSub').textContent="The CPU played a challenge! Name their capital to steal the win!";
+    document.getElementById('cmChoices').innerHTML=choices.map(c=>
+      `<button class="cm-choice" data-ccn3="${c.ccn3}" onclick="onChalAnswer('${c.ccn3}','${correct.ccn3}')">${c.capital||'(none)'}</button>`
+    ).join('');
+  }
+  document.getElementById('chalModal').classList.remove('hidden');
+}
+
+// ── Kick off (flip CPU card then compare) ─────────────
+function kickOff(){
+  if(G.phase!=='picking')return;
+  G.phase='resolving';
+  disableChallengeBtns();
+  setTimeout(()=>{
+    document.getElementById('cInner').classList.add('flipped');
+    setTimeout(doResolve,700);
+  },200);
+}
+
+function doResolve(){
+  const{prop,mode}=G.challenge;
+  const pv=G.playerCard[prop],cv=G.cpuCard[prop];
+  let winner;
+  if(pv===cv)winner='draw';
+  else if(mode==='high')winner=pv>cv?'player':'cpu';
+  else                  winner=pv<cv?'player':'cpu';
+
+  markPropRows(prop,winner);
+  highlightCards(winner);
+  transferCards(winner);
+
+  // Always alternate turns
+  G.currentTurn=G.currentTurn==='player'?'cpu':'player';
+
+  const pd=PROPS.find(p=>p.key===prop);
+  const modeLabel=mode==='high'?'Highest':'Lowest';
+  showRR(winner,`${pd.label} · ${modeLabel} wins — You: ${pd.fmt(pv)} · CPU: ${pd.fmt(cv)}`);
+  updateSidebar(winner,pd.label,mode,pd.fmt(pv),pd.fmt(cv));
+  updateUI();
+  setTimeout(()=>{hideRR();drawRound();},2400);
+}
+
+function markPropRows(prop,winner){
+  const pr=document.getElementById('pr_'+prop);
+  if(pr){pr.classList.remove('selected');pr.classList.add(winner==='player'?'won-prop':'lost-prop');}
+  const cr=document.getElementById('cr_'+prop);
+  if(cr)cr.classList.add(winner==='cpu'?'won-prop':'lost-prop');
+}
+function highlightCards(winner){
+  document.getElementById('pFace').className='wcard-face wcard-front p-card'+(winner==='player'?' won':winner==='cpu'?' lost':'');
+  document.getElementById('cFace').className='wcard-face wcard-front c-card'+(winner==='cpu'?' won':winner==='player'?' lost':'');
+}
+function transferCards(winner){
+  const pCard=G.playerDeck.pop(),cCard=G.cpuDeck.pop();
+  if(winner==='player'){
+    G.playerWins++;
+    G.playerDeck.unshift(pCard);G.playerDeck.unshift(cCard);
+  } else if(winner==='cpu'){
+    G.cpuWins++;
+    G.cpuDeck.unshift(cCard);G.cpuDeck.unshift(pCard);
+  } else {
+    G.draws++;
+    G.playerDeck.unshift(pCard);G.cpuDeck.unshift(cCard);
+  }
+}
+
+// ── Result bar ────────────────────────────────────────
+function showRR(winner,sub){
+  const el=document.getElementById('rrEl');
+  const titleEl=document.getElementById('rrTitle');
+  el.classList.remove('rb-win','rb-lose','rb-draw');
+  titleEl.classList.remove('win','lose','draw');
+  if(winner==='player'){
+    el.classList.add('rb-win'); titleEl.classList.add('win');
+    document.getElementById('rrEmoji').textContent='🏆';
+    titleEl.textContent='You Win!';
+  } else if(winner==='cpu'){
+    el.classList.add('rb-lose'); titleEl.classList.add('lose');
+    document.getElementById('rrEmoji').textContent='💻';
+    titleEl.textContent='CPU Wins!';
+  } else {
+    el.classList.add('rb-draw'); titleEl.classList.add('draw');
+    document.getElementById('rrEmoji').textContent='🤝';
+    titleEl.textContent='Draw!';
+  }
+  document.getElementById('rrSub').textContent=sub;
+  el.classList.add('show');
+}
+function hideRR(){
+  const el=document.getElementById('rrEl');
+  el.classList.remove('show');
+  setTimeout(()=>{
+    el.classList.remove('rb-win','rb-lose','rb-draw');
+    document.getElementById('rrEmoji').textContent='';
+    document.getElementById('rrTitle').textContent='';
+    document.getElementById('rrSub').textContent='';
+  },400);
+}
+
+function updateSidebar(winner,prop,mode,pv,cv){
+  const el=document.getElementById('lastResult');
+  const wl=winner==='player'?'<strong>You won!</strong>':winner==='cpu'?'<strong>CPU won.</strong>':'<strong>Draw.</strong>';
+  if(winner==='draw')el.innerHTML=`${wl} ${prop} — both ${pv}`;
+  else el.innerHTML=`${wl} ${prop} (${mode}) — You ${pv} · CPU ${cv}`;
+}
+
+// ── Challenges ────────────────────────────────────────
+function disableChallengeBtns(){
+  document.getElementById('btnFlag').disabled=true;
+  document.getElementById('btnCapital').disabled=true;
+}
+
+function startChallenge(type){
+  if(G.challengeUsesLeft<=0||G.phase!=='picking'||G.currentTurn!=='player')return;
+  G.challengeUsesLeft--;G.phase='challenge';
+  disableChallengeBtns();
+  updateUI();
+
+  const correct=G.cpuCard;
+  const sameReg=pool.filter(c=>c.ccn3!==correct.ccn3&&c.region===correct.region);
+  const src=sameReg.length>=3?sameReg:pool.filter(c=>c.ccn3!==correct.ccn3);
+  const decoys=shuffle(src).slice(0,3);
+  const choices=shuffle([correct,...decoys]);
+
+  if(type==='flag'){
+    // Show flag → guess country name
+    document.getElementById('cmBig').textContent=correct.flag_emoji;
+    document.getElementById('cmHdr').textContent='Which country is this flag?';
+    document.getElementById('cmSub').textContent="Identify the CPU's country flag to win the round!";
+    document.getElementById('cmChoices').innerHTML=choices.map(c=>
+      `<button class="cm-choice" data-ccn3="${c.ccn3}"
+         onclick="onChalAnswer('${c.ccn3}','${correct.ccn3}')">${c.name}</button>`
+    ).join('');
+  } else {
+    // Show country name → guess capital
+    document.getElementById('cmBig').textContent=correct.flag_emoji;
+    document.getElementById('cmHdr').textContent=`Capital of ${correct.name}?`;
+    document.getElementById('cmSub').textContent="Name the capital city of the CPU's country to win!";
+    document.getElementById('cmChoices').innerHTML=choices.map(c=>
+      `<button class="cm-choice" data-ccn3="${c.ccn3}"
+         onclick="onChalAnswer('${c.ccn3}','${correct.ccn3}')">${c.capital||'(none)'}</button>`
+    ).join('');
+  }
+  document.getElementById('chalModal').classList.remove('hidden');
+}
+
+function onChalAnswer(chosen,correctCcn3){
+  document.querySelectorAll('.cm-choice').forEach(b=>b.disabled=true);
+  const won=chosen===correctCcn3;
+  document.querySelectorAll('.cm-choice').forEach(b=>{
+    if(b.dataset.ccn3===correctCcn3)b.classList.add('correct');
+    else if(b.dataset.ccn3===chosen&&!won)b.classList.add('wrong');
+  });
+  setTimeout(()=>{
+    document.getElementById('chalModal').classList.add('hidden');
+    // Flip CPU card
+    document.getElementById('cInner').classList.add('flipped');
+    const winner=won?'player':'cpu';
+    highlightCards(winner);
+    transferCards(winner);
+    // Always alternate turns
+    G.currentTurn=G.currentTurn==='player'?'cpu':'player';
+    const msg=won
+      ?`🎉 Correct! CPU's country was ${G.cpuCard.name} (${G.cpuCard.capital})`
+      :`❌ Wrong! CPU's country was ${G.cpuCard.name} (capital: ${G.cpuCard.capital})`;
+    showRR(winner,msg);
+    document.getElementById('lastResult').innerHTML=won
+      ?`<strong>Challenge Win!</strong> You identified ${G.cpuCard.name} 🎉`
+      :`<strong>Challenge Lost.</strong> CPU was ${G.cpuCard.name}`;
+    updateUI();
+    setTimeout(()=>{hideRR();drawRound();},2400);
+  },1300);
+}
+
+// ── Update UI ─────────────────────────────────────────
+function updateUI(){
+  document.getElementById('roundNum').textContent=G.round;
+  document.getElementById('roundBadge').textContent=`Round ${G.round} / ${G.maxRounds}`;
+  // Left panel score
+  document.getElementById('scoreYou').textContent=G.playerWins;
+  document.getElementById('scoreCpu').textContent=G.cpuWins;
+  // Card header scores
+  document.getElementById('scoreYouCard').textContent=G.playerWins;
+  document.getElementById('scoreCpuCard').textContent=G.cpuWins;
+  document.getElementById('deckYou').textContent=G.playerDeck.length;
+  document.getElementById('deckCpu').textContent=G.cpuDeck.length;
+  document.getElementById('drawCount').textContent=G.draws;
+  const tot=G.playerWins+G.cpuWins;
+  document.getElementById('scoreFill').style.width=(tot?(G.playerWins/tot*100):50)+'%';
+  const isP=G.currentTurn==='player';
+  document.getElementById('turnDot').className='turn-dot'+(isP?'':' cpu');
+  document.getElementById('turnText').textContent=isP?'Your Turn — pick a stat!':'CPU is thinking…';
+  const canChal=G.challengeUsesLeft>0&&isP&&G.phase==='picking';
+  document.getElementById('btnFlag').disabled=!canChal;
+  document.getElementById('btnCapital').disabled=!canChal;
+  document.getElementById('chalLeft').textContent=G.challengeUsesLeft;
+  for(let i=0;i<3;i++)document.getElementById('cd'+i).classList.toggle('used',i>=G.challengeUsesLeft);
+}
+
+// ── End game ──────────────────────────────────────────
+function endGame(){
+  G.phase='gameover';
+  const w=G.playerWins>G.cpuWins?'player':G.cpuWins>G.playerWins?'cpu':'draw';
+  document.getElementById('endEmoji').textContent=w==='player'?'🏆':w==='cpu'?'💻':'🤝';
+  document.getElementById('endTitle').textContent=w==='player'?'You Win!':w==='cpu'?'CPU Wins!':'Draw!';
+  document.getElementById('endYou').textContent=G.playerWins;
+  document.getElementById('endCpu').textContent=G.cpuWins;
+  document.getElementById('endDraw').textContent=G.draws;
+  document.getElementById('endScreen').classList.remove('hidden');
+  try{
+    const s=JSON.parse(localStorage.getItem('worldcards_v1')||'{"played":0,"won":0}');
+    s.played++;if(w==='player')s.won++;
+    localStorage.setItem('worldcards_v1',JSON.stringify(s));
+  }catch(e){}
+}
+</script>
+</body>
+</html>

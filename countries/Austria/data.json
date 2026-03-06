@@ -1,0 +1,212 @@
+{
+  "name": {
+    "common": "Austria",
+    "official": "Republic of Austria",
+    "native": {
+      "bar": {
+        "official": "Republik Österreich",
+        "common": "Österreich"
+      }
+    }
+  },
+  "cca2": "AT",
+  "cca3": "AUT",
+  "ccn3": "040",
+  "cioc": "AUT",
+  "fifa": "AUT",
+  "tld": [
+    ".at"
+  ],
+  "altSpellings": [
+    "AT",
+    "Osterreich",
+    "Oesterreich"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Western European and Others Group",
+  "capital": [
+    "Vienna"
+  ],
+  "region": "Europe",
+  "subregion": "Central Europe",
+  "continents": [
+    "Europe"
+  ],
+  "latlng": [
+    47.33333333,
+    13.33333333
+  ],
+  "landlocked": true,
+  "borders": [
+    "CZE",
+    "DEU",
+    "HUN",
+    "ITA",
+    "LIE",
+    "SVK",
+    "SVN",
+    "CHE"
+  ],
+  "area": 83871,
+  "population": 9200931,
+  "demonyms": {
+    "eng": {
+      "f": "Austrian",
+      "m": "Austrian"
+    },
+    "fra": {
+      "f": "Autrichienne",
+      "m": "Autrichien"
+    }
+  },
+  "languages": {
+    "bar": "Austro-Bavarian German"
+  },
+  "currencies": {
+    "EUR": {
+      "name": "Euro",
+      "symbol": "€"
+    }
+  },
+  "gini": {
+    "2018": 30.8
+  },
+  "car": {
+    "signs": [
+      "A"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "####",
+    "regex": "^(\\d{4})$"
+  },
+  "idd": {
+    "root": "+4",
+    "suffixes": [
+      "3"
+    ]
+  },
+  "timezones": [
+    "UTC+01:00"
+  ],
+  "flag": "🇦🇹",
+  "flags": {
+    "png": "https://flagcdn.com/w320/at.png",
+    "svg": "https://flagcdn.com/at.svg",
+    "alt": "The flag of Austria is composed of three equal horizontal bands of red, white and red."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/at.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/at.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/pCWpWQhznHyRzQcu9",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/16239"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية النمسا",
+      "common": "النمسا"
+    },
+    "bre": {
+      "official": "Republik Aostria",
+      "common": "Aostria"
+    },
+    "ces": {
+      "official": "Rakouská republika",
+      "common": "Rakousko"
+    },
+    "deu": {
+      "official": "Republik Österreich",
+      "common": "Österreich"
+    },
+    "est": {
+      "official": "Austria Vabariik",
+      "common": "Austria"
+    },
+    "fin": {
+      "official": "Itävallan tasavalta",
+      "common": "Itävalta"
+    },
+    "fra": {
+      "official": "République d'Autriche",
+      "common": "Autriche"
+    },
+    "hrv": {
+      "official": "Republika Austrija",
+      "common": "Austrija"
+    },
+    "hun": {
+      "official": "Ausztria",
+      "common": "Ausztria"
+    },
+    "ita": {
+      "official": "Repubblica d'Austria",
+      "common": "Austria"
+    },
+    "jpn": {
+      "official": "オーストリア共和国",
+      "common": "オーストリア"
+    },
+    "kor": {
+      "official": "오스트리아 공화국",
+      "common": "오스트리아"
+    },
+    "nld": {
+      "official": "Republiek Oostenrijk",
+      "common": "Oostenrijk"
+    },
+    "per": {
+      "official": "جمهوری اتریش",
+      "common": "اتریش"
+    },
+    "pol": {
+      "official": "Republika Austrii",
+      "common": "Austria"
+    },
+    "por": {
+      "official": "República da Áustria",
+      "common": "Áustria"
+    },
+    "rus": {
+      "official": "Австрийская Республика",
+      "common": "Австрия"
+    },
+    "slk": {
+      "official": "Rakúska republika",
+      "common": "Rakúsko"
+    },
+    "spa": {
+      "official": "República de Austria",
+      "common": "Austria"
+    },
+    "srp": {
+      "official": "Republika Austrija",
+      "common": "Austrija"
+    },
+    "swe": {
+      "official": "Republiken Österrike",
+      "common": "Österrike"
+    },
+    "tur": {
+      "official": "Avusturya Cumhuriyeti",
+      "common": "Avusturya"
+    },
+    "urd": {
+      "official": "جمہوریہ آسٹریا",
+      "common": "آسٹریا"
+    },
+    "zho": {
+      "official": "奥地利共和国",
+      "common": "奥地利"
+    }
+  },
+  "largest_city": "Vienna",
+  "largest_city_local": "Vienna",
+  "largest_city_pop": 1691468,
+  "largest_city_is_capital": true
+}

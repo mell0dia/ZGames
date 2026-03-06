@@ -1,0 +1,205 @@
+{
+  "name": {
+    "common": "Oman",
+    "official": "Sultanate of Oman",
+    "native": {
+      "ara": {
+        "official": "سلطنة عمان",
+        "common": "عمان"
+      }
+    }
+  },
+  "cca2": "OM",
+  "cca3": "OMN",
+  "ccn3": "512",
+  "cioc": "OMA",
+  "fifa": "OMA",
+  "tld": [
+    ".om"
+  ],
+  "altSpellings": [
+    "OM",
+    "Sultanate of Oman",
+    "Salṭanat ʻUmān"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Asia and the Pacific Group",
+  "capital": [
+    "Muscat"
+  ],
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "continents": [
+    "Asia"
+  ],
+  "latlng": [
+    21,
+    57
+  ],
+  "landlocked": false,
+  "borders": [
+    "SAU",
+    "ARE",
+    "YEM"
+  ],
+  "area": 309500,
+  "population": 5343630,
+  "demonyms": {
+    "eng": {
+      "f": "Omani",
+      "m": "Omani"
+    },
+    "fra": {
+      "f": "Omanaise",
+      "m": "Omanais"
+    }
+  },
+  "languages": {
+    "ara": "Arabic"
+  },
+  "currencies": {
+    "OMR": {
+      "name": "Omani rial",
+      "symbol": "ر.ع."
+    }
+  },
+  "gini": {},
+  "car": {
+    "signs": [
+      "OM"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "sunday",
+  "postalCode": {
+    "format": "###",
+    "regex": "^(\\d{3})$"
+  },
+  "idd": {
+    "root": "+9",
+    "suffixes": [
+      "68"
+    ]
+  },
+  "timezones": [
+    "UTC+04:00"
+  ],
+  "flag": "🇴🇲",
+  "flags": {
+    "png": "https://flagcdn.com/w320/om.png",
+    "svg": "https://flagcdn.com/om.svg",
+    "alt": "The flag of Oman features a red vertical band on the hoist side that takes up about one-fourth the width of the field, and three equal horizontal bands of white, red and green adjoining the vertical band. At the top of the vertical band is the white emblem of Oman."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/om.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/om.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/L2BoXoAwDDwWecnw5",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/305138"
+  },
+  "translations": {
+    "ara": {
+      "official": "سلطنة عمان",
+      "common": "عمان"
+    },
+    "bre": {
+      "official": "Sultanelezh Oman",
+      "common": "Oman"
+    },
+    "ces": {
+      "official": "Sultanát Omán",
+      "common": "Omán"
+    },
+    "deu": {
+      "official": "Sultanat Oman",
+      "common": "Oman"
+    },
+    "est": {
+      "official": "Omaani Sultaniriik",
+      "common": "Omaan"
+    },
+    "fin": {
+      "official": "Omanin sulttaanikunta",
+      "common": "Oman"
+    },
+    "fra": {
+      "official": "Sultanat d'Oman",
+      "common": "Oman"
+    },
+    "hrv": {
+      "official": "Sultanat Oman",
+      "common": "Oman"
+    },
+    "hun": {
+      "official": "Ománi Szultanátus",
+      "common": "Omán"
+    },
+    "ita": {
+      "official": "Sultanato dell'Oman",
+      "common": "oman"
+    },
+    "jpn": {
+      "official": "オマーン国",
+      "common": "オマーン"
+    },
+    "kor": {
+      "official": "오만 술탄국",
+      "common": "오만"
+    },
+    "nld": {
+      "official": "Sultanaat van Oman",
+      "common": "Oman"
+    },
+    "per": {
+      "official": "سلطان‌نشین عُمان",
+      "common": "عمان"
+    },
+    "pol": {
+      "official": "Sułtanat Omanu",
+      "common": "Oman"
+    },
+    "por": {
+      "official": "Sultanato de Omã",
+      "common": "Omã"
+    },
+    "rus": {
+      "official": "Султанат Оман",
+      "common": "Оман"
+    },
+    "slk": {
+      "official": "Ománsky sultanát",
+      "common": "Omán"
+    },
+    "spa": {
+      "official": "Sultanato de Omán",
+      "common": "Omán"
+    },
+    "srp": {
+      "official": "Sultanat Oman",
+      "common": "Oman"
+    },
+    "swe": {
+      "official": "Sultanatet Oman",
+      "common": "Oman"
+    },
+    "tur": {
+      "official": "Umman Sultanlığı",
+      "common": "Umman"
+    },
+    "urd": {
+      "official": "سلطنت عمان",
+      "common": "عمان"
+    },
+    "zho": {
+      "official": "阿曼苏丹国",
+      "common": "阿曼"
+    }
+  },
+  "largest_city": "Muscat",
+  "largest_city_local": "Muscat",
+  "largest_city_pop": 797000,
+  "largest_city_is_capital": true
+}

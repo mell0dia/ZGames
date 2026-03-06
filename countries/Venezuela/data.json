@@ -1,0 +1,208 @@
+{
+  "name": {
+    "common": "Venezuela",
+    "official": "Bolivarian Republic of Venezuela",
+    "native": {
+      "spa": {
+        "official": "República Bolivariana de Venezuela",
+        "common": "Venezuela"
+      }
+    }
+  },
+  "cca2": "VE",
+  "cca3": "VEN",
+  "ccn3": "862",
+  "cioc": "VEN",
+  "fifa": "VEN",
+  "tld": [
+    ".ve"
+  ],
+  "altSpellings": [
+    "VE",
+    "Bolivarian Republic of Venezuela",
+    "Venezuela, Bolivarian Republic of",
+    "República Bolivariana de Venezuela"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Latin American and Caribbean Group",
+  "capital": [
+    "Caracas"
+  ],
+  "region": "Americas",
+  "subregion": "South America",
+  "continents": [
+    "South America"
+  ],
+  "latlng": [
+    8,
+    -66
+  ],
+  "landlocked": false,
+  "borders": [
+    "BRA",
+    "COL",
+    "GUY"
+  ],
+  "area": 916445,
+  "population": 28517000,
+  "demonyms": {
+    "eng": {
+      "f": "Venezuelan",
+      "m": "Venezuelan"
+    },
+    "fra": {
+      "f": "Vénézuélienne",
+      "m": "Vénézuélien"
+    }
+  },
+  "languages": {
+    "spa": "Spanish"
+  },
+  "currencies": {
+    "VES": {
+      "name": "Venezuelan bolívar soberano",
+      "symbol": "Bs.S."
+    }
+  },
+  "gini": {
+    "2006": 44.8
+  },
+  "car": {
+    "signs": [
+      "YV"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "####",
+    "regex": "^(\\d{4})$"
+  },
+  "idd": {
+    "root": "+5",
+    "suffixes": [
+      "8"
+    ]
+  },
+  "timezones": [
+    "UTC-04:00"
+  ],
+  "flag": "🇻🇪",
+  "flags": {
+    "png": "https://flagcdn.com/w320/ve.png",
+    "svg": "https://flagcdn.com/ve.svg",
+    "alt": "The flag of Venezuela is composed of three equal horizontal bands of yellow, blue and red. At the center of the blue band are eight five-pointed white stars arranged in a horizontal arc."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/ve.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/ve.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/KLCwDN8sec7z2kse9",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/272644"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية فنزويلا البوليفارية",
+      "common": "فنزويلا"
+    },
+    "bre": {
+      "official": "Republik Volivarian Venezuela",
+      "common": "Venezuela"
+    },
+    "ces": {
+      "official": "Bolívarská republika Venezuela",
+      "common": "Venezuela"
+    },
+    "deu": {
+      "official": "Bolivarische Republik Venezuela",
+      "common": "Venezuela"
+    },
+    "est": {
+      "official": "Venezuela Bolívari Vabariik",
+      "common": "Venezuela"
+    },
+    "fin": {
+      "official": "Venezuelan bolivariaainen tasavalta",
+      "common": "Venezuela"
+    },
+    "fra": {
+      "official": "République bolivarienne du Venezuela",
+      "common": "Venezuela"
+    },
+    "hrv": {
+      "official": "BOLIVARIJANSKA Republika Venezuela",
+      "common": "Venezuela"
+    },
+    "hun": {
+      "official": "Venezuelai Bolivári Köztársaság",
+      "common": "Venezuela"
+    },
+    "ita": {
+      "official": "Repubblica Bolivariana del Venezuela",
+      "common": "Venezuela"
+    },
+    "jpn": {
+      "official": "ベネズエラ・ボリバル共和国",
+      "common": "ベネズエラ"
+    },
+    "kor": {
+      "official": "베네수엘라 볼리바르 공화국",
+      "common": "베네수엘라"
+    },
+    "nld": {
+      "official": "Bolivariaanse Republiek Venezuela",
+      "common": "Venezuela"
+    },
+    "per": {
+      "official": "جمهوری بولیواری ونزوئلا",
+      "common": "ونزوئلا"
+    },
+    "pol": {
+      "official": "Boliwariańska Republika Wenezueli",
+      "common": "Wenezuela"
+    },
+    "por": {
+      "official": "República Bolivariana da Venezuela",
+      "common": "Venezuela"
+    },
+    "rus": {
+      "official": "Боливарианская Республика Венесуэла",
+      "common": "Венесуэла"
+    },
+    "slk": {
+      "official": "Venezuelská bolívarovská republika",
+      "common": "Venezuela"
+    },
+    "spa": {
+      "official": "República Bolivariana de Venezuela",
+      "common": "Venezuela"
+    },
+    "srp": {
+      "official": "Bolivarska Republika Venecuela",
+      "common": "Venecuela"
+    },
+    "swe": {
+      "official": "Bolivarianska republiken Venezuela",
+      "common": "Venezuela"
+    },
+    "tur": {
+      "official": "Bolivarcı Venezuela Cumhuriyeti",
+      "common": "Venezuela"
+    },
+    "urd": {
+      "official": "جمہوریہ وینیزویلا",
+      "common": "وینیزویلا"
+    },
+    "zho": {
+      "official": "委内瑞拉玻利瓦尔共和国",
+      "common": "委内瑞拉"
+    }
+  },
+  "largest_city": "Caracas",
+  "largest_city_local": "Caracas",
+  "largest_city_pop": 3000000,
+  "largest_city_is_capital": true
+}

@@ -1,0 +1,196 @@
+{
+  "name": {
+    "common": "Grenada",
+    "official": "Grenada",
+    "native": {
+      "eng": {
+        "official": "Grenada",
+        "common": "Grenada"
+      }
+    }
+  },
+  "cca2": "GD",
+  "cca3": "GRD",
+  "ccn3": "308",
+  "cioc": "GRN",
+  "fifa": "GRN",
+  "tld": [
+    ".gd"
+  ],
+  "altSpellings": [
+    "GD"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Latin American and Caribbean Group",
+  "capital": [
+    "St. George's"
+  ],
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "continents": [
+    "North America"
+  ],
+  "latlng": [
+    12.11666666,
+    -61.66666666
+  ],
+  "landlocked": false,
+  "borders": [],
+  "area": 344,
+  "population": 109021,
+  "demonyms": {
+    "eng": {
+      "f": "Grenadian",
+      "m": "Grenadian"
+    },
+    "fra": {
+      "f": "Grenadienne",
+      "m": "Grenadien"
+    }
+  },
+  "languages": {
+    "eng": "English"
+  },
+  "currencies": {
+    "XCD": {
+      "name": "Eastern Caribbean dollar",
+      "symbol": "$"
+    }
+  },
+  "gini": {},
+  "car": {
+    "signs": [
+      "WG"
+    ],
+    "side": "left"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {},
+  "idd": {
+    "root": "+1",
+    "suffixes": [
+      "473"
+    ]
+  },
+  "timezones": [
+    "UTC-04:00"
+  ],
+  "flag": "🇬🇩",
+  "flags": {
+    "png": "https://flagcdn.com/w320/gd.png",
+    "svg": "https://flagcdn.com/gd.svg",
+    "alt": "The flag of Grenada features a large central rectangular area surrounded by a red border, with three five-pointed yellow stars centered on the top and bottom borders. The central rectangle is divided diagonally into four alternating triangular areas of yellow at the top and bottom and green on the hoist and fly sides, and a five-pointed yellow star on a red circle is superimposed at its center. A symbolic nutmeg pod is situated on the green hoist-side triangle."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/gd.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/gd.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/rqWyfUAt4xhvk1Zy9",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/550727"
+  },
+  "translations": {
+    "ara": {
+      "official": "غرينادا",
+      "common": "غرينادا"
+    },
+    "bre": {
+      "official": "Grenada",
+      "common": "Grenada"
+    },
+    "ces": {
+      "official": "Grenada",
+      "common": "Grenada"
+    },
+    "deu": {
+      "official": "Grenada",
+      "common": "Grenada"
+    },
+    "est": {
+      "official": "Grenada",
+      "common": "Grenada"
+    },
+    "fin": {
+      "official": "Grenada",
+      "common": "Grenada"
+    },
+    "fra": {
+      "official": "Grenade",
+      "common": "Grenade"
+    },
+    "hrv": {
+      "official": "Grenada",
+      "common": "Grenada"
+    },
+    "hun": {
+      "official": "Grenada",
+      "common": "Grenada"
+    },
+    "ita": {
+      "official": "Grenada",
+      "common": "Grenada"
+    },
+    "jpn": {
+      "official": "グレナダ",
+      "common": "グレナダ"
+    },
+    "kor": {
+      "official": "그레나다",
+      "common": "그레나다"
+    },
+    "nld": {
+      "official": "Grenada",
+      "common": "Grenada"
+    },
+    "per": {
+      "official": "گرنادا",
+      "common": "گرنادا"
+    },
+    "pol": {
+      "official": "Grenada",
+      "common": "Grenada"
+    },
+    "por": {
+      "official": "Grenada",
+      "common": "Granada"
+    },
+    "rus": {
+      "official": "Гренада",
+      "common": "Гренада"
+    },
+    "slk": {
+      "official": "Grenada",
+      "common": "Grenada"
+    },
+    "spa": {
+      "official": "Granada",
+      "common": "Grenada"
+    },
+    "srp": {
+      "official": "Grenada",
+      "common": "Grenada"
+    },
+    "swe": {
+      "official": "Grenada",
+      "common": "Grenada"
+    },
+    "tur": {
+      "official": "Grenada",
+      "common": "Grenada"
+    },
+    "urd": {
+      "official": "گریناڈا",
+      "common": "گریناڈا"
+    },
+    "zho": {
+      "official": "格林纳达",
+      "common": "格林纳达"
+    }
+  },
+  "largest_city": "Saint George's",
+  "largest_city_local": "Saint George's",
+  "largest_city_pop": 7500,
+  "largest_city_is_capital": false
+}

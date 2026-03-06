@@ -1,0 +1,205 @@
+{
+  "name": {
+    "common": "Samoa",
+    "official": "Independent State of Samoa",
+    "native": {
+      "eng": {
+        "official": "Independent State of Samoa",
+        "common": "Samoa"
+      },
+      "smo": {
+        "official": "Malo Saʻoloto Tutoʻatasi o Sāmoa",
+        "common": "Sāmoa"
+      }
+    }
+  },
+  "cca2": "WS",
+  "cca3": "WSM",
+  "ccn3": "882",
+  "cioc": "SAM",
+  "fifa": "SAM",
+  "tld": [
+    ".ws"
+  ],
+  "altSpellings": [
+    "WS",
+    "Independent State of Samoa",
+    "Malo Saʻoloto Tutoʻatasi o Sāmoa"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Asia and the Pacific Group",
+  "capital": [
+    "Apia"
+  ],
+  "region": "Oceania",
+  "subregion": "Polynesia",
+  "continents": [
+    "Oceania"
+  ],
+  "latlng": [
+    -13.58333333,
+    -172.33333333
+  ],
+  "landlocked": false,
+  "borders": [],
+  "area": 2842,
+  "population": 205557,
+  "demonyms": {
+    "eng": {
+      "f": "Samoan",
+      "m": "Samoan"
+    },
+    "fra": {
+      "f": "Samoane",
+      "m": "Samoan"
+    }
+  },
+  "languages": {
+    "eng": "English",
+    "smo": "Samoan"
+  },
+  "currencies": {
+    "WST": {
+      "name": "Samoan tālā",
+      "symbol": "T"
+    }
+  },
+  "gini": {
+    "2013": 38.7
+  },
+  "car": {
+    "signs": [
+      "WS"
+    ],
+    "side": "left"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {},
+  "idd": {
+    "root": "+6",
+    "suffixes": [
+      "85"
+    ]
+  },
+  "timezones": [
+    "UTC+13:00"
+  ],
+  "flag": "🇼🇸",
+  "flags": {
+    "png": "https://flagcdn.com/w320/ws.png",
+    "svg": "https://flagcdn.com/ws.svg",
+    "alt": "The flag of Samoa has a red field. A blue rectangle, bearing a representation of the Southern Cross made up of five large and one smaller five-pointed white stars, is superimposed in the canton."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/ws.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/ws.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/CFC9fEFP9cfkYUBF9",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/1872673"
+  },
+  "translations": {
+    "ara": {
+      "official": "دولة ساموا المستقلة",
+      "common": "ساموا"
+    },
+    "bre": {
+      "official": "Stad Dizalc'h Samoa",
+      "common": "Samoa"
+    },
+    "ces": {
+      "official": "Nezávislý stát Samoa",
+      "common": "Samoa"
+    },
+    "deu": {
+      "official": "Unabhängige Staat Samoa",
+      "common": "Samoa"
+    },
+    "est": {
+      "official": "Samoa Iseseisvusriik",
+      "common": "Samoa"
+    },
+    "fin": {
+      "official": "Samoan itsenäinen valtio",
+      "common": "Samoa"
+    },
+    "fra": {
+      "official": "Samoa",
+      "common": "Samoa"
+    },
+    "hrv": {
+      "official": "Nezavisna Država Samoa",
+      "common": "Samoa"
+    },
+    "hun": {
+      "official": "Szamoai Független Állam",
+      "common": "Szamoa"
+    },
+    "ita": {
+      "official": "Stato indipendente di Samoa",
+      "common": "Samoa"
+    },
+    "jpn": {
+      "official": "サモア独立国",
+      "common": "サモア"
+    },
+    "kor": {
+      "official": "사모아 독립국",
+      "common": "사모아"
+    },
+    "nld": {
+      "official": "Onafhankelijke Staat Samoa",
+      "common": "Samoa"
+    },
+    "per": {
+      "official": "ایالت مستقل ساموآ",
+      "common": "ساموآ"
+    },
+    "pol": {
+      "official": "Niezależne Państwo Samoa",
+      "common": "Samoa"
+    },
+    "por": {
+      "official": "Estado Independente de Samoa",
+      "common": "Samoa"
+    },
+    "rus": {
+      "official": "Независимое Государство Самоа",
+      "common": "Самоа"
+    },
+    "slk": {
+      "official": "Nezávislý štátSamoa",
+      "common": "Samoa"
+    },
+    "spa": {
+      "official": "Estado Independiente de Samoa",
+      "common": "Samoa"
+    },
+    "srp": {
+      "official": "Nezavisna Država Samoa",
+      "common": "Samoa"
+    },
+    "swe": {
+      "official": "Självständiga staten Samoa",
+      "common": "Samoa"
+    },
+    "tur": {
+      "official": "Bağımsız Samoa Devleti",
+      "common": "Bağımsız Samoa Devleti"
+    },
+    "urd": {
+      "official": "آزاد سلطنتِ ساموا",
+      "common": "سامووا"
+    },
+    "zho": {
+      "official": "萨摩亚独立国",
+      "common": "萨摩亚"
+    }
+  },
+  "largest_city": "Apia",
+  "largest_city_local": "Apia",
+  "largest_city_pop": 40407,
+  "largest_city_is_capital": true
+}

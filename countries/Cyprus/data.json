@@ -1,0 +1,211 @@
+{
+  "name": {
+    "common": "Cyprus",
+    "official": "Republic of Cyprus",
+    "native": {
+      "ell": {
+        "official": "Δημοκρατία της Κύπρος",
+        "common": "Κύπρος"
+      },
+      "tur": {
+        "official": "Kıbrıs Cumhuriyeti",
+        "common": "Kıbrıs"
+      }
+    }
+  },
+  "cca2": "CY",
+  "cca3": "CYP",
+  "ccn3": "196",
+  "cioc": "CYP",
+  "fifa": "CYP",
+  "tld": [
+    ".cy"
+  ],
+  "altSpellings": [
+    "CY",
+    "Kýpros",
+    "Kıbrıs",
+    "Republic of Cyprus",
+    "Κυπριακή Δημοκρατία",
+    "Kıbrıs Cumhuriyeti"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Asia and the Pacific Group",
+  "capital": [
+    "Nicosia"
+  ],
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "continents": [
+    "Europe"
+  ],
+  "latlng": [
+    35,
+    33
+  ],
+  "landlocked": false,
+  "borders": [],
+  "area": 9251,
+  "population": 1442614,
+  "demonyms": {
+    "eng": {
+      "f": "Cypriot",
+      "m": "Cypriot"
+    },
+    "fra": {
+      "f": "Chypriote",
+      "m": "Chypriote"
+    }
+  },
+  "languages": {
+    "ell": "Greek",
+    "tur": "Turkish"
+  },
+  "currencies": {
+    "EUR": {
+      "name": "Euro",
+      "symbol": "€"
+    }
+  },
+  "gini": {
+    "2018": 32.7
+  },
+  "car": {
+    "signs": [
+      "CY"
+    ],
+    "side": "left"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "####",
+    "regex": "^(\\d{4})$"
+  },
+  "idd": {
+    "root": "+3",
+    "suffixes": [
+      "57"
+    ]
+  },
+  "timezones": [
+    "UTC+02:00"
+  ],
+  "flag": "🇨🇾",
+  "flags": {
+    "png": "https://flagcdn.com/w320/cy.png",
+    "svg": "https://flagcdn.com/cy.svg",
+    "alt": "The flag of Cyprus has a white field, at the center of which is a copper-colored silhouette of the Island of Cyprus above two green olive branches crossed at the stem."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/cy.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/cy.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/77hPBRdLid8yD5Bm7",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/307787"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية قبرص",
+      "common": "قبرص"
+    },
+    "bre": {
+      "official": "Republik Kiprenez",
+      "common": "Kiprenez"
+    },
+    "ces": {
+      "official": "Kyperská republika",
+      "common": "Kypr"
+    },
+    "deu": {
+      "official": "Republik Zypern",
+      "common": "Zypern"
+    },
+    "est": {
+      "official": "Küprose Vabariik",
+      "common": "Küpros"
+    },
+    "fin": {
+      "official": "Kyproksen tasavalta",
+      "common": "Kypros"
+    },
+    "fra": {
+      "official": "République de Chypre",
+      "common": "Chypre"
+    },
+    "hrv": {
+      "official": "Republika Cipar",
+      "common": "Cipar"
+    },
+    "hun": {
+      "official": "Ciprusi Köztársaság",
+      "common": "Ciprus"
+    },
+    "ita": {
+      "official": "Repubblica di Cipro",
+      "common": "Cipro"
+    },
+    "jpn": {
+      "official": "キプロス共和国",
+      "common": "キプロス"
+    },
+    "kor": {
+      "official": "키프로스 공화국",
+      "common": "키프로스"
+    },
+    "nld": {
+      "official": "Republiek Cyprus",
+      "common": "Cyprus"
+    },
+    "per": {
+      "official": "جمهوری قبرس",
+      "common": "قِبرِس"
+    },
+    "pol": {
+      "official": "Republika Cypryjska",
+      "common": "Cypr"
+    },
+    "por": {
+      "official": "República de Chipre",
+      "common": "Chipre"
+    },
+    "rus": {
+      "official": "Республика Кипр",
+      "common": "Кипр"
+    },
+    "slk": {
+      "official": "Cyperská republika",
+      "common": "Cyprus"
+    },
+    "spa": {
+      "official": "República de Chipre",
+      "common": "Chipre"
+    },
+    "srp": {
+      "official": "Republika Kipar",
+      "common": "Kipar"
+    },
+    "swe": {
+      "official": "Republiken Cypern",
+      "common": "Cypern"
+    },
+    "tur": {
+      "official": "Kıbrıs Cumhuriyeti",
+      "common": "Kıbrıs"
+    },
+    "urd": {
+      "official": "جمہوریہ قبرص",
+      "common": "قبرص"
+    },
+    "zho": {
+      "official": "塞浦路斯共和国",
+      "common": "塞浦路斯"
+    }
+  },
+  "largest_city": "Nicosia",
+  "largest_city_local": "Nicosia",
+  "largest_city_pop": 200452,
+  "largest_city_is_capital": true
+}

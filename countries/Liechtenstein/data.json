@@ -1,0 +1,204 @@
+{
+  "name": {
+    "common": "Liechtenstein",
+    "official": "Principality of Liechtenstein",
+    "native": {
+      "deu": {
+        "official": "Fürstentum Liechtenstein",
+        "common": "Liechtenstein"
+      }
+    }
+  },
+  "cca2": "LI",
+  "cca3": "LIE",
+  "ccn3": "438",
+  "cioc": "LIE",
+  "fifa": "LIE",
+  "tld": [
+    ".li"
+  ],
+  "altSpellings": [
+    "LI",
+    "Principality of Liechtenstein",
+    "Fürstentum Liechtenstein"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Western European and Others Group",
+  "capital": [
+    "Vaduz"
+  ],
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "continents": [
+    "Europe"
+  ],
+  "latlng": [
+    47.26666666,
+    9.53333333
+  ],
+  "landlocked": true,
+  "borders": [
+    "AUT",
+    "CHE"
+  ],
+  "area": 160,
+  "population": 40900,
+  "demonyms": {
+    "eng": {
+      "f": "Liechtensteiner",
+      "m": "Liechtensteiner"
+    },
+    "fra": {
+      "f": "Liechtensteinoise",
+      "m": "Liechtensteinois"
+    }
+  },
+  "languages": {
+    "deu": "German"
+  },
+  "currencies": {
+    "CHF": {
+      "name": "Swiss franc",
+      "symbol": "Fr"
+    }
+  },
+  "gini": {},
+  "car": {
+    "signs": [
+      "FL"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "####",
+    "regex": "^(\\d{4})$"
+  },
+  "idd": {
+    "root": "+4",
+    "suffixes": [
+      "23"
+    ]
+  },
+  "timezones": [
+    "UTC+01:00"
+  ],
+  "flag": "🇱🇮",
+  "flags": {
+    "png": "https://flagcdn.com/w320/li.png",
+    "svg": "https://flagcdn.com/li.svg",
+    "alt": "The flag of Liechtenstein is composed of two equal horizontal bands of blue and red, with a golden-yellow crown on the hoist side of the blue band."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/li.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/li.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/KNuHeiJzAPodwM7y6",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/1155955"
+  },
+  "translations": {
+    "ara": {
+      "official": "إمارة ليختنشتاين",
+      "common": "ليختنشتاين"
+    },
+    "bre": {
+      "official": "Priñselezh Liechtenstein",
+      "common": "Liechtenstein"
+    },
+    "ces": {
+      "official": "Knížectví Lichtenštejnské",
+      "common": "Lichtenštejnsko"
+    },
+    "deu": {
+      "official": "Fürstentum Liechtenstein",
+      "common": "Liechtenstein"
+    },
+    "est": {
+      "official": "Liechtensteini Vürstiriik",
+      "common": "Liechtenstein"
+    },
+    "fin": {
+      "official": "Liechensteinin ruhtinaskunta",
+      "common": "Liechenstein"
+    },
+    "fra": {
+      "official": "Principauté du Liechtenstein",
+      "common": "Liechtenstein"
+    },
+    "hrv": {
+      "official": "Kneževina Lihtenštajn",
+      "common": "Lihtenštajn"
+    },
+    "hun": {
+      "official": "Liechtensteini Hercegség",
+      "common": "Liechtenstein"
+    },
+    "ita": {
+      "official": "Principato del Liechtenstein",
+      "common": "Liechtenstein"
+    },
+    "jpn": {
+      "official": "リヒテンシュタイン公国",
+      "common": "リヒテンシュタイン"
+    },
+    "kor": {
+      "official": "리히텐슈타인 공국",
+      "common": "리히텐슈타인"
+    },
+    "nld": {
+      "official": "Vorstendom Liechtenstein",
+      "common": "Liechtenstein"
+    },
+    "per": {
+      "official": "شاهزاده‌نشین لیختن‌اشتاین",
+      "common": "لیختن‌اشتاین"
+    },
+    "pol": {
+      "official": "Księstwo Liechtensteinu",
+      "common": "Liechtenstein"
+    },
+    "por": {
+      "official": "Principado de Liechtenstein",
+      "common": "Liechtenstein"
+    },
+    "rus": {
+      "official": "Княжество Лихтенштейн",
+      "common": "Лихтенштейн"
+    },
+    "slk": {
+      "official": "Lichtenštajnské kniežatstvo",
+      "common": "Lichtenštajnsko"
+    },
+    "spa": {
+      "official": "Principado de Liechtenstein",
+      "common": "Liechtenstein"
+    },
+    "srp": {
+      "official": "Kneževina Lihtenštajn",
+      "common": "Lihtenštajn"
+    },
+    "swe": {
+      "official": "Furstendömet Liechtenstein",
+      "common": "Liechtenstein"
+    },
+    "tur": {
+      "official": "Lihtenştayn Prensliği",
+      "common": "Lihtenştayn"
+    },
+    "urd": {
+      "official": "امارات لیختینستائن",
+      "common": "لیختینستائن"
+    },
+    "zho": {
+      "official": "列支敦士登公国",
+      "common": "列支敦士登"
+    }
+  },
+  "largest_city": "Vaduz",
+  "largest_city_local": "Vaduz",
+  "largest_city_pop": 5197,
+  "largest_city_is_capital": true
+}

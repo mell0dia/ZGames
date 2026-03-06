@@ -1,0 +1,207 @@
+{
+  "name": {
+    "common": "Syria",
+    "official": "Syrian Arab Republic",
+    "native": {
+      "ara": {
+        "official": "الجمهورية العربية السورية",
+        "common": "سوريا"
+      }
+    }
+  },
+  "cca2": "SY",
+  "cca3": "SYR",
+  "ccn3": "760",
+  "cioc": "SYR",
+  "fifa": "SYR",
+  "tld": [
+    ".sy",
+    "سوريا."
+  ],
+  "altSpellings": [
+    "SY",
+    "Syrian Arab Republic",
+    "Al-Jumhūrīyah Al-ʻArabīyah As-Sūrīyah"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Asia and the Pacific Group",
+  "capital": [
+    "Damascus"
+  ],
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "continents": [
+    "Asia"
+  ],
+  "latlng": [
+    35,
+    38
+  ],
+  "landlocked": false,
+  "borders": [
+    "IRQ",
+    "ISR",
+    "JOR",
+    "LBN",
+    "TUR"
+  ],
+  "area": 185180,
+  "population": 25620000,
+  "demonyms": {
+    "eng": {
+      "f": "Syrian",
+      "m": "Syrian"
+    },
+    "fra": {
+      "f": "Syrienne",
+      "m": "Syrien"
+    }
+  },
+  "languages": {
+    "ara": "Arabic"
+  },
+  "currencies": {
+    "SYP": {
+      "name": "Syrian pound",
+      "symbol": "£"
+    }
+  },
+  "gini": {
+    "2003": 37.5
+  },
+  "car": {
+    "signs": [
+      "SYR"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {},
+  "idd": {
+    "root": "+9",
+    "suffixes": [
+      "63"
+    ]
+  },
+  "timezones": [
+    "UTC+02:00"
+  ],
+  "flag": "🇸🇾",
+  "flags": {
+    "png": "https://flagcdn.com/w320/sy.png",
+    "svg": "https://flagcdn.com/sy.svg",
+    "alt": "The flag of Syria is composed of three equal horizontal bands of red, white and black. At the center of the white band are two small five-pointed green stars arranged in a horizontal line."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/sy.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/sy.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/Xe3VnFbwdb4nv2SM9",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/184840"
+  },
+  "translations": {
+    "ara": {
+      "official": "الجمهورية العربية السورية",
+      "common": "سوريا"
+    },
+    "bre": {
+      "official": "Republik Arab Siriat",
+      "common": "Siria"
+    },
+    "ces": {
+      "official": "Syrská arabská republika",
+      "common": "Sýrie"
+    },
+    "deu": {
+      "official": "Arabische Republik Syrien",
+      "common": "Syrien"
+    },
+    "est": {
+      "official": "Süüria Araabia Vabariik",
+      "common": "Süüria"
+    },
+    "fin": {
+      "official": "Syyrian arabitasavalta",
+      "common": "Syyria"
+    },
+    "fra": {
+      "official": "République arabe syrienne",
+      "common": "Syrie"
+    },
+    "hrv": {
+      "official": "Sirijska Arapska Republika",
+      "common": "Sirija"
+    },
+    "hun": {
+      "official": "Szíriai Arab Köztársaság",
+      "common": "Szíria"
+    },
+    "ita": {
+      "official": "Repubblica araba siriana",
+      "common": "Siria"
+    },
+    "jpn": {
+      "official": "シリア・アラブ共和国",
+      "common": "シリア"
+    },
+    "kor": {
+      "official": "시리아 아랍 공화국",
+      "common": "시리아"
+    },
+    "nld": {
+      "official": "Syrische Arabische Republiek",
+      "common": "Syrië"
+    },
+    "per": {
+      "official": "جمهوری عربی سوریه",
+      "common": "سوریه"
+    },
+    "pol": {
+      "official": "Syryjska Republika Arabska",
+      "common": "Syria"
+    },
+    "por": {
+      "official": "República Árabe Síria",
+      "common": "Síria"
+    },
+    "rus": {
+      "official": "Сирийская Арабская Республика",
+      "common": "Сирия"
+    },
+    "slk": {
+      "official": "Sýrska arabská republika",
+      "common": "Sýria"
+    },
+    "spa": {
+      "official": "República Árabe Siria",
+      "common": "Siria"
+    },
+    "srp": {
+      "official": "Sirijska Arapska Republika",
+      "common": "Sirija"
+    },
+    "swe": {
+      "official": "Syriska arabiska republiken",
+      "common": "Syrien"
+    },
+    "tur": {
+      "official": "Suriye Arap Cumhuriyeti",
+      "common": "Suriye"
+    },
+    "urd": {
+      "official": "عرب جمہوریہ سوریہ",
+      "common": "سوریہ"
+    },
+    "zho": {
+      "official": "叙利亚阿拉伯共和国",
+      "common": "叙利亚"
+    }
+  },
+  "largest_city": "Aleppo",
+  "largest_city_local": "Aleppo",
+  "largest_city_pop": 2098210,
+  "largest_city_is_capital": false
+}

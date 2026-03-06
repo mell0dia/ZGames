@@ -1,0 +1,207 @@
+{
+  "name": {
+    "common": "Portugal",
+    "official": "Portuguese Republic",
+    "native": {
+      "por": {
+        "official": "República português",
+        "common": "Portugal"
+      }
+    }
+  },
+  "cca2": "PT",
+  "cca3": "PRT",
+  "ccn3": "620",
+  "cioc": "POR",
+  "fifa": "POR",
+  "tld": [
+    ".pt"
+  ],
+  "altSpellings": [
+    "PT",
+    "Portuguesa",
+    "Portuguese Republic",
+    "República Portuguesa"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Western European and Others Group",
+  "capital": [
+    "Lisbon"
+  ],
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "continents": [
+    "Europe"
+  ],
+  "latlng": [
+    39.5,
+    -8
+  ],
+  "landlocked": false,
+  "borders": [
+    "ESP"
+  ],
+  "area": 92090,
+  "population": 10749635,
+  "demonyms": {
+    "eng": {
+      "f": "Portuguese",
+      "m": "Portuguese"
+    },
+    "fra": {
+      "f": "Portugaise",
+      "m": "Portugais"
+    }
+  },
+  "languages": {
+    "por": "Portuguese"
+  },
+  "currencies": {
+    "EUR": {
+      "name": "Euro",
+      "symbol": "€"
+    }
+  },
+  "gini": {
+    "2018": 33.5
+  },
+  "car": {
+    "signs": [
+      "P"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "####-###",
+    "regex": "^(\\d{7})$"
+  },
+  "idd": {
+    "root": "+3",
+    "suffixes": [
+      "51"
+    ]
+  },
+  "timezones": [
+    "UTC-01:00",
+    "UTC"
+  ],
+  "flag": "🇵🇹",
+  "flags": {
+    "png": "https://flagcdn.com/w320/pt.png",
+    "svg": "https://flagcdn.com/pt.svg",
+    "alt": "The flag of Portugal is composed of two vertical bands of green and red in the ratio of 2:3, with the coat of arms of Portugal centered over the two-color boundary."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/pt.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/pt.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/BaTBSyc4GWMmbAKB8",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/295480"
+  },
+  "translations": {
+    "ara": {
+      "official": "الجمهورية البرتغالية",
+      "common": "البرتغال"
+    },
+    "bre": {
+      "official": "Republik Portugalat",
+      "common": "Portugal"
+    },
+    "ces": {
+      "official": "Portugalská republika",
+      "common": "Portugalsko"
+    },
+    "deu": {
+      "official": "Portugiesische Republik",
+      "common": "Portugal"
+    },
+    "est": {
+      "official": "Portugali Vabariik",
+      "common": "Portugal"
+    },
+    "fin": {
+      "official": "Portugalin tasavalta",
+      "common": "Portugali"
+    },
+    "fra": {
+      "official": "République portugaise",
+      "common": "Portugal"
+    },
+    "hrv": {
+      "official": "Portugalska Republika",
+      "common": "Portugal"
+    },
+    "hun": {
+      "official": "Portugál Köztársaság",
+      "common": "Portugália"
+    },
+    "ita": {
+      "official": "Repubblica portoghese",
+      "common": "Portogallo"
+    },
+    "jpn": {
+      "official": "ポルトガル共和国",
+      "common": "ポルトガル"
+    },
+    "kor": {
+      "official": "포르투갈 공화국",
+      "common": "포르투갈"
+    },
+    "nld": {
+      "official": "Portugese Republiek",
+      "common": "Portugal"
+    },
+    "per": {
+      "official": "جمهوری پرتغال",
+      "common": "پرتغال"
+    },
+    "pol": {
+      "official": "Republika Portugalska",
+      "common": "Portugalia"
+    },
+    "por": {
+      "official": "República português",
+      "common": "Portugal"
+    },
+    "rus": {
+      "official": "Португальская Республика",
+      "common": "Португалия"
+    },
+    "slk": {
+      "official": "Portugalská republika",
+      "common": "Portugalsko"
+    },
+    "spa": {
+      "official": "República Portuguesa",
+      "common": "Portugal"
+    },
+    "srp": {
+      "official": "Republika Portugal",
+      "common": "Portugal"
+    },
+    "swe": {
+      "official": "Republiken Portugal",
+      "common": "Portugal"
+    },
+    "tur": {
+      "official": "Portekiz Cumhuriyeti",
+      "common": "Portekiz"
+    },
+    "urd": {
+      "official": "جمہوریہ پرتگال",
+      "common": "پرتگال"
+    },
+    "zho": {
+      "official": "葡萄牙共和国",
+      "common": "葡萄牙"
+    }
+  },
+  "largest_city": "Lisbon",
+  "largest_city_local": "Lisbon",
+  "largest_city_pop": 517802,
+  "largest_city_is_capital": true
+}

@@ -1,0 +1,211 @@
+{
+  "name": {
+    "common": "Belize",
+    "official": "Belize",
+    "native": {
+      "bjz": {
+        "official": "Belize",
+        "common": "Belize"
+      },
+      "eng": {
+        "official": "Belize",
+        "common": "Belize"
+      },
+      "spa": {
+        "official": "Belice",
+        "common": "Belice"
+      }
+    }
+  },
+  "cca2": "BZ",
+  "cca3": "BLZ",
+  "ccn3": "084",
+  "cioc": "BIZ",
+  "fifa": "BLZ",
+  "tld": [
+    ".bz"
+  ],
+  "altSpellings": [
+    "BZ"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Latin American and Caribbean Group",
+  "capital": [
+    "Belmopan"
+  ],
+  "region": "Americas",
+  "subregion": "Central America",
+  "continents": [
+    "North America"
+  ],
+  "latlng": [
+    17.25,
+    -88.75
+  ],
+  "landlocked": false,
+  "borders": [
+    "GTM",
+    "MEX"
+  ],
+  "area": 22966,
+  "population": 417634,
+  "demonyms": {
+    "eng": {
+      "f": "Belizean",
+      "m": "Belizean"
+    },
+    "fra": {
+      "f": "Bélizienne",
+      "m": "Bélizien"
+    }
+  },
+  "languages": {
+    "bjz": "Belizean Creole",
+    "eng": "English",
+    "spa": "Spanish"
+  },
+  "currencies": {
+    "BZD": {
+      "name": "Belize dollar",
+      "symbol": "$"
+    }
+  },
+  "gini": {
+    "1999": 53.3
+  },
+  "car": {
+    "signs": [
+      "BH"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {},
+  "idd": {
+    "root": "+5",
+    "suffixes": [
+      "01"
+    ]
+  },
+  "timezones": [
+    "UTC-06:00"
+  ],
+  "flag": "🇧🇿",
+  "flags": {
+    "png": "https://flagcdn.com/w320/bz.png",
+    "svg": "https://flagcdn.com/bz.svg",
+    "alt": "The flag of Belize has a royal blue field with a thin red horizontal band at the top and bottom of the field and the national coat of arms in the center."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/bz.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/bz.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/jdCccpdLodm1uTmo9",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/287827"
+  },
+  "translations": {
+    "ara": {
+      "official": "بليز",
+      "common": "بليز"
+    },
+    "bre": {
+      "official": "Belize",
+      "common": "Belize"
+    },
+    "ces": {
+      "official": "Belize",
+      "common": "Belize"
+    },
+    "deu": {
+      "official": "Belize",
+      "common": "Belize"
+    },
+    "est": {
+      "official": "Belize",
+      "common": "Belize"
+    },
+    "fin": {
+      "official": "Belize",
+      "common": "Belize"
+    },
+    "fra": {
+      "official": "Belize",
+      "common": "Belize"
+    },
+    "hrv": {
+      "official": "Belize",
+      "common": "Belize"
+    },
+    "hun": {
+      "official": "Belize",
+      "common": "Belize"
+    },
+    "ita": {
+      "official": "Belize",
+      "common": "Belize"
+    },
+    "jpn": {
+      "official": "ベリーズ",
+      "common": "ベリーズ"
+    },
+    "kor": {
+      "official": "벨리즈",
+      "common": "벨리즈"
+    },
+    "nld": {
+      "official": "Belize",
+      "common": "Belize"
+    },
+    "per": {
+      "official": "بلیز",
+      "common": "بلیز"
+    },
+    "pol": {
+      "official": "Belize",
+      "common": "Belize"
+    },
+    "por": {
+      "official": "Belize",
+      "common": "Belize"
+    },
+    "rus": {
+      "official": "Белиз",
+      "common": "Белиз"
+    },
+    "slk": {
+      "official": "Belize",
+      "common": "Belize"
+    },
+    "spa": {
+      "official": "Belice",
+      "common": "Belice"
+    },
+    "srp": {
+      "official": "Belize",
+      "common": "Belize"
+    },
+    "swe": {
+      "official": "Belize",
+      "common": "Belize"
+    },
+    "tur": {
+      "official": "Belize",
+      "common": "Belize"
+    },
+    "urd": {
+      "official": "بیلیز",
+      "common": "بیلیز"
+    },
+    "zho": {
+      "official": "伯利兹",
+      "common": "伯利兹"
+    }
+  },
+  "largest_city": "Belize City",
+  "largest_city_local": "Belize City",
+  "largest_city_pop": 65222,
+  "largest_city_is_capital": false
+}

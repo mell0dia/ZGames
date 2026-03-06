@@ -1,0 +1,214 @@
+{
+  "name": {
+    "common": "Finland",
+    "official": "Republic of Finland",
+    "native": {
+      "fin": {
+        "official": "Suomen tasavalta",
+        "common": "Suomi"
+      },
+      "swe": {
+        "official": "Republiken Finland",
+        "common": "Finland"
+      }
+    }
+  },
+  "cca2": "FI",
+  "cca3": "FIN",
+  "ccn3": "246",
+  "cioc": "FIN",
+  "fifa": "FIN",
+  "tld": [
+    ".fi"
+  ],
+  "altSpellings": [
+    "FI",
+    "Suomi",
+    "Republic of Finland",
+    "Suomen tasavalta",
+    "Republiken Finland"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Western European and Others Group",
+  "capital": [
+    "Helsinki"
+  ],
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "continents": [
+    "Europe"
+  ],
+  "latlng": [
+    64,
+    26
+  ],
+  "landlocked": false,
+  "borders": [
+    "NOR",
+    "SWE",
+    "RUS"
+  ],
+  "area": 338424,
+  "population": 5650325,
+  "demonyms": {
+    "eng": {
+      "f": "Finnish",
+      "m": "Finnish"
+    },
+    "fra": {
+      "f": "Finlandaise",
+      "m": "Finlandais"
+    }
+  },
+  "languages": {
+    "fin": "Finnish",
+    "swe": "Swedish"
+  },
+  "currencies": {
+    "EUR": {
+      "name": "Euro",
+      "symbol": "€"
+    }
+  },
+  "gini": {
+    "2018": 27.3
+  },
+  "car": {
+    "signs": [
+      "FIN"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "#####",
+    "regex": "^(?:FI)*(\\d{5})$"
+  },
+  "idd": {
+    "root": "+3",
+    "suffixes": [
+      "58"
+    ]
+  },
+  "timezones": [
+    "UTC+02:00"
+  ],
+  "flag": "🇫🇮",
+  "flags": {
+    "png": "https://flagcdn.com/w320/fi.png",
+    "svg": "https://flagcdn.com/fi.svg",
+    "alt": "The flag of Finland has a white field with a large blue cross that extend to the edges of the field. The vertical part of this cross is offset towards the hoist side."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/fi.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/fi.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/HjgWDCNKRAYHrkMn8",
+    "openStreetMaps": "openstreetmap.org/relation/54224"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية فنلندا",
+      "common": "فنلندا"
+    },
+    "bre": {
+      "official": "Republik Finland",
+      "common": "Finland"
+    },
+    "ces": {
+      "official": "Finská republika",
+      "common": "Finsko"
+    },
+    "deu": {
+      "official": "Republik Finnland",
+      "common": "Finnland"
+    },
+    "est": {
+      "official": "Soome Vabariik",
+      "common": "Soome"
+    },
+    "fin": {
+      "official": "Suomen tasavalta",
+      "common": "Suomi"
+    },
+    "fra": {
+      "official": "République de Finlande",
+      "common": "Finlande"
+    },
+    "hrv": {
+      "official": "Republika Finska",
+      "common": "Finska"
+    },
+    "hun": {
+      "official": "Finn Köztársaság",
+      "common": "Finnország"
+    },
+    "ita": {
+      "official": "Repubblica di Finlandia",
+      "common": "Finlandia"
+    },
+    "jpn": {
+      "official": "フィンランド共和国",
+      "common": "フィンランド"
+    },
+    "kor": {
+      "official": "핀란드 공화국",
+      "common": "핀란드"
+    },
+    "nld": {
+      "official": "Republiek Finland",
+      "common": "Finland"
+    },
+    "per": {
+      "official": "جمهوری فنلاند",
+      "common": "فنلاند"
+    },
+    "pol": {
+      "official": "Republika Finlandii",
+      "common": "Finlandia"
+    },
+    "por": {
+      "official": "República da Finlândia",
+      "common": "Finlândia"
+    },
+    "rus": {
+      "official": "Финляндская Республика",
+      "common": "Финляндия"
+    },
+    "slk": {
+      "official": "Fínska republika",
+      "common": "Fínsko"
+    },
+    "spa": {
+      "official": "República de Finlandia",
+      "common": "Finlandia"
+    },
+    "srp": {
+      "official": "Republika Finska",
+      "common": "Finska"
+    },
+    "swe": {
+      "official": "Republiken Finland",
+      "common": "Finland"
+    },
+    "tur": {
+      "official": "Finlandiya Cumhuriyeti",
+      "common": "Finlandiya"
+    },
+    "urd": {
+      "official": "جمہوریہ فن لینڈ",
+      "common": "فن لینڈ"
+    },
+    "zho": {
+      "official": "芬兰共和国",
+      "common": "芬兰"
+    }
+  },
+  "largest_city": "Helsinki",
+  "largest_city_local": "Helsinki",
+  "largest_city_pop": 658864,
+  "largest_city_is_capital": true
+}

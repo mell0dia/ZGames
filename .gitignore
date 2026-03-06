@@ -1,0 +1,20 @@
+# Raw data files (not needed on the web)
+mledoze_raw.json
+rest_batch1.json
+rest_batch2.json
+rest_countries_raw.json
+cities15000.txt
+cities15000.zip
+
+# Python scripts (build tools, not for web)
+generate_game_data.py
+build_countries.py
+download_flags.py
+enrich_cities.py
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V7
+.Trashes

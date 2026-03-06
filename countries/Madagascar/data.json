@@ -1,0 +1,209 @@
+{
+  "name": {
+    "common": "Madagascar",
+    "official": "Republic of Madagascar",
+    "native": {
+      "fra": {
+        "official": "République de Madagascar",
+        "common": "Madagascar"
+      },
+      "mlg": {
+        "official": "Repoblikan'i Madagasikara",
+        "common": "Madagasikara"
+      }
+    }
+  },
+  "cca2": "MG",
+  "cca3": "MDG",
+  "ccn3": "450",
+  "cioc": "MAD",
+  "fifa": "MAD",
+  "tld": [
+    ".mg"
+  ],
+  "altSpellings": [
+    "MG",
+    "Republic of Madagascar",
+    "Repoblikan'i Madagasikara",
+    "République de Madagascar"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "African Group",
+  "capital": [
+    "Antananarivo"
+  ],
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "latlng": [
+    -20,
+    47
+  ],
+  "landlocked": false,
+  "borders": [],
+  "area": 587041,
+  "population": 31727042,
+  "demonyms": {
+    "eng": {
+      "f": "Malagasy",
+      "m": "Malagasy"
+    },
+    "fra": {
+      "f": "Malgache",
+      "m": "Malgache"
+    }
+  },
+  "languages": {
+    "fra": "French",
+    "mlg": "Malagasy"
+  },
+  "currencies": {
+    "MGA": {
+      "name": "Malagasy ariary",
+      "symbol": "Ar"
+    }
+  },
+  "gini": {
+    "2012": 42.6
+  },
+  "car": {
+    "signs": [
+      "RM"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "###",
+    "regex": "^(\\d{3})$"
+  },
+  "idd": {
+    "root": "+2",
+    "suffixes": [
+      "61"
+    ]
+  },
+  "timezones": [
+    "UTC+03:00"
+  ],
+  "flag": "🇲🇬",
+  "flags": {
+    "png": "https://flagcdn.com/w320/mg.png",
+    "svg": "https://flagcdn.com/mg.svg",
+    "alt": "The flag of Madagascar features a white vertical band on the hoist side that takes up about one-third the width of the field, and two equal horizontal bands of red and green adjoining the vertical band."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/mg.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/mg.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/AHQh2ABBaFW6Ngj26",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/447325"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية مدغشقر",
+      "common": "مدغشقر"
+    },
+    "bre": {
+      "official": "Republik Madagaskar",
+      "common": "Madagaskar"
+    },
+    "ces": {
+      "official": "Madagaskarská republika",
+      "common": "Madagaskar"
+    },
+    "deu": {
+      "official": "Republik Madagaskar",
+      "common": "Madagaskar"
+    },
+    "est": {
+      "official": "Madagaskari Vabariik",
+      "common": "Madagaskar"
+    },
+    "fin": {
+      "official": "Madagaskarin tasavalta",
+      "common": "Madagaskar"
+    },
+    "fra": {
+      "official": "République de Madagascar",
+      "common": "Madagascar"
+    },
+    "hrv": {
+      "official": "Republika Madagaskar",
+      "common": "Madagaskar"
+    },
+    "hun": {
+      "official": "Madagaszkári Köztársaság",
+      "common": "Madagaszkár"
+    },
+    "ita": {
+      "official": "Repubblica del Madagascar",
+      "common": "Madagascar"
+    },
+    "jpn": {
+      "official": "マダガスカル共和国",
+      "common": "マダガスカル"
+    },
+    "kor": {
+      "official": "마다가스카르 공화국",
+      "common": "마다가스카르"
+    },
+    "nld": {
+      "official": "Republiek Madagaskar",
+      "common": "Madagaskar"
+    },
+    "per": {
+      "official": "جمهوری ماداگاسکار",
+      "common": "ماداگاسکار"
+    },
+    "pol": {
+      "official": "Republika Madagaskaru",
+      "common": "Madagaskar"
+    },
+    "por": {
+      "official": "República de Madagáscar",
+      "common": "Madagáscar"
+    },
+    "rus": {
+      "official": "Республика Мадагаскар",
+      "common": "Мадагаскар"
+    },
+    "slk": {
+      "official": "Madagaskarská republika",
+      "common": "Madagaskar"
+    },
+    "spa": {
+      "official": "República de Madagascar",
+      "common": "Madagascar"
+    },
+    "srp": {
+      "official": "Republika Madagaskar",
+      "common": "Madagaskar"
+    },
+    "swe": {
+      "official": "Republiken Madagaskar",
+      "common": "Madagaskar"
+    },
+    "tur": {
+      "official": "Madagaskar Cumhuriyeti",
+      "common": "Madagaskar"
+    },
+    "urd": {
+      "official": "جمہوریہ مڈغاسکر",
+      "common": "مڈغاسکر"
+    },
+    "zho": {
+      "official": "马达加斯加共和国",
+      "common": "马达加斯加"
+    }
+  },
+  "largest_city": "Antananarivo",
+  "largest_city_local": "Antananarivo",
+  "largest_city_pop": 1349501,
+  "largest_city_is_capital": true
+}

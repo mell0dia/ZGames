@@ -1,0 +1,214 @@
+{
+  "name": {
+    "common": "New Zealand",
+    "official": "New Zealand",
+    "native": {
+      "eng": {
+        "official": "New Zealand",
+        "common": "New Zealand"
+      },
+      "mri": {
+        "official": "Aotearoa",
+        "common": "Aotearoa"
+      },
+      "nzs": {
+        "official": "New Zealand",
+        "common": "New Zealand"
+      }
+    }
+  },
+  "cca2": "NZ",
+  "cca3": "NZL",
+  "ccn3": "554",
+  "cioc": "NZL",
+  "fifa": "NZL",
+  "tld": [
+    ".nz"
+  ],
+  "altSpellings": [
+    "NZ",
+    "Aotearoa"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Western European and Others Group",
+  "capital": [
+    "Wellington"
+  ],
+  "region": "Oceania",
+  "subregion": "Australia and New Zealand",
+  "continents": [
+    "Oceania"
+  ],
+  "latlng": [
+    -41,
+    174
+  ],
+  "landlocked": false,
+  "borders": [],
+  "area": 270467,
+  "population": 5324700,
+  "demonyms": {
+    "eng": {
+      "f": "New Zealander",
+      "m": "New Zealander"
+    },
+    "fra": {
+      "f": "Neo-Zélandaise",
+      "m": "Neo-Zélandais"
+    }
+  },
+  "languages": {
+    "eng": "English",
+    "mri": "Māori",
+    "nzs": "New Zealand Sign Language"
+  },
+  "currencies": {
+    "NZD": {
+      "name": "New Zealand dollar",
+      "symbol": "$"
+    }
+  },
+  "gini": {},
+  "car": {
+    "signs": [
+      "NZ"
+    ],
+    "side": "left"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "####",
+    "regex": "^(\\d{4})$"
+  },
+  "idd": {
+    "root": "+6",
+    "suffixes": [
+      "4"
+    ]
+  },
+  "timezones": [
+    "UTC-11:00",
+    "UTC-10:00",
+    "UTC+12:00",
+    "UTC+12:45",
+    "UTC+13:00"
+  ],
+  "flag": "🇳🇿",
+  "flags": {
+    "png": "https://flagcdn.com/w320/nz.png",
+    "svg": "https://flagcdn.com/nz.svg",
+    "alt": "The flag of New Zealand has a dark blue field with the flag of the United Kingdom — the Union Jack — in the canton and a representation of the Southern Cross constellation, made up of four five-pointed white-edged red stars, on the fly side of the field."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/nz.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/nz.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/xXiDQo65dwdpw9iu8",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/556706#map=5/-46.710/172.046"
+  },
+  "translations": {
+    "ara": {
+      "official": "نيوزيلندا",
+      "common": "نيوزيلندا"
+    },
+    "bre": {
+      "official": "Zeland-Nevez",
+      "common": "Zeland-Nevez"
+    },
+    "ces": {
+      "official": "Nový Zéland",
+      "common": "Nový Zéland"
+    },
+    "deu": {
+      "official": "Neuseeland",
+      "common": "Neuseeland"
+    },
+    "est": {
+      "official": "Uus-Meremaa",
+      "common": "Uus-Meremaa"
+    },
+    "fin": {
+      "official": "Uusi-Seelanti",
+      "common": "Uusi-Seelanti"
+    },
+    "fra": {
+      "official": "Nouvelle-Zélande",
+      "common": "Nouvelle-Zélande"
+    },
+    "hrv": {
+      "official": "Novi Zeland",
+      "common": "Novi Zeland"
+    },
+    "hun": {
+      "official": "Új-Zéland",
+      "common": "Új-Zéland"
+    },
+    "ita": {
+      "official": "Nuova Zelanda",
+      "common": "Nuova Zelanda"
+    },
+    "jpn": {
+      "official": "ニュージーランド",
+      "common": "ニュージーランド"
+    },
+    "kor": {
+      "official": "뉴질랜드",
+      "common": "뉴질랜드"
+    },
+    "nld": {
+      "official": "Nieuw Zeeland",
+      "common": "Nieuw-Zeeland"
+    },
+    "per": {
+      "official": "نیوزیلند",
+      "common": "نیوزیلند"
+    },
+    "pol": {
+      "official": "Nowa Zelandia",
+      "common": "Nowa Zelandia"
+    },
+    "por": {
+      "official": "nova Zelândia",
+      "common": "Nova Zelândia"
+    },
+    "rus": {
+      "official": "Новая Зеландия",
+      "common": "Новая Зеландия"
+    },
+    "slk": {
+      "official": "Nový Zéland",
+      "common": "Nový Zéland"
+    },
+    "spa": {
+      "official": "nueva Zelanda",
+      "common": "Nueva Zelanda"
+    },
+    "srp": {
+      "official": "Novi Zeland",
+      "common": "Novi Zeland"
+    },
+    "swe": {
+      "official": "Nya Zeeland",
+      "common": "Nya Zeeland"
+    },
+    "tur": {
+      "official": "Yeni Zelanda",
+      "common": "Yeni Zelanda"
+    },
+    "urd": {
+      "official": "نیوزی لینڈ",
+      "common": "نیوزی لینڈ"
+    },
+    "zho": {
+      "official": "新西兰",
+      "common": "新西兰"
+    }
+  },
+  "largest_city": "Auckland",
+  "largest_city_local": "Auckland",
+  "largest_city_pop": 1530500,
+  "largest_city_is_capital": false
+}

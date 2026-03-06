@@ -1,0 +1,203 @@
+{
+  "name": {
+    "common": "Cape Verde",
+    "official": "Republic of Cabo Verde",
+    "native": {
+      "por": {
+        "official": "República de Cabo Verde",
+        "common": "Cabo Verde"
+      }
+    }
+  },
+  "cca2": "CV",
+  "cca3": "CPV",
+  "ccn3": "132",
+  "cioc": "CPV",
+  "fifa": "CPV",
+  "tld": [
+    ".cv"
+  ],
+  "altSpellings": [
+    "CV",
+    "Republic of Cabo Verde",
+    "República de Cabo Verde"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "African Group",
+  "capital": [
+    "Praia"
+  ],
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "continents": [
+    "Africa"
+  ],
+  "latlng": [
+    16,
+    -24
+  ],
+  "landlocked": false,
+  "borders": [],
+  "area": 4033,
+  "population": 491233,
+  "demonyms": {
+    "eng": {
+      "f": "Cape Verdian",
+      "m": "Cape Verdian"
+    },
+    "fra": {
+      "f": "Cap-verdienne",
+      "m": "Cap-verdien"
+    }
+  },
+  "languages": {
+    "por": "Portuguese"
+  },
+  "currencies": {
+    "CVE": {
+      "name": "Cape Verdean escudo",
+      "symbol": "Esc"
+    }
+  },
+  "gini": {
+    "2015": 42.4
+  },
+  "car": {
+    "signs": [
+      "CV"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "####",
+    "regex": "^(\\d{4})$"
+  },
+  "idd": {
+    "root": "+2",
+    "suffixes": [
+      "38"
+    ]
+  },
+  "timezones": [
+    "UTC-01:00"
+  ],
+  "flag": "🇨🇻",
+  "flags": {
+    "png": "https://flagcdn.com/w320/cv.png",
+    "svg": "https://flagcdn.com/cv.svg",
+    "alt": "The flag of Cape Verde is composed of five horizontal bands of blue, white, red, white and blue in the ratio of 6:1:1:1:3. A ring of ten five-pointed yellow stars is centered at three-eighth of the height from the bottom edge and three-eighth of the width from the hoist end of the field."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/cv.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/cv.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/Kc9vy5ChjuiAgMfXA",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/535774"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية كابو فيردي",
+      "common": "كابو فيردي"
+    },
+    "bre": {
+      "official": "Republik Kab Glas",
+      "common": "Kab Glas"
+    },
+    "ces": {
+      "official": "Kapverdská republika",
+      "common": "Kapverdy"
+    },
+    "deu": {
+      "official": "Republik Cabo Verde",
+      "common": "Kap Verde"
+    },
+    "est": {
+      "official": "Cabo Verde Vabariik",
+      "common": "Roheneemesaared"
+    },
+    "fin": {
+      "official": "Kap Verden tasavalta",
+      "common": "Kap Verde"
+    },
+    "fra": {
+      "official": "République du Cap-Vert",
+      "common": "Îles du Cap-Vert"
+    },
+    "hrv": {
+      "official": "Republika Cabo Verde",
+      "common": "Zelenortska Republika"
+    },
+    "hun": {
+      "official": "Zöld-foki Köztársaság",
+      "common": "Zöld-foki Köztársaság"
+    },
+    "ita": {
+      "official": "Repubblica di Capo Verde",
+      "common": "Capo Verde"
+    },
+    "jpn": {
+      "official": "カーボベルデ共和国",
+      "common": "カーボベルデ"
+    },
+    "kor": {
+      "official": "카보베르데 공화국",
+      "common": "카보베르데"
+    },
+    "nld": {
+      "official": "Republiek van Cabo Verde",
+      "common": "Kaapverdië"
+    },
+    "per": {
+      "official": "جمهوری کبو ورد",
+      "common": "دماغهٔ سبز"
+    },
+    "pol": {
+      "official": "Republika Zielonego Przylądka",
+      "common": "Republika Zielonego Przylądka"
+    },
+    "por": {
+      "official": "República de Cabo Verde",
+      "common": "Cabo Verde"
+    },
+    "rus": {
+      "official": "Республика Кабо -Верде",
+      "common": "Кабо-Верде"
+    },
+    "slk": {
+      "official": "Kapverdská republika",
+      "common": "Kapverdy"
+    },
+    "spa": {
+      "official": "República de Cabo Verde",
+      "common": "Cabo Verde"
+    },
+    "srp": {
+      "official": "Republika Zelenortska Ostrva",
+      "common": "Zelenortska Ostrva"
+    },
+    "swe": {
+      "official": "Republiken Kap Verde",
+      "common": "Kap Verde"
+    },
+    "tur": {
+      "official": "Yeşil Burun Cumhuriyeti",
+      "common": "Yeşil Burun"
+    },
+    "urd": {
+      "official": "جمہوریہ کیپ ورڈی",
+      "common": "کیپ ورڈی"
+    },
+    "zho": {
+      "official": "佛得角共和国",
+      "common": "佛得角"
+    }
+  },
+  "largest_city": "Praia",
+  "largest_city_local": "Praia",
+  "largest_city_pop": 137868,
+  "largest_city_is_capital": true
+}

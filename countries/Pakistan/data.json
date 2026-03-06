@@ -1,0 +1,214 @@
+{
+  "name": {
+    "common": "Pakistan",
+    "official": "Islamic Republic of Pakistan",
+    "native": {
+      "eng": {
+        "official": "Islamic Republic of Pakistan",
+        "common": "Pakistan"
+      },
+      "urd": {
+        "official": "اسلامی جمہوریۂ پاكستان",
+        "common": "پاكستان"
+      }
+    }
+  },
+  "cca2": "PK",
+  "cca3": "PAK",
+  "ccn3": "586",
+  "cioc": "PAK",
+  "fifa": "PAK",
+  "tld": [
+    ".pk"
+  ],
+  "altSpellings": [
+    "PK",
+    "Pākistān",
+    "Islamic Republic of Pakistan",
+    "Islāmī Jumhūriya'eh Pākistān"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Asia and the Pacific Group",
+  "capital": [
+    "Islamabad"
+  ],
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "continents": [
+    "Asia"
+  ],
+  "latlng": [
+    30,
+    70
+  ],
+  "landlocked": false,
+  "borders": [
+    "AFG",
+    "CHN",
+    "IND",
+    "IRN"
+  ],
+  "area": 881912,
+  "population": 241499431,
+  "demonyms": {
+    "eng": {
+      "f": "Pakistani",
+      "m": "Pakistani"
+    },
+    "fra": {
+      "f": "Pakistanaise",
+      "m": "Pakistanais"
+    }
+  },
+  "languages": {
+    "eng": "English",
+    "urd": "Urdu"
+  },
+  "currencies": {
+    "PKR": {
+      "name": "Pakistani rupee",
+      "symbol": "₨"
+    }
+  },
+  "gini": {
+    "2018": 31.6
+  },
+  "car": {
+    "signs": [
+      "PK"
+    ],
+    "side": "left"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "#####",
+    "regex": "^(\\d{5})$"
+  },
+  "idd": {
+    "root": "+9",
+    "suffixes": [
+      "2"
+    ]
+  },
+  "timezones": [
+    "UTC+05:00"
+  ],
+  "flag": "🇵🇰",
+  "flags": {
+    "png": "https://flagcdn.com/w320/pk.png",
+    "svg": "https://flagcdn.com/pk.svg",
+    "alt": "The flag of Pakistan is composed of a white vertical band on its hoist side that takes up about one-fourth the width of the field and a dark green rectangular area that spans the rest of the field. A white fly-side facing crescent and five-pointed star are centered in the dark green area."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/pk.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/pk.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/5LYujdfR5yLUXoERA",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/307573"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية باكستان الإسلامية",
+      "common": "باكستان"
+    },
+    "bre": {
+      "official": "Republik islamek Pakistan",
+      "common": "Pakistan"
+    },
+    "ces": {
+      "official": "Pákistánská islámská republika",
+      "common": "Pákistán"
+    },
+    "deu": {
+      "official": "Islamische Republik Pakistan",
+      "common": "Pakistan"
+    },
+    "est": {
+      "official": "Pakistani Islamivabariik",
+      "common": "Pakistan"
+    },
+    "fin": {
+      "official": "Pakistanin islamilainen tasavalta",
+      "common": "Pakistan"
+    },
+    "fra": {
+      "official": "République islamique du Pakistan",
+      "common": "Pakistan"
+    },
+    "hrv": {
+      "official": "Islamska Republika Pakistan",
+      "common": "Pakistan"
+    },
+    "hun": {
+      "official": "Pakisztán",
+      "common": "Pakisztán"
+    },
+    "ita": {
+      "official": "Repubblica islamica del Pakistan",
+      "common": "Pakistan"
+    },
+    "jpn": {
+      "official": "パキスタン・イスラム共和国",
+      "common": "パキスタン"
+    },
+    "kor": {
+      "official": "파키스탄 이슬람 공화국",
+      "common": "파키스탄"
+    },
+    "nld": {
+      "official": "Islamitische Republiek Pakistan",
+      "common": "Pakistan"
+    },
+    "per": {
+      "official": "جمهوری اسلامی پاکستان",
+      "common": "پاکستان"
+    },
+    "pol": {
+      "official": "Islamska Republika Pakistanu",
+      "common": "Pakistan"
+    },
+    "por": {
+      "official": "República Islâmica do Paquistão",
+      "common": "Paquistão"
+    },
+    "rus": {
+      "official": "Исламская Республика Пакистан",
+      "common": "Пакистан"
+    },
+    "slk": {
+      "official": "Pakistanská islamská republika",
+      "common": "Pakistan"
+    },
+    "spa": {
+      "official": "República Islámica de Pakistán",
+      "common": "Pakistán"
+    },
+    "srp": {
+      "official": "Islamska Republika Pakistan",
+      "common": "Pakistan"
+    },
+    "swe": {
+      "official": "Islamiska republiken Pakistan",
+      "common": "Pakistan"
+    },
+    "tur": {
+      "official": "Pakistan İslam Cumhuriyeti",
+      "common": "Pakistan"
+    },
+    "urd": {
+      "official": "اسلامی جمہوریہ پاکستان",
+      "common": "پاکستان"
+    },
+    "zho": {
+      "official": "巴基斯坦伊斯兰共和国",
+      "common": "巴基斯坦"
+    }
+  },
+  "largest_city": "Lahore",
+  "largest_city_local": "Lahore",
+  "largest_city_pop": 13004135,
+  "largest_city_is_capital": false
+}

@@ -1,0 +1,203 @@
+{
+  "name": {
+    "common": "San Marino",
+    "official": "Most Serene Republic of San Marino",
+    "native": {
+      "ita": {
+        "official": "Serenissima Repubblica di San Marino",
+        "common": "San Marino"
+      }
+    }
+  },
+  "cca2": "SM",
+  "cca3": "SMR",
+  "ccn3": "674",
+  "cioc": "SMR",
+  "fifa": "SMR",
+  "tld": [
+    ".sm"
+  ],
+  "altSpellings": [
+    "SM",
+    "Republic of San Marino",
+    "Repubblica di San Marino"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Western European and Others Group",
+  "capital": [
+    "City of San Marino"
+  ],
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "continents": [
+    "Europe"
+  ],
+  "latlng": [
+    43.76666666,
+    12.41666666
+  ],
+  "landlocked": true,
+  "borders": [
+    "ITA"
+  ],
+  "area": 61,
+  "population": 34132,
+  "demonyms": {
+    "eng": {
+      "f": "Sammarinese",
+      "m": "Sammarinese"
+    },
+    "fra": {
+      "f": "Saint-Marinaise",
+      "m": "Saint-Marinais"
+    }
+  },
+  "languages": {
+    "ita": "Italian"
+  },
+  "currencies": {
+    "EUR": {
+      "name": "Euro",
+      "symbol": "€"
+    }
+  },
+  "gini": {},
+  "car": {
+    "signs": [
+      "RSM"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "4789#",
+    "regex": "^(4789\\d)$"
+  },
+  "idd": {
+    "root": "+3",
+    "suffixes": [
+      "78"
+    ]
+  },
+  "timezones": [
+    "UTC+01:00"
+  ],
+  "flag": "🇸🇲",
+  "flags": {
+    "png": "https://flagcdn.com/w320/sm.png",
+    "svg": "https://flagcdn.com/sm.svg",
+    "alt": "The flag of San Marino is composed of two equal horizontal bands of white and light blue, with the national coat of arms superimposed in the center."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/sm.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/sm.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/rxCVJjm8dVY93RPY8",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/54624"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية سان مارينو",
+      "common": "سان مارينو"
+    },
+    "bre": {
+      "official": "Republik San Marino",
+      "common": "San Marino"
+    },
+    "ces": {
+      "official": "Republika San Marino",
+      "common": "San Marino"
+    },
+    "deu": {
+      "official": "Republik San Marino",
+      "common": "San Marino"
+    },
+    "est": {
+      "official": "San Marino Vabariik",
+      "common": "San Marino"
+    },
+    "fin": {
+      "official": "San Marinon seesteinen tasavalta",
+      "common": "San Marino"
+    },
+    "fra": {
+      "official": "République de Saint-Marin",
+      "common": "Saint-Marin"
+    },
+    "hrv": {
+      "official": "Većina Serene Republika San Marino",
+      "common": "San Marino"
+    },
+    "hun": {
+      "official": "San Marino Köztársaság",
+      "common": "San Marino"
+    },
+    "ita": {
+      "official": "Serenissima Repubblica di San Marino",
+      "common": "San Marino"
+    },
+    "jpn": {
+      "official": "サンマリノ共和国",
+      "common": "サンマリノ"
+    },
+    "kor": {
+      "official": "산마리노 공화국",
+      "common": "산마리노"
+    },
+    "nld": {
+      "official": "Meest Serene Republiek San Marino",
+      "common": "San Marino"
+    },
+    "per": {
+      "official": "جمهوری سان مارینو",
+      "common": "سان مارینو"
+    },
+    "pol": {
+      "official": "Republika San Marino",
+      "common": "San Marino"
+    },
+    "por": {
+      "official": "Sereníssima República de San Marino",
+      "common": "San Marino"
+    },
+    "rus": {
+      "official": "Большинство Serene Республика Сан-Марино",
+      "common": "Сан-Марино"
+    },
+    "slk": {
+      "official": "Sanmarínska republika",
+      "common": "San Maríno"
+    },
+    "spa": {
+      "official": "Serenísima República de San Marino",
+      "common": "San Marino"
+    },
+    "srp": {
+      "official": "Republika San Marino",
+      "common": "San Marino"
+    },
+    "swe": {
+      "official": "Republiken San Marino",
+      "common": "San Marino"
+    },
+    "tur": {
+      "official": "San Marino Cumhuriyeti",
+      "common": "San Marino"
+    },
+    "urd": {
+      "official": "جمہوریہ سان مارینو",
+      "common": "سان مارینو"
+    },
+    "zho": {
+      "official": "圣马力诺共和国",
+      "common": "圣马力诺"
+    }
+  },
+  "largest_city": "San Marino",
+  "largest_city_local": "San Marino",
+  "largest_city_pop": 4500,
+  "largest_city_is_capital": false
+}

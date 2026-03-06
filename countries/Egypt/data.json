@@ -1,0 +1,208 @@
+{
+  "name": {
+    "common": "Egypt",
+    "official": "Arab Republic of Egypt",
+    "native": {
+      "ara": {
+        "official": "جمهورية مصر العربية",
+        "common": "مصر"
+      }
+    }
+  },
+  "cca2": "EG",
+  "cca3": "EGY",
+  "ccn3": "818",
+  "cioc": "EGY",
+  "fifa": "EGY",
+  "tld": [
+    ".eg",
+    ".مصر"
+  ],
+  "altSpellings": [
+    "EG",
+    "Arab Republic of Egypt"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "African Group",
+  "capital": [
+    "Cairo"
+  ],
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "latlng": [
+    27,
+    30
+  ],
+  "landlocked": false,
+  "borders": [
+    "ISR",
+    "LBY",
+    "PSE",
+    "SDN"
+  ],
+  "area": 1002450,
+  "population": 107271260,
+  "demonyms": {
+    "eng": {
+      "f": "Egyptian",
+      "m": "Egyptian"
+    },
+    "fra": {
+      "f": "Égyptienne",
+      "m": "Égyptien"
+    }
+  },
+  "languages": {
+    "ara": "Arabic"
+  },
+  "currencies": {
+    "EGP": {
+      "name": "Egyptian pound",
+      "symbol": "£"
+    }
+  },
+  "gini": {
+    "2017": 31.5
+  },
+  "car": {
+    "signs": [
+      "ET"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "sunday",
+  "postalCode": {
+    "format": "#####",
+    "regex": "^(\\d{5})$"
+  },
+  "idd": {
+    "root": "+2",
+    "suffixes": [
+      "0"
+    ]
+  },
+  "timezones": [
+    "UTC+02:00"
+  ],
+  "flag": "🇪🇬",
+  "flags": {
+    "png": "https://flagcdn.com/w320/eg.png",
+    "svg": "https://flagcdn.com/eg.svg",
+    "alt": "The flag of Egypt is composed of three equal horizontal bands of red, white and black, with Egypt's national emblem — a hoist-side facing gold eagle of Saladin — centered in the white band."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/eg.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/eg.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/uoDRhXbsqjG6L7VG7",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/1473947"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية مصر العربية",
+      "common": "مصر"
+    },
+    "bre": {
+      "official": "Republik arab Egipt",
+      "common": "Egipt"
+    },
+    "ces": {
+      "official": "Egyptská arabská republika",
+      "common": "Egypt"
+    },
+    "deu": {
+      "official": "Arabische Republik Ägypten",
+      "common": "Ägypten"
+    },
+    "est": {
+      "official": "Egiptuse Araabia Vabariik",
+      "common": "Egiptus"
+    },
+    "fin": {
+      "official": "Egyptin arabitasavalta",
+      "common": "Egypti"
+    },
+    "fra": {
+      "official": "République arabe d'Égypte",
+      "common": "Égypte"
+    },
+    "hrv": {
+      "official": "Arapska Republika Egipat",
+      "common": "Egipat"
+    },
+    "hun": {
+      "official": "Egyiptomi Arab Köztársaság",
+      "common": "Egyiptom"
+    },
+    "ita": {
+      "official": "Repubblica araba d'Egitto",
+      "common": "Egitto"
+    },
+    "jpn": {
+      "official": "エジプト・アラブ共和国",
+      "common": "エジプト"
+    },
+    "kor": {
+      "official": "이집트 아랍 공화국",
+      "common": "이집트"
+    },
+    "nld": {
+      "official": "Arabische Republiek Egypte",
+      "common": "Egypte"
+    },
+    "per": {
+      "official": "جمهوری عربی مصر",
+      "common": "مصر"
+    },
+    "pol": {
+      "official": "Arabska Republika Egiptu",
+      "common": "Egipt"
+    },
+    "por": {
+      "official": "República Árabe do Egipto",
+      "common": "Egito"
+    },
+    "rus": {
+      "official": "Арабская Республика Египет",
+      "common": "Египет"
+    },
+    "slk": {
+      "official": "Egyptská arabská republika",
+      "common": "Egypt"
+    },
+    "spa": {
+      "official": "República Árabe de Egipto",
+      "common": "Egipto"
+    },
+    "srp": {
+      "official": "Arapska Republika Egipat",
+      "common": "Egipat"
+    },
+    "swe": {
+      "official": "Arabrepubliken Egypten",
+      "common": "Egypten"
+    },
+    "tur": {
+      "official": "Mısır Arap Cumhuriyeti",
+      "common": "Mısır"
+    },
+    "urd": {
+      "official": "مصری عرب جمہوریہ",
+      "common": "مصر"
+    },
+    "zho": {
+      "official": "阿拉伯埃及共和国",
+      "common": "埃及"
+    }
+  },
+  "largest_city": "Cairo",
+  "largest_city_local": "Cairo",
+  "largest_city_pop": 9606916,
+  "largest_city_is_capital": true
+}

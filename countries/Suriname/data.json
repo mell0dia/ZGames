@@ -1,0 +1,206 @@
+{
+  "name": {
+    "common": "Suriname",
+    "official": "Republic of Suriname",
+    "native": {
+      "nld": {
+        "official": "Republiek Suriname",
+        "common": "Suriname"
+      }
+    }
+  },
+  "cca2": "SR",
+  "cca3": "SUR",
+  "ccn3": "740",
+  "cioc": "SUR",
+  "fifa": "SUR",
+  "tld": [
+    ".sr"
+  ],
+  "altSpellings": [
+    "SR",
+    "Sarnam",
+    "Sranangron",
+    "Republic of Suriname",
+    "Republiek Suriname"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Latin American and Caribbean Group",
+  "capital": [
+    "Paramaribo"
+  ],
+  "region": "Americas",
+  "subregion": "South America",
+  "continents": [
+    "South America"
+  ],
+  "latlng": [
+    4,
+    -56
+  ],
+  "landlocked": false,
+  "borders": [
+    "BRA",
+    "GUF",
+    "GUY"
+  ],
+  "area": 163820,
+  "population": 616500,
+  "demonyms": {
+    "eng": {
+      "f": "Surinamer",
+      "m": "Surinamer"
+    },
+    "fra": {
+      "f": "Surinamaise",
+      "m": "Surinamais"
+    }
+  },
+  "languages": {
+    "nld": "Dutch"
+  },
+  "currencies": {
+    "SRD": {
+      "name": "Surinamese dollar",
+      "symbol": "$"
+    }
+  },
+  "gini": {
+    "1999": 57.9
+  },
+  "car": {
+    "signs": [
+      "SME"
+    ],
+    "side": "left"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {},
+  "idd": {
+    "root": "+5",
+    "suffixes": [
+      "97"
+    ]
+  },
+  "timezones": [
+    "UTC-03:00"
+  ],
+  "flag": "🇸🇷",
+  "flags": {
+    "png": "https://flagcdn.com/w320/sr.png",
+    "svg": "https://flagcdn.com/sr.svg",
+    "alt": "The flag of Suriname is composed of five horizontal bands of green, white, red, white and green in the ratio of 2:1:4:1:2. A large five-pointed yellow star is centered in the red band."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/sr.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/sr.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/iy7TuQLSi4qgoBoG7",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/287082"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية سورينام",
+      "common": "سورينام"
+    },
+    "bre": {
+      "official": "Republik Surinam",
+      "common": "Surinam"
+    },
+    "ces": {
+      "official": "Republika Surinam",
+      "common": "Surinam"
+    },
+    "deu": {
+      "official": "Republik Suriname",
+      "common": "Suriname"
+    },
+    "est": {
+      "official": "Suriname Vabariik",
+      "common": "Suriname"
+    },
+    "fin": {
+      "official": "Surinamen tasavalta",
+      "common": "Suriname"
+    },
+    "fra": {
+      "official": "République du Suriname",
+      "common": "Surinam"
+    },
+    "hrv": {
+      "official": "Republika Surinam",
+      "common": "Surinam"
+    },
+    "hun": {
+      "official": "Suriname Köztársaság",
+      "common": "Suriname"
+    },
+    "ita": {
+      "official": "Repubblica del Suriname",
+      "common": "Suriname"
+    },
+    "jpn": {
+      "official": "スリナム共和国",
+      "common": "スリナム"
+    },
+    "kor": {
+      "official": "수리남 공화국",
+      "common": "수리남"
+    },
+    "nld": {
+      "official": "Republiek Suriname",
+      "common": "Suriname"
+    },
+    "per": {
+      "official": "جمهوری سورینام",
+      "common": "سورینام"
+    },
+    "pol": {
+      "official": "Republika Surinamu",
+      "common": "Surinam"
+    },
+    "por": {
+      "official": "República do Suriname",
+      "common": "Suriname"
+    },
+    "rus": {
+      "official": "Республика Суринам",
+      "common": "Суринам"
+    },
+    "slk": {
+      "official": "Surinamská republika",
+      "common": "Surinam"
+    },
+    "spa": {
+      "official": "República de Suriname",
+      "common": "Surinam"
+    },
+    "srp": {
+      "official": "Republika Surinam",
+      "common": "Surinam"
+    },
+    "swe": {
+      "official": "Republiken Surinam",
+      "common": "Surinam"
+    },
+    "tur": {
+      "official": "Surinam Cumhuriyeti",
+      "common": "Surinam"
+    },
+    "urd": {
+      "official": "جمہوریہ سرینام",
+      "common": "سرینام"
+    },
+    "zho": {
+      "official": "苏里南共和国",
+      "common": "苏里南"
+    }
+  },
+  "largest_city": "Paramaribo",
+  "largest_city_local": "Paramaribo",
+  "largest_city_pop": 223757,
+  "largest_city_is_capital": true
+}

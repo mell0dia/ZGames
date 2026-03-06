@@ -1,0 +1,222 @@
+{
+  "name": {
+    "common": "Kazakhstan",
+    "official": "Republic of Kazakhstan",
+    "native": {
+      "kaz": {
+        "official": "Қазақстан Республикасы",
+        "common": "Қазақстан"
+      },
+      "rus": {
+        "official": "Республика Казахстан",
+        "common": "Казахстан"
+      }
+    }
+  },
+  "cca2": "KZ",
+  "cca3": "KAZ",
+  "ccn3": "398",
+  "cioc": "KAZ",
+  "fifa": "KAZ",
+  "tld": [
+    ".kz",
+    ".қаз"
+  ],
+  "altSpellings": [
+    "KZ",
+    "Qazaqstan",
+    "Казахстан",
+    "Republic of Kazakhstan",
+    "Қазақстан Республикасы",
+    "Qazaqstan Respublïkası",
+    "Республика Казахстан",
+    "Respublika Kazakhstan"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Asia and the Pacific Group",
+  "capital": [
+    "Astana"
+  ],
+  "region": "Asia",
+  "subregion": "Central Asia",
+  "continents": [
+    "Asia"
+  ],
+  "latlng": [
+    48,
+    68
+  ],
+  "landlocked": true,
+  "borders": [
+    "CHN",
+    "KGZ",
+    "RUS",
+    "TKM",
+    "UZB"
+  ],
+  "area": 2724900,
+  "population": 20426568,
+  "demonyms": {
+    "eng": {
+      "f": "Kazakhstani",
+      "m": "Kazakhstani"
+    },
+    "fra": {
+      "f": "Kazakhstanaise",
+      "m": "Kazakhstanais"
+    }
+  },
+  "languages": {
+    "kaz": "Kazakh",
+    "rus": "Russian"
+  },
+  "currencies": {
+    "KZT": {
+      "name": "Kazakhstani tenge",
+      "symbol": "₸"
+    }
+  },
+  "gini": {
+    "2018": 27.8
+  },
+  "car": {
+    "signs": [
+      "KZ"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "######",
+    "regex": "^(\\d{6})$"
+  },
+  "idd": {
+    "root": "+7",
+    "suffixes": [
+      "6",
+      "7"
+    ]
+  },
+  "timezones": [
+    "UTC+05:00",
+    "UTC+06:00"
+  ],
+  "flag": "🇰🇿",
+  "flags": {
+    "png": "https://flagcdn.com/w320/kz.png",
+    "svg": "https://flagcdn.com/kz.svg",
+    "alt": "The flag of Kazakhstan has a turquoise field, at the center of which is a gold sun with thirty-two rays above a soaring golden steppe eagle. A thin vertical band displays a national ornamental pattern — koshkar-muiz — in gold near the hoist end."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/kz.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/kz.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/8VohJGu7ShuzZYyeA",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/214665"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية كازاخستان",
+      "common": "كازاخستان"
+    },
+    "bre": {
+      "official": "Republik Kazakstan",
+      "common": "Kazakstan"
+    },
+    "ces": {
+      "official": "Republika Kazachstán",
+      "common": "Kazachstán"
+    },
+    "deu": {
+      "official": "Republik Kasachstan",
+      "common": "Kasachstan"
+    },
+    "est": {
+      "official": "Kasahstani Vabariik",
+      "common": "Kasahstan"
+    },
+    "fin": {
+      "official": "Kazakstanin tasavalta",
+      "common": "Kazakstan"
+    },
+    "fra": {
+      "official": "République du Kazakhstan",
+      "common": "Kazakhstan"
+    },
+    "hrv": {
+      "official": "Republika Kazahstan",
+      "common": "Kazahstan"
+    },
+    "hun": {
+      "official": "Kazah Köztársaság",
+      "common": "Kazahsztán"
+    },
+    "ita": {
+      "official": "Repubblica del Kazakhstan",
+      "common": "Kazakistan"
+    },
+    "jpn": {
+      "official": "カザフスタン共和国",
+      "common": "カザフスタン"
+    },
+    "kor": {
+      "official": "카자흐스탄 공화국",
+      "common": "카자흐스탄"
+    },
+    "nld": {
+      "official": "Republiek Kazachstan",
+      "common": "Kazachstan"
+    },
+    "per": {
+      "official": "جمهوری قزاقستان",
+      "common": "قزاقستان"
+    },
+    "pol": {
+      "official": "Republika Kazachstanu",
+      "common": "Kazachstan"
+    },
+    "por": {
+      "official": "República do Cazaquistão",
+      "common": "Cazaquistão"
+    },
+    "rus": {
+      "official": "Республика Казахстан",
+      "common": "Казахстан"
+    },
+    "slk": {
+      "official": "Kazašská republika",
+      "common": "Kazachstan"
+    },
+    "spa": {
+      "official": "República de Kazajstán",
+      "common": "Kazajistán"
+    },
+    "srp": {
+      "official": "Republika Kazahstan",
+      "common": "Kazahstan"
+    },
+    "swe": {
+      "official": "Republiken Kazakstan",
+      "common": "Kazakstan"
+    },
+    "tur": {
+      "official": "Kazakistan Cumhuriyeti",
+      "common": "Kazakistan"
+    },
+    "urd": {
+      "official": "جمہوریہ قازقستان",
+      "common": "قازقستان"
+    },
+    "zho": {
+      "official": "哈萨克斯坦共和国",
+      "common": "哈萨克斯坦"
+    }
+  },
+  "largest_city": "Almaty",
+  "largest_city_local": "Almaty",
+  "largest_city_pop": 1977011,
+  "largest_city_is_capital": false
+}

@@ -1,0 +1,206 @@
+{
+  "name": {
+    "common": "Tunisia",
+    "official": "Tunisian Republic",
+    "native": {
+      "ara": {
+        "official": "الجمهورية التونسية",
+        "common": "تونس"
+      }
+    }
+  },
+  "cca2": "TN",
+  "cca3": "TUN",
+  "ccn3": "788",
+  "cioc": "TUN",
+  "fifa": "TUN",
+  "tld": [
+    ".tn"
+  ],
+  "altSpellings": [
+    "TN",
+    "Republic of Tunisia",
+    "al-Jumhūriyyah at-Tūnisiyyah"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "African Group",
+  "capital": [
+    "Tunis"
+  ],
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "latlng": [
+    34,
+    9
+  ],
+  "landlocked": false,
+  "borders": [
+    "DZA",
+    "LBY"
+  ],
+  "area": 163610,
+  "population": 11972169,
+  "demonyms": {
+    "eng": {
+      "f": "Tunisian",
+      "m": "Tunisian"
+    },
+    "fra": {
+      "f": "Tunisienne",
+      "m": "Tunisien"
+    }
+  },
+  "languages": {
+    "ara": "Arabic"
+  },
+  "currencies": {
+    "TND": {
+      "name": "Tunisian dinar",
+      "symbol": "د.ت"
+    }
+  },
+  "gini": {
+    "2015": 32.8
+  },
+  "car": {
+    "signs": [
+      "TN"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "####",
+    "regex": "^(\\d{4})$"
+  },
+  "idd": {
+    "root": "+2",
+    "suffixes": [
+      "16"
+    ]
+  },
+  "timezones": [
+    "UTC+01:00"
+  ],
+  "flag": "🇹🇳",
+  "flags": {
+    "png": "https://flagcdn.com/w320/tn.png",
+    "svg": "https://flagcdn.com/tn.svg",
+    "alt": "The flag of Tunisia has a red field. A white circle bearing a five-pointed red star within a fly-side facing red crescent is situated at the center of the field."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/tn.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/tn.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/KgUmpZdUuNRaougs8",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/192757"
+  },
+  "translations": {
+    "ara": {
+      "official": "الجمهورية التونسية",
+      "common": "تونس"
+    },
+    "bre": {
+      "official": "Republik Tunizian",
+      "common": "Tunizia"
+    },
+    "ces": {
+      "official": "Tuniská republika",
+      "common": "Tunisko"
+    },
+    "deu": {
+      "official": "Tunesische Republik",
+      "common": "Tunesien"
+    },
+    "est": {
+      "official": "Tuneesia Vabariik",
+      "common": "Tuneesia"
+    },
+    "fin": {
+      "official": "Tunisian tasavalta",
+      "common": "Tunisia"
+    },
+    "fra": {
+      "official": "République tunisienne",
+      "common": "Tunisie"
+    },
+    "hrv": {
+      "official": "Tuniski Republika",
+      "common": "Tunis"
+    },
+    "hun": {
+      "official": "Tunéziai Köztársaság",
+      "common": "Tunézia"
+    },
+    "ita": {
+      "official": "Repubblica tunisina",
+      "common": "Tunisia"
+    },
+    "jpn": {
+      "official": "チュニジア共和国",
+      "common": "チュニジア"
+    },
+    "kor": {
+      "official": "튀니지 공화국",
+      "common": "튀니지"
+    },
+    "nld": {
+      "official": "Republiek Tunesië",
+      "common": "Tunesië"
+    },
+    "per": {
+      "official": "جمهوری تونس",
+      "common": "تونس"
+    },
+    "pol": {
+      "official": "Republika Tunezyjska",
+      "common": "Tunezja"
+    },
+    "por": {
+      "official": "República da Tunísia",
+      "common": "Tunísia"
+    },
+    "rus": {
+      "official": "Тунисской Республики",
+      "common": "Тунис"
+    },
+    "slk": {
+      "official": "Tuniská republika",
+      "common": "Tunisko"
+    },
+    "spa": {
+      "official": "República de Túnez",
+      "common": "Túnez"
+    },
+    "srp": {
+      "official": "Republika Tunis",
+      "common": "Tunis"
+    },
+    "swe": {
+      "official": "Republiken Tunisien",
+      "common": "Tunisien"
+    },
+    "tur": {
+      "official": "Tunus Cumhuriyeti",
+      "common": "Tunus"
+    },
+    "urd": {
+      "official": "جمہوریہ تونس",
+      "common": "تونس"
+    },
+    "zho": {
+      "official": "突尼斯共和国",
+      "common": "突尼斯"
+    }
+  },
+  "largest_city": "Tunis",
+  "largest_city_local": "Tunis",
+  "largest_city_pop": 693210,
+  "largest_city_is_capital": true
+}

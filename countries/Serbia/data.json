@@ -1,0 +1,216 @@
+{
+  "name": {
+    "common": "Serbia",
+    "official": "Republic of Serbia",
+    "native": {
+      "srp": {
+        "official": "Република Србија",
+        "common": "Србија"
+      }
+    }
+  },
+  "cca2": "RS",
+  "cca3": "SRB",
+  "ccn3": "688",
+  "cioc": "SRB",
+  "fifa": "SRB",
+  "tld": [
+    ".rs",
+    ".срб"
+  ],
+  "altSpellings": [
+    "RS",
+    "Srbija",
+    "Republika Srbija",
+    "Србија",
+    "Република Србија",
+    "Republic of Serbia"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Eastern European Group",
+  "capital": [
+    "Belgrade"
+  ],
+  "region": "Europe",
+  "subregion": "Southeast Europe",
+  "continents": [
+    "Europe"
+  ],
+  "latlng": [
+    44,
+    21
+  ],
+  "landlocked": true,
+  "borders": [
+    "BIH",
+    "BGR",
+    "HRV",
+    "HUN",
+    "UNK",
+    "MKD",
+    "MNE",
+    "ROU"
+  ],
+  "area": 88361,
+  "population": 6567783,
+  "demonyms": {
+    "eng": {
+      "f": "Serbian",
+      "m": "Serbian"
+    },
+    "fra": {
+      "f": "Serbe",
+      "m": "Serbe"
+    }
+  },
+  "languages": {
+    "srp": "Serbian"
+  },
+  "currencies": {
+    "RSD": {
+      "name": "Serbian dinar",
+      "symbol": "дин."
+    }
+  },
+  "gini": {
+    "2017": 36.2
+  },
+  "car": {
+    "signs": [
+      "SRB"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "######",
+    "regex": "^(\\d{6})$"
+  },
+  "idd": {
+    "root": "+3",
+    "suffixes": [
+      "81"
+    ]
+  },
+  "timezones": [
+    "UTC+01:00"
+  ],
+  "flag": "🇷🇸",
+  "flags": {
+    "png": "https://flagcdn.com/w320/rs.png",
+    "svg": "https://flagcdn.com/rs.svg",
+    "alt": "The flag of Serbia is composed of three equal horizontal bands of red, blue and white. The coat of arms of Serbia is superimposed at the center of the field slightly towards the hoist side."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/rs.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/rs.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/2Aqof7aV2Naq8YEK8",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/1741311"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية صيربيا",
+      "common": "صيربيا"
+    },
+    "bre": {
+      "official": "Republik Serbia",
+      "common": "Serbia"
+    },
+    "ces": {
+      "official": "Srbská republika",
+      "common": "Srbsko"
+    },
+    "deu": {
+      "official": "Republik Serbien",
+      "common": "Serbien"
+    },
+    "est": {
+      "official": "Serbia Vabariik",
+      "common": "Serbia"
+    },
+    "fin": {
+      "official": "Serbian tasavalta",
+      "common": "Serbia"
+    },
+    "fra": {
+      "official": "République de Serbie",
+      "common": "Serbie"
+    },
+    "hrv": {
+      "official": "Republika Srbija",
+      "common": "Srbija"
+    },
+    "hun": {
+      "official": "Szerb Köztársaság",
+      "common": "Szerbia"
+    },
+    "ita": {
+      "official": "Repubblica di Serbia",
+      "common": "Serbia"
+    },
+    "jpn": {
+      "official": "セルビア共和国",
+      "common": "セルビア"
+    },
+    "kor": {
+      "official": "세르비아 공화국",
+      "common": "세르비아"
+    },
+    "nld": {
+      "official": "Republiek Servië",
+      "common": "Servië"
+    },
+    "per": {
+      "official": "جمهوری صربستان",
+      "common": "صربستان"
+    },
+    "pol": {
+      "official": "Republika Serbii",
+      "common": "Serbia"
+    },
+    "por": {
+      "official": "República da Sérvia",
+      "common": "Sérvia"
+    },
+    "rus": {
+      "official": "Республика Сербия",
+      "common": "Сербия"
+    },
+    "slk": {
+      "official": "Srbská republika",
+      "common": "Srbsko"
+    },
+    "spa": {
+      "official": "República de Serbia",
+      "common": "Serbia"
+    },
+    "srp": {
+      "official": "Republika Srbija",
+      "common": "Srbija"
+    },
+    "swe": {
+      "official": "Republiken Serbien",
+      "common": "Serbien"
+    },
+    "tur": {
+      "official": "Sırbistan Cumhuriyeti",
+      "common": "Sırbistan"
+    },
+    "urd": {
+      "official": "جمہوریہ سربیا",
+      "common": "سربیا"
+    },
+    "zho": {
+      "official": "塞尔维亚共和国",
+      "common": "塞尔维亚"
+    }
+  },
+  "largest_city": "Belgrade",
+  "largest_city_local": "Belgrade",
+  "largest_city_pop": 1273651,
+  "largest_city_is_capital": true
+}

@@ -1,0 +1,203 @@
+{
+  "name": {
+    "common": "Yemen",
+    "official": "Republic of Yemen",
+    "native": {
+      "ara": {
+        "official": "الجمهورية اليمنية",
+        "common": "اليمن"
+      }
+    }
+  },
+  "cca2": "YE",
+  "cca3": "YEM",
+  "ccn3": "887",
+  "cioc": "YEM",
+  "fifa": "YEM",
+  "tld": [
+    ".ye"
+  ],
+  "altSpellings": [
+    "YE",
+    "Yemeni Republic",
+    "al-Jumhūriyyah al-Yamaniyyah"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Asia and the Pacific Group",
+  "capital": [
+    "Sana'a"
+  ],
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "continents": [
+    "Asia"
+  ],
+  "latlng": [
+    15,
+    48
+  ],
+  "landlocked": false,
+  "borders": [
+    "OMN",
+    "SAU"
+  ],
+  "area": 527968,
+  "population": 32684503,
+  "demonyms": {
+    "eng": {
+      "f": "Yemeni",
+      "m": "Yemeni"
+    },
+    "fra": {
+      "f": "Yéménite",
+      "m": "Yéménite"
+    }
+  },
+  "languages": {
+    "ara": "Arabic"
+  },
+  "currencies": {
+    "YER": {
+      "name": "Yemeni rial",
+      "symbol": "﷼"
+    }
+  },
+  "gini": {
+    "2014": 36.7
+  },
+  "car": {
+    "signs": [
+      "YAR"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "sunday",
+  "postalCode": {},
+  "idd": {
+    "root": "+9",
+    "suffixes": [
+      "67"
+    ]
+  },
+  "timezones": [
+    "UTC+03:00"
+  ],
+  "flag": "🇾🇪",
+  "flags": {
+    "png": "https://flagcdn.com/w320/ye.png",
+    "svg": "https://flagcdn.com/ye.svg",
+    "alt": "The flag of Yemen is composed of three equal horizontal bands of red, white and black."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/ye.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/ye.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/WCmE76HKcLideQQw7",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/305092"
+  },
+  "translations": {
+    "ara": {
+      "official": "الجمهورية اليمنية",
+      "common": "اليمن"
+    },
+    "bre": {
+      "official": "Republik Yemen",
+      "common": "Yemen"
+    },
+    "ces": {
+      "official": "Jemenská republika",
+      "common": "Jemen"
+    },
+    "deu": {
+      "official": "Republik Jemen",
+      "common": "Jemen"
+    },
+    "est": {
+      "official": "Jeemeni Vabariik",
+      "common": "Jeemen"
+    },
+    "fin": {
+      "official": "Jemenin tasavalta",
+      "common": "Jemen"
+    },
+    "fra": {
+      "official": "République du Yémen",
+      "common": "Yémen"
+    },
+    "hrv": {
+      "official": "Republika Jemen",
+      "common": "Jemen"
+    },
+    "hun": {
+      "official": "Jemeni Köztársaság",
+      "common": "Jemen"
+    },
+    "ita": {
+      "official": "Repubblica dello Yemen",
+      "common": "Yemen"
+    },
+    "jpn": {
+      "official": "イエメン共和国",
+      "common": "イエメン"
+    },
+    "kor": {
+      "official": "예멘 공화국",
+      "common": "예멘"
+    },
+    "nld": {
+      "official": "Republiek Jemen",
+      "common": "Jemen"
+    },
+    "per": {
+      "official": "جمهوری یمن",
+      "common": "یمن"
+    },
+    "pol": {
+      "official": "Republika Jemeńska",
+      "common": "Jemen"
+    },
+    "por": {
+      "official": "República do Iêmen",
+      "common": "Iémen"
+    },
+    "rus": {
+      "official": "Йеменская Республика",
+      "common": "Йемен"
+    },
+    "slk": {
+      "official": "Jemenská republika",
+      "common": "Jemen"
+    },
+    "spa": {
+      "official": "República de Yemen",
+      "common": "Yemen"
+    },
+    "srp": {
+      "official": "Republika Jemen",
+      "common": "Jemen"
+    },
+    "swe": {
+      "official": "Republiken Jemen",
+      "common": "Jemen"
+    },
+    "tur": {
+      "official": "Yemen Cumhuriyeti",
+      "common": "Yemen"
+    },
+    "urd": {
+      "official": "جمہوریہ یمن",
+      "common": "یمن"
+    },
+    "zho": {
+      "official": "也门共和国",
+      "common": "也门"
+    }
+  },
+  "largest_city": "Sanaa",
+  "largest_city_local": "Sanaa",
+  "largest_city_pop": 1937451,
+  "largest_city_is_capital": false
+}

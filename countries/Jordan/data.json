@@ -1,0 +1,210 @@
+{
+  "name": {
+    "common": "Jordan",
+    "official": "Hashemite Kingdom of Jordan",
+    "native": {
+      "ara": {
+        "official": "المملكة الأردنية الهاشمية",
+        "common": "الأردن"
+      }
+    }
+  },
+  "cca2": "JO",
+  "cca3": "JOR",
+  "ccn3": "400",
+  "cioc": "JOR",
+  "fifa": "JOR",
+  "tld": [
+    ".jo",
+    "الاردن."
+  ],
+  "altSpellings": [
+    "JO",
+    "Hashemite Kingdom of Jordan",
+    "al-Mamlakah al-Urdunīyah al-Hāshimīyah"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Asia and the Pacific Group",
+  "capital": [
+    "Amman"
+  ],
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "continents": [
+    "Asia"
+  ],
+  "latlng": [
+    31,
+    36
+  ],
+  "landlocked": false,
+  "borders": [
+    "IRQ",
+    "ISR",
+    "PSE",
+    "SAU",
+    "SYR"
+  ],
+  "area": 89342,
+  "population": 11734000,
+  "demonyms": {
+    "eng": {
+      "f": "Jordanian",
+      "m": "Jordanian"
+    },
+    "fra": {
+      "f": "Jordanienne",
+      "m": "Jordanien"
+    }
+  },
+  "languages": {
+    "ara": "Arabic"
+  },
+  "currencies": {
+    "JOD": {
+      "name": "Jordanian dinar",
+      "symbol": "د.ا"
+    }
+  },
+  "gini": {
+    "2010": 33.7
+  },
+  "car": {
+    "signs": [
+      "HKJ"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "sunday",
+  "postalCode": {
+    "format": "#####",
+    "regex": "^(\\d{5})$"
+  },
+  "idd": {
+    "root": "+9",
+    "suffixes": [
+      "62"
+    ]
+  },
+  "timezones": [
+    "UTC+03:00"
+  ],
+  "flag": "🇯🇴",
+  "flags": {
+    "png": "https://flagcdn.com/w320/jo.png",
+    "svg": "https://flagcdn.com/jo.svg",
+    "alt": "The flag of Jordan is composed of three equal horizontal bands of black, white and green, with a red isosceles triangle superimposed on the hoist side of the field. This triangle has its base on the hoist end, spans about half the width of the field and bears a small seven-pointed white star at its center."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/jo.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/jo.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/ko1dzSDKg8Gsi9A98",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/184818"
+  },
+  "translations": {
+    "ara": {
+      "official": "المملكة الأردنية الهاشمية",
+      "common": "الأردن"
+    },
+    "bre": {
+      "official": "Rouantelezh hachemit Jordania",
+      "common": "Jordania"
+    },
+    "ces": {
+      "official": "Jordánské hášimovské království",
+      "common": "Jordánsko"
+    },
+    "deu": {
+      "official": "Haschemitisches Königreich Jordanien",
+      "common": "Jordanien"
+    },
+    "est": {
+      "official": "Jordaania Hašimiidi Kuningriik",
+      "common": "Jordaania"
+    },
+    "fin": {
+      "official": "Jordanian hašemiittinen kunigaskunta",
+      "common": "Jordania"
+    },
+    "fra": {
+      "official": "Royaume hachémite de Jordanie",
+      "common": "Jordanie"
+    },
+    "hrv": {
+      "official": "Hašemitske Kraljevine Jordan",
+      "common": "Jordan"
+    },
+    "hun": {
+      "official": "Jordánia",
+      "common": "Jordánia"
+    },
+    "ita": {
+      "official": "Regno hascemita di Giordania",
+      "common": "Giordania"
+    },
+    "jpn": {
+      "official": "ヨルダン・ハシミテ王国",
+      "common": "ヨルダン"
+    },
+    "kor": {
+      "official": "요르단 하심 왕국",
+      "common": "요르단"
+    },
+    "nld": {
+      "official": "Hasjemitisch Koninkrijk Jordanië",
+      "common": "Jordanië"
+    },
+    "per": {
+      "official": "پادشاهی اُردُن هاشمی",
+      "common": "اردن"
+    },
+    "pol": {
+      "official": "Jordańskie Królestwo Haszymidzkie",
+      "common": "Jordania"
+    },
+    "por": {
+      "official": "Reino Hachemita da Jordânia",
+      "common": "Jordânia"
+    },
+    "rus": {
+      "official": "Иорданского Хашимитского Королевства",
+      "common": "Иордания"
+    },
+    "slk": {
+      "official": "Jordánske hášimovské kráľovstvo",
+      "common": "Jordánsko"
+    },
+    "spa": {
+      "official": "Reino Hachemita de Jordania",
+      "common": "Jordania"
+    },
+    "srp": {
+      "official": "Hašemitska Kraljevina Jordan",
+      "common": "Jordan"
+    },
+    "swe": {
+      "official": "Hashimitiska kungadömet Jordanien",
+      "common": "Jordanien"
+    },
+    "tur": {
+      "official": "ürdün Hâşimi Krallığı",
+      "common": "ürdün"
+    },
+    "urd": {
+      "official": "ھاشمی مملکتِ اردن",
+      "common": "اردن"
+    },
+    "zho": {
+      "official": "约旦哈希姆王国",
+      "common": "约旦"
+    }
+  },
+  "largest_city": "Amman",
+  "largest_city_local": "Amman",
+  "largest_city_pop": 1275857,
+  "largest_city_is_capital": true
+}

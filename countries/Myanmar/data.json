@@ -1,0 +1,210 @@
+{
+  "name": {
+    "common": "Myanmar",
+    "official": "Republic of the Union of Myanmar",
+    "native": {
+      "mya": {
+        "official": "ပြည်ထောင်စု သမ္မတ မြန်မာနိုင်ငံတော်",
+        "common": "မြန်မာ"
+      }
+    }
+  },
+  "cca2": "MM",
+  "cca3": "MMR",
+  "ccn3": "104",
+  "cioc": "MYA",
+  "fifa": "MYA",
+  "tld": [
+    ".mm"
+  ],
+  "altSpellings": [
+    "MM",
+    "Burma",
+    "Republic of the Union of Myanmar",
+    "Pyidaunzu Thanmăda Myăma Nainngandaw"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Asia and the Pacific Group",
+  "capital": [
+    "Naypyidaw"
+  ],
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "continents": [
+    "Asia"
+  ],
+  "latlng": [
+    22,
+    98
+  ],
+  "landlocked": false,
+  "borders": [
+    "BGD",
+    "CHN",
+    "IND",
+    "LAO",
+    "THA"
+  ],
+  "area": 676578,
+  "population": 51316756,
+  "demonyms": {
+    "eng": {
+      "f": "Burmese",
+      "m": "Burmese"
+    },
+    "fra": {
+      "f": "Birmane",
+      "m": "Birman"
+    }
+  },
+  "languages": {
+    "mya": "Burmese"
+  },
+  "currencies": {
+    "MMK": {
+      "name": "Burmese kyat",
+      "symbol": "Ks"
+    }
+  },
+  "gini": {
+    "2017": 30.7
+  },
+  "car": {
+    "signs": [
+      "BUR"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "#####",
+    "regex": "^(\\d{5})$"
+  },
+  "idd": {
+    "root": "+9",
+    "suffixes": [
+      "5"
+    ]
+  },
+  "timezones": [
+    "UTC+06:30"
+  ],
+  "flag": "🇲🇲",
+  "flags": {
+    "png": "https://flagcdn.com/w320/mm.png",
+    "svg": "https://flagcdn.com/mm.svg",
+    "alt": "The flag of Myanmar is composed of three equal horizontal bands of yellow, green and red, with a large five-pointed white star superimposed at the center of the field."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/mm.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/mm.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/4jrZyJkDERUfHyp26",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/50371"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية اتحاد ميانمار",
+      "common": "ميانمار"
+    },
+    "bre": {
+      "official": "Republik Unaniezh Myanmar",
+      "common": "Myanmar"
+    },
+    "ces": {
+      "official": "Republika Myanmarský svaz",
+      "common": "Myanmar"
+    },
+    "deu": {
+      "official": "Republik der Union Myanmar",
+      "common": "Myanmar"
+    },
+    "est": {
+      "official": "Myanmari Liidu Vabariik",
+      "common": "Myanmar"
+    },
+    "fin": {
+      "official": "Myanmarin liiton tasavalta",
+      "common": "Myanmar"
+    },
+    "fra": {
+      "official": "République de l'Union du Myanmar",
+      "common": "Birmanie"
+    },
+    "hrv": {
+      "official": "Republika Unije Mijanmar",
+      "common": "Mijanmar"
+    },
+    "hun": {
+      "official": "Mianmari Államszövetség Köztársasága",
+      "common": "Mianmar"
+    },
+    "ita": {
+      "official": "Repubblica dell'Unione di Myanmar",
+      "common": "Birmania"
+    },
+    "jpn": {
+      "official": "ミャンマー連邦共和国",
+      "common": "ミャンマー"
+    },
+    "kor": {
+      "official": "미얀마 연방 공화국",
+      "common": "미얀마"
+    },
+    "nld": {
+      "official": "Republiek van de Unie van Myanmar",
+      "common": "Myanmar"
+    },
+    "per": {
+      "official": "اتحادیه جمهوری میانمار",
+      "common": "میانمار"
+    },
+    "pol": {
+      "official": "Republika Związku Mjanmy",
+      "common": "Mjanma"
+    },
+    "por": {
+      "official": "República da União de Myanmar",
+      "common": "Myanmar"
+    },
+    "rus": {
+      "official": "Республика Союза Мьянма",
+      "common": "Мьянма"
+    },
+    "slk": {
+      "official": "Mjanmarská zväzová republika",
+      "common": "Mjanmarsko"
+    },
+    "spa": {
+      "official": "República de la Unión de Myanmar",
+      "common": "Myanmar"
+    },
+    "srp": {
+      "official": "Republika Mjanmarska Unija",
+      "common": "Mjanmar"
+    },
+    "swe": {
+      "official": "Republiken Unionen Myanmar",
+      "common": "Myanmar"
+    },
+    "tur": {
+      "official": "Myanmar Birliği Cumhuriyeti",
+      "common": "Myanmar"
+    },
+    "urd": {
+      "official": "متحدہ جمہوریہ میانمار",
+      "common": "میانمار"
+    },
+    "zho": {
+      "official": "缅甸联邦共和国",
+      "common": "缅甸"
+    }
+  },
+  "largest_city": "Yangon",
+  "largest_city_local": "Yangon",
+  "largest_city_pop": 4477638,
+  "largest_city_is_capital": false
+}

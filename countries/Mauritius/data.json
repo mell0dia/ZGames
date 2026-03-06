@@ -1,0 +1,210 @@
+{
+  "name": {
+    "common": "Mauritius",
+    "official": "Republic of Mauritius",
+    "native": {
+      "eng": {
+        "official": "Republic of Mauritius",
+        "common": "Mauritius"
+      },
+      "fra": {
+        "official": "République de Maurice",
+        "common": "Maurice"
+      },
+      "mfe": {
+        "official": "Republik Moris",
+        "common": "Moris"
+      }
+    }
+  },
+  "cca2": "MU",
+  "cca3": "MUS",
+  "ccn3": "480",
+  "cioc": "MRI",
+  "fifa": "MRI",
+  "tld": [
+    ".mu"
+  ],
+  "altSpellings": [
+    "MU",
+    "Republic of Mauritius",
+    "République de Maurice"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "African Group",
+  "capital": [
+    "Port Louis"
+  ],
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "latlng": [
+    -20.28333333,
+    57.55
+  ],
+  "landlocked": false,
+  "borders": [],
+  "area": 2040,
+  "population": 1243741,
+  "demonyms": {
+    "eng": {
+      "f": "Mauritian",
+      "m": "Mauritian"
+    },
+    "fra": {
+      "f": "Mauricienne",
+      "m": "Mauricien"
+    }
+  },
+  "languages": {
+    "eng": "English",
+    "fra": "French",
+    "mfe": "Mauritian Creole"
+  },
+  "currencies": {
+    "MUR": {
+      "name": "Mauritian rupee",
+      "symbol": "₨"
+    }
+  },
+  "gini": {
+    "2017": 36.8
+  },
+  "car": {
+    "signs": [
+      "MS"
+    ],
+    "side": "left"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {},
+  "idd": {
+    "root": "+2",
+    "suffixes": [
+      "30"
+    ]
+  },
+  "timezones": [
+    "UTC+04:00"
+  ],
+  "flag": "🇲🇺",
+  "flags": {
+    "png": "https://flagcdn.com/w320/mu.png",
+    "svg": "https://flagcdn.com/mu.svg",
+    "alt": "The flag of Mauritius is composed of four equal horizontal bands of red, blue, yellow and green."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/mu.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/mu.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/PpKtZ4W3tir5iGrz7",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/535828"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية موريشيوس",
+      "common": "موريشيوس"
+    },
+    "bre": {
+      "official": "Republik Moris",
+      "common": "Moris"
+    },
+    "ces": {
+      "official": "Mauricijská republika",
+      "common": "Mauricius"
+    },
+    "deu": {
+      "official": "Republik Mauritius",
+      "common": "Mauritius"
+    },
+    "est": {
+      "official": "Mauritiuse Vabariik",
+      "common": "Mauritius"
+    },
+    "fin": {
+      "official": "Mauritiuksen tasavalta",
+      "common": "Mauritius"
+    },
+    "fra": {
+      "official": "République de Maurice",
+      "common": "Île Maurice"
+    },
+    "hrv": {
+      "official": "Republika Mauricijus",
+      "common": "Mauricijus"
+    },
+    "hun": {
+      "official": "Mauritiusi Köztársaság",
+      "common": "Mauritius"
+    },
+    "ita": {
+      "official": "Repubblica di Mauritius",
+      "common": "Mauritius"
+    },
+    "jpn": {
+      "official": "モーリシャス共和国",
+      "common": "モーリシャス"
+    },
+    "kor": {
+      "official": "모리셔스 공화국",
+      "common": "모리셔스"
+    },
+    "nld": {
+      "official": "Republiek Mauritius",
+      "common": "Mauritius"
+    },
+    "per": {
+      "official": "جمهوری موریس",
+      "common": "موریس"
+    },
+    "pol": {
+      "official": "Republika Mauritiusu",
+      "common": "Mauritius"
+    },
+    "por": {
+      "official": "República das Maurícias",
+      "common": "Maurício"
+    },
+    "rus": {
+      "official": "Республика Маврикий",
+      "common": "Маврикий"
+    },
+    "slk": {
+      "official": "Maurícijská republika",
+      "common": "Maurícius"
+    },
+    "spa": {
+      "official": "República de Mauricio",
+      "common": "Mauricio"
+    },
+    "srp": {
+      "official": "Republika Mauricijus",
+      "common": "Mauricijus"
+    },
+    "swe": {
+      "official": "Republiken Mauritius",
+      "common": "Mauritius"
+    },
+    "tur": {
+      "official": "Mauritius Cumhuriyeti",
+      "common": "Mauritius"
+    },
+    "urd": {
+      "official": "جمہوریہ موریشس",
+      "common": "موریشس"
+    },
+    "zho": {
+      "official": "毛里求斯共和国",
+      "common": "毛里求斯"
+    }
+  },
+  "largest_city": "Port Louis",
+  "largest_city_local": "Port Louis",
+  "largest_city_pop": 155226,
+  "largest_city_is_capital": true
+}

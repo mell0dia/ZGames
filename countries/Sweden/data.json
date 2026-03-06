@@ -1,0 +1,206 @@
+{
+  "name": {
+    "common": "Sweden",
+    "official": "Kingdom of Sweden",
+    "native": {
+      "swe": {
+        "official": "Konungariket Sverige",
+        "common": "Sverige"
+      }
+    }
+  },
+  "cca2": "SE",
+  "cca3": "SWE",
+  "ccn3": "752",
+  "cioc": "SWE",
+  "fifa": "SWE",
+  "tld": [
+    ".se"
+  ],
+  "altSpellings": [
+    "SE",
+    "Kingdom of Sweden",
+    "Konungariket Sverige"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Western European and Others Group",
+  "capital": [
+    "Stockholm"
+  ],
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "continents": [
+    "Europe"
+  ],
+  "latlng": [
+    62,
+    15
+  ],
+  "landlocked": false,
+  "borders": [
+    "FIN",
+    "NOR"
+  ],
+  "area": 450295,
+  "population": 10605098,
+  "demonyms": {
+    "eng": {
+      "f": "Swedish",
+      "m": "Swedish"
+    },
+    "fra": {
+      "f": "Suédoise",
+      "m": "Suédois"
+    }
+  },
+  "languages": {
+    "swe": "Swedish"
+  },
+  "currencies": {
+    "SEK": {
+      "name": "Swedish krona",
+      "symbol": "kr"
+    }
+  },
+  "gini": {
+    "2018": 30.0
+  },
+  "car": {
+    "signs": [
+      "S"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "SE-### ##",
+    "regex": "^(?:SE)*(\\d{5})$"
+  },
+  "idd": {
+    "root": "+4",
+    "suffixes": [
+      "6"
+    ]
+  },
+  "timezones": [
+    "UTC+01:00"
+  ],
+  "flag": "🇸🇪",
+  "flags": {
+    "png": "https://flagcdn.com/w320/se.png",
+    "svg": "https://flagcdn.com/se.svg",
+    "alt": "The flag of Sweden has a blue field with a large golden-yellow cross that extend to the edges of the field. The vertical part of this cross is offset towards the hoist side."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/se.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/se.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/iqygE491ADVgnBW39",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/52822"
+  },
+  "translations": {
+    "ara": {
+      "official": "مملكة السويد",
+      "common": "السويد"
+    },
+    "bre": {
+      "official": "Rouantelezh Sveden",
+      "common": "Sveden"
+    },
+    "ces": {
+      "official": "Švédské království",
+      "common": "Švédsko"
+    },
+    "deu": {
+      "official": "Königreich Schweden",
+      "common": "Schweden"
+    },
+    "est": {
+      "official": "Rootsi Kuningriik",
+      "common": "Rootsi"
+    },
+    "fin": {
+      "official": "Ruotsin kuningaskunta",
+      "common": "Ruotsi"
+    },
+    "fra": {
+      "official": "Royaume de Suède",
+      "common": "Suède"
+    },
+    "hrv": {
+      "official": "Kraljevina Švedska",
+      "common": "Švedska"
+    },
+    "hun": {
+      "official": "Svéd Királyság",
+      "common": "Svédország"
+    },
+    "ita": {
+      "official": "Regno di Svezia",
+      "common": "Svezia"
+    },
+    "jpn": {
+      "official": "スウェーデン王国",
+      "common": "スウェーデン"
+    },
+    "kor": {
+      "official": "스웨덴 왕국",
+      "common": "스웨덴"
+    },
+    "nld": {
+      "official": "Koninkrijk Zweden",
+      "common": "Zweden"
+    },
+    "per": {
+      "official": "پادشاهی سوئد",
+      "common": "سوئد"
+    },
+    "pol": {
+      "official": "Królestwo Szwecji",
+      "common": "Szwecja"
+    },
+    "por": {
+      "official": "Reino da Suécia",
+      "common": "Suécia"
+    },
+    "rus": {
+      "official": "Королевство Швеция",
+      "common": "Швеция"
+    },
+    "slk": {
+      "official": "Švédske kráľovstvo",
+      "common": "Švédsko"
+    },
+    "spa": {
+      "official": "Reino de Suecia",
+      "common": "Suecia"
+    },
+    "srp": {
+      "official": "Kraljevina Švedska",
+      "common": "Švedska"
+    },
+    "swe": {
+      "official": "Konungariket Sverige",
+      "common": "Sverige"
+    },
+    "tur": {
+      "official": "İsveç Krallığı",
+      "common": "İsveç"
+    },
+    "urd": {
+      "official": "مملکتِ سویڈن",
+      "common": "سویڈن"
+    },
+    "zho": {
+      "official": "瑞典王国",
+      "common": "瑞典"
+    }
+  },
+  "largest_city": "Stockholm",
+  "largest_city_local": "Stockholm",
+  "largest_city_pop": 1515017,
+  "largest_city_is_capital": true
+}

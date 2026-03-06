@@ -1,0 +1,210 @@
+{
+  "name": {
+    "common": "Romania",
+    "official": "Romania",
+    "native": {
+      "ron": {
+        "official": "România",
+        "common": "România"
+      }
+    }
+  },
+  "cca2": "RO",
+  "cca3": "ROU",
+  "ccn3": "642",
+  "cioc": "ROU",
+  "fifa": "ROU",
+  "tld": [
+    ".ro"
+  ],
+  "altSpellings": [
+    "RO",
+    "Rumania",
+    "Roumania",
+    "România"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Eastern European Group",
+  "capital": [
+    "Bucharest"
+  ],
+  "region": "Europe",
+  "subregion": "Southeast Europe",
+  "continents": [
+    "Europe"
+  ],
+  "latlng": [
+    46,
+    25
+  ],
+  "landlocked": false,
+  "borders": [
+    "BGR",
+    "HUN",
+    "MDA",
+    "SRB",
+    "UKR"
+  ],
+  "area": 238391,
+  "population": 19036031,
+  "demonyms": {
+    "eng": {
+      "f": "Romanian",
+      "m": "Romanian"
+    },
+    "fra": {
+      "f": "Roumaine",
+      "m": "Roumain"
+    }
+  },
+  "languages": {
+    "ron": "Romanian"
+  },
+  "currencies": {
+    "RON": {
+      "name": "Romanian leu",
+      "symbol": "lei"
+    }
+  },
+  "gini": {
+    "2018": 35.8
+  },
+  "car": {
+    "signs": [
+      "RO"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "######",
+    "regex": "^(\\d{6})$"
+  },
+  "idd": {
+    "root": "+4",
+    "suffixes": [
+      "0"
+    ]
+  },
+  "timezones": [
+    "UTC+02:00"
+  ],
+  "flag": "🇷🇴",
+  "flags": {
+    "png": "https://flagcdn.com/w320/ro.png",
+    "svg": "https://flagcdn.com/ro.svg",
+    "alt": "The flag of Romania is composed of three equal vertical bands of navy blue, yellow and red."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/ro.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/ro.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/845hAgCf1mDkN3vr7",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/90689"
+  },
+  "translations": {
+    "ara": {
+      "official": "رومانيا",
+      "common": "رومانيا"
+    },
+    "bre": {
+      "official": "Roumania",
+      "common": "Roumania"
+    },
+    "ces": {
+      "official": "Rumunsko",
+      "common": "Rumunsko"
+    },
+    "deu": {
+      "official": "Rumänien",
+      "common": "Rumänien"
+    },
+    "est": {
+      "official": "Rumeenia",
+      "common": "Rumeenia"
+    },
+    "fin": {
+      "official": "Romania",
+      "common": "Romania"
+    },
+    "fra": {
+      "official": "Roumanie",
+      "common": "Roumanie"
+    },
+    "hrv": {
+      "official": "Rumunija",
+      "common": "Rumunjska"
+    },
+    "hun": {
+      "official": "Románia",
+      "common": "Románia"
+    },
+    "ita": {
+      "official": "Romania",
+      "common": "Romania"
+    },
+    "jpn": {
+      "official": "ルーマニア",
+      "common": "ルーマニア"
+    },
+    "kor": {
+      "official": "루마니아",
+      "common": "루마니아"
+    },
+    "nld": {
+      "official": "Roemenië",
+      "common": "Roemenië"
+    },
+    "per": {
+      "official": "رومانی",
+      "common": "رومانی"
+    },
+    "pol": {
+      "official": "Rumunia",
+      "common": "Rumunia"
+    },
+    "por": {
+      "official": "Romênia",
+      "common": "Roménia"
+    },
+    "rus": {
+      "official": "Румыния",
+      "common": "Румыния"
+    },
+    "slk": {
+      "official": "Rumunsko",
+      "common": "Rumunsko"
+    },
+    "spa": {
+      "official": "Rumania",
+      "common": "Rumania"
+    },
+    "srp": {
+      "official": "Rumunija",
+      "common": "Rumunija"
+    },
+    "swe": {
+      "official": "Rumänien",
+      "common": "Rumänien"
+    },
+    "tur": {
+      "official": "Romanya",
+      "common": "Romanya"
+    },
+    "urd": {
+      "official": "رومانیہ",
+      "common": "رومانیہ"
+    },
+    "zho": {
+      "official": "罗马尼亚",
+      "common": "罗马尼亚"
+    }
+  },
+  "largest_city": "Bucharest",
+  "largest_city_local": "Bucharest",
+  "largest_city_pop": 1877155,
+  "largest_city_is_capital": true
+}

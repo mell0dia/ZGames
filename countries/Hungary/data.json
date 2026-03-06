@@ -1,0 +1,209 @@
+{
+  "name": {
+    "common": "Hungary",
+    "official": "Hungary",
+    "native": {
+      "hun": {
+        "official": "Magyarország",
+        "common": "Magyarország"
+      }
+    }
+  },
+  "cca2": "HU",
+  "cca3": "HUN",
+  "ccn3": "348",
+  "cioc": "HUN",
+  "fifa": "HUN",
+  "tld": [
+    ".hu"
+  ],
+  "altSpellings": [
+    "HU"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Eastern European Group",
+  "capital": [
+    "Budapest"
+  ],
+  "region": "Europe",
+  "subregion": "Central Europe",
+  "continents": [
+    "Europe"
+  ],
+  "latlng": [
+    47,
+    20
+  ],
+  "landlocked": true,
+  "borders": [
+    "AUT",
+    "HRV",
+    "ROU",
+    "SRB",
+    "SVK",
+    "SVN",
+    "UKR"
+  ],
+  "area": 93028,
+  "population": 9539502,
+  "demonyms": {
+    "eng": {
+      "f": "Hungarian",
+      "m": "Hungarian"
+    },
+    "fra": {
+      "f": "Hongroise",
+      "m": "Hongrois"
+    }
+  },
+  "languages": {
+    "hun": "Hungarian"
+  },
+  "currencies": {
+    "HUF": {
+      "name": "Hungarian forint",
+      "symbol": "Ft"
+    }
+  },
+  "gini": {
+    "2018": 29.6
+  },
+  "car": {
+    "signs": [
+      "H"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "####",
+    "regex": "^(\\d{4})$"
+  },
+  "idd": {
+    "root": "+3",
+    "suffixes": [
+      "6"
+    ]
+  },
+  "timezones": [
+    "UTC+01:00"
+  ],
+  "flag": "🇭🇺",
+  "flags": {
+    "png": "https://flagcdn.com/w320/hu.png",
+    "svg": "https://flagcdn.com/hu.svg",
+    "alt": "The flag of Hungary is composed of three equal horizontal bands of red, white and green."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/hu.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/hu.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/9gfPupm5bffixiFJ6",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/21335"
+  },
+  "translations": {
+    "ara": {
+      "official": "الجمهورية المجرية",
+      "common": "المجر"
+    },
+    "bre": {
+      "official": "Hungaria",
+      "common": "Hungaria"
+    },
+    "ces": {
+      "official": "Maďarsko",
+      "common": "Maďarsko"
+    },
+    "deu": {
+      "official": "Ungarn",
+      "common": "Ungarn"
+    },
+    "est": {
+      "official": "Ungari",
+      "common": "Ungari"
+    },
+    "fin": {
+      "official": "Unkari",
+      "common": "Unkari"
+    },
+    "fra": {
+      "official": "Hongrie",
+      "common": "Hongrie"
+    },
+    "hrv": {
+      "official": "Madžarska",
+      "common": "Mađarska"
+    },
+    "hun": {
+      "official": "Magyarország",
+      "common": "Magyarország"
+    },
+    "ita": {
+      "official": "Ungheria",
+      "common": "Ungheria"
+    },
+    "jpn": {
+      "official": "ハンガリー",
+      "common": "ハンガリー"
+    },
+    "kor": {
+      "official": "헝가리",
+      "common": "헝가리"
+    },
+    "nld": {
+      "official": "Hongarije",
+      "common": "Hongarije"
+    },
+    "per": {
+      "official": "مجارستان",
+      "common": "مجارستان"
+    },
+    "pol": {
+      "official": "Węgry",
+      "common": "Węgry"
+    },
+    "por": {
+      "official": "Hungria",
+      "common": "Hungria"
+    },
+    "rus": {
+      "official": "Венгрия",
+      "common": "Венгрия"
+    },
+    "slk": {
+      "official": "Maďarsko",
+      "common": "Maďarsko"
+    },
+    "spa": {
+      "official": "Hungría",
+      "common": "Hungría"
+    },
+    "srp": {
+      "official": "Mađarska",
+      "common": "Mađarska"
+    },
+    "swe": {
+      "official": "Ungern",
+      "common": "Ungern"
+    },
+    "tur": {
+      "official": "Macaristan",
+      "common": "Macaristan"
+    },
+    "urd": {
+      "official": "مجارستان",
+      "common": "مجارستان"
+    },
+    "zho": {
+      "official": "匈牙利",
+      "common": "匈牙利"
+    }
+  },
+  "largest_city": "Budapest",
+  "largest_city_local": "Budapest",
+  "largest_city_pop": 1741041,
+  "largest_city_is_capital": true
+}

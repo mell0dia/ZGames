@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌐 World Network</title>
+<script src="graphology.umd.min.js"></script>
+<script src="sigma.min.js"></script>
+<style>
+/* ── Variables ─────────────────────────────────── */
+:root {
+  --bg:       #06091a;
+  --panel-bg: rgba(255,255,255,0.035);
+  --card-bg:  rgba(255,255,255,0.07);
+  --border:   rgba(255,255,255,0.09);
+  --accent:   #3dffc0;
+  --accent2:  #5599ff;
+  --danger:   #ff4d7a;
+  --warn:     #ffcc44;
+  --text:     #e8eaf2;
+  --sub:      rgba(232,234,242,0.48);
+  --panel-w:  300px;
+}
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+html,body { height:100%; overflow:hidden; font-family:'Segoe UI',system-ui,sans-serif; background:var(--bg); color:var(--text); }
+
+/* ── Layout ─────────────────────────────────────── */
+.layout { display:flex; height:100%; }
+
+/* ── LEFT PANEL ─────────────────────────────────── */
+.lpanel {
+  width:var(--panel-w); min-width:var(--panel-w); height:100%;
+  background:var(--panel-bg); backdrop-filter:blur(24px);
+  border-right:1px solid var(--border);
+  display:flex; flex-direction:column;
+  overflow-y:auto; padding:20px 16px 24px; gap:0;
+  z-index:10;
+}
+.lpanel::-webkit-scrollbar { width:3px; }
+.lpanel::-webkit-scrollbar-thumb { background:var(--border); border-radius:2px; }
+
+.back-link {
+  display:inline-flex; align-items:center; gap:6px;
+  font-size:12px; font-weight:600; color:var(--sub);
+  text-decoration:none; padding:6px 10px 6px 6px; border-radius:8px;
+  margin-bottom:16px; transition:all .2s; width:fit-content;
+}
+.back-link:hover { color:var(--accent); background:rgba(61,255,192,.08); }
+.back-link:hover .arr { transform:translateX(-3px); }
+.arr { display:inline-block; font-size:14px; transition:transform .2s; }
+
+.logo { text-align:center; margin-bottom:20px; }
+.logo .ico { font-size:40px; display:block; margin-bottom:6px; animation:floatY 3.5s ease-in-out infinite; }
+.logo h1 {
+  font-size:17px; font-weight:800; letter-spacing:3px; text-transform:uppercase;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+}
+
+.slabel { font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--sub); margin-bottom:10px; }
+.divider { height:1px; background:var(--border); margin:16px 0; }
+
+/* ── Type selector ───────────────────────────────── */
+.type-btns { display:flex; flex-direction:column; gap:7px; }
+.type-btn {
+  display:flex; align-items:center; gap:10px;
+  padding:10px 13px; border:1px solid var(--border); border-radius:11px;
+  background:var(--card-bg); cursor:pointer; transition:all .2s;
+  font-size:13px; font-weight:600; color:var(--sub); text-align:left;
+}
+.type-btn:hover { border-color:var(--accent2); color:var(--text); }
+.type-btn.active { background:rgba(85,153,255,.14); border-color:var(--accent2); color:var(--text); }
+.type-btn .tico { font-size:18px; }
+.type-btn .tmeta { font-size:10px; color:var(--sub); font-weight:400; margin-top:1px; }
+
+/* ── Search ──────────────────────────────────────── */
+.search-wrap { position:relative; margin-bottom:4px; }
+.search-input {
+  width:100%; padding:9px 34px 9px 12px; border-radius:10px;
+  border:1px solid var(--border); background:var(--card-bg);
+  color:var(--text); font-size:13px; outline:none;
+  transition:border-color .2s;
+}
+.search-input::placeholder { color:var(--sub); }
+.search-input:focus { border-color:var(--accent2); }
+.search-ico { position:absolute; right:10px; top:50%; transform:translateY(-50%); font-size:14px; color:var(--sub); pointer-events:none; }
+.search-results {
+  position:absolute; top:calc(100% + 4px); left:0; right:0;
+  background:#12172e; border:1px solid var(--border); border-radius:10px;
+  max-height:200px; overflow-y:auto; z-index:100; display:none;
+}
+.search-results.open { display:block; }
+.search-item {
+  padding:8px 12px; font-size:13px; cursor:pointer; transition:background .15s;
+  border-bottom:1px solid rgba(255,255,255,0.04);
+}
+.search-item:last-child { border-bottom:none; }
+.search-item:hover { background:rgba(85,153,255,.15); }
+.search-item .si-sub { font-size:10px; color:var(--sub); margin-top:1px; }
+
+/* ── Node info card ──────────────────────────────── */
+.info-card {
+  background:var(--card-bg); border:1px solid var(--border);
+  border-radius:14px; padding:14px; display:none; flex-direction:column; gap:10px;
+}
+.info-card.visible { display:flex; }
+.info-top { display:flex; align-items:flex-start; gap:10px; }
+.info-flag { font-size:28px; line-height:1; margin-top:2px; }
+.info-names { flex:1; min-width:0; }
+.info-name { font-size:15px; font-weight:800; line-height:1.2; }
+.info-sub  { font-size:11px; color:var(--sub); margin-top:3px; }
+.info-badge {
+  flex-shrink:0; padding:3px 8px; border-radius:6px; font-size:10px; font-weight:700;
+  letter-spacing:.5px; text-transform:uppercase;
+}
+
+.info-stats { display:grid; grid-template-columns:1fr 1fr; gap:7px; }
+.istat { background:rgba(0,0,0,.2); border-radius:8px; padding:7px 9px; }
+.istat.full { grid-column:1 / -1; }
+.istat .v { font-size:13px; font-weight:800; color:var(--accent); word-break:break-word; }
+.istat .l { font-size:10px; color:var(--sub); text-transform:uppercase; letter-spacing:.5px; margin-top:1px; }
+
+.info-connections-label { font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--sub); }
+.connections-list { display:flex; flex-direction:column; gap:4px; max-height:220px; overflow-y:auto; }
+.connections-list::-webkit-scrollbar { width:3px; }
+.connections-list::-webkit-scrollbar-thumb { background:var(--border); border-radius:2px; }
+.conn-item {
+  display:flex; align-items:center; gap:8px;
+  padding:6px 9px; border-radius:8px; border:1px solid var(--border);
+  background:rgba(0,0,0,.15); cursor:pointer; transition:all .15s;
+  font-size:12px; font-weight:600;
+}
+.conn-item:hover { border-color:var(--accent2); background:rgba(85,153,255,.1); }
+.conn-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+
+.no-selection {
+  text-align:center; padding:20px 10px;
+  font-size:12px; color:var(--sub); line-height:1.7;
+}
+.no-selection .big { font-size:28px; display:block; margin-bottom:8px; }
+
+/* ── Legend ──────────────────────────────────────── */
+.legend-grid { display:grid; grid-template-columns:1fr 1fr; gap:6px; }
+.leg-item { display:flex; align-items:center; gap:6px; font-size:11px; color:var(--sub); }
+.leg-dot { width:9px; height:9px; border-radius:50%; flex-shrink:0; }
+
+/* ── RIGHT PANEL ─────────────────────────────────── */
+.rpanel {
+  flex:1; height:100%; position:relative; overflow:hidden;
+  background:
+    radial-gradient(ellipse at 20% 20%, rgba(61,255,192,0.07) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(85,153,255,0.07) 0%, transparent 50%),
+    #060d1f;
+}
+
+#sigma-container { position:absolute; inset:0; }
+#sigma-container canvas { cursor: grab; }
+#sigma-container canvas:active { cursor: grabbing; }
+
+/* ── Controls overlay ────────────────────────────── */
+.graph-controls {
+  position:absolute; bottom:20px; right:20px;
+  display:flex; flex-direction:column; gap:8px; z-index:10;
+}
+.ctrl-btn {
+  width:38px; height:38px; border-radius:10px; border:1px solid var(--border);
+  background:rgba(6,9,26,.85); backdrop-filter:blur(10px);
+  color:var(--text); font-size:17px; cursor:pointer;
+  display:flex; align-items:center; justify-content:center;
+  transition:all .2s;
+}
+.ctrl-btn:hover { border-color:var(--accent); color:var(--accent); }
+
+/* ── Tooltip ─────────────────────────────────────── */
+#tooltip {
+  position:fixed; pointer-events:none; z-index:50; display:none;
+  background:rgba(12,16,35,.95); border:1px solid var(--border);
+  border-radius:8px; padding:6px 11px;
+  font-size:12px; font-weight:600; color:var(--text);
+  white-space:nowrap; backdrop-filter:blur(8px);
+  transform:translate(-50%,-120%);
+}
+
+/* ── Stats bar ───────────────────────────────────── */
+.stats-bar {
+  position:absolute; top:14px; left:50%; transform:translateX(-50%);
+  display:flex; gap:16px; z-index:10;
+  background:rgba(6,9,26,.8); backdrop-filter:blur(12px);
+  border:1px solid var(--border); border-radius:100px;
+  padding:6px 20px; font-size:12px; color:var(--sub);
+  pointer-events:none;
+}
+.stats-bar strong { color:var(--text); font-weight:700; }
+
+/* ── Keyframes ───────────────────────────────────── */
+@keyframes floatY { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+
+/* ── Mobile ──────────────────────────────────────── */
+.panel-toggle {
+  display:none; position:fixed; top:12px; left:12px; z-index:200;
+  width:40px; height:40px; border-radius:10px;
+  border:1px solid var(--border); background:rgba(6,9,26,.92);
+  backdrop-filter:blur(10px); color:var(--text);
+  font-size:20px; cursor:pointer;
+  align-items:center; justify-content:center;
+}
+.panel-backdrop {
+  display:none; position:fixed; inset:0; z-index:150;
+  background:rgba(0,0,0,.55); backdrop-filter:blur(2px);
+}
+.panel-backdrop.open { display:block; }
+
+@media (max-width:680px) {
+  .panel-toggle { display:flex; }
+  .lpanel {
+    position:fixed; left:0; top:0; height:100%; z-index:160;
+    width:min(var(--panel-w), 88vw);
+    transform:translateX(-100%);
+    transition:transform .3s cubic-bezier(.4,0,.2,1);
+  }
+  .lpanel.open { transform:translateX(0); box-shadow:8px 0 40px rgba(0,0,0,.6); }
+  .stats-bar { font-size:10px; padding:5px 12px; gap:10px; }
+  .graph-controls { bottom:12px; right:12px; }
+}
+</style>
+</head>
+<body>
+<button class="panel-toggle" id="panelToggle" aria-label="Settings">☰</button>
+<div class="panel-backdrop" id="panelBackdrop"></div>
+
+<div class="layout">
+
+  <!-- ── LEFT PANEL ─────────────────── -->
+  <aside class="lpanel">
+    <a class="back-link" href="index.html"><span class="arr">←</span> Game Center</a>
+
+    <div class="logo">
+      <span class="ico">🌐</span>
+      <h1>World Network</h1>
+    </div>
+
+    <div class="slabel">Explore by</div>
+    <div class="type-btns">
+      <button class="type-btn active" data-type="country">
+        <span class="tico">🌍</span>
+        <span>
+          <div>Countries</div>
+          <div class="tmeta">Nodes = sovereign nations</div>
+        </span>
+      </button>
+      <button class="type-btn" data-type="capital">
+        <span class="tico">🏛️</span>
+        <span>
+          <div>Capitals</div>
+          <div class="tmeta">Nodes = capital cities</div>
+        </span>
+      </button>
+      <button class="type-btn" data-type="city">
+        <span class="tico">🏙️</span>
+        <span>
+          <div>Largest Cities</div>
+          <div class="tmeta">Nodes = biggest city per country</div>
+        </span>
+      </button>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="slabel">Search</div>
+    <div class="search-wrap">
+      <input class="search-input" id="searchInput" type="text" placeholder="Find a node…" autocomplete="off">
+      <span class="search-ico">🔍</span>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="slabel">Selected Node</div>
+    <div class="info-card" id="infoCard">
+      <div class="info-top">
+        <span class="info-flag" id="infoFlag">🌍</span>
+        <div class="info-names">
+          <div class="info-name" id="infoName">—</div>
+          <div class="info-sub"  id="infoSub">—</div>
+        </div>
+        <span class="info-badge" id="infoBadge"></span>
+      </div>
+      <div class="info-stats" id="infoStats"></div>
+      <div class="info-connections-label" id="connLabel">Connections</div>
+      <div class="connections-list" id="connList"></div>
+    </div>
+    <div class="no-selection" id="noSelection">
+      <span class="big">👆</span>
+      Click any node on the map to explore its connections.
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="slabel">Region Legend</div>
+    <div class="legend-grid" id="legendGrid"></div>
+  </aside>
+
+  <!-- ── RIGHT PANEL ────────────────── -->
+  <main class="rpanel">
+    <div id="sigma-container"></div>
+
+    <div class="stats-bar" id="statsBar">
+      <span>Nodes: <strong id="sbNodes">—</strong></span>
+      <span>Connections: <strong id="sbEdges">—</strong></span>
+      <span id="sbSelected" style="display:none">Selected: <strong id="sbSelName">—</strong></span>
+    </div>
+
+    <div class="graph-controls">
+      <button class="ctrl-btn" id="btnZoomIn"  title="Zoom in">+</button>
+      <button class="ctrl-btn" id="btnZoomOut" title="Zoom out">−</button>
+      <button class="ctrl-btn" id="btnFit"     title="Reset view">⊙</button>
+    </div>
+
+    <div id="tooltip"></div>
+  </main>
+</div>
+
+<script src="game-data.js"></script>
+<script>
+// ══════════════════════════════════════════════════
+// CONSTANTS
+// ══════════════════════════════════════════════════
+const REGION_COLORS = {
+  'Africa':           '#ff9a3d',
+  'Americas':         '#5599ff',
+  'Asia':             '#ff4d7a',
+  'Europe':           '#3dffc0',
+  'Oceania':          '#cc88ff',
+  'Antarctic':        '#888899',
+};
+const DEFAULT_COLOR = '#8899aa';
+
+const DIM_COLOR    = '#1a1e35';
+const SEL_COLOR    = '#ffffff';
+const NEIGH_COLOR  = '#ffcc44';
+const EDGE_DEFAULT = 'rgba(255,255,255,0.12)';
+const EDGE_HL      = 'rgba(255,255,255,0.55)';
+const EDGE_DIM     = 'rgba(255,255,255,0.02)';
+
+function regionColor(r){ return REGION_COLORS[r] || DEFAULT_COLOR; }
+
+function fmtPop(n){
+  if(!n) return '—';
+  if(n>=1e9) return (n/1e9).toFixed(1)+'B';
+  if(n>=1e6) return Math.round(n/1e6)+'M';
+  if(n>=1e3) return Math.round(n/1e3)+'K';
+  return String(n);
+}
+
+function fmtArea(a){
+  if(!a) return '—';
+  if(a>=1e6) return (a/1e6).toFixed(1)+'M km²';
+  if(a>=1e3) return Math.round(a/1e3)+'K km²';
+  return Math.round(a)+' km²';
+}
+
+function nodeSize(c, type){
+  const pop = type === 'city' ? c.largest_city_pop : c.population;
+  if(!pop) return 5;
+  return Math.max(3, Math.min(18, (Math.log10(pop) - 4) * 4));
+}
+
+// ══════════════════════════════════════════════════
+// BUILD GRAPH
+// ══════════════════════════════════════════════════
+const graph = new graphology.Graph({ type: 'undirected', multi: false });
+
+// Index countries by cca3
+const byCode = {};
+COUNTRIES.forEach(c => { byCode[c.cca3] = c; });
+
+// Add nodes
+COUNTRIES.forEach(c => {
+  if(!c.latlng || c.latlng.length < 2) return;
+  const [lat, lng] = c.latlng;
+  graph.addNode(c.cca3, {
+    // layout
+    x: lng,
+    y: -lat,
+    // current display (will update on type switch)
+    label: c.name,
+    size:  nodeSize(c, 'country'),
+    color: regionColor(c.region),
+    // stored data
+    _c: c,            // full country object
+    _baseColor: regionColor(c.region),
+    _baseSize:  nodeSize(c, 'country'),
+  });
+});
+
+// Add edges (undirected, dedup)
+const addedEdges = new Set();
+COUNTRIES.forEach(c => {
+  (c.borders || []).forEach(bc => {
+    if(!graph.hasNode(bc)) return;
+    const key = [c.cca3, bc].sort().join('|');
+    if(addedEdges.has(key)) return;
+    addedEdges.add(key);
+    graph.addEdge(c.cca3, bc, { color: EDGE_DEFAULT, size: 1 });
+  });
+});
+
+console.log(`Graph: ${graph.order} nodes, ${graph.size} edges`);
+
+// ══════════════════════════════════════════════════
+// SIGMA RENDERER
+// ══════════════════════════════════════════════════
+let selectedNode  = null;
+let neighborSet   = new Set();
+let currentType   = 'country';
+let highlightMode = false;
+
+const container = document.getElementById('sigma-container');
+
+const renderer = new Sigma(graph, container, {
+  renderEdgeLabels: false,
+  defaultNodeType:  'circle',
+  defaultEdgeType:  'line',
+  labelFont:        'Segoe UI, sans-serif',
+  labelSize:        12,
+  labelWeight:      '600',
+  labelColor:       { attribute: 'labelColor' },
+  labelRenderedSizeThreshold: 12,
+  minCameraRatio:   0.05,
+  maxCameraRatio:   5,
+
+  nodeReducer(node, data) {
+    const res = { ...data, labelColor: '#e8eaf2' };
+    if(!highlightMode) return res;
+    if(node === selectedNode) {
+      res.color       = data._baseColor;
+      res.size        = data._baseSize * 2.2;
+      res.highlighted = true;
+      res.forceLabel  = true;
+      res.labelColor  = '#000000';
+      res.zIndex      = 10;
+    } else if(neighborSet.has(node)) {
+      res.color      = data._baseColor;
+      res.size       = data._baseSize * 1.5;
+      res.forceLabel = true;
+      res.zIndex     = 5;
+    } else {
+      res.color  = DIM_COLOR;
+      res.size   = data._baseSize * 0.55;
+      res.label  = '';
+      res.zIndex = 0;
+    }
+    return res;
+  },
+
+  edgeReducer(edge, data) {
+    const res = { ...data };
+    if(!highlightMode) return res;
+    if(graph.hasExtremity(edge, selectedNode)) {
+      res.color = EDGE_HL;
+      res.size  = 2;
+      res.zIndex= 5;
+    } else {
+      res.color = EDGE_DIM;
+      res.size  = 0.4;
+    }
+    return res;
+  },
+});
+
+// ══════════════════════════════════════════════════
+// TYPE SWITCHING
+// ══════════════════════════════════════════════════
+function getLabel(c, type){
+  if(type === 'capital') return c.capital || c.name;
+  if(type === 'city')    return c.largest_city || c.name;
+  return c.name;
+}
+
+function switchType(type){
+  currentType = type;
+  graph.forEachNode((node, attrs) => {
+    const c = attrs._c;
+    const sz = nodeSize(c, type);
+    graph.setNodeAttribute(node, 'label', getLabel(c, type));
+    graph.setNodeAttribute(node, 'size',  sz);
+    graph.setNodeAttribute(node, '_baseSize', sz);
+  });
+  clearSelection();
+  renderer.refresh();
+}
+
+document.querySelectorAll('.type-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    switchType(btn.dataset.type);
+  });
+});
+
+// ══════════════════════════════════════════════════
+// NODE SELECTION + INFO PANEL
+// ══════════════════════════════════════════════════
+function selectNode(node){
+  selectedNode  = node;
+  neighborSet   = new Set(graph.neighbors(node));
+  highlightMode = true;
+  renderer.refresh();
+  renderInfoPanel(node);
+
+  // Stats bar
+  const c = graph.getNodeAttribute(node, '_c');
+  document.getElementById('sbSelected').style.display = '';
+  document.getElementById('sbSelName').textContent = getLabel(c, currentType);
+}
+
+function clearSelection(){
+  selectedNode  = null;
+  neighborSet   = new Set();
+  highlightMode = false;
+  renderer.refresh();
+  document.getElementById('infoCard').classList.remove('visible');
+  document.getElementById('noSelection').style.display = '';
+  document.getElementById('sbSelected').style.display = 'none';
+}
+
+function renderInfoPanel(node){
+  const c    = graph.getNodeAttribute(node, '_c');
+  const type = currentType;
+
+  document.getElementById('infoCard').classList.add('visible');
+  document.getElementById('noSelection').style.display = 'none';
+
+  // Header
+  document.getElementById('infoFlag').textContent = c.flag_emoji || '🌍';
+  document.getElementById('infoName').textContent = getLabel(c, type);
+  document.getElementById('infoSub').textContent  =
+    type === 'country' ? (c.official && c.official !== c.name ? c.official : `${c.region} · ${c.subregion || ''}`) :
+    type === 'capital' ? `Capital of ${c.name}` :
+    `Largest city of ${c.name}`;
+
+  // Badge
+  const badge = document.getElementById('infoBadge');
+  badge.textContent      = c.region;
+  badge.style.background = regionColor(c.region) + '22';
+  badge.style.color      = regionColor(c.region);
+  badge.style.border     = `1px solid ${regionColor(c.region)}55`;
+
+  // Full stats grid
+  const langs = (c.languages || []).join(', ') || '—';
+  const currStr = (c.currencies || []).map(cu =>
+    cu.symbol ? `${cu.name} (${cu.symbol})` : cu.name
+  ).join(', ') || c.currency || '—';
+  const continent  = (c.continents || []).join(', ') || c.region || '—';
+  const tld        = (c.tld || []).slice(0, 3).join(', ') || '—';
+
+  const rows = [
+    ['👥', fmtPop(c.population),     'Population',    false],
+    ['📐', fmtArea(c.area),           'Area',          false],
+    ['🏛️', c.capital || '—',          'Capital',       false],
+    ['🌐', continent,                  'Continent',     false],
+    ['🌆', c.largest_city || '—',     'Largest City',  false],
+    ['👤', fmtPop(c.largest_city_pop),'City Pop.',     false],
+    ['💱', currStr,                    'Currency',      true ],
+    ['🗣️', langs,                      'Languages',     true ],
+    ['🔗', tld,                        'TLD',           false],
+    ['⛰️', c.landlocked ? 'Yes':'No', 'Landlocked',   false],
+  ];
+
+  document.getElementById('infoStats').innerHTML = rows.map(([ico, val, lbl, wide]) => `
+    <div class="istat${wide ? ' full' : ''}">
+      <div class="v">${ico} ${val}</div>
+      <div class="l">${lbl}</div>
+    </div>
+  `).join('');
+
+  // Connections list
+  const connLabel = document.getElementById('connLabel');
+  const connList  = document.getElementById('connList');
+  const neighbors = [...neighborSet].sort((a, b) => {
+    const la = getLabel(byCode[a]||{name:'?'}, type);
+    const lb = getLabel(byCode[b]||{name:'?'}, type);
+    return la.localeCompare(lb);
+  });
+
+  connLabel.textContent = `${neighbors.length} Border Connection${neighbors.length !== 1 ? 's' : ''}`;
+  connList.innerHTML = '';
+
+  if(neighbors.length === 0){
+    connList.innerHTML = '<div style="font-size:12px;color:var(--sub);padding:6px 0">No land borders (island nation)</div>';
+  } else {
+    neighbors.forEach(nid => {
+      const nc = byCode[nid];
+      if(!nc) return;
+      const el = document.createElement('div');
+      el.className = 'conn-item';
+      el.innerHTML = `
+        <span class="conn-dot" style="background:${regionColor(nc.region)}"></span>
+        <span style="flex:1">${nc.flag_emoji||''} ${getLabel(nc, type)}</span>
+        <span style="font-size:10px;color:var(--sub);white-space:nowrap">${fmtPop(nc.population)}</span>
+      `;
+      el.addEventListener('click', () => selectNode(nid));
+      connList.appendChild(el);
+    });
+  }
+}
+
+// ══════════════════════════════════════════════════
+// CAMERA
+// ══════════════════════════════════════════════════
+function centerOnNode(node){
+  const x = graph.getNodeAttribute(node, 'x');
+  const y = graph.getNodeAttribute(node, 'y');
+  renderer.getCamera().animate({ x, y, ratio: 0.6 }, { duration: 500 });
+}
+
+document.getElementById('btnZoomIn').addEventListener('click', () => {
+  const cam = renderer.getCamera();
+  cam.animate({ ratio: cam.ratio * 0.6 }, { duration: 200 });
+});
+document.getElementById('btnZoomOut').addEventListener('click', () => {
+  const cam = renderer.getCamera();
+  cam.animate({ ratio: cam.ratio * 1.6 }, { duration: 200 });
+});
+document.getElementById('btnFit').addEventListener('click', () => {
+  clearSelection();
+  renderer.getCamera().animate({ x:0, y:0, ratio:1 }, { duration: 400 });
+});
+
+// ══════════════════════════════════════════════════
+// DRAG-TO-MOVE NODES
+// ══════════════════════════════════════════════════
+let dragNode    = null;
+let isDragging  = false;
+
+renderer.on('downNode', ({ node }) => {
+  dragNode   = node;
+  isDragging = false;
+});
+
+renderer.getMouseCaptor().on('mousemovebody', (e) => {
+  if (!dragNode) return;
+  isDragging = true;
+  const pos = renderer.viewportToGraph(e);
+  graph.setNodeAttribute(dragNode, 'x', pos.x);
+  graph.setNodeAttribute(dragNode, 'y', pos.y);
+  e.preventSigmaDefault();
+  e.original.preventDefault();
+  e.original.stopPropagation();
+});
+
+renderer.getMouseCaptor().on('mouseup', () => {
+  dragNode = null;
+  // keep isDragging true briefly so clickNode can check it
+  setTimeout(() => { isDragging = false; }, 0);
+});
+
+// ══════════════════════════════════════════════════
+// SIGMA EVENTS
+// ══════════════════════════════════════════════════
+renderer.on('clickNode', ({ node }) => {
+  if (isDragging) return;               // was a drag, ignore
+  if (node === selectedNode) { clearSelection(); return; }
+  selectNode(node);
+});
+
+renderer.on('clickStage', () => {
+  if (isDragging) return;
+  clearSelection();
+});
+
+// Tooltip
+const tooltip = document.getElementById('tooltip');
+renderer.on('enterNode', ({ node }) => {
+  const c    = graph.getNodeAttribute(node, '_c');
+  const lbl  = getLabel(c, currentType);
+  const conn = graph.degree(node);
+  tooltip.innerHTML = `<strong>${lbl}</strong> <span style="color:var(--sub);font-weight:400">${conn} border${conn!==1?'s':''}</span>`;
+  tooltip.style.display = 'block';
+});
+renderer.on('leaveNode', () => { tooltip.style.display = 'none'; });
+
+container.addEventListener('mousemove', e => {
+  tooltip.style.left = e.clientX + 'px';
+  tooltip.style.top  = e.clientY + 'px';
+});
+
+// ══════════════════════════════════════════════════
+// SEARCH
+// ══════════════════════════════════════════════════
+const searchInput   = document.getElementById('searchInput');
+const searchResults = document.getElementById('searchResults');
+
+searchInput.addEventListener('input', () => {
+  const q = searchInput.value.trim().toLowerCase();
+  if(!q){ searchResults.classList.remove('open'); return; }
+
+  const matches = COUNTRIES.filter(c => {
+    const lbl = getLabel(c, currentType).toLowerCase();
+    return lbl.includes(q) || c.name.toLowerCase().includes(q);
+  }).slice(0, 10);
+
+  searchResults.innerHTML = matches.map(c => `
+    <div class="search-item" data-cca3="${c.cca3}">
+      <div>${c.flag_emoji || ''} ${getLabel(c, currentType)}</div>
+      <div class="si-sub">${c.region} · ${graph.degree(c.cca3)} connections</div>
+    </div>
+  `).join('');
+
+  searchResults.querySelectorAll('.search-item').forEach(el => {
+    el.addEventListener('click', () => {
+      selectNode(el.dataset.cca3);
+      searchInput.value = '';
+      searchResults.classList.remove('open');
+    });
+  });
+
+  searchResults.classList.toggle('open', matches.length > 0);
+});
+
+document.addEventListener('click', e => {
+  if(!searchInput.contains(e.target) && !searchResults.contains(e.target)){
+    searchResults.classList.remove('open');
+  }
+});
+
+// ══════════════════════════════════════════════════
+// LEGEND
+// ══════════════════════════════════════════════════
+const legendGrid = document.getElementById('legendGrid');
+Object.entries(REGION_COLORS).forEach(([region, color]) => {
+  if(region === 'Antarctic') return;
+  legendGrid.innerHTML += `
+    <div class="leg-item">
+      <span class="leg-dot" style="background:${color}"></span>
+      <span>${region}</span>
+    </div>
+  `;
+});
+
+// ══════════════════════════════════════════════════
+// STATS BAR
+// ══════════════════════════════════════════════════
+document.getElementById('sbNodes').textContent = graph.order;
+document.getElementById('sbEdges').textContent = graph.size;
+
+// ── Mobile panel toggle ──────────────────────────
+(function(){
+  const toggle   = document.getElementById('panelToggle');
+  const backdrop = document.getElementById('panelBackdrop');
+  const lpanel   = document.querySelector('.lpanel');
+  const open  = () => { lpanel.classList.add('open');    backdrop.classList.add('open'); };
+  const close = () => { lpanel.classList.remove('open'); backdrop.classList.remove('open'); };
+  toggle.addEventListener('click', () => lpanel.classList.contains('open') ? close() : open());
+  backdrop.addEventListener('click', close);
+})();
+</script>
+</body>
+</html>

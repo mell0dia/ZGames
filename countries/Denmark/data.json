@@ -1,0 +1,210 @@
+{
+  "name": {
+    "common": "Denmark",
+    "official": "Kingdom of Denmark",
+    "native": {
+      "dan": {
+        "official": "Kongeriget Danmark",
+        "common": "Danmark"
+      }
+    }
+  },
+  "cca2": "DK",
+  "cca3": "DNK",
+  "ccn3": "208",
+  "cioc": "DEN",
+  "fifa": "DEN",
+  "tld": [
+    ".dk"
+  ],
+  "altSpellings": [
+    "DK",
+    "Danmark",
+    "Kingdom of Denmark",
+    "Kongeriget Danmark"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Western European and Others Group",
+  "capital": [
+    "Copenhagen"
+  ],
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "continents": [
+    "Europe"
+  ],
+  "latlng": [
+    56,
+    10
+  ],
+  "landlocked": false,
+  "borders": [
+    "DEU"
+  ],
+  "area": 43094,
+  "population": 6011488,
+  "demonyms": {
+    "eng": {
+      "f": "Danish",
+      "m": "Danish"
+    },
+    "fra": {
+      "f": "Danoise",
+      "m": "Danois"
+    }
+  },
+  "languages": {
+    "dan": "Danish"
+  },
+  "currencies": {
+    "DKK": {
+      "name": "Danish krone",
+      "symbol": "kr"
+    }
+  },
+  "gini": {
+    "2018": 28.2
+  },
+  "car": {
+    "signs": [
+      "DK"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "####",
+    "regex": "^(\\d{4})$"
+  },
+  "idd": {
+    "root": "+4",
+    "suffixes": [
+      "5"
+    ]
+  },
+  "timezones": [
+    "UTC-04:00",
+    "UTC-03:00",
+    "UTC-01:00",
+    "UTC",
+    "UTC+01:00"
+  ],
+  "flag": "🇩🇰",
+  "flags": {
+    "png": "https://flagcdn.com/w320/dk.png",
+    "svg": "https://flagcdn.com/dk.svg",
+    "alt": "The flag of Denmark has a red field with a large white cross that extend to the edges of the field. The vertical part of this cross is offset towards the hoist side."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/dk.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/dk.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/UddGPN7hAyrtpFiT6",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/50046"
+  },
+  "translations": {
+    "ara": {
+      "official": "مملكة الدنمارك",
+      "common": "الدنمارك"
+    },
+    "bre": {
+      "official": "Rouantelezh Danmark",
+      "common": "Danmark"
+    },
+    "ces": {
+      "official": "Dánské království",
+      "common": "Dánsko"
+    },
+    "deu": {
+      "official": "Königreich Dänemark",
+      "common": "Dänemark"
+    },
+    "est": {
+      "official": "Taani Kuningriik",
+      "common": "Taani"
+    },
+    "fin": {
+      "official": "Tanskan kuningaskunta",
+      "common": "Tanska"
+    },
+    "fra": {
+      "official": "Royaume du Danemark",
+      "common": "Danemark"
+    },
+    "hrv": {
+      "official": "Kraljevina Danska",
+      "common": "Danska"
+    },
+    "hun": {
+      "official": "Dán Királyság",
+      "common": "Dánia"
+    },
+    "ita": {
+      "official": "Regno di Danimarca",
+      "common": "Danimarca"
+    },
+    "jpn": {
+      "official": "デンマーク王国",
+      "common": "デンマーク"
+    },
+    "kor": {
+      "official": "덴마크 왕국",
+      "common": "덴마크"
+    },
+    "nld": {
+      "official": "Koninkrijk Denemarken",
+      "common": "Denemarken"
+    },
+    "per": {
+      "official": "پادشاهی دانمارک",
+      "common": "دانمارک"
+    },
+    "pol": {
+      "official": "Królestwo Danii",
+      "common": "Dania"
+    },
+    "por": {
+      "official": "Reino da Dinamarca",
+      "common": "Dinamarca"
+    },
+    "rus": {
+      "official": "Королевство Дания",
+      "common": "Дания"
+    },
+    "slk": {
+      "official": "Dánske kráľovstvo",
+      "common": "Dánsko"
+    },
+    "spa": {
+      "official": "Reino de Dinamarca",
+      "common": "Dinamarca"
+    },
+    "srp": {
+      "official": "Kraljevina Danska",
+      "common": "Danska"
+    },
+    "swe": {
+      "official": "Konungariket Danmark",
+      "common": "Danmark"
+    },
+    "tur": {
+      "official": "Danimarka Krallığı",
+      "common": "Danimarka"
+    },
+    "urd": {
+      "official": "مملکتِ ڈنمارک",
+      "common": "ڈنمارک"
+    },
+    "zho": {
+      "official": "丹麦王国",
+      "common": "丹麦"
+    }
+  },
+  "largest_city": "Copenhagen",
+  "largest_city_local": "Copenhagen",
+  "largest_city_pop": 1153615,
+  "largest_city_is_capital": true
+}

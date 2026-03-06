@@ -1,0 +1,211 @@
+{
+  "name": {
+    "common": "Poland",
+    "official": "Republic of Poland",
+    "native": {
+      "pol": {
+        "official": "Rzeczpospolita Polska",
+        "common": "Polska"
+      }
+    }
+  },
+  "cca2": "PL",
+  "cca3": "POL",
+  "ccn3": "616",
+  "cioc": "POL",
+  "fifa": "POL",
+  "tld": [
+    ".pl"
+  ],
+  "altSpellings": [
+    "PL",
+    "Republic of Poland",
+    "Rzeczpospolita Polska"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Eastern European Group",
+  "capital": [
+    "Warsaw"
+  ],
+  "region": "Europe",
+  "subregion": "Central Europe",
+  "continents": [
+    "Europe"
+  ],
+  "latlng": [
+    52,
+    20
+  ],
+  "landlocked": false,
+  "borders": [
+    "BLR",
+    "CZE",
+    "DEU",
+    "LTU",
+    "RUS",
+    "SVK",
+    "UKR"
+  ],
+  "area": 312679,
+  "population": 37392000,
+  "demonyms": {
+    "eng": {
+      "f": "Polish",
+      "m": "Polish"
+    },
+    "fra": {
+      "f": "Polonaise",
+      "m": "Polonais"
+    }
+  },
+  "languages": {
+    "pol": "Polish"
+  },
+  "currencies": {
+    "PLN": {
+      "name": "Polish złoty",
+      "symbol": "zł"
+    }
+  },
+  "gini": {
+    "2018": 30.2
+  },
+  "car": {
+    "signs": [
+      "PL"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "##-###",
+    "regex": "^(\\d{5})$"
+  },
+  "idd": {
+    "root": "+4",
+    "suffixes": [
+      "8"
+    ]
+  },
+  "timezones": [
+    "UTC+01:00"
+  ],
+  "flag": "🇵🇱",
+  "flags": {
+    "png": "https://flagcdn.com/w320/pl.png",
+    "svg": "https://flagcdn.com/pl.svg",
+    "alt": "The flag of Poland is composed of two equal horizontal bands of white and red."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/pl.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/pl.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/gY9Xw4Sf4415P4949",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/49715"
+  },
+  "translations": {
+    "ara": {
+      "official": "الجمهورية البولندية",
+      "common": "بولندا"
+    },
+    "bre": {
+      "official": "Republik Polonia",
+      "common": "Polonia"
+    },
+    "ces": {
+      "official": "Polská republika",
+      "common": "Polsko"
+    },
+    "deu": {
+      "official": "Republik Polen",
+      "common": "Polen"
+    },
+    "est": {
+      "official": "Poola Vabariik",
+      "common": "Poola"
+    },
+    "fin": {
+      "official": "Puolan tasavalta",
+      "common": "Puola"
+    },
+    "fra": {
+      "official": "République de Pologne",
+      "common": "Pologne"
+    },
+    "hrv": {
+      "official": "Republika Poljska",
+      "common": "Poljska"
+    },
+    "hun": {
+      "official": "Lengyel Köztársaság",
+      "common": "Lengyelország"
+    },
+    "ita": {
+      "official": "Repubblica di Polonia",
+      "common": "Polonia"
+    },
+    "jpn": {
+      "official": "ポーランド共和国",
+      "common": "ポーランド"
+    },
+    "kor": {
+      "official": "폴란드 공화국",
+      "common": "폴란드"
+    },
+    "nld": {
+      "official": "Republiek Polen",
+      "common": "Polen"
+    },
+    "per": {
+      "official": "جمهوری لهستان",
+      "common": "لهستان"
+    },
+    "pol": {
+      "official": "Rzeczpospolita Polska",
+      "common": "Polska"
+    },
+    "por": {
+      "official": "República da Polónia",
+      "common": "Polónia"
+    },
+    "rus": {
+      "official": "Республика Польша",
+      "common": "Польша"
+    },
+    "slk": {
+      "official": "Poľská republika",
+      "common": "Poľsko"
+    },
+    "spa": {
+      "official": "República de Polonia",
+      "common": "Polonia"
+    },
+    "srp": {
+      "official": "Republika Poljska",
+      "common": "Poljska"
+    },
+    "swe": {
+      "official": "Republiken Polen",
+      "common": "Polen"
+    },
+    "tur": {
+      "official": "Polonya Cumhuriyeti",
+      "common": "Polonya"
+    },
+    "urd": {
+      "official": "جمہوریہ پولینڈ",
+      "common": "پولینڈ"
+    },
+    "zho": {
+      "official": "波兰共和国",
+      "common": "波兰"
+    }
+  },
+  "largest_city": "Warsaw",
+  "largest_city_local": "Warsaw",
+  "largest_city_pop": 1702139,
+  "largest_city_is_capital": true
+}

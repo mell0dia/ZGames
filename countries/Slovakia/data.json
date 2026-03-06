@@ -1,0 +1,209 @@
+{
+  "name": {
+    "common": "Slovakia",
+    "official": "Slovak Republic",
+    "native": {
+      "slk": {
+        "official": "Slovenská republika",
+        "common": "Slovensko"
+      }
+    }
+  },
+  "cca2": "SK",
+  "cca3": "SVK",
+  "ccn3": "703",
+  "cioc": "SVK",
+  "fifa": "SVK",
+  "tld": [
+    ".sk"
+  ],
+  "altSpellings": [
+    "SK",
+    "Slovak Republic",
+    "Slovenská republika"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Eastern European Group",
+  "capital": [
+    "Bratislava"
+  ],
+  "region": "Europe",
+  "subregion": "Central Europe",
+  "continents": [
+    "Europe"
+  ],
+  "latlng": [
+    48.66666666,
+    19.5
+  ],
+  "landlocked": true,
+  "borders": [
+    "AUT",
+    "CZE",
+    "HUN",
+    "POL",
+    "UKR"
+  ],
+  "area": 49037,
+  "population": 5413813,
+  "demonyms": {
+    "eng": {
+      "f": "Slovak",
+      "m": "Slovak"
+    },
+    "fra": {
+      "f": "Slovaque",
+      "m": "Slovaque"
+    }
+  },
+  "languages": {
+    "slk": "Slovak"
+  },
+  "currencies": {
+    "EUR": {
+      "name": "Euro",
+      "symbol": "€"
+    }
+  },
+  "gini": {
+    "2018": 25.0
+  },
+  "car": {
+    "signs": [
+      "SK"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {
+    "format": "###  ##",
+    "regex": "^(\\d{5})$"
+  },
+  "idd": {
+    "root": "+4",
+    "suffixes": [
+      "21"
+    ]
+  },
+  "timezones": [
+    "UTC+01:00"
+  ],
+  "flag": "🇸🇰",
+  "flags": {
+    "png": "https://flagcdn.com/w320/sk.png",
+    "svg": "https://flagcdn.com/sk.svg",
+    "alt": "The flag of Slovakia is composed of three equal horizontal bands of white, blue and red. The coat of arms of Slovakia is superimposed at the center of the field slightly towards the hoist side."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/sk.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/sk.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/uNSH2wW4bLoZVYJj7",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/14296"
+  },
+  "translations": {
+    "ara": {
+      "official": "جمهورية سلوفاكيا",
+      "common": "سلوفاكيا"
+    },
+    "bre": {
+      "official": "Republik Slovak",
+      "common": "Slovakia"
+    },
+    "ces": {
+      "official": "Slovenská republika",
+      "common": "Slovensko"
+    },
+    "deu": {
+      "official": "Slowakische Republik",
+      "common": "Slowakei"
+    },
+    "est": {
+      "official": "Slovaki Vabariik",
+      "common": "Slovakkia"
+    },
+    "fin": {
+      "official": "Slovakian tasavalta",
+      "common": "Slovakia"
+    },
+    "fra": {
+      "official": "République slovaque",
+      "common": "Slovaquie"
+    },
+    "hrv": {
+      "official": "slovačka",
+      "common": "Slovačka"
+    },
+    "hun": {
+      "official": "Szlovák Köztársaság",
+      "common": "Szlovákia"
+    },
+    "ita": {
+      "official": "Repubblica slovacca",
+      "common": "Slovacchia"
+    },
+    "jpn": {
+      "official": "スロバキア共和国",
+      "common": "スロバキア"
+    },
+    "kor": {
+      "official": "슬로바키아 공화국",
+      "common": "슬로바키아"
+    },
+    "nld": {
+      "official": "Slowaakse Republiek",
+      "common": "Slowakije"
+    },
+    "per": {
+      "official": "جمهوری اسلواکی",
+      "common": "اِسلُواکی"
+    },
+    "pol": {
+      "official": "Republika Słowacka",
+      "common": "Słowacja"
+    },
+    "por": {
+      "official": "República Eslovaca",
+      "common": "Eslováquia"
+    },
+    "rus": {
+      "official": "Словацкая Республика",
+      "common": "Словакия"
+    },
+    "slk": {
+      "official": "Slovenská republika",
+      "common": "Slovensko"
+    },
+    "spa": {
+      "official": "República Eslovaca",
+      "common": "Eslovaquia"
+    },
+    "srp": {
+      "official": "Slovačka republika",
+      "common": "Slovačka"
+    },
+    "swe": {
+      "official": "Republiken Slovakien",
+      "common": "Slovakien"
+    },
+    "tur": {
+      "official": "Slovak Cumhuriyeti",
+      "common": "Slovakya"
+    },
+    "urd": {
+      "official": "جمہوریہ سلوواکیہ",
+      "common": "سلوواکیہ"
+    },
+    "zho": {
+      "official": "斯洛伐克共和国",
+      "common": "斯洛伐克"
+    }
+  },
+  "largest_city": "Bratislava",
+  "largest_city_local": "Bratislava",
+  "largest_city_pop": 423737,
+  "largest_city_is_capital": true
+}

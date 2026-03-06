@@ -1,0 +1,227 @@
+{
+  "name": {
+    "common": "Bolivia",
+    "official": "Plurinational State of Bolivia",
+    "native": {
+      "aym": {
+        "official": "Wuliwya Suyu",
+        "common": "Wuliwya"
+      },
+      "grn": {
+        "official": "Tetã Volívia",
+        "common": "Volívia"
+      },
+      "que": {
+        "official": "Buliwya Mamallaqta",
+        "common": "Buliwya"
+      },
+      "spa": {
+        "official": "Estado Plurinacional de Bolivia",
+        "common": "Bolivia"
+      }
+    }
+  },
+  "cca2": "BO",
+  "cca3": "BOL",
+  "ccn3": "068",
+  "cioc": "BOL",
+  "fifa": "BOL",
+  "tld": [
+    ".bo"
+  ],
+  "altSpellings": [
+    "BO",
+    "Buliwya",
+    "Wuliwya",
+    "Bolivia, Plurinational State of",
+    "Plurinational State of Bolivia",
+    "Estado Plurinacional de Bolivia",
+    "Buliwya Mamallaqta",
+    "Wuliwya Suyu",
+    "Tetã Volívia"
+  ],
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "unRegionalGroup": "Latin American and Caribbean Group",
+  "capital": [
+    "Sucre"
+  ],
+  "region": "Americas",
+  "subregion": "South America",
+  "continents": [
+    "South America"
+  ],
+  "latlng": [
+    -17,
+    -65
+  ],
+  "landlocked": true,
+  "borders": [
+    "ARG",
+    "BRA",
+    "CHL",
+    "PRY",
+    "PER"
+  ],
+  "area": 1098581,
+  "population": 11365333,
+  "demonyms": {
+    "eng": {
+      "f": "Bolivian",
+      "m": "Bolivian"
+    },
+    "fra": {
+      "f": "Bolivienne",
+      "m": "Bolivien"
+    }
+  },
+  "languages": {
+    "aym": "Aymara",
+    "grn": "Guaraní",
+    "que": "Quechua",
+    "spa": "Spanish"
+  },
+  "currencies": {
+    "BOB": {
+      "name": "Bolivian boliviano",
+      "symbol": "Bs."
+    }
+  },
+  "gini": {
+    "2019": 41.6
+  },
+  "car": {
+    "signs": [
+      "BOL"
+    ],
+    "side": "right"
+  },
+  "startOfWeek": "monday",
+  "postalCode": {},
+  "idd": {
+    "root": "+5",
+    "suffixes": [
+      "91"
+    ]
+  },
+  "timezones": [
+    "UTC-04:00"
+  ],
+  "flag": "🇧🇴",
+  "flags": {
+    "png": "https://flagcdn.com/w320/bo.png",
+    "svg": "https://flagcdn.com/bo.svg",
+    "alt": "The flag of Bolivia is composed of three equal horizontal bands of red, yellow and green, with the national coat of arms centered in the yellow band."
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/bo.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/bo.svg"
+  },
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/9DfnyfbxNM2g5U9b9",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/252645"
+  },
+  "translations": {
+    "ara": {
+      "official": "دولة بوليفيا المتعددة القوميات",
+      "common": "بوليفيا"
+    },
+    "bre": {
+      "official": "Stad Liesvroadel Bolivia",
+      "common": "Bolivia"
+    },
+    "ces": {
+      "official": "Mnohonárodnostní stát Bolívie",
+      "common": "Bolívie"
+    },
+    "deu": {
+      "official": "Plurinationaler Staat Bolivien",
+      "common": "Bolivien"
+    },
+    "est": {
+      "official": "Boliivia Paljurahvuseline Riik",
+      "common": "Boliivia"
+    },
+    "fin": {
+      "official": "Bolivian monikansainen valtio",
+      "common": "Bolivia"
+    },
+    "fra": {
+      "official": "État plurinational de Bolivie",
+      "common": "Bolivie"
+    },
+    "hrv": {
+      "official": "Plurinational State of Bolivia",
+      "common": "Bolivija"
+    },
+    "hun": {
+      "official": "Bolíviai Többnemzetiségű Állam",
+      "common": "Bolívia"
+    },
+    "ita": {
+      "official": "Stato Plurinazionale della Bolivia",
+      "common": "Bolivia"
+    },
+    "jpn": {
+      "official": "ボリビア多民族国",
+      "common": "ボリビア"
+    },
+    "kor": {
+      "official": "볼리비아 다민족국",
+      "common": "볼리비아"
+    },
+    "nld": {
+      "official": "Plurinationale Staat van Bolivia",
+      "common": "Bolivia"
+    },
+    "per": {
+      "official": "جمهوری بولیوی",
+      "common": "بولیوی"
+    },
+    "pol": {
+      "official": "Wielonarodowe Państwo Boliwia",
+      "common": "Boliwia"
+    },
+    "por": {
+      "official": "Estado Plurinacional da Bolívia",
+      "common": "Bolívia"
+    },
+    "rus": {
+      "official": "Многонациональное Государство Боливия",
+      "common": "Боливия"
+    },
+    "slk": {
+      "official": "Bolívijská republika",
+      "common": "Bolívia"
+    },
+    "spa": {
+      "official": "Estado Plurinacional de Bolivia",
+      "common": "Bolivia"
+    },
+    "srp": {
+      "official": "Višenacionalna Država Bolivija",
+      "common": "Bolivija"
+    },
+    "swe": {
+      "official": "Mångnationella staten Bolivia",
+      "common": "Bolivia"
+    },
+    "tur": {
+      "official": "Bolivya çokuluslu Devleti",
+      "common": "Bolivya"
+    },
+    "urd": {
+      "official": "جمہوریہ بولیویا",
+      "common": "بولیویا"
+    },
+    "zho": {
+      "official": "多民族玻利维亚国",
+      "common": "玻利维亚"
+    }
+  },
+  "largest_city": "La Paz",
+  "largest_city_local": "La Paz",
+  "largest_city_pop": 2004652,
+  "largest_city_is_capital": false
+}
