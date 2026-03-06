@@ -220,13 +220,47 @@ html,body{min-height:100%;font-family:'Segoe UI',system-ui,sans-serif;background
 .cm-choice.wrong{background:rgba(255,77,122,0.2);border-color:#ff4d7a;color:#ff4d7a;}
 
 /* Mobile */
-.panel-toggle{display:none;position:fixed;top:12px;left:12px;z-index:300;
-  width:42px;height:42px;border-radius:10px;border:1px solid var(--border);
-  background:var(--panel-bg);color:var(--text);font-size:20px;cursor:pointer;
+.panel-toggle{display:none;position:fixed;top:12px;right:12px;left:auto;z-index:300;
+  width:40px;height:40px;border-radius:10px;border:1px solid var(--border);
+  background:rgba(8,12,30,.92);backdrop-filter:blur(10px);color:var(--text);font-size:18px;cursor:pointer;
   align-items:center;justify-content:center;}
+.nav-btn {
+  display:none; position:fixed; top:12px; left:12px; z-index:300;
+  width:40px; height:40px; border-radius:10px;
+  border:1px solid var(--border); background:rgba(8,12,30,.92);
+  backdrop-filter:blur(10px); color:var(--text); font-size:20px;
+  cursor:pointer; align-items:center; justify-content:center;
+}
+.nav-drawer {
+  position:fixed; left:0; top:0; height:100%; width:220px; z-index:320;
+  background:rgba(8,12,30,.97); backdrop-filter:blur(20px);
+  border-right:1px solid var(--border);
+  display:flex; flex-direction:column; padding:0;
+  transform:translateX(-100%); transition:transform .3s cubic-bezier(.4,0,.2,1);
+}
+.nav-drawer.open { transform:translateX(0); box-shadow:8px 0 40px rgba(0,0,0,.7); }
+.nav-drawer-title {
+  font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase;
+  color:rgba(232,234,242,0.45); padding:20px 18px 10px; border-bottom:1px solid rgba(255,255,255,.08);
+  margin-bottom:6px;
+}
+.nav-item {
+  display:flex; align-items:center; gap:12px; padding:11px 18px;
+  font-size:14px; font-weight:600; color:#e8eaf2;
+  text-decoration:none; transition:background .15s; border-left:3px solid transparent;
+}
+.nav-item:hover { background:rgba(255,255,255,.06); }
+.nav-item.nav-active { color:#3dffc0; background:rgba(61,255,192,.07); border-left-color:#3dffc0; }
+.nav-item-icon { font-size:18px; width:24px; text-align:center; flex-shrink:0; }
+.nav-backdrop2 {
+  display:none; position:fixed; inset:0; z-index:310; background:rgba(0,0,0,.55);
+  backdrop-filter:blur(2px);
+}
+.nav-backdrop2.open { display:block; }
 .panel-backdrop{display:none;position:fixed;inset:0;z-index:110;background:rgba(0,0,0,.5);}
 
 @media(max-width:700px){
+  .nav-btn { display:flex; }
   .panel-toggle{display:flex;}
   .layout{z-index:auto;}
   .lpanel{position:fixed;top:0;left:0;bottom:0;z-index:160;
@@ -268,7 +302,7 @@ html,body{min-height:100%;font-family:'Segoe UI',system-ui,sans-serif;background
   .rr-title{font-size:15px;}
   .rr-sub{font-size:9px;}
 
-  .turn-banner{padding:7px 10px 7px 54px;font-size:11px;}
+  .turn-banner { padding:7px 54px 7px 54px; font-size:11px; }
 }
 </style>
 </head>
@@ -276,7 +310,18 @@ html,body{min-height:100%;font-family:'Segoe UI',system-ui,sans-serif;background
 <canvas id="stars"></canvas>
 <div class="bg-glow"></div>
 
-<button class="panel-toggle" id="panelToggle">☰</button>
+<button class="nav-btn" id="navBtn" aria-label="Navigation">☰</button>
+<div class="nav-backdrop2" id="navBackdrop2"></div>
+<div class="nav-drawer" id="navDrawer">
+  <div class="nav-drawer-title">Z's Game Center</div>
+  <a class="nav-item" href="index.html"><span class="nav-item-icon">🏠</span>Home</a>
+  <a class="nav-item" href="quiz.html"><span class="nav-item-icon">🧠</span>World Quiz</a>
+  <a class="nav-item" href="borders.html"><span class="nav-item-icon">🗺️</span>Borders</a>
+  <a class="nav-item" href="network.html"><span class="nav-item-icon">🕸️</span>World Network</a>
+  <a class="nav-item" href="pin.html"><span class="nav-item-icon">📍</span>Pin the Country</a>
+  <a class="nav-item nav-active" href="worldcards.html"><span class="nav-item-icon">🃏</span>World Cards</a>
+</div>
+<button class="panel-toggle" id="panelToggle">⚙️</button>
 <div class="panel-backdrop" id="panelBackdrop"></div>
 
 <div class="layout">
@@ -448,6 +493,17 @@ html,body{min-height:100%;font-family:'Segoe UI',system-ui,sans-serif;background
   const open=()=>{panel.classList.add('open');bd.classList.add('open');};
   const close=()=>{panel.classList.remove('open');bd.classList.remove('open');};
   btn.addEventListener('click',open);bd.addEventListener('click',close);
+})();
+
+// Nav drawer
+(function(){
+  const btn = document.getElementById('navBtn');
+  const drawer = document.getElementById('navDrawer');
+  const bd = document.getElementById('navBackdrop2');
+  const open  = () => { drawer.classList.add('open');  bd.classList.add('open'); };
+  const close = () => { drawer.classList.remove('open'); bd.classList.remove('open'); };
+  btn.addEventListener('click', () => drawer.classList.contains('open') ? close() : open());
+  bd.addEventListener('click', close);
 })();
 
 // ── Properties (no language, added highest_point) ─────
